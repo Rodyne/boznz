@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Secret Sauce, (Putting the Mobile System altogether)</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-346 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post346.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post336.html" rel="prev"><span class="meta-nav">←</span> Job Checklists</a></div>
+<div class="nav-next"><a href="post360.html" rel="next">Short update <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-346 post type-post status-publish format-standard hentry category-mobile-terminal" id="post-346">
+<h1 class="entry-title">Secret Sauce, (Putting the Mobile System altogether)</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post346.html" rel="bookmark" title="1:00 pm"><span class="entry-date">15 February 2014</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>I was recently contacted by JJ from France about the mobile terminal I am designing for one of my clients, specifically regarding how it would fit together and if he eventually emulated the design how he would interface it to his clients factory systems (SQL Server in his case) most importantly he was confused how the terminal could get by with such a small processor.</p>
+<p>First let us recall the block diagram for the system</p>
+<p><a href="images/2013/10/concept.jpg"><img alt="Concept Overview" class="aligncenter size-full wp-image-15" height="266" src="images/2013/10/concept.jpg" width="668"/></a></p>
+<p>We’ve been talking exclusively up to now about the terminal but here we are specifically going to talk about the Service/Daemon that sits between your production system and the handheld terminal (this is your secret sauce!), it is the program that:</p>
+<ol>
+<li>Manages the security of which terminals can access the system</li>
+<li>Translates Simple requests from your dumb terminal into high level language SQL to populate or read your production system data-sets</li>
+<li>Reads the production system statuses to decide which screens the terminal will present to the operator. eg in the systems I write barcodes are Code39 and the IDs are prefixed with the type of ID it is, thus a job barcode for say job 2345 would be J2345, if an operator scans this barcode and passes it to the service the service can read the prefix, know the operator has scanned a job and thus know to now use that job or if it expecting some other type of barcode, say an Asset or Stock then to ignore the barcode and pass back an error message.</li>
+<li>Tracks the progress of the messages between Terminal and Service and so knows precisely the state of each.</li>
+<li>Manages printing. If you click a button on the terminal to print a barcode or report it will send a very simple message to the service (Print barcode record XX) and it is the service that will work with the OS, Printer drivers etc to make that happen.</li>
+<li>Displays and logs activity so that a supervisor/manager can see real-time what’s happening on the shop floor</li>
+</ol>
+<p>For example lets think of the process of updating our hypothetical job system with the new volume of a vessel after the job has finished.</p>
+<p>Our production system service requires 4 pieces of information to fully complete this task (Assuming Dates and times are actual timestamps)</p>
+<ol>
+<li>The Unique Job Number (Barcode)</li>
+<li>The ID of the person who is doing the operation. This can be gathered automatically by linking the MAC or IP address to the terminal to the operator ID (the supervisor could do this start of shift before handing out the devices), it could also be done using the RFID scanner and operator tags or just requesting a user ID password every time. I will be implementing the first option as it requires no additional complexity at the terminal end and the rest of the text will assume this.</li>
+<li>The unique vessel ID (Barcode)</li>
+<li>The new volume to update the job with (operator data entry)</li>
+</ol>
+<p>So lets say the operator has just switched on the terminal by clicking the scan button, the following hypothetical workflow will need to happen:</p>
+<ol>
+<li>The terminal need to connect to the WiFi infrastructure and obtain an IP address using DHCP, this may take a few seconds on a busy system, the terminal will need to store in Non-Volatile memory (NVM) the Access point SSID, Authentication Method and Passcode to do this.</li>
+<li>The terminal needs to simultaneously (as the barcode scanner and WiFi modules have there own sub-processors) initiate a barcode scan so the operator will see NO delay whatsoever between pressing the scan button and scanning the barcode, even though the system may not yet be connected to the service.</li>
+<li>If required we can display a processing message at this point though I think everything will be ready within a second or two.</li>
+<li>Once WiFi is connected and the Barcode has been scanned, the terminal will need to form a simple message and send it to the services TCP Port. For this the scanner will also have to have stored the IP address of the service host and the TCP port it will be listening in on in the NVM during its setup (the port can be hardcoded with some arbitrary number as it is never really going to change say port 3000)
+<ol>
+<ol>
+<li><em>Message from terminal to Service: <span style="color: #008000;">&lt;hello, here is barcode J2345&gt;</span> </em></li>
+</ol>
+</ol>
+</li>
+<li>The service receiving this message will know automatically which IP address it came from and thus (if your tying the IP address to the user) which user is using it, it will also know if this terminal is not configured for a user and can reject it.</li>
+<li>The service knows the ID is from a job barcode and will now run a SQL query back to the production database to check the status of that job, only jobs at a certain (open) status will be valid any other job number would be rejected.</li>
+<li>The service would reply to the terminal with a simple message to show the job title and the list of valid operations, ie something like:
+<ol>
+<ol>
+<li>Message from service to Terminal:<span style="color: #ffff00;"><em> &lt;<span style="color: #008000;">OK, JobTitle “Check Evaporation”, Message “Please Scan Vessel”, Now Expecting Asset ID Scan</span>&gt;</em></span></li>
+</ol>
+</ol>
+</li>
+<li>Operator sees message to scan the vessel barcode and does so, the terminal then sends something like:
+<ol>
+<ol>
+<li>Message from Terminal to Service:<em> &lt;<span style="color: #008000;">hello, here is barcode A65432</span>&gt;</em></li>
+</ol>
+</ol>
+</li>
+<li>As the service has no practical limitations in CPU or memory it can can hold the state of the message thread for thousands of these terminals and thus know this terminal has already scanned in a job number and is waiting for a valid asset number, a simple SQL query to the production database will tell it that the asset ID supplied in the barcode is valid for that job and it can either reject the message or confirm it using:
+<ol>
+<ol>
+<li>Message from Service to Terminal: <em>&lt;<span style="color: #008000;">OK, AssetTitle “Vessel B344, 20,000 Litres”, Message “Please enter new volume”, Now expecting number up to 20000</span>&gt;</em></li>
+</ol>
+</ol>
+</li>
+<li>Operator is presented with message and numeric input on the touchscreen to enter new number of litres (or a dip in the case of a winery) the message would be something like:
+<ol>
+<ol>
+<li>Message from Terminal to Service: <em>&lt;<span style="color: #008000;">Hello, number is 15015</span>&gt;</em></li>
+</ol>
+</ol>
+</li>
+<li>Finally, in the simplest case the service would check this number against an expected range and either accept it or reject it, if accepted it would update the job/vessel status in the production system using SQL so that the action can be marked as complete and could not be done again and also initiate a print of a new label if required.
+<ol>
+<ol>
+<li>Message from Terminal to Service: <em>&lt;<span style="color: #008000;">OK, Display “Value OK, new sticker being printed please attach to vessel” turn off in 10 seconds</span>&gt;</em></li>
+</ol>
+</ol>
+</li>
+</ol>
+<p><span style="font-size: 16px;">Naturally these are not the real messages going back and forth and you would use simple byte codes to keep things “Microprocessor friendly” and the data sent small, there may also be timeouts and/or other secondary supervisor checks.</span></p>
+<p>From the above you can see that the terminal does not need to be a Linux or MS behemoth, nor does it require 100’s of Kilobytes of memory to process, nor even an operating system, it could (almost) be done with an arduino and literally requires just the ability to format and send very small messages of a maximum of a few hundred bytes (unless you decide to be clever with showing pictures) so even using a PIC32 is effectively overkill!</p>
+<p>It is also important to note in the above that for security we are using a combination of  the fact:</p>
+<ol>
+<li>We are using a secure WiFi system onto the company network (this is usually the main gate of security on to your network so I would strongly advise not using an open access point!)</li>
+<li>The service will only be responding to IP addresses that have been configured in our DHCP to be given out to our specific terminals MAC addresses (the same way the system administrator may reserve a printer to a specific IP Addresses) in practice this can be tied in with the firewall to only allow the terminal to talk to only the specific server and on a single TCP port, this is good practice and a good reason for reserving the addresses of the terminals.</li>
+<li>The Terminals IP address must be linked to a user in our service before it will accept a message, this would be done by a supervisor having a list of terminals and users and connecting them via a drag/drop operation or whatever.</li>
+<li>Using ‘security by obscurity’ in that we are using an unknown port and an unknown plain text protocol to do the transactions, both easily printed out through a network packet sniffer, however..</li>
+<li>Messages will only be valid with specific combinations of job, asset, Stock or other ID’s all other combinations will be rejected. Without knowing the system intimately this task would require some very serious analysis of the traffic indeed. The operators job sheet is effectively the key to this!</li>
+</ol>
+<p>There is no encryption between terminal and service envisaged ever, and the above will be adequate for the simple fact that, it is going to be used in a factory, generally a controlled access environment and any hacker would need some serious knowledge of the system, most importantly there is no value whatsoever to be had from monitoring the traffic nor, if possible, modifying it as any and all<span style="font-size: 16px;"> information put in by the system is still checked and confirmed by an office person before the job is closed and data committed, most systems have integrity checks and warnings to be acknowledged if anything is out of the ordinary.</span></p>
+<p>Needless to say if this is not enough security for your particular area then don’t use it, but even writing both the production system, the service and the terminal and designing the database it would be beyond me without being on-site and having my laptop plugged into the network and having a valid job sheet. – Go figure.</p>
+<p>And yes the whole of the service could be done using an off the shelf web server such as apache or Microsoft Internet server  (web server tcp ports are easily changed) but you would need a scripting language such as PHP, ASP or Python which can access printer services if printing is required. You would need to use some sort of message format compatable with HTML eg messages sent from the terminal to the service would be something like <span style="color: #ff6600;">http://192.168.0.1/service.php?barcode=J1234</span></p>
+<p><span style="font-size: 16px;">And the PHP would be something like (and I apologize here as I’ve not used PHP for several years)</span></p>
+<pre>&lt;?php
+
+// check terminal is registered on our server database
+if($res=mysql_query("SELECT OperatorID FROM terminals WHERE IPAddress='".$_SERVER["REMOTE_ADDR"]."))
+{
+  if($data=mysql_fetch_row($res))
+<span style="color: #222222; font-family: 'Courier 10 Pitch', Courier, monospace; font-size: 15px; line-height: 21px;">  {
+</span>     $OperatorID=$data[0] // good get operator who owns terminal
+  }
+  else
+    die("Not registered");
+}
+else
+  die("Go away unknown terminal!");
+<span style="color: #222222; font-family: 'Courier 10 Pitch', Courier, monospace; font-size: 15px; line-height: 21px;">
+if(isset($_GET["Barcode"])) // Check barcode
+</span>{
+  if(LEFT($_GET["Barcode"],1)=="J")
+  {
+    if($res=mysql_query("<span style="color: #333300;">SELECT JobStatus,JobTitle FROM jobs WHERE JobID=</span>'".MID($_GET["Barcode"],2,9)."))
+    {
+      if($data=mysql_fetch_row($res))
+      {
+        if($data[0]==20) // good job status so respond..
+         die("OK:JOBTITLE=`".$data[1],"`:PLEASE SCAN ASSETID");
+        else
+         die("BAD Status");
+      }
+      else
+        die("BAD Job Barcode");
+    }
+    else
+     die("BAD Query"); // We Dont really want to report this to terminal!
+ }
+ else
+   die("BAD Barcode Type");
+<span style="color: #222222; font-family: 'Courier 10 Pitch', Courier, monospace; font-size: 15px; line-height: 21px;">}
+</span>else
+  die("BAD parameter");
+<span style="color: #222222; font-family: 'Courier 10 Pitch', Courier, monospace; font-size: 15px; line-height: 21px;">
+?&gt;</span></pre>
+<p>So thats it, the way its all going to work (eventually). Not so hard really is it?</p>
+<p>However back to the real world, I’m still real busy on both Islands of New Zealand. Vintage starts Monday in Gissy and early March in Marlborough, two months of nothing but support,</p>
+<p>I cant wait to get back to normality!</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-5.html" rel="category">Mobile Terminal</a>. Bookmark the <a href="post346.html" rel="bookmark" title="Permalink to Secret Sauce, (Putting the Mobile System altogether)">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post336.html" rel="prev"><span class="meta-nav">←</span> Job Checklists</a></div>
+<div class="nav-next"><a href="post360.html" rel="next">Short update <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

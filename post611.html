@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Data Collection Terminal End-Game (Putting it all together)</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-611 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post611.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post604.html" rel="prev"><span class="meta-nav">←</span> Latest Updates</a></div>
+<div class="nav-next"><a href="post641.html" rel="next">Decoding an EM4100 Manchester Encoded RFID Tag <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-611 post type-post status-publish format-standard hentry category-uncategorized tag-data-collection-terminal tag-delphi tag-lazarus tag-pic32" id="post-611">
+<h1 class="entry-title">Data Collection Terminal End-Game (Putting it all together)</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post611.html" rel="bookmark" title="7:26 am"><span class="entry-date">16 January 2015</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>Getting close to the end game of the mobile data-collection terminal and its here we start to think of how all the different parts are going to fit together as a whole to be useful.<img alt="TERMINAL3" class="size-full wp-image-607 alignright" height="298" src="images/2015/01/TERMINAL3.jpg" width="305"/></p>
+<p>As an aid for me I created an Open Office diagram a little while back explaining how this will work in one of my customers case, this diagram can be found <a href="files/2015/01/Mobile-System1.pdf">here</a> as a PDF (Link to Open Office Document <a href="files/2015/01/Mobile-System.odp">here</a> ) Obviously each implementation will be different but not much so as most MRP systems are fairly similar in concept.</p>
+<p>The document shows that in order to make the system work I need to write 3 lots of code:</p>
+<ol>
+<li>The PIC32 Firmware which will use a proprietary (i.e. I made it up) messaging protocol  sending and receiving very simple messages on TCP Port 2001 (or any number of your choosing). These messages have at there root a couple of key fields, ie MRP system job and asset numbers which can uniquely retrieve job data for the factory. Eg when the barcode scanner scans a job sheet it then sends the unique jobid to the MRP system to request job statuses etc.</li>
+<li>In order for the above to work we need a PC program (a service or daemon as it does not need to be visual) which listens to port 2001 and interprets this simple message into a MySQL query which will retrieve the Job record from the MRP system and package the results into a simple message that the terminal can easily parse.<a href="images/2015/01/message-log.png"><img alt="message log" class="aligncenter size-full wp-image-616" height="218" src="images/2015/01/message-log.png" width="777"/></a>The message trace above is from my work in progress implementation of this program, it shows the message sent by the mobile and the reply received from the server (in this case bugger off as the terminal was not assigned to a user!) I have extracted the thread where the action takes place <a href="files/2015/01/mainunit.zip">here</a> this will be the easiest place to start if your converting it to another language. The current working/test (lazarus/freepascal) code and PC program is: <a href="files/2015/01/Mobile-Service-FreePascal-Program-and-Code.zip">Mobile Service (FreePascal Program and Code)</a>. Note this version does not include the additional security checks I envisage, this will come.</li>
+<li>As this will form an integrated part of the MRP system we also need a way for a supervisor to assign a terminal to an operator on the factory floor and to put a user friendly face to the program at the back-end office. eg in my case I will build a module to my Bulls-i MRP system which allows the assigning of a user to a terminal before it will work and to log all transactions back to the supervisor terminal. ie they can assign the terminal to Fred and as Fred scans jobs and completes tasks these will be displayed real-time on the supervisors PC program. this program will also print the configuration sheets for the mobile (ie the barcodes for SSID, security and Host program) that it uses to set up the WiFi and Host connection. I need to write this in Pascal as the MRP system is written in Delphi (shot below).<a href="images/2015/01/mrp-bulls-i-integration.jpg"><img alt="mrp-bulls-i-integration" class="aligncenter size-full wp-image-614" height="709" loading="lazy" src="images/2015/01/mrp-bulls-i-integration.jpg" width="1178"/></a><a href="images/2015/01/mrp-bulls-i-integration2.jpg"><img alt="mrp-bulls-i-integration2" class="aligncenter size-full wp-image-615" height="595" loading="lazy" src="images/2015/01/mrp-bulls-i-integration2.jpg" width="1417"/></a><a href="images/2015/01/trace.jpg"><img alt="trace" class="aligncenter size-full wp-image-631" height="894" loading="lazy" src="images/2015/01/trace.jpg" width="982"/></a>The last picture is especially interesting as it shows the screen where I edit the functions/queries, I’ve included a test button which will open a socket to the mobile server and actually test it end-to-end, quite a good idea to eliminate stupid problems.</li>
+<li>I will certainly release the source for the server on github, however unfortunately the MRP system it goes to is not open source so some guessing on the part of the builder is required until I publish a stand alone item. Still anyone familiar with the concepts should be able to decipher it quite easy and each MRP system will probably be unique.</li>
+<li>The SQL to create the mobile DB is <a href="files/2015/01/mobile-db.sql_.zip">mobile-db.sql</a></li>
+</ol>
+<p>If you don’t have the code for the system you are integrating it into then it may also be possible to combine programs 2 and 3 into a single web based system. There is also no reason why you cannot use TCP port 80 for the mobile messages instead of port 2001. I’ve not written a web program for about 9 years so doing a complete open source demo may have to wait</p>
+<p>Security is important these days, luckily we are already running a layer of security above the standard industrial systems such as MODBUS by using an encrypted wireless network (WPA2) this prevents eavesdropping but does not prevent spoofing (ie someone with malicious purposes pretending to be a mobile terminal) As I have published most of my secret source this would be relatively easy (assuming you were on the corporate network somehow) The got-cha here is that only certain combinations or job ID’s and asset ID’s in the MRP system will work, and this is a next to impossible task without a print-out of a in-progress job.  Also in the live system I will be adding another layer of authentication that the user will need to scan their RFID tag to do an update just as they have to do on the current touch screens. While not impossible, it does put deviousness outside the realms of your average hacker (I would find it quite difficult myself even as the author)</p>
+<p>Do not dispare Hipsters and Pascal haters, the PC programs are relatively short and should be quite easy to read and covert to you favourite language de jour. I will post up the work-in-progress code in the next few days.</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-1.html" rel="category">Uncategorized</a> and tagged <a href="tag-data-collection-terminal.html" rel="tag">data collection terminal</a>, <a href="tag-delphi.html" rel="tag">Delphi</a>, <a href="tag-lazarus.html" rel="tag">Lazarus</a>, <a href="tag-pic32.html" rel="tag">PIC32</a>. Bookmark the <a href="post611.html" rel="bookmark" title="Permalink to Data Collection Terminal End-Game (Putting it all together)">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post604.html" rel="prev"><span class="meta-nav">←</span> Latest Updates</a></div>
+<div class="nav-next"><a href="post641.html" rel="next">Decoding an EM4100 Manchester Encoded RFID Tag <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

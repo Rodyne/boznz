@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>USR WiFi232-S awkwardness</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-526 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post526.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post521.html" rel="prev"><span class="meta-nav">←</span> August Update</a></div>
+<div class="nav-next"><a href="post531.html" rel="next">Terminal Update <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-526 post type-post status-publish format-standard hentry category-mobile-terminal tag-power tag-usr-wifi232-s" id="post-526">
+<h1 class="entry-title">USR WiFi232-S awkwardness</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post526.html" rel="bookmark" title="10:05 am"><span class="entry-date">13 August 2014</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>OK so I have now found out the USR Wifi232-S Low power module, which has the following specs on the web site does not actually have a standby mode.<a href="images/2014/08/wifi232specs.jpg"><img alt="wifi232specs" class="aligncenter size-full wp-image-527" height="646" src="images/2014/08/wifi232specs.jpg" width="579"/></a>Unfortunately my evaluation of the unit did not include checking sleep current so I found this out AFTER I had the PCB made and several hours of trying to put the module into standby.</p>
+<p>I have subsequently found out this is a “reserved” (ie future) feature and actually does not work. The AT+MSLP=standby command gets accepted by the module but doesnt do anything. I guess the lesson is try fully before you commit. I note the documentation on the web site is removing some of this bad information so I guess it could have been a genuine cut and paste error from one of their other device datasheets.</p>
+<p>The silver lining to this cloud is the unit does work and does not use that much power in normal operation (around 10mA) and also connects quite quickly to the access point so as a work around I am going to switch the power off using a mosfet on the 3.3V line and power it when required. Not sure if there will be any consequences for this but I guess this is the cost of saving US$20 over the flagship RN-131 (which itself still has an unanswered flaw with the boost converter – still no replay on microchip forum on this!)</p>
+<p>Hopefully this post will help someone.</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-5.html" rel="category">Mobile Terminal</a> and tagged <a href="tag-power.html" rel="tag">power</a>, <a href="tag-usr-wifi232-s.html" rel="tag">USR WIFI232-S</a>. Bookmark the <a href="post526.html" rel="bookmark" title="Permalink to USR WiFi232-S awkwardness">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post521.html" rel="prev"><span class="meta-nav">←</span> August Update</a></div>
+<div class="nav-next"><a href="post531.html" rel="next">Terminal Update <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

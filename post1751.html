@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Das Blinkenlights (mit RP2040!)</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-1751 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post1751.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post1674.html" rel="prev"><span class="meta-nav">←</span> Das Blinkenlights!</a></div>
+<div class="nav-next"><a href="post1781.html" rel="next">Yet another boring small project (with an interesting back-story) <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-1751 post type-post status-publish format-standard hentry category-blinkenlights category-rp2040 tag-chatgpt tag-rp2040" id="post-1751">
+<h1 class="entry-title">Das Blinkenlights (mit RP2040!)</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post1751.html" rel="bookmark" title="10:17 pm"><span class="entry-date">26 January 2025</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p class="wp-block-paragraph">Got my updated design back from JLPCB on Friday and this morning decided to test them and have a go at programming them. While I have done a hardware RP2040 design for a customer before I have never actually gotten around to programming one.</p>
+<figure class="wp-block-image size-full"><a href="https://www.youtube.com/watch?v=vKjqw5iGqnQ&amp;t=2s"><img alt="" class="wp-image-2579" height="944" src="images/Untitled.jpg" width="919"/></a></figure>
+<p class="wp-block-paragraph">The changes to the <a href="post1674.html">original blinkenlights</a> are:</p>
+<ol class="wp-block-list">
+<li>RP2040 Microcontroller </li>
+<li>Reversed the numbering on the silk screen (Once I saw this mistake I could not unsee it!)</li>
+<li>Connects via USB cable (No host PC required, can just be used for power and it will blink)</li>
+</ol>
+<p class="wp-block-paragraph">The first thing of note is that the guy I made the boards for wanted the RP2350 (the worthy successor to the RP2040), but that chip is unfortunately not available anywhere, though rumours are they are on their way and may be in stock by the time you read this! Why the guy wanted a chip so capable for basically blinking some LED’s is beyond me, but he was so keen to get the boards he went for the older RP2040, which is still far too powerful for the task, however with both chips being under US$1.00 I guess I should just stop asking stupid questions!</p>
+<p class="wp-block-paragraph">The design is a bit easier as the RP2040 has 30 GPIO pins, this means we don’t have to resort to any weird external chips and can just drive the 8 rows of 16 LEDs directly through MOSFETS, though I need to move everything from 5V to 3.3V. The spare pins connected to a 4-pin dip-switch the only use at the moment for this is to ensure differing panels have different random light sequences but could also be read by the host to send different info to different panels if this functionality is programmed.</p>
+<p class="wp-block-paragraph">As the guy is away for a few weeks I decided I would check them out myself. Previously I have checked the RP2040 is working by simply setting the BOOT SEL switch, to disable the flash chip, and plugging the USB into my PC. If all was well, a new drive would appear in the file manager as a mounted USB Drive with two readable files. As this part worked I thought I would try and be smart and take a ride with ChatGPT to see if I could convert my original PIC C code to the RP2040.</p>
+<p class="wp-block-paragraph">TLDR; The hardware is fine, the LEDs blink, but buggered if I could get the USB/CDC serial interface working in the few hours allocated.</p>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-1752" height="529" src="images/blinkenlights-rp2040-pcb-1024x529.jpg" width="1024"/></figure>
+<p class="wp-block-paragraph">Note I decided to move the BOOT SEL switch back to a push-button in the final design, even though the DIP switch did make it easier to use without having three hands.</p>
+<p class="wp-block-paragraph">If you want to make this project, again all the files are here =&gt; <a href="https://oshwlab.com/rodyne/new-project_copy_copy_copy_copy">OSHWLab</a></p>
+<p class="wp-block-paragraph">If you don’t like that, then all the files are also zipped up here =&gt; <a href="files/Schematic_Gerbers_SourceCode_and_UF2_Binary.zip">zip-files</a></p>
+<p class="wp-block-paragraph">No licence, everything public domain.</p>
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">My journey with a new Microcontroller and ChatGPT. (from zero to hero!</span>)</p>
+<p class="wp-block-paragraph">OK so this morning I knew as much as your average PIC programmer about VS Code, Pico SDK’s or any of the workings of the RP2040 outside of the (meager) hardware design reference which I used 18 months previous for another board design.</p>
+<p class="wp-block-paragraph">After having my usual Sunday stroll up Blenheim’s own Mount Vernon, a 400M high stroll, with a bunch of other old farts, I sat down at my PC at 1PM and opened the <a href="https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf">getting started with the Pico</a> guide, followed the quite good instructions and compiled my first blink program in C.</p>
+<p class="wp-block-paragraph">The only bits that caused an issue were the fact I have never used VS Code before and the first project I created took about 10 minutes to even show up as it silently downloaded the SDK. Of course me being impatient closed VS Code after a minute of nothing seeming to happen, then I noticed the little messages at the bottom right of the IDE and decided to let it do its thing. All good after then, though man, that IDE is really slow!</p>
+<p class="wp-block-paragraph">With blinky LED under the belt I decided to ask ChatGPT to create me a bare RP2040 C Program with a 1mS interrupt, which it nicely did, and I proceeded to modify the interrupt to put the LED scan code. Pressing compile totally failed as I forgot about the make file, CMakeList.txt. Now make files are usually handled by whatever IDE I am using, MPLABX or STM32 cube, I never need to touch them and never do anything fancy with them, having it exposed to a newbie like me was a bit of a shock, (Sigh, why did Pascal never catch on!) luckily ChatGPT to the rescue.</p>
+<p class="wp-block-paragraph">Now ChatGPT has been pretty good and getting better, but I know it’s limitations. The perfect example of this was a few weeks ago after it gave me the perfect description how to connect some 74LS193 counters on my retro-computer. A very upbeat naive version of me then asked it for a schematic, and what I got was below!</p>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-1753" height="1024" loading="lazy" src="images/ChatGPT-I-want-to-connect-2-74ls193-counters-in-series-to-get-an-8-bit-counter-can-you-show-me-the-schematic-to-do-this.jpg" width="1024"/></figure>
+<p class="wp-block-paragraph">So WTF! Yes it will make a good t-shirt to mock our AI overlords in the future, but as it stands, AI is not quite at the level of replacing an EE. (yet!)</p>
+<p class="wp-block-paragraph">Anyway, back to the story. I was a bit shocked with the number of configurations you needed in the CMakeList.txt file, e.g. just including a file in the C code before was good enough, but the compiler here will not do anything unless the make file knows about it. I guess there is some logic, since there are about a million C libraries out there.</p>
+<p class="wp-block-paragraph">Anyway, to my surprise on first compiling my program and dropping the UF2 file onto my RP2040 USB drive it worked! Hi Five to me and ChatGPT, the winning combo!</p>
+<p class="wp-block-paragraph">Except it didn’t work as none of the USB serial part worked and no matter what prompts I fed to it, I did not get a resolution to my problem. But the lights blink magically!</p>
+<p class="wp-block-paragraph">Anyway it does seem a nice chip to work with, and I may look into it (and the RP2350 when available) a bit more for my home and professional projects in the future. As for ChatGPT, it is scarily good, and like a good politician very persuasive even when it is wrong, unlike a politician though it should be able to fix its mistakes. Welcome to the future!</p>
+<p class="has-blue-background-color has-background wp-block-paragraph"><strong>Note from future self: I fixed the code in about an hour in MMBasic =&gt; <a href="post3533.html">here</a>, it might be a lot easier to understand if C is not your scene and/or you just want it working.</strong></p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-152.html" rel="category">blinkenlights</a>, <a href="category-164.html" rel="category">RP2040</a> and tagged <a href="tag-chatgpt.html" rel="tag">ChatGPT</a>, <a href="tag-rp2040.html" rel="tag">RP2040</a>. Bookmark the <a href="post1751.html" rel="bookmark" title="Permalink to Das Blinkenlights (mit RP2040!)">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post1674.html" rel="prev"><span class="meta-nav">←</span> Das Blinkenlights!</a></div>
+<div class="nav-next"><a href="post1781.html" rel="next">Yet another boring small project (with an interesting back-story) <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

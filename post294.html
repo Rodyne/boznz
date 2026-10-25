@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Mobile Terminal Power On/Off</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-294 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post294.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post263.html" rel="prev"><span class="meta-nav">←</span> HK Here I come</a></div>
+<div class="nav-next"><a href="post325.html" rel="next">Hack-a-Day and Github <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-294 post type-post status-publish format-standard hentry category-mobile-terminal tag-auto-power-off tag-mosfet tag-power-control" id="post-294">
+<h1 class="entry-title">Mobile Terminal Power On/Off</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post294.html" rel="bookmark" title="11:52 am"><span class="entry-date">5 January 2014</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>Had a good long think about how the cellar hands currently need the system to work so I can better customise the system for them, there seem to be a few basic actions required and these are really quite simple</p>
+<ol>
+<li>First thing they will normally do is scan a barcode, eg a job sheet barcode or a vessel barcode or a lab barcode etc which needs to go back to the factory processing system to be verified as a valid barcode and then have the status of the job, lab test, vessel etc checked to see what actions can be done on it.</li>
+<li>The next thing is to present and allow the user to pick one of these actions, which usually involve entering some data or a time or date or status</li>
+<li>For some options we may require a supervisor so we need to be able to check the users RFID tag and verify their identity before allowing the option to be chosen</li>
+<li>After this the system generally should go to sleep until the next time.</li>
+</ol>
+<p>Wow its that simple and a few things spring to mind which is why bother with both a power switch and a scan button, lets just combine it such that the button switches on the terminal and initiates a scan immediately while simultaneously connecting to the WIFI, and once its done, wait a minute or so and power everything off.</p>
+<p>This gets rid of a switch (and another pesky cut-out in the case!) and also saves having to micro manage the low power modes on each device too critically (Remember we have the TFT, RFID, CPU, WiFi, 5V reg &amp; Barcode drawing power) more so, it can easily be done with a couple of MOSFETS and resistors as below.</p>
+<p><a href="images/2014/01/mosfet-power-ctrl3.png"><img alt="mosfet power ctrl3" class="aligncenter size-full wp-image-298" height="538" src="images/2014/01/mosfet-power-ctrl3.png" width="808"/></a></p>
+<p>So how does it work? Well, Q1 and the diode D1 are already in the circuit and they arbitrate what powers the circuit, when it is not connected to the USB Charger then Q1 allows the battery to power the circuit, when on USB Power then power is routed through D1 and the battery is effectively disconnected (allowing it to be charged without drawing current).</p>
+<p>Q2 is normally switched off by the 100K R1 resistor holding the gate high and thus no power is drawn (except the leakage of Q2 which is lower than the batteries self resistance so effectively its off)</p>
+<p>Pressing the power on button sets Q2’s gate low and Q2 switches on powering the LDO’s and thus powering the PIC32, immediately the PIC is powered on it must assert Port F5 high and Q3 will effectively take over from the switch shorting Q2 gate to ground and keeping on the power when the button is released. R2 is required as the PIC32 pin effectively floats when no power is connected and we need it normally off.</p>
+<p>When were done we simply set Port F5 low and everything powers off.</p>
+<p>Sounds like a plan!</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-5.html" rel="category">Mobile Terminal</a> and tagged <a href="tag-auto-power-off.html" rel="tag">auto power off</a>, <a href="tag-mosfet.html" rel="tag">MOSFET</a>, <a href="tag-power-control.html" rel="tag">power control</a>. Bookmark the <a href="post294.html" rel="bookmark" title="Permalink to Mobile Terminal Power On/Off">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post263.html" rel="prev"><span class="meta-nav">←</span> HK Here I come</a></div>
+<div class="nav-next"><a href="post325.html" rel="next">Hack-a-Day and Github <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

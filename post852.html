@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Encryption for very low data rate embedded systems</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-852 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post852.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post844.html" rel="prev"><span class="meta-nav">←</span> Lora Data Collection Terminal</a></div>
+<div class="nav-next"><a href="post880.html" rel="next">USB Real-Time Clock for Raspberry Pi, etc <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-852 post type-post status-publish format-standard hentry category-electronics category-encryption category-other-programming tag-encryption tag-one-time-pad" id="post-852">
+<h1 class="entry-title">Encryption for very low data rate embedded systems</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post852.html" rel="bookmark" title="7:49 pm"><span class="entry-date">11 October 2017</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>If your latest IOT project needs to run on batteries for a few years and you need to send some important data over the airwaves or across a serial line then you are in a bit of a poor situation when it comes to normal encryption.</p>
+<p>While adding 1 to the ACSII character and sending the message backwards worked for Tin-Tin and looked like a good idea when you were 10 years old, you really are are going to look a bit silly when your device gets hacked and an impostor can read key data or more seriously send false messages which will be interpreted as one from your sensor.</p>
+<p><a href="images/2017/10/dasterdly.png" rel="attachment wp-att-854"><img alt="" class="size-full wp-image-854 alignleft" height="263" src="images/2017/10/dasterdly.png" width="192"/></a></p>
+<p>Proper encryption is generally known as <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">public key encryption</a> requires quite a complicated algorithm to compute and requires a private key stored in your IOT device and a public key stored in the remote device to decode it. You default low power AT-Mega or PIC 8-bit microprocessors struggle a bit in this situation and the normal course of action is to bite the bullet and upgrade to a 32 bit core, but what if I said there is another way which requires no messy complicated math or algorithms and is totally unbreakable?</p>
+<p>Well there is a simple solution, one which uses the oldest (and most unbreakable) encryption method known to man, it’s called the <a href="https://en.wikipedia.org/wiki/One-time_pad">One Time Pad</a> or OTP. It is however really only suitable for very low data rate sensors as this method requires a random byte for every single encrypted byte you want to transmit. Here’s the big thing though, you only want to encrypt the actual data values and the checksum not the header, preamble and other fluff, in fact this should really not be encrypted using your key as repeating the same header bytes over and over again will make your encryption scheme several-giga-orders of magnitude easier to decrypt!</p>
+<p>Also if the data is unimportant (and that is a thing you need to decide carefully) and your happy anyone can read it (say temperature readings in a field) then the only thing you need to protect against is `man in the middle` attack in which somebody else sends your message with false data in it. In these cases you really only need to encrypt the CRC to produce a digital signature so you can check the data is true and has not been compromised.</p>
+<p>So for the theoretical temperature sensor above, if we to do the math</p>
+<p>2 bytes/temperature reading<br/>
+24 temperature readings a day<br/>
+365 days a year<br/>
+5 years operation</p>
+<p>= 87.6KB of data</p>
+<p>Now that seems like a lot in the micro-controller world, but in the above case the pattern would not repeat until 5 years have passed and if you seriously think somebody is going to intercept every message so they can work on their 5 year master plan to disrupt your operation with bad data then you are seriously working for the wrong businesses!</p>
+<p>In cryptography there is a well known fact that if you xor a random byte with another random byte you get (wait for it) a different random byte so here is where you can be clever at the expense of a small loss of security so it you have three arrays of random numbers crypto[3][256] then you can make 24 million new numbers using:</p>
+<p>NewRandom[a*b*c] = crypto[0][a] ^ crypto[1][b] ^ crypto[2][c]</p>
+<p>The NSA/GCHQ will possibly be able to attack this with enough data points however everytime you increase the array size and add another element into the xor chain the math becomes too hard to predict even when you know the algorithm and the unencypted source byte. Anyway more about this in a future post (with code I promise)</p>
+<p>So back to the simple OTP, for super secure I need 87.6KB of ROM.</p>
+<p>Both the sender and the receiver need this same random data pattern, and it will need to be random as the normal RAND() functions of your favourite programming language are not actually that random. DES encrypting such a random stream would make it pretty near random as we can get without going to silly extremes.</p>
+<p>To do the actual encryption the two bytes of data will need to be XOR’d with two of the OTP/RND key bytes and the next position in the OTP/RND ROM table incremented (below). The receiving system does exactly the same XOR function on the encrypted data and out pops the good data.</p>
+<p><a href="images/2017/10/xor-1.png" rel="attachment wp-att-871"><img alt="" class="aligncenter size-full wp-image-871" height="364" src="images/2017/10/xor-1.png" width="1030"/></a></p>
+<p> </p>
+<p>Thats all there is to it, there really is no need to do any further encryption as the OTP is theoretically unbreakable without the KEY. (so don’t ruin it by publishing the header on Github!)</p>
+<p>If you have more data and your microprocessor is maxed out of flash then the method I have used is to use serial SPI flash which costs a few dollars. 64MB Serial flash in an SOIC8 package can store 8MB of of KEY data which could be used for bigger or more frequent messages but if your getting that big you really need to go to a bigger micro and one of proper PKE or DES encryption libraries.</p>
+<p>And of course, once your fully encrypted then you can add a 1 to the ASCII message and transmit it backwards just to piss off the NSA 🙂</p>
+<p>More to follow</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-170.html" rel="category">Electronics</a>, <a href="category-172.html" rel="category">Encryption</a>, <a href="category-175.html" rel="category">Other Programming</a> and tagged <a href="tag-encryption.html" rel="tag">encryption</a>, <a href="tag-one-time-pad.html" rel="tag">one-time-pad</a>. Bookmark the <a href="post852.html" rel="bookmark" title="Permalink to Encryption for very low data rate embedded systems">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post844.html" rel="prev"><span class="meta-nav">←</span> Lora Data Collection Terminal</a></div>
+<div class="nav-next"><a href="post880.html" rel="next">USB Real-Time Clock for Raspberry Pi, etc <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

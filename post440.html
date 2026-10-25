@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>No Setup Required!</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-440 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post440.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post415.html" rel="prev"><span class="meta-nav">←</span> Re-using pre-existing cases to make your design shine!</a></div>
+<div class="nav-next"><a href="post490.html" rel="next">So Whats with all the designs Boz? <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-440 post type-post status-publish format-standard hentry category-mobile-terminal" id="post-440">
+<h1 class="entry-title">No Setup Required!</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post440.html" rel="bookmark" title="8:16 am"><span class="entry-date">13 May 2014</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>In the miniscule time I have off in the evenings (all day writing the catch2 program at the moment), I’ve been working on the mobile software. For the last few weeks this has been concentrating on trying to get an alphanumeric input on a 2.8″ display. With 240×320 screen area to play with and trying to keep the calibration of the touchscreen to zero I basically couldnt do it without resorting to a old style phone keypad as below with multiple functions/key or calibrating the screen.</p>
+<p>So why do I need alpha-numeric keypad? One word “IT administrators” (ok thats two) and their bloody passwords “L@gMe1n3!” being a old one I had to type in to one of my WiFi hotspots recently!</p>
+<p><a href="images/2014/05/keypad.jpg"><img alt="keypad" class="aligncenter size-full wp-image-441" height="263" src="images/2014/05/keypad.jpg" width="192"/></a></p>
+<p>Now during its normal operation the terminal will not need to use alphanumeric input, the terminal is a means of simplifying data capture and checking, if you want to write some text go to a touchscreen or PC. Basically the mobile is for error reduction and data capture, we are either scanning the resource, picking it from a list, presenting a simple choice (ON/OFF,  YES/NO, COOLING/HEATING..) or using the rfid.  The only thing we want to capture via a keypad is numeric like tank dips (in cm) or lab test results done in the winery such as temperature and this is why the previous post on the option of a physical keyboard enclosure was interesting.  (I May have found a suitable LCD so watch this space!)</p>
+<p>The only time I <em>must</em> have an alphanumeric input is the bloody setup of the system. Once I’ve connected to the server via WiFi I can get all the other things I need from the MySQL server (or “the cloud” as its easier to explain to non-technical people and managers!)</p>
+<p>The goal of this project is not to show how much I can fit onto a screen, I’d use an android device if that was the case, it is the complete opposite, its for a practical cheap tool that is incredibly simple NOT complicated.</p>
+<p><a href="images/2014/05/setup.jpg"><img alt="setup" class="aligncenter size-full wp-image-442" height="467" src="images/2014/05/setup.jpg" width="350"/></a></p>
+<p>The above is the current prototype showing its setup screen, on this screen are the only things that require setting up to access the server, the Wifi SSID/Password and the host name of the server running the service. The TCP port is fixed (I’ve chosen 2001)  the protocol is TCP so nothing else is required and once I’ve accessed the server  I can access/download anything else under full programmer control (we <span style="text-decoration: underline;">don’t</span> want the user playing with anything they can break!)</p>
+<p>Now the SSID would be easy to set, I could just run a scan command on the WiFi module and I could pick it from the list (assuming its not hidden!), the host server can be input with the numeric keypad, but the password would require an alphanumeric keyboard with all the usual special characters which make your IT Manager slaver at the thought of foiling hackers!</p>
+<p>No way around it! I recently thought not too, but a simpler solution is always there waiting!</p>
+<p><a href="images/2013/10/concept.jpg"><img alt="Concept Overview" class="aligncenter size-full wp-image-15" height="266" loading="lazy" src="images/2013/10/concept.jpg" width="668"/></a></p>
+<p>If you look back to the block diagram of the terminal, if we count  there are actually 3 methods of input (assuming we have the touchscreen as the first method) the second method is the RFID scanner and the third method is the Barcode scanner and some barcodes such as code39 can be alphanumeric! So there we have it why not encode the SSID/Password/Host Server into a couple of barcodes then every time the IT Manager decides to change the RFID password we just have to print off a piece of paper with these barcodes on it and the operator can even change it themselves! When we are dealing with 20-30 scanners, lost settings and monthy password changes this is also a real time saver.</p>
+<p>Of course anyone who’s worked with barcode scanners before know this is how they change their configuration already and have done since the 80’s, so again nothing new under the sun!</p>
+<p>(..oh Hum!) Shame about the wasted time though.</p>
+<p>[Edit] Yes, a QR barcode could fit the whole setup string and more, however the scan engines I am currently working with are 1D not 2D. My wife suggested this would actually be a great way to get her smart phone to connect to the horrible WiFi hotspots currently out there, but as far as I’m aware it hasnt been done yet (Google, Apple hint hint!)</p>
+<p> </p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-5.html" rel="category">Mobile Terminal</a>. Bookmark the <a href="post440.html" rel="bookmark" title="Permalink to No Setup Required!">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post415.html" rel="prev"><span class="meta-nav">←</span> Re-using pre-existing cases to make your design shine!</a></div>
+<div class="nav-next"><a href="post490.html" rel="next">So Whats with all the designs Boz? <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

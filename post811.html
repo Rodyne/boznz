@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Why so quiet?</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-811 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post811.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post856.html" rel="prev"><span class="meta-nav">←</span> Uploading file data as a C Header</a></div>
+<div class="nav-next"><a href="post832.html" rel="next">Re-Envisioning Mobile Communications <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-811 post type-post status-publish format-standard hentry category-barcode category-c-programming category-electronics category-rfid category-vinwizard tag-vinwizard" id="post-811">
+<h1 class="entry-title">Why so quiet?</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post811.html" rel="bookmark" title="10:26 am"><span class="entry-date">23 February 2017</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p class="wp-block-paragraph">Well I have actually been busy. Two of the electronic boards have gone into production and a third more complicated 4-layer board is nearing completion for the client. Unfortunately these wont be open sourced as the client has some close competition in the market. I normally try and stick to 2-layers unless I am dealing with special cases like high frequency mixed signal or like this where there simply is too much going on to even consider 2 layer (80 pin CPU with 10 multiplexers, DAC, 2 op-amps and 6 open-collector driver chips and two power supplies on a 100cm square board) still designing with 4-layer is also easier as you get a dedicated ground plane which is easier to shape to separate the analog and digital paths and much easier to solder as you tend not to need another ground plane on the component sides of the board.</p>
+<div class="wp-block-image">
+<figure class="aligncenter"><a href="images/2017/02/iowiz16.jpg" rel="attachment wp-att-814"><img alt="" class="wp-image-814" height="425" src="images/2017/02/iowiz16.jpg" width="853"/></a></figure>
+</div>
+<p class="wp-block-paragraph"></p>
+<p class="has-text-align-center wp-block-paragraph"><em>Ahh the joys of prototyping tiny little components when your eyes are getting old!</em></p>
+<div class="wp-block-image">
+<figure class="aligncenter"><a href="images/2017/02/iowiz16-2.jpg" rel="attachment wp-att-816"><img alt="" class="wp-image-816" height="617" src="images/2017/02/iowiz16-2.jpg" width="1198"/></a></figure>
+</div>
+<p class="has-text-align-center wp-block-paragraph"></p>
+<p class="has-text-align-center wp-block-paragraph"><em>And after my bad soldering effort!</em></p>
+<p class="wp-block-paragraph">You may also have heard we also had a bit of a shake just after my last post with a <a href="http://www.geonet.org.nz/quakes/region/newzealand/2016p858000">7.8 earthquake north of Kaikoura</a> about 80Km away, It wrecked the lab and workshop which was at peak mess at the time toppling most of my test equipment and monitors on to the floor and spewing thousands of 0805 components around like snow. My old Owon scope cracked its screen but otherwise no physical damage to anything or my house. The joys of living 2M above and 200M away from the Pacific Ocean are easily forgotten when your shaken awake at midnight and have to get to high ground in your underpants!</p>
+<p class="wp-block-paragraph">I am also doing a re-design of the Data Collection Terminal for another possible client. WiFi is proving to be a pain for them on their large sites and the new design will use either the RFM69 or RFM95(lora) 868Mhz modules (which have compatible footprints and are interchangeable) which should allow a single or at most 2 base units to cover the site and improve battery life. Due to the design of the mobile unit the data rate is very low and so it fits quite well with these modules where low data rates = low bandwidths = quite long ranges. I have not yet put the designs up as they are changing frequently as I experiment with different configurations, the mobile enclosure will remain however I will remove the USB and LiPo battery for 2 x NMHi AA ones which should last several weeks (without a proper enclosure the USB connector had to be cut-out and looked unprofessional) I have also changed the Keypad layout to a standard 4×4 matrix (Nicer IMHO). Oh and we are back to a 125Khz RFID but with a $2 EM4100 module (less than half the price of the chip I was using)!. So basically apart from the enclosure, barcode reader and LCD it is completely different! I was going to use a ATMega328PB to keep my arduino friends happy but the PIC18F26K40 just came out and is twice the Flash and RAM and cheaper.. decisions.. decisions..</p>
+<div class="wp-block-image">
+<figure class="aligncenter"><a href="images/2017/02/WP_20170223_19_45_33_Pro1.jpg" rel="attachment wp-att-817"><img alt="" class="wp-image-817" height="666" loading="lazy" src="images/2017/02/WP_20170223_19_45_33_Pro1.jpg" width="700"/></a></figure>
+</div>
+<p class="wp-block-paragraph"></p>
+<p class="has-text-align-center wp-block-paragraph"><em>The bare bones of the MKII Data terminal (Warts and All!)</em></p>
+<p class="wp-block-paragraph">The new keyboard overlay was far superior to the original one in every way and came to  US$610 for 100 pieces including courier to NZ which is half the price of my other supplier so shout out to <a href="http://en.szhaiwen.com">Haiwen Membrane Switch Limited</a> who i will definitely use again</p>
+<p class="wp-block-paragraph">Of course the usual suspects want changes to their respective systems and so everything has to be prioritised, with only one of me and vintage looming this is proving troublesome.</p>
+<p class="wp-block-paragraph">Finally My daughter Alex has turned 21 (today! Happy Birthday) and finally moved on to another full time job in <a href="https://www.aon.co.nz/">AON</a> in corporate Auckland, I’m going to miss her help, my wife has offered to help by doing my accounts and filing which should free up some time for me and fill the gap a bit</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-179.html" rel="category">Barcode</a>, <a href="category-173.html" rel="category">C Programming</a>, <a href="category-170.html" rel="category">Electronics</a>, <a href="category-178.html" rel="category">RFID</a>, <a href="category-177.html" rel="category">Vinwizard</a> and tagged <a href="tag-vinwizard.html" rel="tag">Vinwizard</a>. Bookmark the <a href="post811.html" rel="bookmark" title="Permalink to Why so quiet?">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post856.html" rel="prev"><span class="meta-nav">←</span> Uploading file data as a C Header</a></div>
+<div class="nav-next"><a href="post832.html" rel="next">Re-Envisioning Mobile Communications <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Mobile Terminal Version 3 Up and (nearly) working</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-159 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post159.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post134.html" rel="prev"><span class="meta-nav">←</span> Boards and stencils from smart prototyping</a></div>
+<div class="nav-next"><a href="post168.html" rel="next">Version 4 or is that 5! <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-159 post type-post status-publish format-standard hentry category-mobile-terminal" id="post-159">
+<h1 class="entry-title">Mobile Terminal Version 3 Up and (nearly) working</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post159.html" rel="bookmark" title="2:43 pm"><span class="entry-date">20 November 2013</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>Getting a solder stencil really paid off as the new board came out of the oven cooked to perfection (well almost!)</p>
+<p><a href="images/2013/11/Version-3-prototype-power-on.jpg"><img alt="Version 3 prototype power on" class="aligncenter size-large wp-image-160" height="611" src="images/2013/11/Version-3-prototype-power-on-1024x978.jpg" width="640"/></a></p>
+<p style="text-align: center;">Prototype powered on with Wi-fi connection made.</p>
+<p><span style="text-decoration: underline;">So whats working?</span></p>
+<p>Well the inspection showed a few pins of the TFT connector had bridged, however on closer inspection these were all ground lines and connected anyway (phew!)</p>
+<p>The board powered up from the USB and immediately started charging the battery, all the voltages showed good including the 5V from the boost reg (once the enable pin was set correctly!), though there is a bit of ripple to investigate on the main 3.3V line.</p>
+<p>After writing a very basic driver for the ILI9341,  I managed to display some text and boxes proving the basics are OK and the refresh rate using 8 bits was totally adequate for the job. (a screen fill is barely noticeable) The 8051 demo program from the east-rising site is too complex and inaccurate and while it will get you a basic display most of the initialisation code is for other devices, ignored by this driver and can be dumped, my very basic driver is</p>
+<pre>#define CMD 0
+#define DATA 1</pre>
+<pre>void TFTWrite(uint8 address, uint8 data)
+{
+ PMPSetAddress(address);
+ PMPMasterWrite(data);
+}</pre>
+<pre>void TFTWake(void)
+{
+ TFTWrite(CMD,0x11); // Wake
+ DelayMs(150);
+ TFTWrite(CMD,0x29); // Display on
+}</pre>
+<pre>void TFTInit()
+{
+ uint8 i;
+// TFT Parallel Master Port initialization</pre>
+<pre> mPMPOpen(PMP_ON | PMP_READ_WRITE_EN | PMP_CS2_CS1_OFF, PMP_DATA_BUS_8 | PMP_MODE_MASTER2 | PMP_WAIT_BEG_4 | PMP_WAIT_MID_15 | PMP_WAIT_END_4, 0x0001, PMP_INT_OFF);</pre>
+<pre>DelayMs(30); // wait for &gt;30ms</pre>
+<pre>TFT_CS(OFF); // Issue a low to Chip select to enable TFT (not required if TFT CS pin hard-wired to 0V as it will be in later vers)
+ DelayMs(5);
+ TFT_RESET(OFF); // Issue a hard reset to TFT
+ DelayMs(10);
+ TFT_RESET(ON);
+ DelayMs(120);</pre>
+<pre>// ILI9341 TFT Startup sequence (Copied from example on EastRising web site, then eliminated most as ref sheet said did not do anything!)
+
+ TFTWrite(CMD,0x36); // memory access ctrl
+ TFTWrite(DATA,0x48);
+ TFTWrite(CMD,0xb6); // displ fn control
+ TFTWrite(DATA,0xa0);
+ TFTWrite(DATA,0x82);
+ TFTWrite(CMD,0xf2); // gamma fn disable
+ TFTWrite(DATA,0x00);
+ TFTWrite(CMD,0x3a); // pixel format set (16bit 65K colour, Page 65)
+ TFTWrite(DATA,0x55);
+ TFTWake();
+}</pre>
+<pre>void TFTSetPos(uint8 x0,uint16 y0,uint8 x1,uint16 y1) // Set row and column start and end ranges for image data following it to be written to
+{
+ TFTWrite(CMD,0x2A);
+ TFTWrite(DATA,0);
+ TFTWrite(DATA,x0);
+ TFTWrite(DATA,0);
+ TFTWrite(DATA,x1);
+ TFTWrite(CMD,0x2b);
+ TFTWrite(DATA,y0&gt;&gt;8);
+ TFTWrite(DATA,y0);
+ TFTWrite(DATA,y1&gt;&gt;8);
+ TFTWrite(DATA,y1);
+ TFTWrite(CMD,0x2C); //LCD_WriteCMD(GRAMWR);
+}</pre>
+<pre>void FillBox(uint16 x0,uint16 y0,uint16 x1,uint16 y1,uint16 FillColour)
+{
+ uint16 x,y;
+ TFTSetPos(x0,y0,x1,y1);
+ for(y=y0; y&lt;=y1; y++)
+ for(x=x0; x&lt;=x1; x++)
+ {
+ TFTWrite(DATA,FillColour&gt;&gt;8);
+ TFTWrite(DATA,FillColour);
+ }
+ TFTWrite(CMD,0x2C); //LCD_WriteCMD(GRAMWR);
+}</pre>
+<p>The code above should be enough to display a few boxes on the screen using the main program below, you will need to add your own pic initialisation and a delay routine as specific for your pic chip</p>
+<pre>#define GREEN 0x0400
+#define BLUE 0x001F
+
+void main()
+{
+ uint32 i;
+ char c;
+ InitPic();
+ TFTInit();
+ FillBox(0,0,240,320,BLUE);
+ FillBox(40,40,200,280,GREEN);
+ while(1);
+}</pre>
+<p><span style="font-size: 16px;">The WI-FI and Barcode UARTS Both worked, however <span style="text-decoration: underline;"><span style="color: #000000; text-decoration: underline;">not</span></span> together and some re-jigging will be necessary. Basically the Peripheral Pin selection features on the PIC dont allow one of the pins to be active when the other one is (a real unlucky choice and one again I should have picked up before making a PCB)</span></p>
+<p>Boot time to a welcome screen was instant (and I mean real instant not a second or two) the Wi-Fi acquired in just 2 seconds so I’m thinking it would almost be possible to use this 2 seconds from power up which would mean instead of setting low-power sleep modes I can basically shut it off completely and get ages of battery life, something to think about.</p>
+<p><span style="text-decoration: underline;">So whats bad?</span></p>
+<p>The main problem is that the barcode connector is actually reversed, luckilly I noticed this as I was joining the barcode connector to the board, pin 1 on the connector actually goes to pin 12 on the barcode reader due to the nature of the flat flex connector. I’m sure a few professionals out there have hit this problem early on in their working with FFC/FPC and are having a little chuckle!</p>
+<p>Secondly, the touch screen. After 3 hours of re-writing analog to digital conversion routines to try and see a signal from the touchscreen and cursing the PIC32 designers to hell, I finally got the scope out and realised the TFT did not actually have a touch-screen on it (dohhh!). Yes it had the pins and connections, but looking back on the web site I noticed the 6.99 touchscreen has a $1.00 option to add the touchscreen at the factory and I hadn’t checked the box when I ordered! I’m so used to capacitive touchscreens these days I just did not notice, oh well again easily rectified with a new order..</p>
+<p>Thirdly there is no power switch, until I work out a way to put it all to sleep the system will constantly draw power until the battery is flat! Also to do with the power, I forgot the dual power option so that when it is powered from the USB the battery should be isolated while charging, another mosfet and a diode should take care of this.</p>
+<p>Mechanics, oh dear!  Mounting the TFT where I did is not really good when it comes to assembling the item, and I now know why most designers mount the TFT on the reverse side of the PCB. In fact I’m re-thinking the case design totally and may mill out some acrylic board to see if I can improve it.</p>
+<p>All of these should hopefully be rectified in the next version. But as I’ve got a mostly working version now I can take my time a bit on the version 4 board, however my trip to HK is planned for 10th Jan so I really need something before then to take with me.</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-5.html" rel="category">Mobile Terminal</a>. Bookmark the <a href="post159.html" rel="bookmark" title="Permalink to Mobile Terminal Version 3 Up and (nearly) working">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post134.html" rel="prev"><span class="meta-nav">←</span> Boards and stencils from smart prototyping</a></div>
+<div class="nav-next"><a href="post168.html" rel="next">Version 4 or is that 5! <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

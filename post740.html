@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Raspberry Pi PT100 temperature sensor and control board</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-740 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post740.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post725.html" rel="prev"><span class="meta-nav">←</span> Ever get the feeling something big is about to happen?</a></div>
+<div class="nav-next"><a href="post754.html" rel="next">PT100 Control Board for Raspberry Pi. Completed! <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-740 post type-post status-publish format-standard hentry category-c-programming category-electronics category-uncategorized category-vinwizard tag-16f1782 tag-an687 tag-easyeda tag-pt100" id="post-740">
+<h1 class="entry-title">Raspberry Pi PT100 temperature sensor and control board</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post740.html" rel="bookmark" title="12:34 pm"><span class="entry-date">8 June 2016</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>I am currently working on a small Project for David at Wine Technologies (<a href="http://www.vinwizard.us/">vinwizard.us</a>) to replace an older proprietary temperature control PLC. David decided he would like to use a Raspberry Pi due to the fact it is very powerful, low cost and has extensive documentation and support as well as a ready built network and USB stack for communications.</p>
+<p>The problem really was would you really want to use a Raspberry Pi in such an industrial application?</p>
+<p>The main concerns are the complexity. PLC’s and industrial controllers normally run very simple firmware for very good reasons, that being it is much more testable and therefore very reliable. The RPi to be useful needs to run an operating system such as Linux and while reliable can crash due to numerous reasons. David wanted the system to be at least as reliable as the system he was replacing which meant building a custom motherboard for it with a few additional safeguards. The whole board also had to fit into the existing metal case.</p>
+<p>The specification for the motherboard is detailed below:</p>
+<ol>
+<li>The RPi would connect to the motherboard via its GPIO header so it would be modular and easily removable/upgraded if required. The GPIO for the RPi2 and RPi3 is a 40 pin dual header.</li>
+<li>The Motherboard would provide a filtered 5V/3A supply to the RPi through the GPIO, the PSU would be industrial rated for 24V DC. I have checked numerous experts on this (and many so called experts). The only disadvantage of supplying 5V through the GPIO is that we bypass the fuse and some filtering. This can be easily fixed by putting the fuse and additional filtering on the PSU, electrically there are no other issues.</li>
+<li>The Motherboard would allow the connection of 4 x PT100 temperature sensors and the RPi will read the temperatures off the I2C bus.</li>
+<li>The Motherboard would have 8 relays (as we are a temperature control board these will be 4 heating relays and 4 cooling relays) again these will be controlled by writing to  I2C registers</li>
+<li>It must be capable of resetting itself in case of software failure. The RPi does have a built in watchdog timer, however software resets do not always work (been there, done that) and a hardware power off-on reset was preferred. so an external watchdog timer would be on the motherboard and if no I2C communications are received within a pre-determined time (under 2 minutes) the motherboard will power-cycle the 5V.</li>
+<li>Relays will retain there state during a restart of the RPi however if more than 3 restarts are done without communications the system will enter a fail safe mode with all relays open and sound an audible alarm.</li>
+</ol>
+<p>David has decided it would be good kudos for his company to release the final design and firmware back to the community so the design will be open sourced.</p>
+<p>There are a few novel design elements to the motherboard (read it will require more testing than normal) Firstly I am fairly competent on analog design but I am very happy not to re-invent the wheel so I will be using the Microchip <a href="http://ww1.microchip.com/downloads/en/AppNotes/00687c.pdf">AN687 Design Application Note</a> for the core of the design, however as I will need 4 channels I will be multiplexing 4 external channels using MOSFETS which have very low on resistance. We have also added a 5th channel which connects to a precision 100 ohm 0.1% resistor this will be used for calibration and self-test purposes. (What could possibly go wrong!)</p>
+<p>As usual I will be using a PIC controller for the dirty work so it will do the control of the relays, analog multiplexer, watchdog timer and I2C slave to the RPi. I chose the PIC16F1782 this time as it has a 12 bit ADC and also has a 8 bit DAC that I will use to programatically alter the Vref into the constant current source.</p>
+<p>As usual I have designed and hosted the Project using <a href="https://easyeda.com/">EasyEDA</a> which makes it easy for you to get a PCB just by forking the project and pressing the Manufacture Button, I have never had any problems with the quality and price at EasyEDA and they deserve all the praise they get.</p>
+<p>I don’t envisage very complicated firmware will be required for the PIC all the action apart from I2C communications will take place in a simple loop.</p>
+<p>I am still at the stage of building up the PCB I received so more to come</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-173.html" rel="category">C Programming</a>, <a href="category-170.html" rel="category">Electronics</a>, <a href="category-1.html" rel="category">Uncategorized</a>, <a href="category-177.html" rel="category">Vinwizard</a> and tagged <a href="tag-16f1782.html" rel="tag">16F1782</a>, <a href="tag-an687.html" rel="tag">AN687</a>, <a href="tag-easyeda.html" rel="tag">EasyEDA</a>, <a href="tag-pt100.html" rel="tag">PT100</a>. Bookmark the <a href="post740.html" rel="bookmark" title="Permalink to Raspberry Pi PT100 temperature sensor and control board">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post725.html" rel="prev"><span class="meta-nav">←</span> Ever get the feeling something big is about to happen?</a></div>
+<div class="nav-next"><a href="post754.html" rel="next">PT100 Control Board for Raspberry Pi. Completed! <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

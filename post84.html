@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Barcode Scanner Selection</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-84 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post84.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post42.html" rel="prev"><span class="meta-nav">←</span> Fill level sensor update</a></div>
+<div class="nav-next"><a href="post114.html" rel="next">Things not quite right <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-84 post type-post status-publish format-standard hentry category-mobile-terminal tag-mt700-se1223-bar-code" id="post-84">
+<h1 class="entry-title">Barcode Scanner Selection</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post84.html" rel="bookmark" title="5:37 pm"><span class="entry-date">11 October 2013</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>There are two types of barcode scanner engine, the laser one which oscillates a mirror to produce a line which with good timing and a photo-sensor can be converted into 1’s and 0’s. The second type is a CMOS barcode engine which is basically taking a picture of the barcode using a CMOS camera and doing some image processing to get the 1’s and 0’s out. The laser type has a much longer range than the CMOS and is generally bigger and heavier, the CMOS is cheaper and has no moving parts so is a bit more robust and less power hungry.</p>
+<p>Choosing a barcode engine for the terminal is a lot more difficult than I first imagined. I started out with a fairly minimal set of specifications which were:</p>
+<ol>
+<li>It must communicate by UART (which all do) or SPI (not many do)</li>
+<li>It must be small, my reference case, the Hammond 1553B has a narrow opening at the end so it must be under 20mm height (most are)</li>
+<li>It should preferably use laser technology for the greater range</li>
+<li>It should be 3.3V (most are not!), and</li>
+<li>It should be under US$30 (none are!).</li>
+</ol>
+<p>So much for the goals!</p>
+<p>The biggest problem was the price, I sort of assumed these things were commodity items, but it was proving impossible despite my wildest claims to the suppliers (yes fifty now and 500 probably next year!)  to get a laser barcode engine under $50, most wont give you the time of day unless you are buying 200+. The bigger brands Symbol/Motorola were generally up at about US$85 for 100+ qty, the cheaper Chinese equivalents were around $70 for the same qty. $50 could be achieved when ordering minimum quantities of 500 but this was never going to be practical.</p>
+<p>There are about half a dozen manufacturers of OEM barcode engines, after contacting some of them I realised some were just re-branding the same scanner engine, many did not respond (But I did make contact in English which is generally not the first language of these guys), and some came back with insufficient information or sky high costs.</p>
+<p>The most helpful response was from a company in Taiwan called Marson who supplied the MT700 CMOS 3.3V engine to me, and which is absolutely tiny,  its claimed to be the smallest in the world. The photo below shows it attached to the supplied demo board.</p>
+<p><a href="images/2013/10/mt700.jpg"><img alt="mt700" class="aligncenter size-full wp-image-85" height="251" src="images/2013/10/mt700.jpg" width="485"/></a>The board attaches to the PCB via two screws (opposite the two on the top) and the typical 12 way 0.5mm flat flex connector. I manage to secure a price each of US$36 for a minimum order quantity of 100 which I thought was rather good. Being CMOS, the effective range of the units is quite short, typical EAN 13 product barcodes worked OK up to about 150mm (about 6 inches) and were quite accurate and reliable at that range. If it was just scanning paperwork or product barcodes these would be ideal, but they are not really suitable for warehousing where the barcodes may be high or in inaccessible areas. As a lot of factory work does involve just scanning close up documents and product labels I will probably make a future version with this nice unit.</p>
+<p>Due to a stroke of luck, which almost always never happens! I eventually managed to secure 40 x Brand-New Symbol SE1223 barcode engines from an eBay supplier in the states, these worked out at US$20 each. So the game is back on!</p>
+<p><a href="images/2013/10/se-1223.jpg"><img alt="se-1223" height="212" src="images/2013/10/se-1223.jpg" width="238"/></a></p>
+<p>The units have a few draw-backs, the main one being they are basically obsolete and you may not be able to secure the same quantities in the future, the other drawback is they work on 5V so a boost power supply and level conversions to and from 3.3V will be required. The big advantage is the range, being laser they are good up to 500mm for a typical EAN 13 product barcode and can recognise larger barcode fonts over a meter. Four of the units are the Long Range version which can do 2-3 Meters. The units communicate at a fixed 9600 baud TTL to a UART and require control signals to activate,monitor and put to sleep. They take up quite of room in the reference case and account for about 1/4 of the total weight of the terminal and a lot of the real-estate (see picture).</p>
+<p><a href="images/2013/10/case2.jpg"><img alt="case2" class="aligncenter size-full wp-image-86" height="678" loading="lazy" src="images/2013/10/case2.jpg" width="533"/></a>The above shows the barcode scanner in the Hammond 1553B reference case with the revision A board (which I never used due to a design flaw). It is quite a tight fit for the height of the case, it does actually fit, but I ended up milling 1.0 mm from the bottom of the inside of the case to get less tighter fit and less strain on the TFT which touches the top.</p>
+<p> </p>
+<p> </p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-5.html" rel="category">Mobile Terminal</a> and tagged <a href="tag-mt700-se1223-bar-code.html" rel="tag">mt700 se1223 bar-code</a>. Bookmark the <a href="post84.html" rel="bookmark" title="Permalink to Barcode Scanner Selection">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post42.html" rel="prev"><span class="meta-nav">←</span> Fill level sensor update</a></div>
+<div class="nav-next"><a href="post114.html" rel="next">Things not quite right <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
