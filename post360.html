@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Short update</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-360 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post360.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post346.html" rel="prev"><span class="meta-nav">←</span> Secret Sauce, (Putting the Mobile System altogether)</a></div>
+<div class="nav-next"><a href="post391.html" rel="next">Logo <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-360 post type-post status-publish format-standard hentry category-catch2 category-fill-level-sensor category-mobile-terminal category-uncategorized tag-alex tag-catch2-2 tag-easyeda" id="post-360">
+<h1 class="entry-title">Short update</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post360.html" rel="bookmark" title="12:14 pm"><span class="entry-date">7 April 2014</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p class="wp-block-paragraph">February and March have flown by and I’m now coming to the end of my major support period (thank god!) Have got a real backlog of work to catch up on, including the full re-write of the Omega Seafoods Production System and some much needed work to get my mobile terminal from prototype to production ready device.</p>
+<p class="wp-block-paragraph">A Typical day for the last 3 months has been wake up, immediately turn on computer and check for problems which are generally caused by last minute software changes that have not been tested properly or users making wrong physical updates, I’m addressing the second point with the appointment of a software tester (more below) but there is not much I can do about the first point its really down to training and understanding the job in hand. After checking and fixing the problems I go to the customer site and provide on-site support for around 8 hours, then go home and leave the phone and computer on to handle evening support. The company works 24×7 during this time and most problems can be deferred until the morning so thankfully no night calls so far.</p>
+<p class="wp-block-paragraph">Finally gave up the ghost with the Eagle EDA Program, its served me well in the past but its restrictions are now causing issues, I had a small internal project I did for myself six weeks ago which required a 150mm x 20mm board, just a few LEDS’s nothing interesting, however my first level $99 eagle licence only allows 2 layers and 100×80 boards and forking out US$500 for a licence that would do this was never going to happen so I did it in <a href="http://www.kicad-pcb.org/" target="_blank">KiCad</a>. After several years on Eagle with all its quirky ways of doing things it was quite a tricky move, also the Kicad interface is still a bit quirky itself and managing/searching the libraries seems to be a bit of a pain, however I managed to lay out and manufacture a dozen of the boards and all was (eventually) good, so I’m sort of inbetween CAD packages at the moment.</p>
+<p class="wp-block-paragraph">I’m currently playing with another EDA Package called <a href="http://easyeda.com/" target="_blank">EasyEDA</a>, it looks to be in its infancy but where it cuts it for me is the ability to seamlessly open Eagle (or KiCad) libraries , schemas and layouts ( component footprints) with none of the Eagle restrictions and much more intuitively than in KiCad. As the project is in its (very) early phase I’m watching it with great interest, though it is not open source it has a promise that it will be free and should it ever wind down for any reason it will be made open source, it also runs off line and has another promise that it will also eventually export all my projects to eagle or Kicad. So far I’m liking the experience and I especially like the schematic editor. I may do a full review when life returns to normal in a few months.</p>
+<p class="wp-block-paragraph">We had (another) re-think on the mobile terminal system after we noticed the prototype was almost completely unreadable in direct sunlight. Standard (transmissive) TFT displays just don’t really cut it in bright sunlight (as anyone with a cell phone will tell you) I’m looking at a couple of sunlight readable options by getting samples of trans-flective displays and graphic COB displays (groan, yes I know it will be like the 1990’s over again!) I’ve also got a random batch of sample cases to see if I’ve missed anything obvious. The case below was perfect for the MT700 barcode scanner and a non-touchscreen as it had a small membrane keypad and was around US$5, it also used AA batteries so wouldn’t require a charging circuit or a LIPO battery either. As an exercise (mainly during a long airport wait) I decided to draw up a suitable minimal schematic of the terminal to fit. It only took me 2 hours to modify the circuit and lay it out in EasyEDA which was very impressive considering I’ve only been using it for a few days.</p>
+<div class="wp-block-image">
+<figure class="aligncenter"><a href="images/2014/04/SZOMK-AK-H-24.png"><img alt="SZOMK AK-H-24" class="wp-image-362" height="696" src="images/2014/04/SZOMK-AK-H-24.png" width="724"/></a></figure>
+</div>
+<p class="wp-block-paragraph"></p>
+<p class="has-text-align-center wp-block-paragraph">Picture ripped from the current <a href="http://www.aliexpress.com/" target="_blank" title="Dont go there!">AliExpress</a> listing</p>
+<p class="wp-block-paragraph">The case was quite cute when it arrived, I’ve shared the (obviously untested) schematic and PCB with how I think it would lay out on EasyEDA below as an exercise. This design would not be able to use a resistive touchscreen due to the glass window front and it is more suitable to a 128×128 (sunlight readable) graphic LCD such as the one suggested in the schematic, but though this display is very close when I tried it on the case when it arrived it unfortunately did not fit properly, so without a 5mm extension to the case (which they do say its customisable!) or a different GLCD (which I am looking for but cannot yet find) its probably a non-starter, though as an exercise it still has merit.</p>
+<p class="wp-block-paragraph">I will be making a start on the Catch2 project once the vintage support winds down and I need to make a small hardware and software modification to the fill sensor to add a couple of indicator LED’s (to show if its positioned too high or too low during calibration stage – which is also the only reasons I’ve been called out to look at it!) work on the terminal will be sporadic until then. Winter (that’s July to September in the Southern hemisphere) though is generally a quieter time for me so I can hopefully catch up then.</p>
+<p class="wp-block-paragraph">Finally, I’ve been joined in the Company by my daughter Alex, who  has done work for me in the past unofficially but who will now be officially working for me part time and providing me some much needed support mainly in the software testing area. She’s located in Auckland doing a commerce degree there but that is the good thing about the job, she can be located anywhere and only needs to pop back occasionally when major changes need to be communicated.</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-12.html" rel="category">catch2</a>, <a href="category-8.html" rel="category">Fill-Level Sensor</a>, <a href="category-5.html" rel="category">Mobile Terminal</a>, <a href="category-1.html" rel="category">Uncategorized</a> and tagged <a href="tag-alex.html" rel="tag">Alex</a>, <a href="tag-catch2-2.html" rel="tag">Catch2</a>, <a href="tag-easyeda.html" rel="tag">EasyEDA</a>. Bookmark the <a href="post360.html" rel="bookmark" title="Permalink to Short update">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post346.html" rel="prev"><span class="meta-nav">←</span> Secret Sauce, (Putting the Mobile System altogether)</a></div>
+<div class="nav-next"><a href="post391.html" rel="next">Logo <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

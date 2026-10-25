@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>CO2, Temperature and Humidity Monitor</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-777 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post777.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post754.html" rel="prev"><span class="meta-nav">←</span> PT100 Control Board for Raspberry Pi. Completed!</a></div>
+<div class="nav-next"><a href="post856.html" rel="next">Uploading file data as a C Header <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-777 post type-post status-publish format-standard hentry category-co2-monitoring tag-co2 tag-dht-11 tag-dht-22 tag-hd44780 tag-mh-z16 tag-mn-z19 tag-pic18f22k22 tag-pic18f23k22 tag-pic18f24k22 tag-pic18f25k22" id="post-777">
+<h1 class="entry-title">CO2, Temperature and Humidity Monitor</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post777.html" rel="bookmark" title="6:48 am"><span class="entry-date">13 September 2016</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p><a href="images/2016/09/Front-panel3.jpg" rel="attachment wp-att-798"><img alt="front-panel3" class="aligncenter size-full wp-image-798" height="426" src="images/2016/09/Front-panel3.jpg" width="699"/></a></p>
+<p>CO2 Monitoring is mandatory in many workplaces and it affects two of my clients directly in Barrel Halls where wine is stored and aged in temperature and environmentally controlled areas. The table below shows the affects of various concentrations in the air.</p>
+<table>
+<tbody>
+<tr>
+<td>250-350ppm</td>
+<td>Normal background concentration in outdoor ambient air</td>
+</tr>
+<tr>
+<td>350-1,000ppm</td>
+<td>Concentrations typical of occupied indoor spaces with good air exchange</td>
+</tr>
+<tr>
+<td>1,000-2,000ppm</td>
+<td>Complaints of drowsiness and poor air.</td>
+</tr>
+<tr>
+<td>2,000-5,000 ppm</td>
+<td>Headaches, sleepiness and stagnant, stale, stuffy air. Poor concentration, loss of attention, increased heart rate and slight nausea may also be present.</td>
+</tr>
+<tr>
+<td>5,000</td>
+<td>Workplace exposure limit (as 8-hour TWA) in most jurisdictions.</td>
+</tr>
+<tr>
+<td>&gt;40,000 ppm</td>
+<td>Exposure may lead to serious oxygen deprivation resulting in permanent brain damage, coma, even death.</td>
+</tr>
+</tbody>
+</table>
+<p>The project described below uses a MH-Z16 or MH-Z19 CO2 sensor and a DHT-22 (or DHT-11 if less accuracy is required) to measure the Temperature and Humidity. It has a 4 line by 20 character LCD Display to show the current readings and status, a warning alarm and two relays which can be triggered on a low CO2 (Generally above 1000 ppm) normally to switch on an extractor fan and a high level (4000 ppm) which will trigger a warning device such as an external alarm. There are two models I used the 0 to 5000 ppm device here but the code will be the same for the 0 to 10000 ppm model.</p>
+<p><a href="images/2016/09/front-panel2.jpg" rel="attachment wp-att-778"><img alt="front-panel2" class="aligncenter size-full wp-image-778" height="246" src="images/2016/09/front-panel2.jpg" width="603"/></a></p>
+<p><span style="color: #993300;"><strong>Warning: The system is mains powered (100VAC – 240VAC) so if you are replicating the project you should be very careful when wiring up and enclosing the board to ensure it meets all safety guidelines, and if it is going into a public space or factory environment it will need to be installed and tested by a qualified electrician. The PCB is designed for a standard industrial 158 x 90 x 65 mm Plastic Enclosure.</strong></span></p>
+<p><span style="text-decoration: underline;">Circuit Description</span></p>
+<p>The MH-z19 is a self contained sensor powered from 5V which has its own internal processor and outputs the CO2 level as either a pulse width modulated signal or in a serial UART data format. The datasheet is not very detailed but has enough information to use it. I still have a lot of PIC18F24K22 chips lying about from Wine Technology Marlborough’s MLP project and as this has 2 UARTS I decided to use the serial port. The PIC is a little overkill but two UARTS does mean we have a spare serial port that can be used in case the builder wants to output the air quality data to another system.</p>
+<p>A HD44780 compatible 4 line x 20 character display (2004) was chosen so I could fit all the information on without being too cramped. The interface to the PIC is via 4 data lines not 8 as I was initially going to use the extra ports for another purpose. The only difference between the 4-bit and 8-bit interface is a single initialization bit and the need to then send two writes to the device not one. (less soldering is also always good if you are building it without a PCB) The LCD is mounted on the transparent front of the enclosure and connected by flying leads to the PCB</p>
+<p>I need 5V and 3.3V supplies for this (the MH-Z19 interface levels are 3.3V even though it is powered from 5V) No engineer in his or her right mind is going to design their own switch mode power supply for the mains unless they were making thousands and cost was an issue so I have used an off the shelf HLK-PM01 5V AC to DC converter which cost around US$8 each in single quantities. I picked this unit as I saw a review/strip down and test (<a href="http://lygte-info.dk/review/Power%20Mains%20to%205V%200.6A%20Hi-Link%20HLK-PM01%20UK.html">here</a>) and while it looks a bit sloppy inside, it was safe in all aspects, passes NZ electrical safety (PAT) testing and runs quite efficiently and cool for extended periods. The unit above has been on and off for several months now without any issues.</p>
+<p>The DHT-22 is a one-wire device, you need to drag the data pin low for 20mS to initiate the data transfer, the protocol is quite simple and requires only a few lines of code and a timer to measure the pulse lengths and convert them to 0’s and 1’s. See the logic trace below I captured during development, the first trace is a debug line I was asserting to check the timing, the bottom trace is the actual DHT-11 trace.</p>
+<p><a href="images/2016/09/dht-11.jpg" rel="attachment wp-att-786"><img alt="dht-11" class="aligncenter size-full wp-image-786" height="430" loading="lazy" src="images/2016/09/dht-11.jpg" width="1397"/></a></p>
+<p>(Note DHT-11 and DHT-22 are the same but the DHT-11 is limited to 0-50Dec at 1 degree accuracy and 20-80% RH where as the DHT-22 is a few dollars more and has a full temperature range of -40 to +100 Dec at 0.5 DegC and 0-100% RH)</p>
+<p>The two buttons and the LED connected to U3 header are to reset the unit, which also re-calibrates the MH-Z19, the second button is to silence the buzzer should it go off (it is a 1 hour silence so it will re-sound if the levels are still high an hour later) the LED flashes during an alarm and connects to the LED on the silence button</p>
+<p>Two off-the-shelf 5V relays were used to allow switching of a mains extractor fan and an alarm as required.</p>
+<p>The second UART is wired to the ICSP port and it will supply 3.3V, 0V TXD and RXD to an external board if required (A 4-wire RS422/modbus  chip such as a MAX3488/90 or even a bluetooth or ESP serial wifi module would be ideal if required)</p>
+<p>The circuit is below<br/>
+<a href="images/2016/09/cct.png" rel="attachment wp-att-782"><img alt="cct" class="aligncenter size-full wp-image-782" height="669" loading="lazy" src="images/2016/09/cct.png" width="1150"/></a></p>
+<p><em>Note that only 1 CO2 sensor can be used at a time so it is <span style="text-decoration: underline;">either</span> a MH-Z19 <span style="text-decoration: underline;">or</span> a MH-Z16 do not insert both units or it wont work!</em></p>
+<p>As usual I have put the design up at EasyEDA <a href="https://easyeda.com/rodyne">here</a> and you can fork it off and press the manufacture button on the PCB design page to make them yourself or press buy to get the PCBs made (US$17 for Qty 5) The design is fully tested and working.</p>
+<p><a href="images/2016/09/pcb.png" rel="attachment wp-att-793"><img alt="pcb" class="aligncenter size-full wp-image-793" height="655" loading="lazy" src="images/2016/09/pcb.png" width="1035"/></a></p>
+<p>The C code for the PIC is actually 100% working now (must update the EasyEDA description sometime) and it is zipped up as a MPLAB-X Project file <a href="files/2016/09/CO2Detector.X.zip">here</a>. To use you must install the MPLAB-X Eclipse IDE, the XC8 compiler and unzip and open the project and build for your target MPU no other headers or libraries are required and its just a few hundred lines of code. You will need a PICKIT2 or PICKIT3 connected to the ICSP connector to program the device but I guess if your reading this you will already know this, if you do not have a PIC the code is quite well commented if you want to convert it to another micro.</p>
+<p>Licence is totally Open Source/Public Domain so do with it as you wish 🙂</p>
+<p><span style="color: #008000;">As an interesting side note; Even though I live by the coast in rural New Zealand one of the least polluted and populated environment in the world I could not achieve the 350 ppm normal limit below, the best I got was 370 ppm  so I guess either the sensor is a bit off or global warming must be real. (</span><span style="color: #008000;">worrying when you live only 2M above sea level like me!)</span></p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-89.html" rel="category">CO2 Monitoring</a> and tagged <a href="tag-co2.html" rel="tag">CO2</a>, <a href="tag-dht-11.html" rel="tag">DHT-11</a>, <a href="tag-dht-22.html" rel="tag">DHT-22</a>, <a href="tag-hd44780.html" rel="tag">HD44780</a>, <a href="tag-mh-z16.html" rel="tag">MH-Z16</a>, <a href="tag-mn-z19.html" rel="tag">MN-Z19</a>, <a href="tag-pic18f22k22.html" rel="tag">PIC18F22K22</a>, <a href="tag-pic18f23k22.html" rel="tag">PIC18F23K22</a>, <a href="tag-pic18f24k22.html" rel="tag">PIC18F24K22</a>, <a href="tag-pic18f25k22.html" rel="tag">PIC18F25K22</a>. Bookmark the <a href="post777.html" rel="bookmark" title="Permalink to CO2, Temperature and Humidity Monitor">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post754.html" rel="prev"><span class="meta-nav">←</span> PT100 Control Board for Raspberry Pi. Completed!</a></div>
+<div class="nav-next"><a href="post856.html" rel="next">Uploading file data as a C Header <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

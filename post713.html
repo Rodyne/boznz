@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Serial Port combiner for RFID station</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-713 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post713.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post704.html" rel="prev"><span class="meta-nav">←</span> Adding a Message Of the Day or Quote of the Day to your system</a></div>
+<div class="nav-next"><a href="post725.html" rel="next">Ever get the feeling something big is about to happen? <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-713 post type-post status-publish format-standard hentry category-c-programming category-electronics category-foss category-rfid category-uncategorized tag-industrial tag-rfid" id="post-713">
+<h1 class="entry-title">Serial Port combiner for RFID station</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post713.html" rel="bookmark" title="8:03 am"><span class="entry-date">22 December 2015</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>I have a project where the HMI (Human-Machine Interface – ie the touch screen PC) is situated 20M from the station. Normally I would move the screen but this time it was not possible.</p>
+<p>The station has a printer and 2 RFID readers which are activated when a packing crate with an RFID tag embedded in it comes into contact with its cradle. As we have two positions we also need to know which station the reading was sent from. I also need to send a command to a box printer to change the lot number and product name printer on the boxes being packed.</p>
+<p>If the station was close I would normally use an RS232 reader on different COM ports. (I cannot use USB as I don’t <em>easily</em> know which RFID port is which), however RS232 is really only good for 10M at 9600 baud especially in industrial areas where there is a lot of noise so I needed a way of doing this.</p>
+<p>Our solution to this is below (link to project is <a href="https://easyeda.com/rodyne/RFID_Port_Combiner-ZHBTN5mEy" target="_blank">here</a>)</p>
+<p><a href="images/2015/12/circuit.png" rel="attachment wp-att-714"><img alt="circuit" class="aligncenter size-full wp-image-714" height="802" src="images/2015/12/circuit.png" width="1358"/></a></p>
+<p>Two serial RFID readers, are connected to the circuit board which provides power to them and also reads whatever they send. On receival of an RFID tag code (a 10 char string with a header and trailer char) the system appends an “A” or a “B” to the serial string, removes the header and trailer and replaces the trailer with a CR LF and sends it to the PC over RS485 which is good for very long distances and speeds through noisy environments.</p>
+<p>Data sent from the PC is passed though to the printer serial port and on to the label printer. however by embedding a command sequence at the start of the string we can also turn on or off the 4 relays, sound an alarm or request a re-transmission of the RFID tag numbers.</p>
+<p>By having it on a micro controller we can reduce the complexity of the PC code and achieve a better reliability as well as achieving our goal of extending the distance.</p>
+<p>The prototype is shown below (warts and all), the wiring changes were put in so that the RFID signals can trigger an external interrupt which improves the reliability of the soft modem. the project EDA files have all the modifications in for the second version</p>
+<p><a href="images/2015/12/prototype.png" rel="attachment wp-att-715"><img alt="prototype" class="aligncenter size-full wp-image-715" height="597" src="images/2015/12/prototype.png" width="1108"/></a></p>
+<p>The Current MPLABX XC8 code for the PIC is here =&gt; <a href="files/2015/12/main.c" rel="attachment wp-att-720">main.c</a></p>
+<p>Note the code is work in progress so check back for updates, most of it works but its not been tested under pressure, however it should give a feel for what the system does.</p>
+<p>The only change I would make in a future version would be to use a switching regulator like an LM2596 which requires an additional 100uH inductor and a diode but then gives proper industrial power supply tolerance. My circuit is running off 9v as it supplies the RFID’s their power so the LDO gets warm when all the relays are engaged and it pulls 250mA peak, however I am only using 1 relay here so max current is &lt;100mA and there is no reason for me to fix this.</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-173.html" rel="category">C Programming</a>, <a href="category-170.html" rel="category">Electronics</a>, <a href="category-180.html" rel="category">FOSS</a>, <a href="category-178.html" rel="category">RFID</a>, <a href="category-1.html" rel="category">Uncategorized</a> and tagged <a href="tag-industrial.html" rel="tag">industrial</a>, <a href="tag-rfid.html" rel="tag">RFID</a>. Bookmark the <a href="post713.html" rel="bookmark" title="Permalink to Serial Port combiner for RFID station">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post704.html" rel="prev"><span class="meta-nav">←</span> Adding a Message Of the Day or Quote of the Day to your system</a></div>
+<div class="nav-next"><a href="post725.html" rel="next">Ever get the feeling something big is about to happen? <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Small Blinkenlight Update</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-3533 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post3533.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post3486.html" rel="prev"><span class="meta-nav">←</span> Vibe-Migrating, The Easy-Peasy way from Windows 11 to Linux</a></div>
+<div class="nav-next"><a href="post3524.html" rel="next">My first week with Kubuntu/Linux <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-3533 post type-post status-publish format-standard hentry category-blinkenlights category-other-programming category-picomite category-programming category-retro category-rp2040 tag-mmbasic" id="post-3533">
+<h1 class="entry-title">Small Blinkenlight Update</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post3533.html" rel="bookmark" title="11:05 am"><span class="entry-date">20 January 2026</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p class="wp-block-paragraph">I loaded the MM Edit program onto my new Linux/Kubuntu desktop and wanted to test it out with a Raspberry Pi Pico development board to ensure everything was working. As my Pico board was all the way over in my workshop, and it was raining and cold outside (yeah, middle of summer here – go figure!), I pulled the spare <a href="post1751.html">RP2040 blinkenlight board</a> off my spares shelf and decided to have another go at the temporary C firmware on it, maybe fix it once and for all.</p>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-3540" height="168" src="images/IMG_0508-ezgif.com-optimize.gif" width="784"/></figure>
+<p class="wp-block-paragraph">The original blinkenlight board was a surprise favourite with the Hacker News and HackaDay community last year, and judging from the correspondence I had, a lot of people appreciated the RP2040 version over the original 8-Bit PIC one. Obviously, as I was testing MM Edit, not VS Code, I replaced the C program with a small MMBASIC program, just to see how easy it was to to do, if it all worked, and, if BASIC was fast enough to drive a bunch of multiplexed LED’s with row and column drivers. I am pleased to say it did, and the results surprised me, this must have also been the fastest development I have ever done, maybe 3 hours start to finish! It was as simple as clicking the boot-select switch on my board, plugging it in to a free USB port, and dropping the PicoMite RP2040 6.01 firmware on the new USB drive. Then writing the super-simple program below in MM Edit, pressing reset on the blinkenlight board clicking the MM Edit upload button and presto!</p>
+<p class="wp-block-paragraph">I wont even bother to explain the code you don’t get much easier than this. I guess I should start testing my C compilers now, wont be as much fun 🙁</p>
+<pre class="wp-block-code"><code>' Firmware for the Blinkenlights board (https://rodyne.com/?p=1751)
+' Note we are ignoring the 4-switch inputs as not required in USB version
+' Use OPTION HEARTBEAT OFF to free up the heartbeat LED which I have used
+
+OPTION EXPLICIT     ' must declare variables and defaults
+OPTION DEFAULT NONE '
+ON ERROR IGNORE     ' lazy error handling for non-critical hardware
+
+' set RP2040 pin assignments
+SETPIN gp3, dout
+SETpin GP4, dout
+SETpin GP5, dout
+SETpin GP9, dout
+SETpin GP10, dout
+SETpin GP11, dout
+SETpin GP12, dout
+SETpin GP13, dout
+SETpin GP14, dout
+SETpin GP15, dout
+SETpin GP16, dout
+SETpin GP17, dout
+SETpin GP18, dout
+SETpin GP19, dout
+SETpin GP20, dout
+SETpin GP21, dout
+SETpin GP22, dout
+SETpin GP23, dout
+SETpin GP24, dout
+SETpin GP25, dout
+SETpin GP26, dout
+SETpin GP27, dout
+SETpin GP28, dout
+SETpin GP29, dout
+
+' global variables
+dim integer regs(8) ' 8 banks (rows) of 16 leds
+DIM integer row = 0 ' which row is selected for output
+dim integer OpModeTimeout = 0 ' it needs to accept input from my retro comp
+dim string  CBuff$="" 'input temporary sorage
+dim string  Char$
+DIM integer trnd, nVal, hVal
+
+' program main loop
+DO
+  if OpModeTimeout=0 then ' no input so do some random light show
+    trnd = rnd*400 ' adjust this to speed up or slow down light show
+    if trnd&lt;10 then regs(row)=regs(row)&lt;&lt;1  ' shift bank LEDs left
+    if trnd=13 then regs(row)=regs(row)&gt;&gt;1  ' and right
+    if trnd=14 then regs(row)=not regs(row) ' invert them
+    if trnd=15 then regs(row)=rnd*65000     ' pop a new random pattern in
+    if trnd&gt;380 then regs(row)=regs(row)+1  ' increment them
+  else
+    OpModeTimeout=OpModeTimeout-1 ' if no input for 12s then timeout to rnd light show 
+  endif  
+
+  ' asset the scan row driver (1=ROW ON)
+  pin(gp22)=(row=7)
+  pin(gp23)=(row=6)
+  pin(gp24)=(row=5)
+  pin(gp25)=(row=4)
+  pin(gp26)=(row=3)
+  pin(gp27)=(row=2)
+  pin(gp28)=(row=1)
+  pin(gp29)=(row=0)
+  
+  ' decode and asset the correct column driver for the 16 LED's (0=COL ON)
+  if regs(row) and &amp;h0001 then PIN(GP3)=0 else pin(gp3)=1
+  if regs(row) and &amp;h0002 then PIN(GP4)=0 else pin(gp4)=1
+  if regs(row) and &amp;h0004 then PIN(GP5)=0 else pin(gp5)=1
+  if regs(row) and &amp;h0008 then PIN(GP9)=0 else pin(gp9)=1
+  if regs(row) and &amp;h0010 then PIN(GP10)=0 else pin(gp10)=1
+  if regs(row) and &amp;h0020 then PIN(GP11)=0 else pin(gp11)=1
+  if regs(row) and &amp;h0040 then PIN(GP12)=0 else pin(gp12)=1
+  if regs(row) and &amp;h0080 then PIN(GP13)=0 else pin(gp13)=1
+  if regs(row) and &amp;h0100 then PIN(GP14)=0 else pin(gp14)=1
+  if regs(row) and &amp;h0200 then PIN(GP15)=0 else pin(gp15)=1
+  if regs(row) and &amp;h0400 then PIN(GP16)=0 else pin(gp16)=1
+  if regs(row) and &amp;h0800 then PIN(GP17)=0 else pin(gp17)=1
+  if regs(row) and &amp;h1000 then PIN(GP18)=0 else pin(gp18)=1
+  if regs(row) and &amp;h2000 then PIN(GP19)=0 else pin(gp19)=1
+  if regs(row) and &amp;h4000 then PIN(GP20)=0 else pin(gp20)=1
+  if regs(row) and &amp;h8000 then PIN(GP21)=0 else pin(gp21)=1
+
+  pause 1 ' 1mS
+  
+  ' after pause turn all scan lines off so we dont get ghosting when we change states
+  pin(gp3)=1
+  pin(gp4)=1
+  pin(gp5)=1
+  pin(gp9)=1
+  pin(gp10)=1
+  pin(gp11)=1
+  pin(gp12)=1
+  pin(gp13)=1
+  pin(gp14)=1
+  pin(gp15)=1
+  pin(gp16)=1
+  pin(gp17)=1
+  pin(gp18)=1
+  pin(gp19)=1
+  pin(gp20)=1
+  pin(gp21)=1
+  
+  ' process banks/rows 0-7 in round-robin
+  row=row+1
+  if row&gt;7 then row=0
+  
+  ' The USB port in this firmware acts like a virtual terminal so you can send
+  ' text strings into it as if you are coming from a serial port, just need to 
+  ' pretend a serial char is a keypress :-)
+  ' format if r=nnnn where r is the row (0-7), and nnnn is a 16-bit hex string
+  ' eg "4=2FE7&lt;CR&gt;" will put the value 2FE7 into bank 4 of the leds
+  ' if no serial received for more than 12 seconds then revert back to rnd light show
+  Char$=inkey$
+  if Char$&lt;&gt;"" then ' check if character received
+    if Char$=CHR$(10) OR Char$=CHR$(13) then ' if its CR then process buffer
+      ' Note I'm not doing any checks on input using lazy error handling
+      print "'"+CBuff$+"'" 'for debugging
+      nVal = Val(LEFT$(CBuff$,1)) ' get the register value 0-7
+      hVal = val("&amp;H" + mid$(CBuff$,3,4))' convert 4 char hex str to value
+      regs(nVal)=hVal ' set the register
+      OpModeTimeout=10000 ' reset the timeout to display it
+      CBuff$="" ' clear buffer string when processed 
+    else  
+      CBuff$=CBuff$+Char$ ' if not a CR then add char to buffer string
+    endif  
+  endif  
+
+loop
+</code></pre>
+<p class="wp-block-paragraph">Schematic and Gerbers for the Blinkenlights RP2040 = &gt; <a href="files/Schematic_Gerbers_SourceCode_and_UF2_Binary.zip">here</a></p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-152.html" rel="category">blinkenlights</a>, <a href="category-175.html" rel="category">Other Programming</a>, <a href="category-342.html" rel="category">PicoMite</a>, <a href="category-219.html" rel="category">Programming</a>, <a href="category-312.html" rel="category">Retro</a>, <a href="category-164.html" rel="category">RP2040</a> and tagged <a href="tag-mmbasic.html" rel="tag">MMBasic</a>. Bookmark the <a href="post3533.html" rel="bookmark" title="Permalink to Small Blinkenlight Update">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post3486.html" rel="prev"><span class="meta-nav">←</span> Vibe-Migrating, The Easy-Peasy way from Windows 11 to Linux</a></div>
+<div class="nav-next"><a href="post3524.html" rel="next">My first week with Kubuntu/Linux <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

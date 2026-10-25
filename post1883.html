@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Removing Some Very Un-Corporate Baggage</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-1883 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post1883.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post1828.html" rel="prev"><span class="meta-nav">←</span> With AI You Need to Think Much Bigger!</a></div>
+<div class="nav-next"><a href="post2032.html" rel="next">The Summer of Reasoning Book 1 – The Phoney War <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-1883 post type-post status-publish format-standard hentry category-bulls-i category-funny category-indevin category-it-failures category-uncategorized" id="post-1883">
+<h1 class="entry-title">Removing Some Very Un-Corporate Baggage</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post1883.html" rel="bookmark" title="4:35 pm"><span class="entry-date">11 March 2025</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p class="wp-block-paragraph">In preparation for the shut-down and hand-over of the outgoing Bulls-i Winemaking system at Indevin I thought I would go through and maybe remove some of the more inappropriate comments and messages so as not to offend the next guy who has to learn from this. Many of the messages are aimed at me to get the appropriate attention from the user so they will actually email me the error so I could check what happened. Snippy here was a good example, that used to pop up after particularly nasty transaction failures.</p>
+</div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-1905" height="196" src="images/clippy3.png" width="181"/></figure>
+</div>
+</div>
+<p class="wp-block-paragraph">A quick search for the word “fuck” in the source code brings up 57 hits, most of these are comments on how stupid I was at the time, but several translated into actual error messages or screens below. Many more error messages are so deeply embedded in the system they are actually impossible to trigger manually with out a specific set of weird circumstances (Which I guess was why I put them there) like the ones below which were probably only ever seen by one or two people, if any!</p>
+<pre class="wp-block-code"><code>raise exception.Create('Having problems determining crush job to use. 
+                        May be the result of a manual float job or multiple jobs filling 
+                        the same crush tank, cosmic rays, aliens, who fu**ing 
+                        knows!'+cr+cr+
+                       'To-Do Boz to un-couple float jobs from crush pool and never-ever 
+                        try to make sensible assumptions where winemaking is 
+                        concerned.'
+                       );</code></pre>
+<pre class="wp-block-code"><code>raise exception.create('Could not locate i-Ticket '+cfg.bookingid+cr+cr+
+                       'Possibly hiding with Elvis or the Easter Bunny!'); // WTF</code></pre>
+<pre class="wp-block-code"><code>messageDLG('Job is no longer valid!'+cr+cr+
+           'Yes this is totally weird and not normal, the job may have been deleted 
+            by another user, network issues or Space Aliens (hell who knows!) either 
+            way this session is fucked..'+cr+cr+
+           'Bulls-i will now give up on life and die a gruesome death!'+cr+cr+
+           'Definitely A Good time to restart your computer and take a coffee break!',
+           mterror,[mbok],0);</code></pre>
+<pre class="wp-block-code"><code>raise exception.Create('Crush Tank No Longer Exists. Elvis has left the Building'+cr+cr+
+                       'Bulls-i is now going to give up and move to a monastery in
+                        Tibet somewhere, where it will hopefully never see a                                         
+                        wine-maker again!'); </code></pre>
+<p class="wp-block-paragraph">A few others were more easy to trigger.</p>
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">The Classic one I suppose is the infamous “Fuck-up Screen” which I used to show to the intake co-ordinators when they ignored the three steps before booking a truck onto a bin and subsequently had to back the load out. It had to post a message to a SCADA service and wait for a response, hence the little progress bar. I even kept a leaderboard of who made the most fuck-ups in a vintage. Luckily the guys doing the intake coordination had broad shoulders!</p>
+</div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-1885" height="291" src="images/fu-screen.png" width="355"/></figure>
+</div>
+</div>
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">With the system being transactional in nature, there were quite a few No-No’s that I really should not have had buttons for. These I would generally lock down to me only. One such example to the right, was was trying to re-run a composition on a closed Job.</p>
+</div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-1887" height="163" loading="lazy" src="images/fu2-screen.png" width="355"/></figure>
+</div>
+</div>
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">Bulls-i did not use unit tests, and with 140K lines of code I was not going to retrofit them. However it did have a very complicated set of initialisation code. The failure message (which thankfully not many clients ever saw) was this.</p>
+</div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-1889" height="152" loading="lazy" src="images/fu3-screen.png" width="284"/></figure>
+</div>
+</div>
+<p class="wp-block-paragraph">And of course which Indevin winemaker could ever forget the Winemaker “Job Issue” warning screen. The current iteration of this screen has the very tame Dr Evil picture as below:</p>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-1891" height="451" loading="lazy" src="images/fu4-screen-1024x451.png" width="1024"/></figure>
+<p class="wp-block-paragraph">But before Dr Evil, we had many others, here are a few of the more memorable ones:</p>
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">The Donald Trump “You’re Fired!” meme was actually back from 2014, before he was the president of the USA, and when people still smiled at his television antics. </p>
+</div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-1897" height="183" loading="lazy" src="images/fu6.jpg" width="275"/></figure>
+</div>
+</div>
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">Kim Jong Un. this meme only lasted on the screen for about a week until somebody pointed out he actually looked a little bit like our laboratory manager Owen (He doesn’t!). Luckily Owen himself did not actually make the connection.</p>
+</div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-1898" height="224" loading="lazy" src="images/fu5.jpg" width="224"/></figure>
+</div>
+</div>
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">And who could forget Chuck Norris. As an aside, don’t ever Google Chuck Norris, (I’m sure there’s a Chuck-Norris’ism there about breaking the Internet, but I cant think of it) anyway, you will go down a rabbit hole for hours as you re-live the old memes and some new ones. I just had to include the meme collage below, even though they are not really related to this post..</p>
+</div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-1896" height="251" loading="lazy" src="images/chuck.jpg" width="201"/></figure>
+</div>
+</div>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-1899" height="608" loading="lazy" src="images/chuck2-1024x608.jpeg" width="1024"/></figure>
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">And finally which IT Person can forget the Test Print Labels that used to spit out of various printers, usually at the most inappropriate times. This was also the winemaker warning meme for all of about a day, before the HR police saw it. Luckily the HR Department never tested printers!</p>
+</div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-1895" height="251" loading="lazy" src="images/fu8-screen.png" width="397"/></figure>
+</div>
+</div>
+<p class="wp-block-paragraph">I really could go on and on about this, but my daughter is a DEI coordinator for a international university and I really wouldn’t want her to get too annoyed or embarrassed with me (sorry Alex!) and although the system never-ever actually crossed any lines it probably stepped on it several times. The one I remember well, as I had to purge about a 150 dodgy records, was because at one point we had the ability for the users of the system to put quotes of the day into it without any forms of checks, these often never came up for weeks, and then came up at the most inappropriate time. Obviously I learnt that lesson the hard way.</p>
+<p class="wp-block-paragraph">I know my system is not unique in having these, and most, if not all the thousands of users of the system found these totally fine. Many people still ask where the funny messages and menu items have now gone, so I guess this post is for them, and as a legacy of a pre-corporate environment, one that is unlikely to ever return.</p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-160.html" rel="category">Bulls-i</a>, <a href="category-161.html" rel="category">Funny</a>, <a href="category-31.html" rel="category">Indevin</a>, <a href="category-156.html" rel="category">IT Failures</a>, <a href="category-1.html" rel="category">Uncategorized</a>. Bookmark the <a href="post1883.html" rel="bookmark" title="Permalink to Removing Some Very Un-Corporate Baggage">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post1828.html" rel="prev"><span class="meta-nav">←</span> With AI You Need to Think Much Bigger!</a></div>
+<div class="nav-next"><a href="post2032.html" rel="next">The Summer of Reasoning Book 1 – The Phoney War <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

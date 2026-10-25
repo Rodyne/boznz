@@ -1,0 +1,751 @@
+old_url,new_file,kind,title
+https://rodyne.com/rstatic/index.html-author=2&paged=10.html,author-2-page-10.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=2&paged=2.html,author-2-page-2.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=2&paged=3.html,author-2-page-3.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=2&paged=4.html,author-2-page-4.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=2&paged=5.html,author-2-page-5.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=2&paged=6.html,author-2-page-6.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=2&paged=7.html,author-2-page-7.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=2&paged=8.html,author-2-page-8.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=2&paged=9.html,author-2-page-9.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=2.html,author-2.html,author,Author Archives: admin
+https://rodyne.com/rstatic/index.html-author=751.html,author-751.html,author,Author Archives: Boz
+https://rodyne.com/rstatic/index.html-cat=1&paged=2.html,category-1-page-2.html,category,Category Archives: Uncategorized
+https://rodyne.com/rstatic/index.html-cat=1&paged=3.html,category-1-page-3.html,category,Category Archives: Uncategorized
+https://rodyne.com/rstatic/index.html-cat=1&paged=4.html,category-1-page-4.html,category,Category Archives: Uncategorized
+https://rodyne.com/rstatic/index.html-cat=1.html,category-1.html,category,Category Archives: Uncategorized
+https://rodyne.com/rstatic/index.html-cat=109.html,category-109.html,category,Category Archives: Motor Controllers
+https://rodyne.com/rstatic/index.html-cat=12.html,category-12.html,category,Category Archives: catch2
+https://rodyne.com/rstatic/index.html-cat=123&paged=2.html,category-123-page-2.html,category,Category Archives: Publishing
+https://rodyne.com/rstatic/index.html-cat=123&paged=3.html,category-123-page-3.html,category,Category Archives: Publishing
+https://rodyne.com/rstatic/index.html-cat=123.html,category-123.html,category,Category Archives: Publishing
+https://rodyne.com/rstatic/index.html-cat=152.html,category-152.html,category,Category Archives: blinkenlights
+https://rodyne.com/rstatic/index.html-cat=155.html,category-155.html,category,Category Archives: Project Management
+https://rodyne.com/rstatic/index.html-cat=156.html,category-156.html,category,Category Archives: IT Failures
+https://rodyne.com/rstatic/index.html-cat=157&paged=2.html,category-157-page-2.html,category,Category Archives: The Summer of Reasoning
+https://rodyne.com/rstatic/index.html-cat=157.html,category-157.html,category,Category Archives: The Summer of Reasoning
+https://rodyne.com/rstatic/index.html-cat=158.html,category-158.html,category,Category Archives: A Level of Consciousness
+https://rodyne.com/rstatic/index.html-cat=159.html,category-159.html,category,Category Archives: Science Fiction
+https://rodyne.com/rstatic/index.html-cat=160.html,category-160.html,category,Category Archives: Bulls-i
+https://rodyne.com/rstatic/index.html-cat=161&paged=2.html,category-161-page-2.html,category,Category Archives: Funny
+https://rodyne.com/rstatic/index.html-cat=161.html,category-161.html,category,Category Archives: Funny
+https://rodyne.com/rstatic/index.html-cat=162&paged=2.html,category-162-page-2.html,category,Category Archives: AI
+https://rodyne.com/rstatic/index.html-cat=162&paged=3.html,category-162-page-3.html,category,Category Archives: AI
+https://rodyne.com/rstatic/index.html-cat=162.html,category-162.html,category,Category Archives: AI
+https://rodyne.com/rstatic/index.html-cat=163.html,category-163.html,category,Category Archives: ESP32-C3
+https://rodyne.com/rstatic/index.html-cat=164.html,category-164.html,category,Category Archives: RP2040
+https://rodyne.com/rstatic/index.html-cat=165&paged=2.html,category-165-page-2.html,category,Category Archives: Politics
+https://rodyne.com/rstatic/index.html-cat=165.html,category-165.html,category,Category Archives: Politics
+https://rodyne.com/rstatic/index.html-cat=166.html,category-166.html,category,Category Archives: Efficiency
+https://rodyne.com/rstatic/index.html-cat=168.html,category-168.html,category,Category Archives: Office Politics
+https://rodyne.com/rstatic/index.html-cat=169.html,category-169.html,category,Category Archives: Bad Management
+https://rodyne.com/rstatic/index.html-cat=170&paged=2.html,category-170-page-2.html,category,Category Archives: Electronics
+https://rodyne.com/rstatic/index.html-cat=170.html,category-170.html,category,Category Archives: Electronics
+https://rodyne.com/rstatic/index.html-cat=171.html,category-171.html,category,Category Archives: LoRa
+https://rodyne.com/rstatic/index.html-cat=172.html,category-172.html,category,Category Archives: Encryption
+https://rodyne.com/rstatic/index.html-cat=173&paged=2.html,category-173-page-2.html,category,Category Archives: C Programming
+https://rodyne.com/rstatic/index.html-cat=173.html,category-173.html,category,Category Archives: C Programming
+https://rodyne.com/rstatic/index.html-cat=174.html,category-174.html,category,Category Archives: Pascal Programming
+https://rodyne.com/rstatic/index.html-cat=175.html,category-175.html,category,Category Archives: Other Programming
+https://rodyne.com/rstatic/index.html-cat=177.html,category-177.html,category,Category Archives: Vinwizard
+https://rodyne.com/rstatic/index.html-cat=178.html,category-178.html,category,Category Archives: RFID
+https://rodyne.com/rstatic/index.html-cat=179.html,category-179.html,category,Category Archives: Barcode
+https://rodyne.com/rstatic/index.html-cat=180.html,category-180.html,category,Category Archives: FOSS
+https://rodyne.com/rstatic/index.html-cat=183&paged=2.html,category-183-page-2.html,category,Category Archives: Speculation
+https://rodyne.com/rstatic/index.html-cat=183&paged=3.html,category-183-page-3.html,category,Category Archives: Speculation
+https://rodyne.com/rstatic/index.html-cat=183.html,category-183.html,category,Category Archives: Speculation
+https://rodyne.com/rstatic/index.html-cat=184&paged=2.html,category-184-page-2.html,category,Category Archives: The Future
+https://rodyne.com/rstatic/index.html-cat=184&paged=3.html,category-184-page-3.html,category,Category Archives: The Future
+https://rodyne.com/rstatic/index.html-cat=184.html,category-184.html,category,Category Archives: The Future
+https://rodyne.com/rstatic/index.html-cat=185.html,category-185.html,category,Category Archives: MRP
+https://rodyne.com/rstatic/index.html-cat=187.html,category-187.html,category,Category Archives: Omega Seafood
+https://rodyne.com/rstatic/index.html-cat=189.html,category-189.html,category,Category Archives: MySQL
+https://rodyne.com/rstatic/index.html-cat=193.html,category-193.html,category,Category Archives: solari
+https://rodyne.com/rstatic/index.html-cat=194.html,category-194.html,category,Category Archives: Soft-Flap Display
+https://rodyne.com/rstatic/index.html-cat=203.html,category-203.html,category,Category Archives: Repair
+https://rodyne.com/rstatic/index.html-cat=207&paged=2.html,category-207-page-2.html,category,Category Archives: boz
+https://rodyne.com/rstatic/index.html-cat=207.html,category-207.html,category,Category Archives: boz
+https://rodyne.com/rstatic/index.html-cat=208&paged=2.html,category-208-page-2.html,category,Category Archives: Boz NZ
+https://rodyne.com/rstatic/index.html-cat=208.html,category-208.html,category,Category Archives: Boz NZ
+https://rodyne.com/rstatic/index.html-cat=211.html,category-211.html,category,Category Archives: The Phoney War
+https://rodyne.com/rstatic/index.html-cat=212.html,category-212.html,category,Category Archives: Singularity
+https://rodyne.com/rstatic/index.html-cat=213.html,category-213.html,category,Category Archives: End Game
+https://rodyne.com/rstatic/index.html-cat=218&paged=2.html,category-218-page-2.html,category,Category Archives: Books
+https://rodyne.com/rstatic/index.html-cat=218&paged=3.html,category-218-page-3.html,category,Category Archives: Books
+https://rodyne.com/rstatic/index.html-cat=218.html,category-218.html,category,Category Archives: Books
+https://rodyne.com/rstatic/index.html-cat=219&paged=2.html,category-219-page-2.html,category,Category Archives: Programming
+https://rodyne.com/rstatic/index.html-cat=219.html,category-219.html,category,Category Archives: Programming
+https://rodyne.com/rstatic/index.html-cat=220&paged=2.html,category-220-page-2.html,category,Category Archives: Management
+https://rodyne.com/rstatic/index.html-cat=220.html,category-220.html,category,Category Archives: Management
+https://rodyne.com/rstatic/index.html-cat=221.html,category-221.html,category,Category Archives: SQL
+https://rodyne.com/rstatic/index.html-cat=226.html,category-226.html,category,Category Archives: New Zealand
+https://rodyne.com/rstatic/index.html-cat=227.html,category-227.html,category,Category Archives: NZ
+https://rodyne.com/rstatic/index.html-cat=236.html,category-236.html,category,Category Archives: Villa Maria
+https://rodyne.com/rstatic/index.html-cat=250.html,category-250.html,category,Category Archives: SCADA
+https://rodyne.com/rstatic/index.html-cat=251.html,category-251.html,category,Category Archives: Process Automation
+https://rodyne.com/rstatic/index.html-cat=255&paged=2.html,category-255-page-2.html,category,Category Archives: AI Alignment
+https://rodyne.com/rstatic/index.html-cat=255.html,category-255.html,category,Category Archives: AI Alignment
+https://rodyne.com/rstatic/index.html-cat=258&paged=2.html,category-258-page-2.html,category,Category Archives: Singularity
+https://rodyne.com/rstatic/index.html-cat=258.html,category-258.html,category,Category Archives: Singularity
+https://rodyne.com/rstatic/index.html-cat=290&paged=2.html,category-290-page-2.html,category,Category Archives: Philosophy
+https://rodyne.com/rstatic/index.html-cat=290.html,category-290.html,category,Category Archives: Philosophy
+https://rodyne.com/rstatic/index.html-cat=301.html,category-301.html,category,Category Archives: RPG Games
+https://rodyne.com/rstatic/index.html-cat=31&paged=2.html,category-31-page-2.html,category,Category Archives: Indevin
+https://rodyne.com/rstatic/index.html-cat=31.html,category-31.html,category,Category Archives: Indevin
+https://rodyne.com/rstatic/index.html-cat=312.html,category-312.html,category,Category Archives: Retro
+https://rodyne.com/rstatic/index.html-cat=320.html,category-320.html,category,Category Archives: International Calling
+https://rodyne.com/rstatic/index.html-cat=324.html,category-324.html,category,Category Archives: writing
+https://rodyne.com/rstatic/index.html-cat=331.html,category-331.html,category,Category Archives: RP2350
+https://rodyne.com/rstatic/index.html-cat=342.html,category-342.html,category,Category Archives: PicoMite
+https://rodyne.com/rstatic/index.html-cat=348.html,category-348.html,category,Category Archives: The Ramblings of an Old Man
+https://rodyne.com/rstatic/index.html-cat=350.html,category-350.html,category,Category Archives: Critical Thinking
+https://rodyne.com/rstatic/index.html-cat=5&paged=2.html,category-5-page-2.html,category,Category Archives: Mobile Terminal
+https://rodyne.com/rstatic/index.html-cat=5&paged=3.html,category-5-page-3.html,category,Category Archives: Mobile Terminal
+https://rodyne.com/rstatic/index.html-cat=5.html,category-5.html,category,Category Archives: Mobile Terminal
+https://rodyne.com/rstatic/index.html-cat=8.html,category-8.html,category,Category Archives: Fill-Level Sensor
+https://rodyne.com/rstatic/index.html-cat=89.html,category-89.html,category,Category Archives: CO2 Monitoring
+https://rodyne.com/,index.html,home,Optimism During an Uncertain Future
+https://rodyne.com/index.html,index.html,home-alias,Optimism During an Uncertain Future
+https://rodyne.com/rstatic/,index.html,home-alias,Optimism During an Uncertain Future
+https://rodyne.com/rstatic/index.html,index.html,home-alias,Optimism During an Uncertain Future
+https://www.rodyne.com/,index.html,home-alias,Optimism During an Uncertain Future
+https://www.rodyne.com/rstatic/index.html,index.html,home-alias,Optimism During an Uncertain Future
+http://rodyne.com/wp-content/uploads/2013/10/100461_001-230x230.jpg,images/2013/10/100461_001-230x230.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/10/100507_001-230x230.jpg,images/2013/10/100507_001-230x230.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/10/case2.jpg,images/2013/10/case2.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/10/concept.jpg,images/2013/10/concept.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/10/mobile-terminal-version1.0a.jpg,images/2013/10/mobile-terminal-version1.0a.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/10/mt700.jpg,images/2013/10/mt700.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/11/Version-3-prototype-power-on-1024x978.jpg,images/2013/11/Version-3-prototype-power-on-1024x978.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/11/Version-3-prototype-power-on.jpg,images/2013/11/Version-3-prototype-power-on.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/11/Version-4-board.jpg,images/2013/11/Version-4-board.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/11/version-3-PCB.jpg,images/2013/11/version-3-PCB.jpg,image,
+http://rodyne.com/wp-content/uploads/2013/11/version5.png,images/2013/11/version5.png,image,
+http://rodyne.com/wp-content/uploads/2013/12/SensorControl3.png,images/2013/12/SensorControl3.png,image,
+http://rodyne.com/wp-content/uploads/2013/12/SensorControl3b.png,images/2013/12/SensorControl3b.png,image,
+http://rodyne.com/wp-content/uploads/2013/12/SensorControl3c.png,images/2013/12/SensorControl3c.png,image,
+http://rodyne.com/wp-content/uploads/2013/12/Version5-power-on.png,images/2013/12/Version5-power-on.png,image,
+http://rodyne.com/wp-content/uploads/2014/01/diving.jpg,images/2014/01/diving.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/01/leominster.jpg,images/2014/01/leominster.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/01/mosfet-power-ctrl3.png,images/2014/01/mosfet-power-ctrl3.png,image,
+http://rodyne.com/wp-content/uploads/2014/01/ptotoype2.png,images/2014/01/ptotoype2.png,image,
+http://rodyne.com/wp-content/uploads/2014/01/rehau-it.jpg,images/2014/01/rehau-it.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/04/CPR2.png,images/2014/04/CPR2.png,image,
+http://rodyne.com/wp-content/uploads/2014/04/DSCF0017.jpg,images/2014/04/DSCF0017.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/04/SZOMK-AK-H-24.png,images/2014/04/SZOMK-AK-H-24.png,image,
+http://rodyne.com/wp-content/uploads/2014/04/altoids.png,images/2014/04/altoids.png,image,
+http://rodyne.com/wp-content/uploads/2014/04/cpr3.png,images/2014/04/cpr3.png,image,
+http://rodyne.com/wp-content/uploads/2014/04/mhWBo5u6z3-sjIt-8mhd5_Q.jpg,images/2014/04/mhWBo5u6z3-sjIt-8mhd5_Q.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/05/setup.jpg,images/2014/05/setup.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/06/GLCD-Keypad.jpg,images/2014/06/GLCD-Keypad.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/06/iowiz16.jpg,images/2014/06/iowiz16.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/07/version1.png,images/2014/07/version1.png,image,
+http://rodyne.com/wp-content/uploads/2014/08/r2-1024x555.jpg,images/2014/08/r2-1024x555.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/08/r2.jpg,images/2014/08/r2.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/08/wifi232specs.jpg,images/2014/08/wifi232specs.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/09/rev3.jpg,images/2014/09/rev3.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/11/74HCT4052.jpg,images/2014/11/74HCT4052.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/11/bozmo.jpg,images/2014/11/bozmo.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/11/bozmo2.jpg,images/2014/11/bozmo2.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/11/bozmo3.jpg,images/2014/11/bozmo3.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/11/uart.png,images/2014/11/uart.png,image,
+http://rodyne.com/wp-content/uploads/2014/12/Photo0029-277x300.jpg,images/2014/12/Photo0029-277x300.jpg,image,
+http://rodyne.com/wp-content/uploads/2014/12/Photo0029.jpg,images/2014/12/Photo0029.jpg,image,
+http://rodyne.com/wp-content/uploads/2015/01/TERMINAL1.jpg,images/2015/01/TERMINAL1.jpg,image,
+http://rodyne.com/wp-content/uploads/2015/01/TERMINAL2.jpg,images/2015/01/TERMINAL2.jpg,image,
+http://rodyne.com/wp-content/uploads/2015/01/TERMINAL3.jpg,images/2015/01/TERMINAL3.jpg,image,
+http://rodyne.com/wp-content/uploads/2015/01/message-log.png,images/2015/01/message-log.png,image,
+http://rodyne.com/wp-content/uploads/2015/01/mrp-bulls-i-integration.jpg,images/2015/01/mrp-bulls-i-integration.jpg,image,
+http://rodyne.com/wp-content/uploads/2015/01/mrp-bulls-i-integration2.jpg,images/2015/01/mrp-bulls-i-integration2.jpg,image,
+http://rodyne.com/wp-content/uploads/2015/01/trace.jpg,images/2015/01/trace.jpg,image,
+http://rodyne.com/wp-content/uploads/2015/03/DecodingEM4100.jpg,images/2015/03/DecodingEM4100.jpg,image,
+http://rodyne.com/wp-content/uploads/2015/03/em4100-decoded.png,images/2015/03/em4100-decoded.png,image,
+http://rodyne.com/wp-content/uploads/2015/03/em4100.png,images/2015/03/em4100.png,image,
+http://rodyne.com/wp-content/uploads/2015/06/joborder-old.jpg,images/2015/06/joborder-old.jpg,image,
+http://rodyne.com/wp-content/uploads/2015/10/screenshot.png,images/2015/10/screenshot.png,image,
+http://rodyne.com/wp-content/uploads/2015/12/circuit.png,images/2015/12/circuit.png,image,
+http://rodyne.com/wp-content/uploads/2015/12/prototype.png,images/2015/12/prototype.png,image,
+http://rodyne.com/wp-content/uploads/2016/08/RPiPT100.png,images/2016/08/RPiPT100.png,image,
+http://rodyne.com/wp-content/uploads/2016/08/Schematic_Version_5.png,images/2016/08/Schematic_Version_5.png,image,
+http://rodyne.com/wp-content/uploads/2016/09/Front-panel3.jpg,images/2016/09/Front-panel3.jpg,image,
+http://rodyne.com/wp-content/uploads/2016/09/cct.png,images/2016/09/cct.png,image,
+http://rodyne.com/wp-content/uploads/2016/09/dht-11.jpg,images/2016/09/dht-11.jpg,image,
+http://rodyne.com/wp-content/uploads/2016/09/pcb.png,images/2016/09/pcb.png,image,
+http://rodyne.com/wp-content/uploads/2017/02/WP_20170223_19_45_33_Pro1.jpg,images/2017/02/WP_20170223_19_45_33_Pro1.jpg,image,
+http://rodyne.com/wp-content/uploads/2017/02/iowiz16-2.jpg,images/2017/02/iowiz16-2.jpg,image,
+http://rodyne.com/wp-content/uploads/2017/02/iowiz16.jpg,images/2017/02/iowiz16.jpg,image,
+http://rodyne.com/wp-content/uploads/2017/09/Lora-Terminal.jpg,images/2017/09/Lora-Terminal.jpg,image,
+http://rodyne.com/wp-content/uploads/2017/09/volcano.jpg,images/2017/09/volcano.jpg,image,
+http://rodyne.com/wp-content/uploads/2017/10/dasterdly.png,images/2017/10/dasterdly.png,image,
+http://rodyne.com/wp-content/uploads/2017/10/header.png,images/2017/10/header.png,image,
+http://rodyne.com/wp-content/uploads/2017/10/header2.png,images/2017/10/header2.png,image,
+http://rodyne.com/wp-content/uploads/2017/10/xor-1.png,images/2017/10/xor-1.png,image,
+http://rodyne.com/wp-content/uploads/2017/12/rtc-pcb.png,images/2017/12/rtc-pcb.png,image,
+http://rodyne.com/wp-content/uploads/2017/12/rtc-prototype1.jpg,images/2017/12/rtc-prototype1.jpg,image,
+http://rodyne.com/wp-content/uploads/2017/12/rtc-schema.png,images/2017/12/rtc-schema.png,image,
+http://rodyne.com/wp-content/uploads/2017/12/rtc-uart.jpg,images/2017/12/rtc-uart.jpg,image,
+http://rodyne.com/wp-content/uploads/2019/08/shed1.jpg,images/2019/08/shed1.jpg,image,
+http://rodyne.com/wp-content/uploads/2019/08/shed5-1024x768.jpg,images/2019/08/shed5-1024x768.jpg,image,
+http://rodyne.com/wp-content/uploads/2019/08/workshop.jpg,images/2019/08/workshop.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/2013/10/Version-1.0b.pdf,files/2013/10/Version-1.0b.pdf,image,
+https://rodyne.com/rstatic/wp-content/uploads/2013/10/pic32-2.8-SE-1223-RN-131.pdf,files/2013/10/pic32-2.8-SE-1223-RN-131.pdf,image,
+https://rodyne.com/rstatic/wp-content/uploads/2013/10/se-1223.jpg,images/2013/10/se-1223.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/2013/11/Mobile-Terminal-Eagle-files-Version-1.0e.zip,files/2013/11/Mobile-Terminal-Eagle-files-Version-1.0e.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/2013/12/database-r4.odp,files/2013/12/database-r4.odp,image,
+https://rodyne.com/rstatic/wp-content/uploads/2014/04/mess.png,images/2014/04/mess.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/2014/04/smalllogo.png,images/2014/04/smalllogo.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/2014/04/solari.pdf,files/2014/04/solari.pdf,image,
+https://rodyne.com/rstatic/wp-content/uploads/2014/04/timer.c,files/2014/04/timer.c,image,
+https://rodyne.com/rstatic/wp-content/uploads/2014/05/keypad.jpg,images/2014/05/keypad.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/2014/06/database-r4.odp,files/2014/06/database-r4.odp,image,
+https://rodyne.com/rstatic/wp-content/uploads/2014/06/database-r4.pdf,files/2014/06/database-r4.pdf,image,
+https://rodyne.com/rstatic/wp-content/uploads/2014/06/prod-test.zip,files/2014/06/prod-test.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/2014/11/PSUMOD.png,images/2014/11/PSUMOD.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/2015/01/Mobile-Service-FreePascal-Program-and-Code.zip,files/2015/01/Mobile-Service-FreePascal-Program-and-Code.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/2015/01/Mobile-System.odp,files/2015/01/Mobile-System.odp,image,
+https://rodyne.com/rstatic/wp-content/uploads/2015/01/Mobile-System1.pdf,files/2015/01/Mobile-System1.pdf,image,
+https://rodyne.com/rstatic/wp-content/uploads/2015/01/mainunit.zip,files/2015/01/mainunit.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/2015/01/mobile-db.sql_.zip,files/2015/01/mobile-db.sql_.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/2015/10/qotd.zip,files/2015/10/qotd.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/2017/10/Create-Header.zip,files/2017/10/Create-Header.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/2017/12/RPI-RTC-XC8-for-PIC16F1544.zip,files/2017/12/RPI-RTC-XC8-for-PIC16F1544.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/2017/12/RPI-RTC.pdf,files/2017/12/RPI-RTC.pdf,image,
+https://rodyne.com/rstatic/wp-content/uploads/2018/07/spocksbrain.jpg,images/2018/07/spocksbrain.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/2020/09/Schematic_Chainable-Large-LED-character-display2-1024x675.png,images/2020/09/Schematic_Chainable-Large-LED-character-display2-1024x675.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/2020/09/chain-display2-1024x797.jpg,images/2020/09/chain-display2-1024x797.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/2020/09/image.png,images/2020/09/image.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/2023/10/cover-753x1024.jpg,images/2023/10/cover-753x1024.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/2024/01/image.png,images/2024/01/image.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/2024/11/DALL·E-2024-11-21-08.49.05-A-cartoon-style-depiction-of-a-small-ship-with-several-holes-in-its-hull-water-leaking-in-and-only-the-captain-standing-at-the-helm-confidently-and-2.jpg,images/2024/11/DALL·E-2024-11-21-08.49.05-A-cartoon-style-depiction-of-a-small-ship-with-several-holes-in-its-hull-water-leaking-in-and-only-the-captain-standing-at-the-helm-confidently-and-2.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/2024/11/DALL·E-2024-11-23-13.42.09-A-Renaissance-era-writer-sitting-at-a-wooden-desk-in-a-dimly-lit-study-deeply-pondering-while-holding-a-quill-pen.-The-room-is-adorned-with-books-sc-2.png,images/2024/11/DALL·E-2024-11-23-13.42.09-A-Renaissance-era-writer-sitting-at-a-wooden-desk-in-a-dimly-lit-study-deeply-pondering-while-holding-a-quill-pen.-The-room-is-adorned-with-books-sc-2.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/2024/11/mini-cover.jpg,images/2024/11/mini-cover.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/22373_strip.gif,images/22373_strip.gif,image,
+https://rodyne.com/rstatic/wp-content/uploads/BackupProjects_rodyne_personal_0_20250112-1.zip,files/BackupProjects_rodyne_personal_0_20250112-1.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/BackupProjects_rodyne_personal_0_20250112.zip,files/BackupProjects_rodyne_personal_0_20250112.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/Book-0-TSOR-Cover-745x1024.jpg,images/Book-0-TSOR-Cover-745x1024.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/ChatGPT-I-want-to-connect-2-74ls193-counters-in-series-to-get-an-8-bit-counter-can-you-show-me-the-schematic-to-do-this.jpg,images/ChatGPT-I-want-to-connect-2-74ls193-counters-in-series-to-get-an-8-bit-counter-can-you-show-me-the-schematic-to-do-this.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/Cover3-745x1024.jpg,images/Cover3-745x1024.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/Cover3-small-free.jpg,images/Cover3-small-free.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/DAS-BLINKENLIGHTS-2U.zip,files/DAS-BLINKENLIGHTS-2U.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/Dungeon Newbie V1.pdf,files/Dungeon Newbie V1.pdf,image,
+https://rodyne.com/rstatic/wp-content/uploads/End-Game.png,images/End-Game.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/GDPR-1.jpg,images/GDPR-1.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/Gemini_Generated_Image_2jcn9e2jcn9e2jcn.png,images/Gemini_Generated_Image_2jcn9e2jcn9e2jcn.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/Gemini_Generated_Image_sqqdnqsqqdnqsqqd.png,images/Gemini_Generated_Image_sqqdnqsqqdnqsqqd.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/HLeL0XQaIAAvuur-1.jpeg,images/HLeL0XQaIAAvuur-1.jpeg,image,
+https://rodyne.com/rstatic/wp-content/uploads/IMG_0470-822x1024.jpg,images/IMG_0470-822x1024.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/IMG_0471-1024x387.jpg,images/IMG_0471-1024x387.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/IMG_0484-1024x473.jpg,images/IMG_0484-1024x473.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/IMG_0508-ezgif.com-optimize.gif,images/IMG_0508-ezgif.com-optimize.gif,image,
+https://rodyne.com/rstatic/wp-content/uploads/Retro8031-1.jpg,images/Retro8031-1.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/Schematic_BLINKENLIGHTS-2U_2025-01-11-1024x726.png,images/Schematic_BLINKENLIGHTS-2U_2025-01-11-1024x726.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/Schematic_Gerbers_SourceCode_and_UF2_Binary.zip,files/Schematic_Gerbers_SourceCode_and_UF2_Binary.zip,image,
+https://rodyne.com/rstatic/wp-content/uploads/Schematic_Indevin-Clock-V2_2025-03-05.png,images/Schematic_Indevin-Clock-V2_2025-03-05.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/Schematic_RP2350B-RP2354B-PICO2-HDMI-Dev-board_2026-05-18.png,images/Schematic_RP2350B-RP2354B-PICO2-HDMI-Dev-board_2026-05-18.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/Schematic_Solari-Controller_2025-03-31-1024x724.jpg,images/Schematic_Solari-Controller_2025-03-31-1024x724.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/The-Phoney-War.jpg,images/The-Phoney-War.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/The-Summ-of-Reasoning-Cover-2-744x1024.jpg,images/The-Summ-of-Reasoning-Cover-2-744x1024.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/Untitled.jpg,images/Untitled.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/Untitled.png,images/Untitled.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/aislop.jpg,images/aislop.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/alien2.jpg,images/alien2.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/aliens.jpg,images/aliens.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/all-the-books.jpg,images/all-the-books.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/assm-877x1024.jpg,images/assm-877x1024.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/b6f5479e-9e81-4aa1-85fd-15a9d9fcad4e-687x1024.jpg,images/b6f5479e-9e81-4aa1-85fd-15a9d9fcad4e-687x1024.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/bio-pic.jpg,images/bio-pic.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/blinkenlights-desktop-1024x572.jpg,images/blinkenlights-desktop-1024x572.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/blinkenlights-rp2040-pcb-1024x529.jpg,images/blinkenlights-rp2040-pcb-1024x529.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/blinkenlights1-1-1024x209.jpg,images/blinkenlights1-1-1024x209.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/book1.jpg,images/book1.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/brown-family-reunion-2025-1024x792.jpg,images/brown-family-reunion-2025-1024x792.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/cat-meme-1.jpg,images/cat-meme-1.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/chicken.jpg,images/chicken.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/chickengame2-2.jpg,images/chickengame2-2.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/chuck-4.jpg,images/chuck-4.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/chuck.jpg,images/chuck.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/chuck2-1024x608.jpeg,images/chuck2-1024x608.jpeg,image,
+https://rodyne.com/rstatic/wp-content/uploads/circuit-821x1024.jpg,images/circuit-821x1024.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/clippy3.png,images/clippy3.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/clock-pcb.png,images/clock-pcb.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/cookies.jpg,images/cookies.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/cpaBY-2.jpg,images/cpaBY-2.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/devboard-2-1024x716.jpg,images/devboard-2-1024x716.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/dumbo.jpg,images/dumbo.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/eagle2-1024x576.jpg,images/eagle2-1024x576.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/float.jpg,images/float.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/float2-1024x227.jpg,images/float2-1024x227.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/float3.jpg,images/float3.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/float5-1024x576.jpg,images/float5-1024x576.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/float5.jpg,images/float5.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/floatation-with-al-and-fran-small-1024x719.jpg,images/floatation-with-al-and-fran-small-1024x719.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/floatation-with-al-and-fran-small.jpg,images/floatation-with-al-and-fran-small.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/front-panel.jpg,images/front-panel.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/fu-screen.png,images/fu-screen.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/fu2-screen.png,images/fu2-screen.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/fu3-screen.png,images/fu3-screen.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/fu4-screen-1024x451.png,images/fu4-screen-1024x451.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/fu5.jpg,images/fu5.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/fu6.jpg,images/fu6.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/fu8-screen.png,images/fu8-screen.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/genius.jpg,images/genius.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/grab-bag.jpeg,images/grab-bag.jpeg,image,
+https://rodyne.com/rstatic/wp-content/uploads/granny.jpg,images/granny.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/graph1-1.jpg,images/graph1-1.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/hogwarts1.jpg,images/hogwarts1.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/homer-simpson-jobs.jpg,images/homer-simpson-jobs.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/image-1024x529.png,images/image-1024x529.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/image-2-1.jpg,images/image-2-1.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/image.png,images/image.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/inbox.jpg,images/inbox.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/internet-meme.jpg,images/internet-meme.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/meme3.jpg,images/meme3.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/meter.png,images/meter.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/monktypewriter.jpg,images/monktypewriter.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/orac-2030-1024x687.jpg,images/orac-2030-1024x687.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/partsbin.jpg,images/partsbin.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/pcb-1024x726.jpg,images/pcb-1024x726.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/pcb-2.jpg,images/pcb-2.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/pebbl2.jpg,images/pebbl2.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/phone-1.jpg,images/phone-1.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/platez.jpg,images/platez.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/plc-graph.gif,images/plc-graph.gif,image,
+https://rodyne.com/rstatic/wp-content/uploads/process.png,images/process.png,image,
+https://rodyne.com/rstatic/wp-content/uploads/singularity.jpg,images/singularity.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/smapdango.jpg,images/smapdango.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/solari1.jpg,images/solari1.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/solari2.jpg,images/solari2.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/solari3.jpg,images/solari3.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/solari4.jpg,images/solari4.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/solari5.jpg,images/solari5.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/touchscreen-example.jpg,images/touchscreen-example.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/unnamed.jpg,images/unnamed.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/vsx-520-front-panel-cct-1024x1018.jpg,images/vsx-520-front-panel-cct-1024x1018.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/vsx520-in-action-1024x727.jpg,images/vsx520-in-action-1024x727.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/vulnerabilities.jpg,images/vulnerabilities.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/win8.jpg,images/win8.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/wizardoftech.jpg,images/wizardoftech.jpg,image,
+https://rodyne.com/rstatic/wp-content/uploads/zombies.jpg,images/zombies.jpg,image,
+https://rodyne.com/wp-content/uploads/2015/11/web-header2.png,images/2015/11/web-header2.png,image,
+https://rodyne.com/wp-content/uploads/2015/12/main.c,files/2015/12/main.c,image,
+https://rodyne.com/wp-content/uploads/2016/08/RPI-Temperature-IO-Board.X.zip,files/2016/08/RPI-Temperature-IO-Board.X.zip,image,
+https://rodyne.com/wp-content/uploads/2016/08/RTD-Pt100-Conversion.pdf,files/2016/08/RTD-Pt100-Conversion.pdf,image,
+https://rodyne.com/wp-content/uploads/2016/09/CO2Detector.X.zip,files/2016/09/CO2Detector.X.zip,image,
+https://rodyne.com/wp-content/uploads/2016/09/front-panel2.jpg,images/2016/09/front-panel2.jpg,image,
+https://rodyne.com/wp-content/uploads/2017/09/Lora-Terminal-Assembled.jpg,images/2017/09/Lora-Terminal-Assembled.jpg,image,
+https://rodyne.com/wp-content/uploads/2020/04/nz.gif,images/2020/04/nz.gif,image,
+https://rodyne.com/wp-content/uploads/Cover3.jpg,images/Cover3.jpg,image,
+https://rodyne.com/wp-content/uploads/The-Summ-of-Reasoning-Cover-2.jpg,images/The-Summ-of-Reasoning-Cover-2.jpg,image,
+https://rodyne.com/wp-content/uploads/cropped-newlogo2.jpg,images/cropped-newlogo2.jpg,image,
+https://storage.ko-fi.com/cdn/kofi6.png?v=6,images/kofi.png,image,
+https://web.archive.org/web/20100814195112im_/http://www.boznz.com/images/cp1h.png,images/external/cp1h.png,image,
+https://web.archive.org/web/20100814195112im_/http://www.boznz.com/images/plc-graph.gif,images/external/plc-graph.gif,image,
+https://rodyne.com/rstatic/index.html-page_id=1252.html,post1252.html,page,The Summer of Reasoning trilogy
+https://rodyne.com/rstatic/index.html-p=1045.html,post1045.html,post,New Office and Workshop
+https://rodyne.com/rstatic/index.html-p=1097.html,post1097.html,post,Industrial Display
+https://rodyne.com/rstatic/index.html-p=114.html,post114.html,post,Things not quite right
+https://rodyne.com/rstatic/index.html-p=132.html,post132.html,post,Almost there!
+https://rodyne.com/rstatic/index.html-p=134.html,post134.html,post,Boards and stencils from smart prototyping
+https://rodyne.com/rstatic/index.html-p=1373.html,post1373.html,post,Destroy All Humans!
+https://rodyne.com/rstatic/index.html-p=1400.html,post1400.html,post,The future of Publishing (and why it sucks!)
+https://rodyne.com/rstatic/index.html-p=1439.html,post1439.html,post,"The Power is On, Why Doesn’t it Work?"
+https://rodyne.com/rstatic/index.html-p=1446.html,post1446.html,post,New Book – A Level of Consciousness
+https://rodyne.com/rstatic/index.html-p=1588.html,post1588.html,post,Why you should write for yourself.
+https://rodyne.com/rstatic/index.html-p=159.html,post159.html,post,Mobile Terminal Version 3 Up and (nearly) working
+https://rodyne.com/rstatic/index.html-p=1614.html,post1614.html,post,"2025, My Final Vintage and Open For New Business"
+https://rodyne.com/rstatic/index.html-p=1666.html,post1666.html,post,Making it Real!
+https://rodyne.com/rstatic/index.html-p=1674.html,post1674.html,post,Das Blinkenlights!
+https://rodyne.com/rstatic/index.html-p=1679.html,post1679.html,post,Protecting your Work. Is it Even Worth The Effort?
+https://rodyne.com/rstatic/index.html-p=168.html,post168.html,post,Version 4 or is that 5!
+https://rodyne.com/rstatic/index.html-p=1751.html,post1751.html,post,Das Blinkenlights (mit RP2040!)
+https://rodyne.com/rstatic/index.html-p=1781.html,post1781.html,post,Yet another boring small project (with an interesting back-story)
+https://rodyne.com/rstatic/index.html-p=1795.html,post1795.html,post,I guess I’m not so good at this Marketing Thing!
+https://rodyne.com/rstatic/index.html-p=1828.html,post1828.html,post,With AI You Need to Think Much Bigger!
+https://rodyne.com/rstatic/index.html-p=1883.html,post1883.html,post,Removing Some Very Un-Corporate Baggage
+https://rodyne.com/rstatic/index.html-p=1997.html,post1997.html,post,The Timeline for my First Book is Now Playing Out!
+https://rodyne.com/rstatic/index.html-p=2024.html,post2024.html,post,The Common Sense Guide to Not fucking up Your Business or Organisation.
+https://rodyne.com/rstatic/index.html-p=2032.html,post2032.html,post,The Summer of Reasoning Book 1 – The Phoney War
+https://rodyne.com/rstatic/index.html-p=207.html,post207.html,post,Fill Sensor Testing
+https://rodyne.com/rstatic/index.html-p=2074.html,post2074.html,post,On-Time and Under-Budget. Where some IT projects are Probably Going Wrong.
+https://rodyne.com/rstatic/index.html-p=213.html,post213.html,post,New Project “Catch 2”
+https://rodyne.com/rstatic/index.html-p=2154.html,post2154.html,post,Poisoning the Brand!
+https://rodyne.com/rstatic/index.html-p=2169.html,post2169.html,post,"Flip, Flap, Flop! – Solari Fix."
+https://rodyne.com/rstatic/index.html-p=22.html,post22.html,post,PCB’s and Prototypes
+https://rodyne.com/rstatic/index.html-p=2209.html,post2209.html,post,Continuous Floatation in Wineries
+https://rodyne.com/rstatic/index.html-p=2290.html,post2290.html,post,Technology for Everyone.. Are You Sure?
+https://rodyne.com/rstatic/index.html-p=231.html,post231.html,post,Time is not your friend
+https://rodyne.com/rstatic/index.html-p=233.html,post233.html,post,Version 5 Power Up!
+https://rodyne.com/rstatic/index.html-p=2368.html,post2368.html,post,Please don’t read this if you are in the EU.
+https://rodyne.com/rstatic/index.html-p=2402.html,post2402.html,post,Don’t Write Long Books Until You’re Famous.
+https://rodyne.com/rstatic/index.html-p=2450.html,post2450.html,post,Singularity – Book 2 of The Summer of Reasoning.
+https://rodyne.com/rstatic/index.html-p=2457.html,post2457.html,post,END GAME – Book 3 of The Summer of Reasoning
+https://rodyne.com/rstatic/index.html-p=2474.html,post2474.html,post,The Utopian and Dystopian Future of Vibe Coding.
+https://rodyne.com/rstatic/index.html-p=2488.html,post2488.html,post,How much longer for the GUI?
+https://rodyne.com/rstatic/index.html-p=2589.html,post2589.html,post,Some of the Lessons Learnt from Writing my First Book
+https://rodyne.com/rstatic/index.html-p=2594.html,post2594.html,post,Dumbo’s Feather
+https://rodyne.com/rstatic/index.html-p=2596.html,post2596.html,post,I’m an ASI. Ask Me Anything.
+https://rodyne.com/rstatic/index.html-p=263.html,post263.html,post,HK Here I come
+https://rodyne.com/rstatic/index.html-p=2653.html,post2653.html,post,What Roving Dynamics Can Do For You.
+https://rodyne.com/rstatic/index.html-p=2660.html,post2660.html,post,Custom Electronics
+https://rodyne.com/rstatic/index.html-p=2681.html,post2681.html,post,Systems Engineering and Industrial Automation
+https://rodyne.com/rstatic/index.html-p=271.html,post271.html,post,Contact Information
+https://rodyne.com/rstatic/index.html-p=2736.html,post2736.html,post,I knew your predecessors before they were murdered.
+https://rodyne.com/rstatic/index.html-p=2844.html,post2844.html,post,Harry Potter and the Junior Prompt Engineer
+https://rodyne.com/rstatic/index.html-p=2855.html,post2855.html,post,Dungeon Newbie
+https://rodyne.com/rstatic/index.html-p=286.html,post286.html,post,Personnel (aka Boz)
+https://rodyne.com/rstatic/index.html-p=2911.html,post2911.html,post,AI Can’t Take Over Soon Enough For Me.
+https://rodyne.com/rstatic/index.html-p=294.html,post294.html,post,Mobile Terminal Power On/Off
+https://rodyne.com/rstatic/index.html-p=3051.html,post3051.html,post,Humanity Needs Aliens to Survive
+https://rodyne.com/rstatic/index.html-p=3106.html,post3106.html,post,Read / Edit / Repeat
+https://rodyne.com/rstatic/index.html-p=3121.html,post3121.html,post,Download My First Book Trilogy eBook For Free!
+https://rodyne.com/rstatic/index.html-p=3188.html,post3188.html,post,At what point do you stop learning new programming languages?
+https://rodyne.com/rstatic/index.html-p=3225.html,post3225.html,post,Do 8051/8031 assembly like its 1984!
+https://rodyne.com/rstatic/index.html-p=325.html,post325.html,post,Hack-a-Day and Github
+https://rodyne.com/rstatic/index.html-p=3293.html,post3293.html,post,Why Do We Still Pay For International Calls in 2025?
+https://rodyne.com/rstatic/index.html-p=3359.html,post3359.html,post,Cross Genres At Your Peril!
+https://rodyne.com/rstatic/index.html-p=336.html,post336.html,post,Job Checklists
+https://rodyne.com/rstatic/index.html-p=3380.html,post3380.html,post,Re-Purposing an old Pioneer Amplifier
+https://rodyne.com/rstatic/index.html-p=34.html,post34.html,post,Equipment Spending Spree
+https://rodyne.com/rstatic/index.html-p=346.html,post346.html,post,"Secret Sauce, (Putting the Mobile System altogether)"
+https://rodyne.com/rstatic/index.html-p=3486.html,post3486.html,post,"Vibe-Migrating, The Easy-Peasy way from Windows 11 to Linux"
+https://rodyne.com/rstatic/index.html-p=3524.html,post3524.html,post,My first week with Kubuntu/Linux
+https://rodyne.com/rstatic/index.html-p=3533.html,post3533.html,post,Small Blinkenlight Update
+https://rodyne.com/rstatic/index.html-p=3574.html,post3574.html,post,Don’t look Behind The Curtains!
+https://rodyne.com/rstatic/index.html-p=360.html,post360.html,post,Short update
+https://rodyne.com/rstatic/index.html-p=3687.html,post3687.html,post,Where have all the Utopian Futures Gone?
+https://rodyne.com/rstatic/index.html-p=3771.html,post3771.html,post,"AI Slop is caused by Humans, Not AI’s"
+https://rodyne.com/rstatic/index.html-p=3803.html,post3803.html,post,The Utopian AI Problem Few People are Talking About.
+https://rodyne.com/rstatic/index.html-p=3822.html,post3822.html,post,"AI Coding: 2022 Sci-Fi, Versus March 2026 Reality"
+https://rodyne.com/rstatic/index.html-p=3835.html,post3835.html,post,Preparing For the AI Future Should be Top of Your List!
+https://rodyne.com/rstatic/index.html-p=3848.html,post3848.html,post,Random Emails from Strangers are Still Nice to Get.
+https://rodyne.com/rstatic/index.html-p=3875.html,post3875.html,post,NOW is the Time to Eat Their Lunch
+https://rodyne.com/rstatic/index.html-p=3881.html,post3881.html,post,The X Factor
+https://rodyne.com/rstatic/index.html-p=3886.html,post3886.html,post,Three Technologies I want to see before I die:
+https://rodyne.com/rstatic/index.html-p=391.html,post391.html,post,Logo
+https://rodyne.com/rstatic/index.html-p=3918.html,post3918.html,post,All My Novels are Now Free to Download/Read
+https://rodyne.com/rstatic/index.html-p=3999.html,post3999.html,post,Debugging (Yet Another) R2350 Dev Board!
+https://rodyne.com/rstatic/index.html-p=4045.html,post4045.html,post,The Internet is Rotting from Within
+https://rodyne.com/rstatic/index.html-p=4070.html,post4070.html,post,Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give
+https://rodyne.com/rstatic/index.html-p=4105.html,post4105.html,post,Can I Now Please Go Back to a Dumb-Phone?
+https://rodyne.com/rstatic/index.html-p=4119.html,post4119.html,post,Continual Learning is Consciousness.
+https://rodyne.com/rstatic/index.html-p=415.html,post415.html,post,Re-using pre-existing cases to make your design shine!
+https://rodyne.com/rstatic/index.html-p=42.html,post42.html,post,Fill level sensor update
+https://rodyne.com/rstatic/index.html-p=434.html,post434.html,post,timer
+https://rodyne.com/rstatic/index.html-p=440.html,post440.html,post,No Setup Required!
+https://rodyne.com/rstatic/index.html-p=458.html,post458.html,post,Why Would I Want to Build a Custom System?
+https://rodyne.com/rstatic/index.html-p=471.html,post471.html,post,Anatomy of a Production System
+https://rodyne.com/rstatic/index.html-p=490.html,post490.html,post,So Whats with all the designs Boz?
+https://rodyne.com/rstatic/index.html-p=509.html,post509.html,post,Hack-a-Day IO
+https://rodyne.com/rstatic/index.html-p=511.html,post511.html,post,Be careful with Delphi Tlines
+https://rodyne.com/rstatic/index.html-p=521.html,post521.html,post,August Update
+https://rodyne.com/rstatic/index.html-p=526.html,post526.html,post,USR WiFi232-S awkwardness
+https://rodyne.com/rstatic/index.html-p=531.html,post531.html,post,Terminal Update
+https://rodyne.com/rstatic/index.html-p=536.html,post536.html,post,Bloody Optics (Again)
+https://rodyne.com/rstatic/index.html-p=539.html,post539.html,post,Seriously!
+https://rodyne.com/rstatic/index.html-p=544.html,post544.html,post,Off to the UK – Book picks..
+https://rodyne.com/rstatic/index.html-p=547.html,post547.html,post,PIC32 Low power operation
+https://rodyne.com/rstatic/index.html-p=565.html,post565.html,post,October Update
+https://rodyne.com/rstatic/index.html-p=573.html,post573.html,post,Back to the grindstone
+https://rodyne.com/rstatic/index.html-p=581.html,post581.html,post,Never enough serial ports
+https://rodyne.com/rstatic/index.html-p=585.html,post585.html,post,Movember Update
+https://rodyne.com/rstatic/index.html-p=590.html,post590.html,post,"Hardware, so close now!"
+https://rodyne.com/rstatic/index.html-p=596.html,post596.html,post,"One down, five to go!"
+https://rodyne.com/rstatic/index.html-p=604.html,post604.html,post,Latest Updates
+https://rodyne.com/rstatic/index.html-p=611.html,post611.html,post,Data Collection Terminal End-Game (Putting it all together)
+https://rodyne.com/rstatic/index.html-p=641.html,post641.html,post,Decoding an EM4100 Manchester Encoded RFID Tag
+https://rodyne.com/rstatic/index.html-p=651.html,post651.html,post,Vintage Mode.
+https://rodyne.com/rstatic/index.html-p=656.html,post656.html,post,Slow progress on RFID decoding
+https://rodyne.com/rstatic/index.html-p=661.html,post661.html,post,Tinkering around
+https://rodyne.com/rstatic/index.html-p=678.html,post678.html,post,A Better kind of Job Instruction
+https://rodyne.com/rstatic/index.html-p=688.html,post688.html,post,ICD3 Finally working in MPLABX
+https://rodyne.com/rstatic/index.html-p=697.html,post697.html,post,Bloody Auditors!
+https://rodyne.com/rstatic/index.html-p=701.html,post701.html,post,Catch Production system. First Screen shots
+https://rodyne.com/rstatic/index.html-p=704.html,post704.html,post,Adding a Message Of the Day or Quote of the Day to your system
+https://rodyne.com/rstatic/index.html-p=713.html,post713.html,post,Serial Port combiner for RFID station
+https://rodyne.com/rstatic/index.html-p=725.html,post725.html,post,Ever get the feeling something big is about to happen?
+https://rodyne.com/rstatic/index.html-p=740.html,post740.html,post,Raspberry Pi PT100 temperature sensor and control board
+https://rodyne.com/rstatic/index.html-p=754.html,post754.html,post,PT100 Control Board for Raspberry Pi. Completed!
+https://rodyne.com/rstatic/index.html-p=777.html,post777.html,post,"CO2, Temperature and Humidity Monitor"
+https://rodyne.com/rstatic/index.html-p=811.html,post811.html,post,Why so quiet?
+https://rodyne.com/rstatic/index.html-p=828.html,post828.html,post,If the worst should happen!
+https://rodyne.com/rstatic/index.html-p=832.html,post832.html,post,Re-Envisioning Mobile Communications
+https://rodyne.com/rstatic/index.html-p=84.html,post84.html,post,Barcode Scanner Selection
+https://rodyne.com/rstatic/index.html-p=844.html,post844.html,post,Lora Data Collection Terminal
+https://rodyne.com/rstatic/index.html-p=852.html,post852.html,post,Encryption for very low data rate embedded systems
+https://rodyne.com/rstatic/index.html-p=856.html,post856.html,post,Uploading file data as a C Header
+https://rodyne.com/rstatic/index.html-p=880.html,post880.html,post,"USB Real-Time Clock for Raspberry Pi, etc"
+https://rodyne.com/rstatic/index.html-p=906.html,post906.html,post,Spocks Brain
+https://rodyne.com/rstatic/index.html-tag=16f1782.html,tag-16f1782.html,tag,Tag Archives: 16F1782
+https://rodyne.com/rstatic/index.html-tag=18f23k22.html,tag-18f23k22.html,tag,Tag Archives: 18F23K22
+https://rodyne.com/rstatic/index.html-tag=2026.html,tag-2026.html,tag,Tag Archives: 2026
+https://rodyne.com/rstatic/index.html-tag=3-3v-boost-converter.html,tag-3-3v-boost-converter.html,tag,Tag Archives: 3.3V Boost converter
+https://rodyne.com/rstatic/index.html-tag=4052.html,tag-4052.html,tag,Tag Archives: 4052
+https://rodyne.com/rstatic/index.html-tag=8031.html,tag-8031.html,tag,Tag Archives: 8031
+https://rodyne.com/rstatic/index.html-tag=8051.html,tag-8051.html,tag,Tag Archives: 8051
+https://rodyne.com/rstatic/index.html-tag=a-level-of-consciousness.html,tag-a-level-of-consciousness.html,tag,Tag Archives: a level of consciousness
+https://rodyne.com/rstatic/index.html-tag=advice-to-new-authors.html,tag-advice-to-new-authors.html,tag,Tag Archives: Advice to New Authors
+https://rodyne.com/rstatic/index.html-tag=agi.html,tag-agi.html,tag,Tag Archives: AGI
+https://rodyne.com/rstatic/index.html-tag=ai-2027.html,tag-ai-2027.html,tag,Tag Archives: AI.2027
+https://rodyne.com/rstatic/index.html-tag=ai-alignment.html,tag-ai-alignment.html,tag,Tag Archives: AI Alignment
+https://rodyne.com/rstatic/index.html-tag=ai-slop.html,tag-ai-slop.html,tag,Tag Archives: AI SLOP
+https://rodyne.com/rstatic/index.html-tag=ai-succession.html,tag-ai-succession.html,tag,Tag Archives: AI succession
+https://rodyne.com/rstatic/index.html-tag=ai-training.html,tag-ai-training.html,tag,Tag Archives: AI training
+https://rodyne.com/rstatic/index.html-tag=ai.html,tag-ai.html,tag,Tag Archives: AI
+https://rodyne.com/rstatic/index.html-tag=alex.html,tag-alex.html,tag,Tag Archives: Alex
+https://rodyne.com/rstatic/index.html-tag=aliens.html,tag-aliens.html,tag,Tag Archives: Aliens
+https://rodyne.com/rstatic/index.html-tag=allison-droguett.html,tag-allison-droguett.html,tag,Tag Archives: Allison Droguett
+https://rodyne.com/rstatic/index.html-tag=ama.html,tag-ama.html,tag,Tag Archives: AMA
+https://rodyne.com/rstatic/index.html-tag=amazon.html,tag-amazon.html,tag,Tag Archives: amazon
+https://rodyne.com/rstatic/index.html-tag=an687.html,tag-an687.html,tag,Tag Archives: AN687
+https://rodyne.com/rstatic/index.html-tag=annoyances.html,tag-annoyances.html,tag,Tag Archives: Annoyances!
+https://rodyne.com/rstatic/index.html-tag=arduino.html,tag-arduino.html,tag,Tag Archives: Arduino
+https://rodyne.com/rstatic/index.html-tag=asi.html,tag-asi.html,tag,Tag Archives: ASI
+https://rodyne.com/rstatic/index.html-tag=assembler.html,tag-assembler.html,tag,Tag Archives: assembler
+https://rodyne.com/rstatic/index.html-tag=auto-power-off.html,tag-auto-power-off.html,tag,Tag Archives: auto power off
+https://rodyne.com/rstatic/index.html-tag=bad-gui.html,tag-bad-gui.html,tag,Tag Archives: Bad GUI
+https://rodyne.com/rstatic/index.html-tag=barcode-scanners.html,tag-barcode-scanners.html,tag,Tag Archives: barcode scanners
+https://rodyne.com/rstatic/index.html-tag=blenheim-library.html,tag-blenheim-library.html,tag,Tag Archives: Blenheim Library
+https://rodyne.com/rstatic/index.html-tag=bling.html,tag-bling.html,tag,Tag Archives: bling
+https://rodyne.com/rstatic/index.html-tag=blinkenlights.html,tag-blinkenlights.html,tag,Tag Archives: blinkenlights
+https://rodyne.com/rstatic/index.html-tag=bor.html,tag-bor.html,tag,Tag Archives: BOR
+https://rodyne.com/rstatic/index.html-tag=boz-nz.html,tag-boz-nz.html,tag,Tag Archives: boz nz
+https://rodyne.com/rstatic/index.html-tag=boz.html,tag-boz.html,tag,Tag Archives: boz
+https://rodyne.com/rstatic/index.html-tag=boznz.html,tag-boznz.html,tag,Tag Archives: boznz
+https://rodyne.com/rstatic/index.html-tag=branding.html,tag-branding.html,tag,Tag Archives: Branding
+https://rodyne.com/rstatic/index.html-tag=bulk-insert.html,tag-bulk-insert.html,tag,Tag Archives: bulk insert
+https://rodyne.com/rstatic/index.html-tag=business-continuity.html,tag-business-continuity.html,tag,Tag Archives: Business Continuity
+https://rodyne.com/rstatic/index.html-tag=business.html,tag-business.html,tag,Tag Archives: business
+https://rodyne.com/rstatic/index.html-tag=c-header.html,tag-c-header.html,tag,Tag Archives: C Header
+https://rodyne.com/rstatic/index.html-tag=c-programmer.html,tag-c-programmer.html,tag,Tag Archives: C Programmer
+https://rodyne.com/rstatic/index.html-tag=capture.html,tag-capture.html,tag,Tag Archives: capture
+https://rodyne.com/rstatic/index.html-tag=catch2-2.html,tag-catch2-2.html,tag,Tag Archives: Catch2
+https://rodyne.com/rstatic/index.html-tag=cd4052.html,tag-cd4052.html,tag,Tag Archives: CD4052
+https://rodyne.com/rstatic/index.html-tag=cdc.html,tag-cdc.html,tag,Tag Archives: CDC
+https://rodyne.com/rstatic/index.html-tag=cell-phones.html,tag-cell-phones.html,tag,Tag Archives: cell-phones
+https://rodyne.com/rstatic/index.html-tag=change.html,tag-change.html,tag,Tag Archives: change
+https://rodyne.com/rstatic/index.html-tag=chatgpt.html,tag-chatgpt.html,tag,Tag Archives: ChatGPT
+https://rodyne.com/rstatic/index.html-tag=chip-printers.html,tag-chip-printers.html,tag,Tag Archives: Chip Printers
+https://rodyne.com/rstatic/index.html-tag=clarification.html,tag-clarification.html,tag,Tag Archives: Clarification
+https://rodyne.com/rstatic/index.html-tag=co2.html,tag-co2.html,tag,Tag Archives: CO2
+https://rodyne.com/rstatic/index.html-tag=consciousness.html,tag-consciousness.html,tag,Tag Archives: consciousness
+https://rodyne.com/rstatic/index.html-tag=continuous-floatation.html,tag-continuous-floatation.html,tag,Tag Archives: Continuous Floatation
+https://rodyne.com/rstatic/index.html-tag=continuous-learning.html,tag-continuous-learning.html,tag,Tag Archives: Continuous Learning
+https://rodyne.com/rstatic/index.html-tag=contract-work.html,tag-contract-work.html,tag,Tag Archives: contract work
+https://rodyne.com/rstatic/index.html-tag=cookies.html,tag-cookies.html,tag,Tag Archives: Cookies
+https://rodyne.com/rstatic/index.html-tag=creative-writing.html,tag-creative-writing.html,tag,Tag Archives: Creative Writing
+https://rodyne.com/rstatic/index.html-tag=daniel-kokotailo.html,tag-daniel-kokotailo.html,tag,Tag Archives: Daniel Kokotailo
+https://rodyne.com/rstatic/index.html-tag=data-collection-terminal.html,tag-data-collection-terminal.html,tag,Tag Archives: data collection terminal
+https://rodyne.com/rstatic/index.html-tag=dd-starter.html,tag-dd-starter.html,tag,Tag Archives: D&D Starter
+https://rodyne.com/rstatic/index.html-tag=dd.html,tag-dd.html,tag,Tag Archives: D&D
+https://rodyne.com/rstatic/index.html-tag=delphi-developer-nz.html,tag-delphi-developer-nz.html,tag,Tag Archives: Delphi Developer NZ
+https://rodyne.com/rstatic/index.html-tag=delphi-developer.html,tag-delphi-developer.html,tag,Tag Archives: Delphi Developer
+https://rodyne.com/rstatic/index.html-tag=delphi-programmer-nz.html,tag-delphi-programmer-nz.html,tag,Tag Archives: Delphi Programmer NZ
+https://rodyne.com/rstatic/index.html-tag=delphi-programmer.html,tag-delphi-programmer.html,tag,Tag Archives: Delphi programmer
+https://rodyne.com/rstatic/index.html-tag=delphi.html,tag-delphi.html,tag,Tag Archives: Delphi
+https://rodyne.com/rstatic/index.html-tag=dht-11.html,tag-dht-11.html,tag,Tag Archives: DHT-11
+https://rodyne.com/rstatic/index.html-tag=dht-22.html,tag-dht-22.html,tag,Tag Archives: DHT-22
+https://rodyne.com/rstatic/index.html-tag=disaster-planning.html,tag-disaster-planning.html,tag,Tag Archives: Disaster Planning
+https://rodyne.com/rstatic/index.html-tag=dragons-of-stormwreck-island.html,tag-dragons-of-stormwreck-island.html,tag,Tag Archives: Dragons of Stormwreck Island
+https://rodyne.com/rstatic/index.html-tag=drivers.html,tag-drivers.html,tag,Tag Archives: drivers
+https://rodyne.com/rstatic/index.html-tag=drm.html,tag-drm.html,tag,Tag Archives: DRM
+https://rodyne.com/rstatic/index.html-tag=ds1307.html,tag-ds1307.html,tag,Tag Archives: DS1307
+https://rodyne.com/rstatic/index.html-tag=dumb-phones.html,tag-dumb-phones.html,tag,Tag Archives: dumb phones
+https://rodyne.com/rstatic/index.html-tag=dungeon-newbie.html,tag-dungeon-newbie.html,tag,Tag Archives: Dungeon Newbie
+https://rodyne.com/rstatic/index.html-tag=dungeons-and-dragons.html,tag-dungeons-and-dragons.html,tag,Tag Archives: Dungeons and Dragons
+https://rodyne.com/rstatic/index.html-tag=dwarkesh-patel.html,tag-dwarkesh-patel.html,tag,Tag Archives: Dwarkesh Patel
+https://rodyne.com/rstatic/index.html-tag=dystopian.html,tag-dystopian.html,tag,Tag Archives: Dystopian
+https://rodyne.com/rstatic/index.html-tag=eagle-transporter.html,tag-eagle-transporter.html,tag,Tag Archives: Eagle Transporter
+https://rodyne.com/rstatic/index.html-tag=easyeda.html,tag-easyeda.html,tag,Tag Archives: EasyEDA
+https://rodyne.com/rstatic/index.html-tag=ebook.html,tag-ebook.html,tag,Tag Archives: ebook
+https://rodyne.com/rstatic/index.html-tag=einstein.html,tag-einstein.html,tag,Tag Archives: Einstein
+https://rodyne.com/rstatic/index.html-tag=electronics-design-nz.html,tag-electronics-design-nz.html,tag,Tag Archives: Electronics Design NZ
+https://rodyne.com/rstatic/index.html-tag=electronics-design.html,tag-electronics-design.html,tag,Tag Archives: Electronics Design
+https://rodyne.com/rstatic/index.html-tag=em4100.html,tag-em4100.html,tag,Tag Archives: EM4100
+https://rodyne.com/rstatic/index.html-tag=emails.html,tag-emails.html,tag,Tag Archives: Emails
+https://rodyne.com/rstatic/index.html-tag=enclosure-design.html,tag-enclosure-design.html,tag,Tag Archives: enclosure design
+https://rodyne.com/rstatic/index.html-tag=encryption.html,tag-encryption.html,tag,Tag Archives: encryption
+https://rodyne.com/rstatic/index.html-tag=end-game.html,tag-end-game.html,tag,Tag Archives: End Game
+https://rodyne.com/rstatic/index.html-tag=end-of-project.html,tag-end-of-project.html,tag,Tag Archives: end of project
+https://rodyne.com/rstatic/index.html-tag=epub.html,tag-epub.html,tag,Tag Archives: epub
+https://rodyne.com/rstatic/index.html-tag=esp-01.html,tag-esp-01.html,tag,Tag Archives: ESP-01
+https://rodyne.com/rstatic/index.html-tag=esp8266.html,tag-esp8266.html,tag,Tag Archives: ESP8266
+https://rodyne.com/rstatic/index.html-tag=factory-automation.html,tag-factory-automation.html,tag,Tag Archives: Factory Automation
+https://rodyne.com/rstatic/index.html-tag=factory-mrp.html,tag-factory-mrp.html,tag,Tag Archives: Factory MRP
+https://rodyne.com/rstatic/index.html-tag=fran-monsalve.html,tag-fran-monsalve.html,tag,Tag Archives: Fran Monsalve
+https://rodyne.com/rstatic/index.html-tag=free-ebook.html,tag-free-ebook.html,tag,Tag Archives: Free eBook
+https://rodyne.com/rstatic/index.html-tag=free-epub.html,tag-free-epub.html,tag,Tag Archives: Free ePub
+https://rodyne.com/rstatic/index.html-tag=free-international-calling.html,tag-free-international-calling.html,tag,Tag Archives: Free International Calling
+https://rodyne.com/rstatic/index.html-tag=front-panel.html,tag-front-panel.html,tag,Tag Archives: Front panel
+https://rodyne.com/rstatic/index.html-tag=full-time.html,tag-full-time.html,tag,Tag Archives: full-time
+https://rodyne.com/rstatic/index.html-tag=fusion.html,tag-fusion.html,tag,Tag Archives: Fusion
+https://rodyne.com/rstatic/index.html-tag=future-of-programming.html,tag-future-of-programming.html,tag,Tag Archives: Future of Programming
+https://rodyne.com/rstatic/index.html-tag=fying-saucers.html,tag-fying-saucers.html,tag,Tag Archives: Fying Saucers
+https://rodyne.com/rstatic/index.html-tag=gchq.html,tag-gchq.html,tag,Tag Archives: GCHQ
+https://rodyne.com/rstatic/index.html-tag=gdpr.html,tag-gdpr.html,tag,Tag Archives: GDPR
+https://rodyne.com/rstatic/index.html-tag=github.html,tag-github.html,tag,Tag Archives: github
+https://rodyne.com/rstatic/index.html-tag=go-for-it.html,tag-go-for-it.html,tag,Tag Archives: Go for it!
+https://rodyne.com/rstatic/index.html-tag=good-gui.html,tag-good-gui.html,tag,Tag Archives: Good GUI
+https://rodyne.com/rstatic/index.html-tag=grape-receival.html,tag-grape-receival.html,tag,Tag Archives: Grape Receival
+https://rodyne.com/rstatic/index.html-tag=gui.html,tag-gui.html,tag,Tag Archives: GUI
+https://rodyne.com/rstatic/index.html-tag=hackaday.html,tag-hackaday.html,tag,Tag Archives: hackaday
+https://rodyne.com/rstatic/index.html-tag=harry-potter.html,tag-harry-potter.html,tag,Tag Archives: Harry Potter
+https://rodyne.com/rstatic/index.html-tag=hd44780.html,tag-hd44780.html,tag,Tag Archives: HD44780
+https://rodyne.com/rstatic/index.html-tag=holodeck.html,tag-holodeck.html,tag,Tag Archives: Holodeck
+https://rodyne.com/rstatic/index.html-tag=holy-shit.html,tag-holy-shit.html,tag,Tag Archives: Holy Shit!
+https://rodyne.com/rstatic/index.html-tag=indevin.html,tag-indevin.html,tag,Tag Archives: indevin
+https://rodyne.com/rstatic/index.html-tag=industrial.html,tag-industrial.html,tag,Tag Archives: industrial
+https://rodyne.com/rstatic/index.html-tag=intelligence-explosion.html,tag-intelligence-explosion.html,tag,Tag Archives: Intelligence Explosion
+https://rodyne.com/rstatic/index.html-tag=kindle.html,tag-kindle.html,tag,Tag Archives: kindle
+https://rodyne.com/rstatic/index.html-tag=kubuntu.html,tag-kubuntu.html,tag,Tag Archives: Kubuntu
+https://rodyne.com/rstatic/index.html-tag=lazarus.html,tag-lazarus.html,tag,Tag Archives: Lazarus
+https://rodyne.com/rstatic/index.html-tag=leds.html,tag-leds.html,tag,Tag Archives: LEDs
+https://rodyne.com/rstatic/index.html-tag=lessons-for-new-authors.html,tag-lessons-for-new-authors.html,tag,Tag Archives: LEssons for New Authors
+https://rodyne.com/rstatic/index.html-tag=licence.html,tag-licence.html,tag,Tag Archives: licence
+https://rodyne.com/rstatic/index.html-tag=life.html,tag-life.html,tag,Tag Archives: life
+https://rodyne.com/rstatic/index.html-tag=lifestyle.html,tag-lifestyle.html,tag,Tag Archives: lifestyle
+https://rodyne.com/rstatic/index.html-tag=linux-migration.html,tag-linux-migration.html,tag,Tag Archives: Linux Migration
+https://rodyne.com/rstatic/index.html-tag=llm.html,tag-llm.html,tag,Tag Archives: LLM
+https://rodyne.com/rstatic/index.html-tag=lprc.html,tag-lprc.html,tag,Tag Archives: LPRC
+https://rodyne.com/rstatic/index.html-tag=manchester-encoding.html,tag-manchester-encoding.html,tag,Tag Archives: Manchester Encoding
+https://rodyne.com/rstatic/index.html-tag=manchester.html,tag-manchester.html,tag,Tag Archives: Manchester
+https://rodyne.com/rstatic/index.html-tag=marketing.html,tag-marketing.html,tag,Tag Archives: Marketing
+https://rodyne.com/rstatic/index.html-tag=metrics.html,tag-metrics.html,tag,Tag Archives: metrics
+https://rodyne.com/rstatic/index.html-tag=mh-z16.html,tag-mh-z16.html,tag,Tag Archives: MH-Z16
+https://rodyne.com/rstatic/index.html-tag=migration-from-windows-11-to-linux.html,tag-migration-from-windows-11-to-linux.html,tag,Tag Archives: Migration From Windows 11 to Linux
+https://rodyne.com/rstatic/index.html-tag=mlx90109.html,tag-mlx90109.html,tag,Tag Archives: MLX90109
+https://rodyne.com/rstatic/index.html-tag=mmbasic.html,tag-mmbasic.html,tag,Tag Archives: MMBasic
+https://rodyne.com/rstatic/index.html-tag=mn-z19.html,tag-mn-z19.html,tag,Tag Archives: MN-Z19
+https://rodyne.com/rstatic/index.html-tag=mobile-platforms.html,tag-mobile-platforms.html,tag,Tag Archives: mobile platforms
+https://rodyne.com/rstatic/index.html-tag=mobile-termination-rate.html,tag-mobile-termination-rate.html,tag,Tag Archives: Mobile Termination Rate
+https://rodyne.com/rstatic/index.html-tag=mosfet.html,tag-mosfet.html,tag,Tag Archives: MOSFET
+https://rodyne.com/rstatic/index.html-tag=mp3-jukebox.html,tag-mp3-jukebox.html,tag,Tag Archives: MP3 Jukebox
+https://rodyne.com/rstatic/index.html-tag=mplabx.html,tag-mplabx.html,tag,Tag Archives: mplabx
+https://rodyne.com/rstatic/index.html-tag=mrp.html,tag-mrp.html,tag,Tag Archives: MRP
+https://rodyne.com/rstatic/index.html-tag=mt700-se1223-bar-code.html,tag-mt700-se1223-bar-code.html,tag,Tag Archives: mt700 se1223 bar-code
+https://rodyne.com/rstatic/index.html-tag=multiplexer.html,tag-multiplexer.html,tag,Tag Archives: Multiplexer
+https://rodyne.com/rstatic/index.html-tag=national-library-of-nz.html,tag-national-library-of-nz.html,tag,Tag Archives: National Library of NZ
+https://rodyne.com/rstatic/index.html-tag=ncp1421.html,tag-ncp1421.html,tag,Tag Archives: NCP1421
+https://rodyne.com/rstatic/index.html-tag=new-authors.html,tag-new-authors.html,tag,Tag Archives: New Authors
+https://rodyne.com/rstatic/index.html-tag=new-book.html,tag-new-book.html,tag,Tag Archives: new book
+https://rodyne.com/rstatic/index.html-tag=new-ebook.html,tag-new-ebook.html,tag,Tag Archives: new ebook
+https://rodyne.com/rstatic/index.html-tag=new-zealand.html,tag-new-zealand.html,tag,Tag Archives: New Zealand
+https://rodyne.com/rstatic/index.html-tag=nostalgia.html,tag-nostalgia.html,tag,Tag Archives: nostalgia
+https://rodyne.com/rstatic/index.html-tag=novel-length.html,tag-novel-length.html,tag,Tag Archives: Novel length
+https://rodyne.com/rstatic/index.html-tag=omega-seafood.html,tag-omega-seafood.html,tag,Tag Archives: Omega Seafood
+https://rodyne.com/rstatic/index.html-tag=one-time-pad.html,tag-one-time-pad.html,tag,Tag Archives: one-time-pad
+https://rodyne.com/rstatic/index.html-tag=openclaw.html,tag-openclaw.html,tag,Tag Archives: OpenClaw
+https://rodyne.com/rstatic/index.html-tag=orac.html,tag-orac.html,tag,Tag Archives: Orac
+https://rodyne.com/rstatic/index.html-tag=oscconbits-oswen.html,tag-oscconbits-oswen.html,tag,Tag Archives: OSCCONbits.OSWEN
+https://rodyne.com/rstatic/index.html-tag=part-time.html,tag-part-time.html,tag,Tag Archives: part-time
+https://rodyne.com/rstatic/index.html-tag=pascal-programmer.html,tag-pascal-programmer.html,tag,Tag Archives: Pascal Programmer
+https://rodyne.com/rstatic/index.html-tag=pascal.html,tag-pascal.html,tag,Tag Archives: Pascal
+https://rodyne.com/rstatic/index.html-tag=pcm5102.html,tag-pcm5102.html,tag,Tag Archives: PCM5102
+https://rodyne.com/rstatic/index.html-tag=performance.html,tag-performance.html,tag,Tag Archives: performance
+https://rodyne.com/rstatic/index.html-tag=pic-16f1782.html,tag-pic-16f1782.html,tag,Tag Archives: PIC 16F1782
+https://rodyne.com/rstatic/index.html-tag=pic.html,tag-pic.html,tag,Tag Archives: PIC
+https://rodyne.com/rstatic/index.html-tag=pic16f455.html,tag-pic16f455.html,tag,Tag Archives: PIC16F455
+https://rodyne.com/rstatic/index.html-tag=pic18f.html,tag-pic18f.html,tag,Tag Archives: PIC18F
+https://rodyne.com/rstatic/index.html-tag=pic18f22k22.html,tag-pic18f22k22.html,tag,Tag Archives: PIC18F22K22
+https://rodyne.com/rstatic/index.html-tag=pic18f23k22.html,tag-pic18f23k22.html,tag,Tag Archives: PIC18F23K22
+https://rodyne.com/rstatic/index.html-tag=pic18f24k22.html,tag-pic18f24k22.html,tag,Tag Archives: PIC18F24K22
+https://rodyne.com/rstatic/index.html-tag=pic18f25k22.html,tag-pic18f25k22.html,tag,Tag Archives: PIC18F25K22
+https://rodyne.com/rstatic/index.html-tag=pic32.html,tag-pic32.html,tag,Tag Archives: PIC32
+https://rodyne.com/rstatic/index.html-tag=pic32mx150.html,tag-pic32mx150.html,tag,Tag Archives: PIC32MX150
+https://rodyne.com/rstatic/index.html-tag=pic32mx170.html,tag-pic32mx170.html,tag,Tag Archives: PIC32MX170
+https://rodyne.com/rstatic/index.html-tag=pico2.html,tag-pico2.html,tag,Tag Archives: pico2
+https://rodyne.com/rstatic/index.html-tag=picomite.html,tag-picomite.html,tag,Tag Archives: PicoMite
+https://rodyne.com/rstatic/index.html-tag=pioneer-stereo.html,tag-pioneer-stereo.html,tag,Tag Archives: pioneer stereo
+https://rodyne.com/rstatic/index.html-tag=port-expander.html,tag-port-expander.html,tag,Tag Archives: Port Expander
+https://rodyne.com/rstatic/index.html-tag=power-control.html,tag-power-control.html,tag,Tag Archives: power control
+https://rodyne.com/rstatic/index.html-tag=power.html,tag-power.html,tag,Tag Archives: power
+https://rodyne.com/rstatic/index.html-tag=powersaveidle.html,tag-powersaveidle.html,tag,Tag Archives: PowerSaveIdle()
+https://rodyne.com/rstatic/index.html-tag=powersavesleep.html,tag-powersavesleep.html,tag,Tag Archives: PowerSaveSleep()
+https://rodyne.com/rstatic/index.html-tag=probably-bull-shit.html,tag-probably-bull-shit.html,tag,Tag Archives: Probably Bull-shit
+https://rodyne.com/rstatic/index.html-tag=probably-wrong.html,tag-probably-wrong.html,tag,Tag Archives: Probably Wrong!
+https://rodyne.com/rstatic/index.html-tag=productivity.html,tag-productivity.html,tag,Tag Archives: productivity
+https://rodyne.com/rstatic/index.html-tag=prompt-engineering.html,tag-prompt-engineering.html,tag,Tag Archives: Prompt Engineering
+https://rodyne.com/rstatic/index.html-tag=prove-youre-human.html,tag-prove-youre-human.html,tag,Tag Archives: Prove You’re Human
+https://rodyne.com/rstatic/index.html-tag=pt100.html,tag-pt100.html,tag,Tag Archives: PT100
+https://rodyne.com/rstatic/index.html-tag=pt2259.html,tag-pt2259.html,tag,Tag Archives: PT2259
+https://rodyne.com/rstatic/index.html-tag=publisher.html,tag-publisher.html,tag,Tag Archives: publisher
+https://rodyne.com/rstatic/index.html-tag=publishing.html,tag-publishing.html,tag,Tag Archives: publishing
+https://rodyne.com/rstatic/index.html-tag=ramblings-of-an-old-man.html,tag-ramblings-of-an-old-man.html,tag,Tag Archives: Ramblings of an old man
+https://rodyne.com/rstatic/index.html-tag=random.html,tag-random.html,tag,Tag Archives: random
+https://rodyne.com/rstatic/index.html-tag=raspberry-pi.html,tag-raspberry-pi.html,tag,Tag Archives: Raspberry Pi
+https://rodyne.com/rstatic/index.html-tag=re-enforcement-learning.html,tag-re-enforcement-learning.html,tag,Tag Archives: re-enforcement learning
+https://rodyne.com/rstatic/index.html-tag=re-structuring.html,tag-re-structuring.html,tag,Tag Archives: re-structuring
+https://rodyne.com/rstatic/index.html-tag=reality-check.html,tag-reality-check.html,tag,Tag Archives: Reality Check
+https://rodyne.com/rstatic/index.html-tag=redundancy.html,tag-redundancy.html,tag,Tag Archives: redundancy
+https://rodyne.com/rstatic/index.html-tag=repair.html,tag-repair.html,tag,Tag Archives: Repair
+https://rodyne.com/rstatic/index.html-tag=reputation.html,tag-reputation.html,tag,Tag Archives: reputation
+https://rodyne.com/rstatic/index.html-tag=rfid.html,tag-rfid.html,tag,Tag Archives: RFID
+https://rodyne.com/rstatic/index.html-tag=rn131.html,tag-rn131.html,tag,Tag Archives: RN131
+https://rodyne.com/rstatic/index.html-tag=rp2040.html,tag-rp2040.html,tag,Tag Archives: RP2040
+https://rodyne.com/rstatic/index.html-tag=rpg.html,tag-rpg.html,tag,Tag Archives: RPG
+https://rodyne.com/rstatic/index.html-tag=rs232.html,tag-rs232.html,tag,Tag Archives: rs232
+https://rodyne.com/rstatic/index.html-tag=rtc.html,tag-rtc.html,tag,Tag Archives: RTC
+https://rodyne.com/rstatic/index.html-tag=safety.html,tag-safety.html,tag,Tag Archives: Safety
+https://rodyne.com/rstatic/index.html-tag=sc16315.html,tag-sc16315.html,tag,Tag Archives: SC16315
+https://rodyne.com/rstatic/index.html-tag=scada.html,tag-scada.html,tag,Tag Archives: SCADA
+https://rodyne.com/rstatic/index.html-tag=sci-fi.html,tag-sci-fi.html,tag,Tag Archives: sci-fi
+https://rodyne.com/rstatic/index.html-tag=scott-alexander.html,tag-scott-alexander.html,tag,Tag Archives: Scott Alexander
+https://rodyne.com/rstatic/index.html-tag=security.html,tag-security.html,tag,Tag Archives: Security
+https://rodyne.com/rstatic/index.html-tag=self-publishing.html,tag-self-publishing.html,tag,Tag Archives: self-publishing
+https://rodyne.com/rstatic/index.html-tag=selling-yourself.html,tag-selling-yourself.html,tag,Tag Archives: Selling Yourself
+https://rodyne.com/rstatic/index.html-tag=sentience.html,tag-sentience.html,tag,Tag Archives: Sentience
+https://rodyne.com/rstatic/index.html-tag=sentient-ai.html,tag-sentient-ai.html,tag,Tag Archives: Sentient AI
+https://rodyne.com/rstatic/index.html-tag=serial.html,tag-serial.html,tag,Tag Archives: serial
+https://rodyne.com/rstatic/index.html-tag=simplifying-life.html,tag-simplifying-life.html,tag,Tag Archives: simplifying life
+https://rodyne.com/rstatic/index.html-tag=singularity.html,tag-singularity.html,tag,Tag Archives: singularity
+https://rodyne.com/rstatic/index.html-tag=slow.html,tag-slow.html,tag,Tag Archives: slow
+https://rodyne.com/rstatic/index.html-tag=smart-phones.html,tag-smart-phones.html,tag,Tag Archives: smart phones
+https://rodyne.com/rstatic/index.html-tag=smart-prototyping.html,tag-smart-prototyping.html,tag,Tag Archives: smart prototyping
+https://rodyne.com/rstatic/index.html-tag=social-media.html,tag-social-media.html,tag,Tag Archives: Social Media
+https://rodyne.com/rstatic/index.html-tag=soft-flap-display.html,tag-soft-flap-display.html,tag,Tag Archives: Soft-Flap Display
+https://rodyne.com/rstatic/index.html-tag=solari.html,tag-solari.html,tag,Tag Archives: solari
+https://rodyne.com/rstatic/index.html-tag=space-1999.html,tag-space-1999.html,tag,Tag Archives: Space 1999
+https://rodyne.com/rstatic/index.html-tag=spam.html,tag-spam.html,tag,Tag Archives: SPAM
+https://rodyne.com/rstatic/index.html-tag=speculation.html,tag-speculation.html,tag,Tag Archives: Speculation
+https://rodyne.com/rstatic/index.html-tag=sql-administration.html,tag-sql-administration.html,tag,Tag Archives: SQL administration
+https://rodyne.com/rstatic/index.html-tag=sql-administrator.html,tag-sql-administrator.html,tag,Tag Archives: SQL administrator
+https://rodyne.com/rstatic/index.html-tag=sql-developer-nz.html,tag-sql-developer-nz.html,tag,Tag Archives: SQL Developer NZ
+https://rodyne.com/rstatic/index.html-tag=sql-development.html,tag-sql-development.html,tag,Tag Archives: SQL Development
+https://rodyne.com/rstatic/index.html-tag=sql.html,tag-sql.html,tag,Tag Archives: SQL
+https://rodyne.com/rstatic/index.html-tag=standard-operating-procedures.html,tag-standard-operating-procedures.html,tag,Tag Archives: standard operating procedures
+https://rodyne.com/rstatic/index.html-tag=techno-thriller.html,tag-techno-thriller.html,tag,Tag Archives: Techno-Thriller
+https://rodyne.com/rstatic/index.html-tag=the-algorithm.html,tag-the-algorithm.html,tag,Tag Archives: the algorithm
+https://rodyne.com/rstatic/index.html-tag=the-phoney-war.html,tag-the-phoney-war.html,tag,Tag Archives: The Phoney War
+https://rodyne.com/rstatic/index.html-tag=the-stack.html,tag-the-stack.html,tag,Tag Archives: The Stack
+https://rodyne.com/rstatic/index.html-tag=the-summer-of-reasoning.html,tag-the-summer-of-reasoning.html,tag,Tag Archives: the summer of reasoning
+https://rodyne.com/rstatic/index.html-tag=thinkpad-p14s.html,tag-thinkpad-p14s.html,tag,Tag Archives: Thinkpad P14s
+https://rodyne.com/rstatic/index.html-tag=tinkercad.html,tag-tinkercad.html,tag,Tag Archives: tinkercad
+https://rodyne.com/rstatic/index.html-tag=tips-for-new-authors.html,tag-tips-for-new-authors.html,tag,Tag Archives: Tips for New Authors
+https://rodyne.com/rstatic/index.html-tag=tmemo.html,tag-tmemo.html,tag,Tag Archives: Tmemo
+https://rodyne.com/rstatic/index.html-tag=tongue-in-cheek.html,tag-tongue-in-cheek.html,tag,Tag Archives: Tongue-in-Cheek
+https://rodyne.com/rstatic/index.html-tag=touchscreen.html,tag-touchscreen.html,tag,Tag Archives: Touchscreen
+https://rodyne.com/rstatic/index.html-tag=touchscreens.html,tag-touchscreens.html,tag,Tag Archives: Touchscreens
+https://rodyne.com/rstatic/index.html-tag=turbo-c.html,tag-turbo-c.html,tag,Tag Archives: Turbo-C
+https://rodyne.com/rstatic/index.html-tag=turbo-pascal-3.html,tag-turbo-pascal-3.html,tag,Tag Archives: Turbo Pascal 3
+https://rodyne.com/rstatic/index.html-tag=uart.html,tag-uart.html,tag,Tag Archives: UART
+https://rodyne.com/rstatic/index.html-tag=ultrafiire.html,tag-ultrafiire.html,tag,Tag Archives: Ultrafiire
+https://rodyne.com/rstatic/index.html-tag=usb.html,tag-usb.html,tag,Tag Archives: USB
+https://rodyne.com/rstatic/index.html-tag=usr-wifi232-s.html,tag-usr-wifi232-s.html,tag,Tag Archives: USR WIFI232-S
+https://rodyne.com/rstatic/index.html-tag=utopia.html,tag-utopia.html,tag,Tag Archives: Utopia
+https://rodyne.com/rstatic/index.html-tag=utopian.html,tag-utopian.html,tag,Tag Archives: Utopian
+https://rodyne.com/rstatic/index.html-tag=vfd.html,tag-vfd.html,tag,Tag Archives: VFD
+https://rodyne.com/rstatic/index.html-tag=vibe-coding.html,tag-vibe-coding.html,tag,Tag Archives: Vibe Coding
+https://rodyne.com/rstatic/index.html-tag=vinwizard.html,tag-vinwizard.html,tag,Tag Archives: Vinwizard
+https://rodyne.com/rstatic/index.html-tag=voip.html,tag-voip.html,tag,Tag Archives: VOIP
+https://rodyne.com/rstatic/index.html-tag=vsx-520k.html,tag-vsx-520k.html,tag,Tag Archives: VSX-520K
+https://rodyne.com/rstatic/index.html-tag=vsx520.html,tag-vsx520.html,tag,Tag Archives: vsx520
+https://rodyne.com/rstatic/index.html-tag=we-enabled.html,tag-we-enabled.html,tag,Tag Archives: we-enabled
+https://rodyne.com/rstatic/index.html-tag=windows-11.html,tag-windows-11.html,tag,Tag Archives: Windows 11
+https://rodyne.com/rstatic/index.html-tag=winemaking.html,tag-winemaking.html,tag,Tag Archives: Winemaking
+https://rodyne.com/rstatic/index.html-tag=winery-automation.html,tag-winery-automation.html,tag,Tag Archives: Winery Automation
+https://rodyne.com/rstatic/index.html-tag=winery.html,tag-winery.html,tag,Tag Archives: winery
+https://rodyne.com/rstatic/index.html-tag=wont-age-well.html,tag-wont-age-well.html,tag,Tag Archives: Won’t age well
+https://rodyne.com/rstatic/index.html-tag=worst-case-scenarios.html,tag-worst-case-scenarios.html,tag,Tag Archives: Worst Case Scenarios
+https://rodyne.com/rstatic/index.html-tag=writing.html,tag-writing.html,tag,Tag Archives: writing
+https://rodyne.com/rstatic/index.html-tag=xc32.html,tag-xc32.html,tag,Tag Archives: xc32
+https://rodyne.com/rstatic/index.html-tag=xmas-fun.html,tag-xmas-fun.html,tag,Tag Archives: XMAS Fun!
+https://rodyne.com/rstatic/index.html-tag=zero-point-energy.html,tag-zero-point-energy.html,tag,Tag Archives: Zero-Point Energy

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Anatomy of a Production System</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular page-template-default page page-id-471 custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post471.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="post-471 page type-page status-publish hentry" id="post-471">
+<h1 class="entry-title">Anatomy of a Production System</h1>
+<div class="entry-content">
+<p class="wp-block-paragraph"><em>These notes were specifically taylored for the work I did to create the Indevin and the Omega Seafood production systems but they applies equally well to most production systems.</em></p>
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">Overview</span></p>
+<p class="wp-block-paragraph">The basic concept of a production system for most companies that produce finished goods are basically the same and is fairly simple and it all comes down a few key points:</p>
+<ol class="wp-block-list">
+<li>All Stock received into the system must come through a Purchase Order (PO) – This is vital as you and your  accountant must know your out-goings i.e. what you are spending on the raw materials, labour and value added services to manufacture your goods.</li>
+<li>You must have a recipe (Bill of Materials + assembly instructions) for each of your finished goods you make. The cost you sell your finished goods for must be set so that it covers the cost of all the ingredients or raw materials (including all packaging and labelling) plus the cost of assembly (man hours+energy+plant+waste) plus any delivery and storage charges, plus your overheads (such as rates, administration, sales and marketing) finally (and obviously most importantly) your sale price must include a profit margin.  To set the correct finished goods price you must know the costs of everything that goes into making it and this gives you your cost price, selling below cost price will give you a loss, selling above cost price will give you a profit. You also need to know the market price of the goods you sell. If the market price is above your cost price you need to lower your cost price or move into another market.</li>
+<li>Raw Materials are taken from stock and assembled into finished or semi finished products. The Qty of the raw material stock and the finished product stock must be adjusted after each job so you have an accurate inventory. Having an accurate inventory allows you to keep stock levels of raw materials, finished and semi-finished stock at an optimum value, as holding too much unnecessary stock both ties up both space and capital, and worse with perishable stock, it may have additional storage environmental constraints, and may expire and have to be written off.</li>
+<li>Finally everything dispatched from your system must be dispatched though an accompanying Sales Order (SO)</li>
+</ol>
+<p class="wp-block-paragraph">With these in place you have the ability to know and control your costs and by careful analysis reduce them over time. The above is valid whether you are making packaged ready to eat (and tasty) green-shell mussels or an iPhone.</p>
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">The devil is in the detail</span></p>
+<p class="wp-block-paragraph">Put a generic production system in to an organisation and, unless it has been taylor made for that industry, it will need customisation or the company will have to change its procedures to fit the system. This is of course because every business has its quirks, even businesses in the same industry such as Winemaking, where there are several great (and crap) ready made systems to choose from you may want to do something a different way.</p>
+<p class="wp-block-paragraph">Some companies may choose to only use the parts of the program they need, some larger ones may choose to customise the system (within reasonable bounds of course!) and some may choose just to adopt the modus operandi the system gives you.</p>
+<p class="wp-block-paragraph">Where your production methods fall outside the norm, such as the mussel factory, you may end up with a combination of manual systems, spreadsheets and accounting systems to achieve your goal.</p>
+<p class="wp-block-paragraph">Should you do the math and decide to write your own (not as difficult as it seems – but beware!) you need to account for every variation in your business and plan for the unexpected, even the most perfectly planned system can fall apart just because you or your programmer forgot something simple like including how to deal with returned finished goods (which may not happen until several months into its life).</p>
+<p class="wp-block-paragraph">Planning for the unexpected generally just means having the ability to manually adjust something in or out of stock or allowing a few generic text fields for comments that can be utilised or not. It also means ensuring you have the ability to query and modify your data as required to fix things.</p>
+<p class="wp-block-paragraph">Note the difference between fixing and tampering is a fine and dangerous line with auditors and statutory bodies who require traceability. These bodies would much prefer adjustments to be made which are transparent and accountable than for someone to go under the hood and change something with no record of it being done. Adjustments should be your primary method of doing this. Under the hood fixes should be a last resort and should be supported by some sort of quality control documentation so you know why and whether this gap needs fixing.</p>
+<p class="wp-block-paragraph">A Production system can be made or broken on its ability to be queried and trace the origin of finished goods down to the last mussel, grape, nut or bolt. Having a transparent data schema is a big part of this as you never know when you will need to find out things such as “how many Brazilian workers added sulphur to your chardonnay in April 2005”</p>
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">Writing a basic production system </span></p>
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">1. the data schema</span></p>
+<p class="wp-block-paragraph">Generally the simplest production system will start with a good data schema. To save you the trouble I have included the (current) schema for the Catch2 Program</p>
+<p class="wp-block-paragraph"><a href="files/2014/06/database-r4.pdf">database r4</a> (PDF Format A3)</p>
+<p class="wp-block-paragraph"><a href="files/2014/06/database-r4.odp">database r4</a> (Open Office Open document Format)</p>
+<p class="wp-block-paragraph">For the programmer and project manager, the schema is an evolving document, it is the blueprint you will use for developing the system, and the document you will refer to most of the time when writing reports. It basically consists of a circuit diagram of your relational database tables, showing the references and meanings of fields. It should be as self explanatory as possible, field and table names should reflect what they do, and any that don’t should be explained either on the diagram (preferably) or on a separate document and in the source code if its more complicated.</p>
+<p class="wp-block-paragraph">The schema will be generated during the investigation and analysis phase where you will go through the companies production process from purchase order to dispatch and invoice. In it you will also define any fields or tables that are special to the business.  You will examine all the notes, tags, labels and documents currently used and ensure they all can be stored and generated. And you will <span style="text-decoration: underline;">not</span> make assumptions that it is set in stone.</p>
+<p class="wp-block-paragraph">You will notice that the catch2 system does not include any financial elements to it, while it does track costs in, during, and out of production, and it produces purchase and sales orders,  it does <span style="text-decoration: underline;">not</span> produce your tax or accountancy reports, nor pay your staff, nor does it do HR, or marketing. This is not to say you could not bolt these on, but it is rather why would you when there are better tools already written out there with the ability to read in data direct from your system; A Lot of people try and make their new system do everything from the outset and if you have existing systems you are comfortable with such as your accounting package then you would be better off to design for them, not design them out.</p>
+<p class="wp-block-paragraph">You should define from the outset what will be done in the system and what will be done by external programs, this will also determine the reports you will need to be able to generate from it.</p>
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">2. The Database</span></p>
+<p class="wp-block-paragraph">You will need a database, and in all likelihood it will be an SQL database. Do not underestimate the difficulties of writing a complex system such as this without one, if this is not core to your data storage design reject it. Ask anyone who has tried to understand a production spreadsheet!</p>
+<p class="wp-block-paragraph">Whichever database you choose is up to you, you will hear arguments from evangelists either for or against their chosen one, but just like the difference between Coke and Pepsi, or a Ford and a Holden, there really is none. It’s all about how familiar your developer is with the technology, what you want to pay, and the support you get.</p>
+<p class="wp-block-paragraph">My chosen database for my last two MRP systems is <a href="http://en.wikipedia.org/wiki/MySQL" target="_blank">MySQL</a>, or usually a binary compatible version which has a more open licence such as Percona or MariaDB. There is no particular reason for choosing MySQL other than it is the one I’m currently most familiar with; I have written 3 production systems using it, processed billions of records and run billions of queries, so if it has problems I know about them. It is just a preference though, and any other free and open source system such as <a href="http://en.wikipedia.org/wiki/Firebird_(database_server)" target="_blank">Firebird</a> or <a href="http://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL </a>would be totally perfect. Non free SQL systems such as <a href="http://en.wikipedia.org/wiki/Oracle_Database" target="_blank">Oracle</a>, DB2 and <a href="http://en.wikipedia.org/wiki/Microsoft_SQL_Server" target="_blank">Microsoft SQL server</a> are also fine if you want the additional “support” and are willing to pay the licence fees, however I am reluctant to recommend to new customers when there are better free alternative. </p>
+<p class="wp-block-paragraph">Again don’t believe the <a href="http://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt" target="_blank">FUD</a> around any database, they are all good and there are no situations using any of the above systems where your data would not be in excellent hands. If your chosen contractor pushes you one way or another, understand their reasons, it may not pay to push them into a system they are not familiar with. I tend to steer clear of vendor specific and proprietary extensions and standard SQL is quite easy to move to different databases.</p>
+<p class="wp-block-paragraph">Installing a database is as simple as downloading the exe file from the providers website and clicking yes a few times, there is no black magic, just a lot of terms you may not be familiar with. Once you’ve installed your chosen database you will need to create the schema. Here is my current schema as an SQL file, just run it!</p>
+<p class="wp-block-paragraph"><a href="files/2014/06/prod-test.zip">prod-test</a> (extract and run in your chosen SQL database system – <a href="https://www.google.com/search?q=installing+and+running+mysql&amp;oq=installing+and+running+mysql" target="_blank">Google</a> and AI are your friend)</p>
+<p class="wp-block-paragraph">Stored Procedures or not? Ouch, another programming minefield!  Stored procedures are another layer that allow your database to make complex changes to your dataset using a simple one line call from your program, they have the advantage of running very quick (all processing is done in the database rather than separate datasets fetched, processed and written back) they allow you to control access to your tables, i.e. you may not want to give the guy interfacing the web system full access to your data so you may give him a few procedure calls to read and write just those records you know he needs and under your control).. etc</p>
+<p class="wp-block-paragraph">I use stored procedures sparingly and use the following rules to determine if I need them:</p>
+<ul class="wp-block-list">
+<li>Any query or calculation requiring repeated reads/writes to the database to set or return a dataset</li>
+<li>Any calculation which requires frequent changes (never come across this one as most calculations only change variables such as tax rates which can be stored in a master table!)</li>
+<li>Any interface table I need to write for a third party or someone who is not comfortable with SQL (seriously do not give anyone who does not understand SQL fully and you fully trust any access to your database – ever!)</li>
+<li>If you are using a compiled programming language then you would also want to add any algorithms that require tweeking here to allow updates to your system without re-compiling.</li>
+</ul>
+<p class="wp-block-paragraph">If you don’t use stored procedures you will need to do all the processing in your program, this is only an issue though if you are dealing with large datasets, slow connections or real-time data-capture.</p>
+<p class="wp-block-paragraph">Your chosen SQL system will need to be able to do transactions and be multi-user (All the above mentioned do this adequately) and all the servers above (with the exception of Microsoft) can run on any operating system or over the internet to a cloud server. Scaling your system again is not an issue, all the above databases can work in the billions of records and adequately cater for hundreds on quite modest hardware</p>
+<p class="wp-block-paragraph">Whatever you choose, ensure the dataset is backed up at least daily to an off-site location, your IT provider should be able to take care of this.</p>
+<p class="wp-block-paragraph">Very importantly make sure you build a test system from the outset of the project for training and so updates can be tested in a non-production environment.</p>
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">3. the program</span></p>
+<p class="wp-block-paragraph">Regardless of the language you (or your contractor) have chosen to develop your system in, it will inevitably be many thousands of lines and you will need to follow some basic principles to keep on top of it and not be overwhelmed.</p>
+<p class="wp-block-paragraph">A good programmer will break the program into modules for readability, maintenance and simplicity. Generally these modules will have a common shell so that the user sees a single seamless program (though you could also separate the programs if you have very distinct job areas or want to provide mobile or touch-screen facilities for the shop floor)</p>
+<p class="wp-block-paragraph">Each module will deal with such things as master table maintenance, receivals, stock control, production, dispatches, orders, reports and each will be self contained so you can easily rip any out and replace it with a better one or amalgamate or split modules if required or the function changes slightly. As each module will be in the hundreds of lines (not many thousands) it will be easier to see what’s going on.</p>
+<p class="wp-block-paragraph">Global variables, Classes, common functions and procedures should be grouped in a separate common unit which each module will use ( or #include) you may also strip out database, language and operating system specifics into there own modules if you so desire, but this is overkill IMHO unless you know you will need to support multiple countries/platforms or databases as it can actually compromise readability and adds a lot of overheads in code and complexity a small system may not require. Again your chosen programming language may force this method or make this real easy, if so then go for it. My rule is not to sacrifice simplicity and readability for anything as when you are asked to fix some weird behaviour several years down the line you, or someone else, will need to be able to understand what was in your mind at the time.</p>
+<p class="wp-block-paragraph">Where possible all constants or key variables should be stored on the server. I am sure nobody would think of storing GST/VAT as a CONST, but neither should you assume things like currency units or even the Company name! because you know five minutes after you implement the system your customer will make their first sale to the UK! Create a configuration table in the database with anything you think possibly may change, then read in those variables when the program starts.</p>
+<p class="wp-block-paragraph">Think multi-user from the outset. During development there is only likely to be you using the system, but once in production two or more people may be working on the same thing at the same time. You can implement locking to prevent this but you then need to think about unlocking records when the users PC crashes or the network goes down, do you really want this? A Better method is statuses. Generally the record is at a certain stage in the production, eg being ordered, waiting receival, in production, waiting dispatch etc, it is unlikely the person will try and dispatch and receive the same record at the same time so use this to your advantage to minimize (or eliminate) locking. If you do not implement locking then inform the users how any race condition will work and never assume what you have read in from the database is its current state, eg if person 1 edits the GST rate and person2 edits the GST rate and there is no locking the last one who saves it will set the value, so before you save check the value/status etc is still the same as when you read it in.</p>
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">The catch2 System</span></p>
+<p class="wp-block-paragraph">I am implementing the above basic production system in my Catch2 Program. This program uses the above principles as its core, and then (as the devil is in the detail) adds a few special features of the mussel factory to allow them to do things their way.</p>
+<p class="wp-block-paragraph">I will update the web site with the source code and schema once I reach a reliable stage.</p>
+</div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

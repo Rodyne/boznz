@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+<head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Things not quite right</title>
+<link href="css/site.css" rel="stylesheet"/>
+<link href="images/2015/11/web-header2.png" rel="icon"/>
+</head>
+<body class="wp-singular post-template-default single single-post postid-114 single-format-standard custom-background wp-theme-twentyten">
+<div class="hfeed" id="wrapper">
+<a class="screen-reader-text skip-link" href="post114.html#content">Skip to content</a>
+<div id="header">
+<div id="masthead">
+<div id="branding" role="banner">
+<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<div id="access" role="navigation">
+</div>
+</div>
+</div>
+<div id="main">
+<div id="container">
+<div id="content" role="main">
+<div class="navigation" id="nav-above">
+<div class="nav-previous"><a href="post84.html" rel="prev"><span class="meta-nav">←</span> Barcode Scanner Selection</a></div>
+<div class="nav-next"><a href="post132.html" rel="next">Almost there! <span class="meta-nav">→</span></a></div>
+</div>
+<div class="post-114 post type-post status-publish format-standard hentry category-fill-level-sensor" id="post-114">
+<h1 class="entry-title">Things not quite right</h1>
+<div class="entry-meta">
+<span class="meta-prep meta-prep-author">Posted on</span> <a href="post114.html" rel="bookmark" title="11:42 am"><span class="entry-date">29 October 2013</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
+<div class="entry-content">
+<p>As predicted the fill sensor performed miserably on clear bottles using the default settings and one of the operators noticed a mysterious lock up, where the sensor seemed to hang every now and then but became responsive again after a while. Another problem, lesser so, was the system was coming out of the gap detection loop when there clearly were no bottles, this last one while annoying did not trigger anything as the next part looking for the bottle end timed out. Time to investigate!</p>
+<p>The first problem was predictably the default exposure for dark bottles would not be the same for light bottles, sort of knew this but ignored it as clear bottles were so rare I hadn’t encountered one yet. Armed with a good sample of clear bottles and various dilutions of blackcurrant juice I set up the test rig and began incorporating some sort of calibration unit into the system to auto-detect the bottle and set the exposure.</p>
+<p>The second problem was really tricky. The system would be operating fine, then for no reason would completely hang, no leds, no backlight, no serial, no nothing! By sending various debug codes out through the serial port at each stage I was able to localise the problem to this very common PIC32 Delay routine..</p>
+<pre>void DelayMicroseconds(uint32 uS) // Blocking wait of 1uS
+{
+ uint32 ExitCount = ReadCoreTimer()+ (DELAY_FACTOR_50MHZ*uS);
+ while(ReadCoreTimer()&lt;ExitCount); // wait for time to come around
+}</pre>
+<pre>eg DelayMicroseconds(3); // Wait 3uS</pre>
+<p>The PIC32 has a core 32 bit timer built into the MIPS core which ticks at half the clock rate. We basically add our delay to this timer then wait until it comes around. What could possibly be wrong with this?</p>
+<p>Consider the line:</p>
+<pre>DelayMicroseconds(SampleRate - 1500 - exposure);</pre>
+<p>If I set exposure too high, the Delay Microseconds() will be called with a negative number (say -10), however it is an unsigned integer so that negative number will be translated into a very BIG positive number!  -10 = 4294967279! – So we are actually calling a delay of about an hour! (whoops!), the simple fix is to ensure DelayMicroseconds() is not called if the number is negative. So that solves the program hanging.</p>
+<p>This Delay procedure also has a second, more subtle, bug that is nothing to do with how its called but with the procedure itself, again it is to do with the integer overflowing.</p>
+<p>If we read the coretimer just before it overflows then add our delay to it, it will overflow to a tiny number, the next line will then exit immediately as the coretimer will be greater than the exitcount, thus..</p>
+<p>DelayMicroseconds(ReallyBigNumber) becomes DelayMicroseconds(0) !</p>
+<p>There are lots of timing critical points in the program such as the AquireImage() function which must wait a specific exposure period, if this exposure period becomes 0 then it will detect a much darker image, if this occurs during the time the system is waiting for the bottle gap to end then it will detect a dark image, think the bottle has passed and trigger, hence the above problem and again a fairly simple fix now we know.</p>
+<p>The re-calibration I am still working on!</p>
+<p> </p>
+</div>
+<div class="entry-utility">
+							This entry was posted in <a href="category-8.html" rel="category">Fill-Level Sensor</a>. Bookmark the <a href="post114.html" rel="bookmark" title="Permalink to Things not quite right">permalink</a>.													</div>
+</div>
+<div class="navigation" id="nav-below">
+<div class="nav-previous"><a href="post84.html" rel="prev"><span class="meta-nav">←</span> Barcode Scanner Selection</a></div>
+<div class="nav-next"><a href="post132.html" rel="next">Almost there! <span class="meta-nav">→</span></a></div>
+</div>
+
+</div>
+</div>
+<div class="widget-area" id="primary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_text" id="text-2"> <div class="textwidget"><br/><a href="index.html"><b>Home</b></a> . 
+<a href="post271.html">Contact</a> . 
+<a href="post286.html">About (Boz)</a>
+<br/>
+<br/><u><b>Novels By Boz</b></u><br/><br/>
+<a href="post1252.html">
+<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+</a>
+<br/>-<br/><a href="post1446.html">
+<img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
+</a>
+<br/>
+<br/><u>Recent Posts</u></div>
+</li><li class="widget-container widget_block widget_recent_entries" id="block-14"><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="post4119.html">Continual Learning is Consciousness.</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4105.html">Can I Now Please Go Back to a Dumb-Phone?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4070.html">Artificial Super-Intelligence May Require a Level of Trust We’re Not Willing to Give</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post4045.html">The Internet is Rotting from Within</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="post3999.html">Debugging (Yet Another) R2350 Dev Board!</a></li>
+</ul></li><div><b>You'll notice that Nancy Reagan never drinks water when Ronnie speaks. - Robin Williams..</b></div> </ul>
+</div>
+<div class="widget-area" id="secondary" role="complementary">
+<ul class="xoxo">
+<li class="widget-container widget_block widget_media_image" id="block-12">
+<figure class="wp-block-image is-resized"><a href="https://ko-fi.com/V7V01PTFH2" rel="noreferrer noopener" target="_blank"><img alt="Say Thanks.." src="images/kofi.png" style="width:190px;height:auto"/></a></figure>
+</li><li class="widget-container widget_block widget_text" id="block-13">
+<p class="wp-block-paragraph">If you enjoyed my free eBooks then buying my next book and/or spreading the word is a great way to say thanks. The second-best way is to buy me a cuppa using the button above :-)</p>
+</li><li class="widget-container widget_block" id="block-11"><div class="logged-out wp-block-loginout">Log in</div></li> </ul>
+</div>
+</div>
+<div id="footer" role="contentinfo">
+<div id="colophon">
+<div id="site-info">
+<a href="index.html" rel="home">
+</a>
+</div>
+<div id="site-generator">
+<a class="imprint" href="https://wordpress.org/" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress.				</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
