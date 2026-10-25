@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PicoMite</title>
+	<atom:link href="https://rodyne.com/?feed=rss2&#038;cat=342" rel="self" type="application/rss+xml" />
+	<link>https://rodyne.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 09 Jul 2026 21:20:54 +0000</lastBuildDate>
+	<language>en-NZ</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.7</generator>
+
+<image>
+	<url>https://rodyne.com/wp-content/uploads/2015/11/web-header2.png</url>
+	<title>PicoMite</title>
+	<link>https://rodyne.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Debugging (Yet Another) R2350 Dev Board!</title>
+		<link>https://rodyne.com/?p=3999</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 03 Jul 2026 03:32:25 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Electronics]]></category>
+		<category><![CDATA[PicoMite]]></category>
+		<category><![CDATA[RP2350]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=3999</guid>
+
+					<description><![CDATA[Just like publishing a book and going to print, passing your Gerber files to a PCB assembly house usually results in days and days of checking everything is correct, pushing the button, and immediately finding an error somewhere when it &#8230; <a href="https://rodyne.com/?p=3999">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Just like publishing a book and going to print, passing your Gerber files to a PCB assembly house usually results in days and days of checking everything is correct, pushing the button, and immediately finding an error somewhere when it gets back. Kind of makes you wonder what the fuck you were doing during those hours and hours of checking!</p>
+
+
+
+<p class="wp-block-paragraph">I had been holding off pressing the button on this one due to the pathetic level of the NZ$, getting 2 of these baby&#8217;s assembled at JLPCB worked out at NZ$230 including exorbitant courier fees which I again I assume are because of our lousy exchange rate. Great for exporters and tourists, alas, not for me! Anyway, long story short, I am now $230 poorer, and here is the board fresh back from the assembly house, and looking like a charm.</p>
+
+
+
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="716" src="https://rodyne.com/wp-content/uploads/devboard-2-1024x716.jpg" alt="" class="wp-image-4000" srcset="https://rodyne.com/wp-content/uploads/devboard-2-1024x716.jpg 1024w, https://rodyne.com/wp-content/uploads/devboard-2-300x210.jpg 300w, https://rodyne.com/wp-content/uploads/devboard-2-768x537.jpg 768w, https://rodyne.com/wp-content/uploads/devboard-2-1536x1074.jpg 1536w, https://rodyne.com/wp-content/uploads/devboard-2-2048x1432.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p class="wp-block-paragraph">Of course, plugging the USB power cable into it did nothing, no led, no smoke, no loud pops, nothing! Actually I don&#8217;t usually mind fixing these easy faults, generally no brain required, but, and note to future self on naming nets, VBUS and 5V on a simple board like this are very likely the same net!</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><img decoding="async" width="481" height="431" src="https://rodyne.com/wp-content/uploads/HLeL0XQaIAAvuur-1.jpeg" alt="" class="wp-image-4002" style="aspect-ratio:1.116038046713249;width:312px;height:auto" srcset="https://rodyne.com/wp-content/uploads/HLeL0XQaIAAvuur-1.jpeg 481w, https://rodyne.com/wp-content/uploads/HLeL0XQaIAAvuur-1-300x269.jpeg 300w" sizes="(max-width: 481px) 100vw, 481px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">OK. So one very dodgy blob of solder later, we now have the VBUS and 5V nets connected.</p>
+
+
+
+<p class="wp-block-paragraph">Plugging the board in this time lit the LED, brought up the RP2350 boot loader, and mounted a drive on my laptop. Woohoo! I decided to use PicoMite to do the testing as it proved to be nice and straightforward to work with last time. I dropped the latest PicoMite uf2 firmware image onto the drive, and it copied over fine, then rebooted.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">Unfortunately after the reboot I should have had a standard config PicoMite board running, but no, the boot-loader came up again, and Linux again saw the board as a USB drive. (sigh!)</p>
+
+
+
+<p class="wp-block-paragraph">This usually means the image (uf2 file) was broken, or a hardware problem between the RP3250 and the Flash Memory. Unfortunately it also of course means I have to some some real digging, with logic analyzers and the debug probe, which also means going in the unheated workshop in the middle of winter. </p>
+
+
+
+<p class="wp-block-paragraph">This might take some time! &#8211; groan!</p>
+
+
+
+<p class="wp-block-paragraph">Schematic <a href="https://rodyne.com/wp-content/uploads/Schematic_RP2350B-RP2354B-PICO2-HDMI-Dev-board_2026-05-18.png" target="_blank" rel="noreferrer noopener">Here</a> for those that want to see if they can find the problem before me.</p>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">Update 7-July-2026</span></p>
+
+
+
+<p class="wp-block-paragraph">OK think I&#8217;ve found this next issue (and without going out to the cold damp workshop), yes it is another newbie mistake: VREG_FB and VREG_PGND are both floating and should be grounded. Interesting that the chip even powers up and mounts a boot drive considering we are only grounded via the thermal pad at the bottom! &#8211; Sometimes it is much nicer when things fail harder than this, as it took about 3 hours with the debug probe, VS Code (VSCodium) debug console and a smart-arse AI to finally figure out it was much more serious than a bad firmware image.</p>
+
+
+
+<p class="wp-block-paragraph"><em>Note: AI&#8217;s are still not as smart as we believe, I gave Gemini pro the schematic above (same as you) at the start of our session, telling it I had a hardware bug I think and it happily took me through 3 hours of pissing about on the VS code debugger before I told it I found the problem with VREG_PGND not being connected, it literally then told me VREG_FB should also be grounded too. Seriously, take away from this what you will!</em></p>
+
+
+
+<p class="wp-block-paragraph">With only 0.4mm between pins this is really going to test my soldering skills to put a ground wire to both of these. While I am at redesigning version 2.0 I&#8217;m also going to take out my USB switching circuit using the D-Type latch, it just over-complicates the design for minimal gain.</p>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">Update 10-July-2026</span></p>
+
+
+
+<p class="wp-block-paragraph">What was I thinking!</p>
+
+
+
+<p class="wp-block-paragraph">Nope, not a chance in hell of me putting these two wires in; under the microscope the finest tip of my Hanko soldering iron, next to the pins, looks like I&#8217;m trying to send a text with a boxing glove. And while my hands look steady holding them in front of me now, they shake at least 1 or 2mm under the microscope. I&#8217;m just not cut out for fine SMT rework, and I&#8217;ve definitely damaged both boards beyond repair now with my terrible efforts.</p>
+
+
+
+<p class="wp-block-paragraph">The only real option for me now is to get another two boards made once I&#8217;ve fixed the errors and made the other changes I want; so alas dear reader this I&#8217;m afraid is going to be the end of this post. When hell freezes over and the NZ$ recovers a bit I may dig into a bit more of my pension savings and get another two boards made and do another post.</p>
+
+
+
+<p class="has-light-gray-background-color has-background wp-block-paragraph">I was also going to post this on X but I currently cannot prove I&#8217;m a human! It seems my experiment with social media has failed after only 3 months, and my experiment with being a human has failed after 63 years!</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Don&#8217;t look Behind The Curtains!</title>
+		<link>https://rodyne.com/?p=3574</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 30 Jan 2026 07:47:15 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Electronics]]></category>
+		<category><![CDATA[ESP32-C3]]></category>
+		<category><![CDATA[Other Programming]]></category>
+		<category><![CDATA[Pascal Programming]]></category>
+		<category><![CDATA[Philosophy]]></category>
+		<category><![CDATA[PicoMite]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Retro]]></category>
+		<category><![CDATA[RP2040]]></category>
+		<category><![CDATA[RP2350]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[Ramblings of an old man]]></category>
+		<category><![CDATA[The Stack]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=3574</guid>
+
+					<description><![CDATA[My recent goals to work with and learn some newer, more popular, micro-controllers, and to try some different programming languages, has made me also take another look at the ways things have progressed since I started my career. My programming &#8230; <a href="https://rodyne.com/?p=3574">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><img decoding="async" width="359" height="506" src="https://rodyne.com/wp-content/uploads/image-2-1.jpg" alt="" class="wp-image-3590" style="aspect-ratio:0.7094743071171292;width:298px;height:auto" srcset="https://rodyne.com/wp-content/uploads/image-2-1.jpg 359w, https://rodyne.com/wp-content/uploads/image-2-1-213x300.jpg 213w" sizes="(max-width: 359px) 100vw, 359px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%">
+<p class="wp-block-paragraph">My recent goals to work with and learn some newer, more popular, micro-controllers, and to try some different programming languages, has made me also take another look at the ways things have progressed since I started my career. My programming career started with Pet and ZX81 Basic at school, then Turbo Pascal for PC, and C for VMS/Unix at work/college. These were all languages I could easily grok. I still remember a magazine article where somebody poked a number into a memory location in the ZX81 and the letter &#8220;A&#8221; popped up on the screen, one line of code.. which mapped to one single CPU instruction! That was all it took for the light bulb to go on in my head.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">The 80&#8217;s were simpler times, and life at that point was easy, and things worked well.. But then came the 90&#8217;s and along came Windows! I vaguely remember the 100&#8217;s of lines of weird C++ code, calling this API, then that API, just to get a window on the screen with &#8220;Hello world&#8221;, it all made zero sense at the time, not just to me, but a lot of our more traditional programmers, and I knew from that point on things had changed big time for me; I would no longer be a part of that world, I never wanted to see it ever again, and (for me at least) Windows/C++ had tainted the simplicity of C.</p>
+
+
+
+<p class="wp-block-paragraph">I guess this epiphany happened to a lot of other people too, as dozens of new programming languages, development environments, and operating systems, all sprung up around this time, each preaching a better and easier life than C/C++. My department however had committed to Windows, and we were all electronics engineers, so it was Visual Basic, then Delphi which won us over. Both languages hid the (high) complexity of Windows behind a simple event driven point and click interface, great for us engineers who simply wanted to get something done.</p>
+
+
+
+<p class="wp-block-paragraph">Someone coming into programming in 2026 will likely be offered JavaScript or Python as their first development language, both require an OS, an IDE, an interpreter or a browser, and probably the equivalent of a 1980&#8217;s supercomputer just to print &#8220;Hello World&#8221;. No beginner is really going to have a clue how their <em>Print &#8220;Hello World&#8221;</em> got onto their screen, because doing so requires understanding a API stack a mile high; If this was where I had to start my programming journey, I might never have begun, as I like to understand how things work. To many, I expect the inner workings of the stack between their chosen programming language, and the work their program actually does, is still <em>black-magic</em>.</p>
+
+
+
+<p class="wp-block-paragraph">I was lucky to have peeked behind the curtains early in my career, and have an intimate knowledge of CPU architectures, but even I have basically given up trying to understand the layers or stack. I read and write to whatever API is exposed, and hope the level below me knows what it is doing! Occasionally I have written parts of &#8216;the stack&#8217;, building hardware and writing a driver for Windows or Linux to support it, but even then I am conforming to a set of norms for the level above it, and I doubt anybody ever checked my code.</p>
+
+
+
+<p class="wp-block-paragraph">Only with Micro-controller projects am I fully back in control, and with them (for me at least) there generally was no stack; My program <em>was</em> the stack! This was however back with older 8-bit or 16-bit micros, and micro-controllers were not immune from technologies progress. Today&#8217;s micro-processors are amazing pieces of technology that have improved in leaps and bounds, going to multi-core monsters, with layers of complexity and peripherals that would shame a 1980&#8217;s super-computers. Unlike software though, they have done this while improving there efficiency and lowering there cost. For me, the best thing about all of this is you don&#8217;t really have to use any of this new complexity, and a simple blinking LED can still be done in a few primitive lines of C.</p>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://rodyne.com/?p=1751"><img loading="lazy" decoding="async" width="784" height="168" src="https://rodyne.com/wp-content/uploads/IMG_0508-ezgif.com-optimize.gif" alt="" class="wp-image-3540"/></a></figure>
+
+
+
+<p class="wp-block-paragraph">From a blinking LED I can add in all the complexity, and use as many of these new peripherals as I like. This is <em>exactly</em> like I did back in 1980 with my first Z80 chip, no real need for a stack or an API.</p>
+
+
+
+<p class="wp-block-paragraph">But API&#8217;s and stacks get added anyway, for convenience, reliability and speed of development. Abstracting away complex code behind a set of C SDK libraries, an RTOS, MicroPython, Arduino or even MMBasic, is a way of not having to learn the 1000&#8217;s of pages of CPU and peripheral datasheets. A lot of people are happy to take these easier options, including me, but lets not kid ourselves that we diligently read the libraries of source code that get compiled into our binaries, most of the time we are generally trusting the coders have done a good job.</p>
+
+
+
+<p class="wp-block-paragraph">A modern micro-processor, or System-On-Chip (SOC), is a far different beast from a micro-controller, adding many more layers of complexity, security, memory management, cores and peripherals, such as PCIe, USB3, Ethernet, or even a GPU. They are so complex that they often require there own bootstrap program to even initialise everything before it even finds and runs even a single line of your code. Very few programmers are brave enough to work <em><a href="https://en.wikipedia.org/wiki/Bare_machine" target="_blank" rel="noreferrer noopener">bare-metal</a></em> at this level because often as not these SOC&#8217;s, unlike micro-controllers, hide or abstract everything behind NDA&#8217;s or binary API&#8217;s, this is why for example on your cell phone, real world people accept they are going to work through an operating system and use the provided API&#8217;s.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">So, to segue again back to my first paragraph, if I was being honest with my real goals, I love the fact that when working with micro-controllers I am effectively going back to a simpler time, a time where I owned, and understood the stack, where the stack hardly ever changed, and when I turned my computer on I was running my program code within microseconds. I guess that is why there is a resurgence in retro-computing going on, people still want to know what is behind the curtains and understand how it all works!</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="512" height="512" src="https://rodyne.com/wp-content/uploads/wizardoftech.jpg" alt="" class="wp-image-3607" srcset="https://rodyne.com/wp-content/uploads/wizardoftech.jpg 512w, https://rodyne.com/wp-content/uploads/wizardoftech-300x300.jpg 300w, https://rodyne.com/wp-content/uploads/wizardoftech-150x150.jpg 150w" sizes="auto, (max-width: 512px) 100vw, 512px" /></figure>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">I am one of those people, but I will never go back to using a retro-computer or retro-operating system for my daily drive, I am happy the stack is there and hundreds of thousands of people have stood on each others shoulders, to bring me the marvelous Linux and IOS GUI&#8217;s I have today. However there is a cost, and that cost is complexity, efficiency, and the fact that programmers (like me) take all these layers of code for granted without looking behind the curtain. A whole Eco-system based on the trust that somebody else has done your due diligence for you!</p>
+
+
+
+<p class="wp-block-paragraph">This is especially scary once you realise how many bad actors are out there, examining every line of these stacks for code vulnerabilities. This is happening every hour of the day, and they are finding them with ease. AI, over-complicated programming styles, and dependency hell, are making it harder for the developers to miss these cracks in their code reviews, and easier for the bad guys to find them.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<figure class="wp-block-image size-full"><a href="https://news.ycombinator.com/item?id=46789913" target="_blank" rel=" noreferrer noopener"><img loading="lazy" decoding="async" width="518" height="213" src="https://rodyne.com/wp-content/uploads/vulnerabilities.jpg" alt="" class="wp-image-3613" srcset="https://rodyne.com/wp-content/uploads/vulnerabilities.jpg 518w, https://rodyne.com/wp-content/uploads/vulnerabilities-300x123.jpg 300w" sizes="auto, (max-width: 518px) 100vw, 518px" /></a></figure>
+
+
+
+<p class="has-text-align-center has-small-font-size wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=46789913" target="_blank" rel="noreferrer noopener">Hacker News Link and Comments For Story Above</a></p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<p class="wp-block-paragraph">Unfortunately, as always, it is up to you to balance the security, against the ease and convenience, or, like the vast majority of us, believe the myth that your system is secure and does not have these problems.</p>
+</div>
+</div>
+
+
+
+<p class="has-text-align-center wp-block-paragraph"><em>Thanks to <a href="https://gemini.google/overview/image-generation/" target="_blank" rel="noreferrer noopener">Gemini</a> for the memes, but like AI vibe-coding it pays to look at the finer details </em><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p class="has-light-gray-background-color has-background wp-block-paragraph">The vulnerabilities of these programming stacks were one of the plot elements in my free sci-fi trilogy eBook <a href="https://rodyne.com/?p=1252">The Summer Of Reasoning</a>. I still think I did a good job in that book of explaining the problem, why it matters, and the consequences of when it fails.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Small Blinkenlight Update</title>
+		<link>https://rodyne.com/?p=3533</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 19 Jan 2026 22:05:55 +0000</pubDate>
+				<category><![CDATA[blinkenlights]]></category>
+		<category><![CDATA[Other Programming]]></category>
+		<category><![CDATA[PicoMite]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Retro]]></category>
+		<category><![CDATA[RP2040]]></category>
+		<category><![CDATA[MMBasic]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=3533</guid>
+
+					<description><![CDATA[I loaded the MM Edit program onto my new Linux/Kubuntu desktop and wanted to test it out with a Raspberry Pi Pico development board to ensure everything was working. As my Pico board was all the way over in my &#8230; <a href="https://rodyne.com/?p=3533">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">I loaded the MM Edit program onto my new Linux/Kubuntu desktop and wanted to test it out with a Raspberry Pi Pico development board to ensure everything was working. As my Pico board was all the way over in my workshop, and it was raining and cold outside (yeah, middle of summer here &#8211; go figure!), I pulled the spare <a href="https://rodyne.com/?p=1751">RP2040 blinkenlight board</a> off my spares shelf and decided to have another go at the temporary C firmware on it, maybe fix it once and for all.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="784" height="168" src="https://rodyne.com/wp-content/uploads/IMG_0508-ezgif.com-optimize.gif" alt="" class="wp-image-3540"/></figure>
+
+
+
+<p class="wp-block-paragraph">The original blinkenlight board was a surprise favourite with the Hacker News and HackaDay community last year, and judging from the correspondence I had, a lot of people appreciated the RP2040 version over the original 8-Bit PIC one. Obviously, as I was testing MM Edit, not VS Code, I replaced the C program with a small MMBASIC program, just to see how easy it was to to do, if it all worked, and, if BASIC was fast enough to drive a bunch of multiplexed LED&#8217;s with row and column drivers. I am pleased to say it did, and the results surprised me, this must have also been the fastest development I have ever done, maybe 3 hours start to finish! It was as simple as clicking the boot-select switch on my board, plugging it in to a free USB port, and dropping the PicoMite RP2040 6.01 firmware on the new USB drive. Then writing the super-simple program below in MM Edit, pressing reset on the blinkenlight board clicking the MM Edit upload button and presto!</p>
+
+
+
+<p class="wp-block-paragraph">I wont even bother to explain the code you don&#8217;t get much easier than this. I guess I should start testing my C compilers now, wont be as much fun <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<pre class="wp-block-code"><code>' Firmware for the Blinkenlights board (https://rodyne.com/?p=1751)
+' Note we are ignoring the 4-switch inputs as not required in USB version
+' Use OPTION HEARTBEAT OFF to free up the heartbeat LED which I have used
+
+OPTION EXPLICIT     ' must declare variables and defaults
+OPTION DEFAULT NONE '
+ON ERROR IGNORE     ' lazy error handling for non-critical hardware
+
+' set RP2040 pin assignments
+SETPIN gp3, dout
+SETpin GP4, dout
+SETpin GP5, dout
+SETpin GP9, dout
+SETpin GP10, dout
+SETpin GP11, dout
+SETpin GP12, dout
+SETpin GP13, dout
+SETpin GP14, dout
+SETpin GP15, dout
+SETpin GP16, dout
+SETpin GP17, dout
+SETpin GP18, dout
+SETpin GP19, dout
+SETpin GP20, dout
+SETpin GP21, dout
+SETpin GP22, dout
+SETpin GP23, dout
+SETpin GP24, dout
+SETpin GP25, dout
+SETpin GP26, dout
+SETpin GP27, dout
+SETpin GP28, dout
+SETpin GP29, dout
+
+' global variables
+dim integer regs(8) ' 8 banks (rows) of 16 leds
+DIM integer row = 0 ' which row is selected for output
+dim integer OpModeTimeout = 0 ' it needs to accept input from my retro comp
+dim string  CBuff$="" 'input temporary sorage
+dim string  Char$
+DIM integer trnd, nVal, hVal
+
+' program main loop
+DO
+  if OpModeTimeout=0 then ' no input so do some random light show
+    trnd = rnd*400 ' adjust this to speed up or slow down light show
+    if trnd&lt;10 then regs(row)=regs(row)&lt;&lt;1  ' shift bank LEDs left
+    if trnd=13 then regs(row)=regs(row)>>1  ' and right
+    if trnd=14 then regs(row)=not regs(row) ' invert them
+    if trnd=15 then regs(row)=rnd*65000     ' pop a new random pattern in
+    if trnd>380 then regs(row)=regs(row)+1  ' increment them
+  else
+    OpModeTimeout=OpModeTimeout-1 ' if no input for 12s then timeout to rnd light show 
+  endif  
+
+  ' asset the scan row driver (1=ROW ON)
+  pin(gp22)=(row=7)
+  pin(gp23)=(row=6)
+  pin(gp24)=(row=5)
+  pin(gp25)=(row=4)
+  pin(gp26)=(row=3)
+  pin(gp27)=(row=2)
+  pin(gp28)=(row=1)
+  pin(gp29)=(row=0)
+  
+  ' decode and asset the correct column driver for the 16 LED's (0=COL ON)
+  if regs(row) and &amp;h0001 then PIN(GP3)=0 else pin(gp3)=1
+  if regs(row) and &amp;h0002 then PIN(GP4)=0 else pin(gp4)=1
+  if regs(row) and &amp;h0004 then PIN(GP5)=0 else pin(gp5)=1
+  if regs(row) and &amp;h0008 then PIN(GP9)=0 else pin(gp9)=1
+  if regs(row) and &amp;h0010 then PIN(GP10)=0 else pin(gp10)=1
+  if regs(row) and &amp;h0020 then PIN(GP11)=0 else pin(gp11)=1
+  if regs(row) and &amp;h0040 then PIN(GP12)=0 else pin(gp12)=1
+  if regs(row) and &amp;h0080 then PIN(GP13)=0 else pin(gp13)=1
+  if regs(row) and &amp;h0100 then PIN(GP14)=0 else pin(gp14)=1
+  if regs(row) and &amp;h0200 then PIN(GP15)=0 else pin(gp15)=1
+  if regs(row) and &amp;h0400 then PIN(GP16)=0 else pin(gp16)=1
+  if regs(row) and &amp;h0800 then PIN(GP17)=0 else pin(gp17)=1
+  if regs(row) and &amp;h1000 then PIN(GP18)=0 else pin(gp18)=1
+  if regs(row) and &amp;h2000 then PIN(GP19)=0 else pin(gp19)=1
+  if regs(row) and &amp;h4000 then PIN(GP20)=0 else pin(gp20)=1
+  if regs(row) and &amp;h8000 then PIN(GP21)=0 else pin(gp21)=1
+
+  pause 1 ' 1mS
+  
+  ' after pause turn all scan lines off so we dont get ghosting when we change states
+  pin(gp3)=1
+  pin(gp4)=1
+  pin(gp5)=1
+  pin(gp9)=1
+  pin(gp10)=1
+  pin(gp11)=1
+  pin(gp12)=1
+  pin(gp13)=1
+  pin(gp14)=1
+  pin(gp15)=1
+  pin(gp16)=1
+  pin(gp17)=1
+  pin(gp18)=1
+  pin(gp19)=1
+  pin(gp20)=1
+  pin(gp21)=1
+  
+  ' process banks/rows 0-7 in round-robin
+  row=row+1
+  if row>7 then row=0
+  
+  ' The USB port in this firmware acts like a virtual terminal so you can send
+  ' text strings into it as if you are coming from a serial port, just need to 
+  ' pretend a serial char is a keypress :-)
+  ' format if r=nnnn where r is the row (0-7), and nnnn is a 16-bit hex string
+  ' eg "4=2FE7&lt;CR>" will put the value 2FE7 into bank 4 of the leds
+  ' if no serial received for more than 12 seconds then revert back to rnd light show
+  Char$=inkey$
+  if Char$&lt;>"" then ' check if character received
+    if Char$=CHR$(10) OR Char$=CHR$(13) then ' if its CR then process buffer
+      ' Note I'm not doing any checks on input using lazy error handling
+      print "'"+CBuff$+"'" 'for debugging
+      nVal = Val(LEFT$(CBuff$,1)) ' get the register value 0-7
+      hVal = val("&amp;H" + mid$(CBuff$,3,4))' convert 4 char hex str to value
+      regs(nVal)=hVal ' set the register
+      OpModeTimeout=10000 ' reset the timeout to display it
+      CBuff$="" ' clear buffer string when processed 
+    else  
+      CBuff$=CBuff$+Char$ ' if not a CR then add char to buffer string
+    endif  
+  endif  
+
+loop
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Schematic and Gerbers for the Blinkenlights RP2040 = &gt; <a href="https://rodyne.com/wp-content/uploads/Schematic_Gerbers_SourceCode_and_UF2_Binary.zip">here</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

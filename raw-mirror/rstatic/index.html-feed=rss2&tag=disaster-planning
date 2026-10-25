@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Disaster Planning</title>
+	<atom:link href="https://rodyne.com/?feed=rss2&#038;tag=disaster-planning" rel="self" type="application/rss+xml" />
+	<link>https://rodyne.com</link>
+	<description></description>
+	<lastBuildDate>Fri, 06 Mar 2026 19:25:03 +0000</lastBuildDate>
+	<language>en-NZ</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.7</generator>
+
+<image>
+	<url>https://rodyne.com/wp-content/uploads/2015/11/web-header2.png</url>
+	<title>Disaster Planning</title>
+	<link>https://rodyne.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Preparing For the AI Future Should be Top of Your List!</title>
+		<link>https://rodyne.com/?p=3835</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 04 Mar 2026 07:05:43 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[AI Alignment]]></category>
+		<category><![CDATA[New Zealand]]></category>
+		<category><![CDATA[Philosophy]]></category>
+		<category><![CDATA[Politics]]></category>
+		<category><![CDATA[Singularity]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[The Future]]></category>
+		<category><![CDATA[The Ramblings of an Old Man]]></category>
+		<category><![CDATA[Disaster Planning]]></category>
+		<category><![CDATA[OpenClaw]]></category>
+		<category><![CDATA[Worst Case Scenarios]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=3835</guid>
+
+					<description><![CDATA[Humans are creatures of habit, and you may not like this, but almost everything meaningful you do in your day to day life can be reduced to a series of prompts. Ditto for your work, especially if you are sat &#8230; <a href="https://rodyne.com/?p=3835">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="225" height="225" src="https://rodyne.com/wp-content/uploads/grab-bag.jpeg" alt="" class="wp-image-3839" srcset="https://rodyne.com/wp-content/uploads/grab-bag.jpeg 225w, https://rodyne.com/wp-content/uploads/grab-bag-150x150.jpeg 150w" sizes="(max-width: 225px) 100vw, 225px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p class="wp-block-paragraph">Humans are creatures of habit, and you may not like this, but almost everything meaningful you do in your day to day life can be reduced to a series of prompts. Ditto for your work, especially if you are sat at a computer in your office reading this now. For me, 90% of my office life consisted of waiting for an emails, changing software or fixing data, then replying to the email. Rinse, repeat!</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">If you haven&#8217;t already installed <a href="https://openclaw.ai/" target="_blank" rel="noreferrer noopener">OpenClaw</a>, you are probably watching it closely. IT departments are probably having nightmares over this software, which basically puts a bunch of prompts into timing loops (ie your workload) and then runs the loop, and you pray the software does not do anything bad, like hallucinate, change its instructions, or run something bad. Smart people are trying it out sand-boxed in controlled environments with limited or no access to their production stuff, others have just opened the drawbridge, to various degrees of success or failure, and its only just over two months old!</p>
+
+
+
+<p class="wp-block-paragraph">However you feel about this you cannot turn a blind eye to its potential. A well built, well managed, controlled OpenClaw-like system has the potential to easily automate 50%, to 100% of an office workers job, and if your company wants a competitive edge in the future, they are going to hear about this soon enough, and somebody out there, likely a consultant firm, is going to offer to install it for them.</p>
+
+
+
+<p class="wp-block-paragraph">This is the tip of a massive iceberg, the trickle of water leaking out of the dam; Once properly orchestrated, and with the improvements in LLM&#8217;s happening monthly, we are already seeing several classes of jobs made redundant. Once this is in the door, no company is going to go back to hiring and training workers who are not going to bring immediate value to their company, because if they snooze, their competitors might not.</p>
+
+
+
+<p class="wp-block-paragraph">There is no end-game planned for this tsunami of mayhem, worst case, we have millions of unemployed white collar workers who are never going to get that old job back, many are going to have to switch career path, but even that is threatened! Robotics a on the same timeline as this, so those skilled and unskilled manual jobs may also be a thing of the past soon. Best case is this AI miracle somehow creates some sort of boom in technology and productivity and the tide lifts all boats in our new world of abundance, the tech-bro&#8217;s are hyping this future, but seriously there is no evidence or actions being taken to ensure it happens, so we really do need to consider those worst case scenarios. Remember all this is happening now, in a few years it will be difficult to ignore.</p>
+
+
+
+<p class="wp-block-paragraph">NZ is a bit luckier than most, it is not a high tech hub, but even so it has a lot of people who are right in the middle of the Venn diagram for being replaced by AI. My advice, install and play with these new technologies, and if necessary use them to move outside your comfort zone, so when the revolution comes, you can lead the challenge. But, just like that getaway bag you keep by the door for disasters, I also urge you to have some sort of backup plan in case it all turns to shit.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

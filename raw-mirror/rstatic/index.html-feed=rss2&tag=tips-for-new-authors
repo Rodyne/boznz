@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tips for New Authors</title>
+	<atom:link href="https://rodyne.com/?feed=rss2&#038;tag=tips-for-new-authors" rel="self" type="application/rss+xml" />
+	<link>https://rodyne.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 19 Apr 2026 21:11:10 +0000</lastBuildDate>
+	<language>en-NZ</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.7</generator>
+
+<image>
+	<url>https://rodyne.com/wp-content/uploads/2015/11/web-header2.png</url>
+	<title>Tips for New Authors</title>
+	<link>https://rodyne.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Some of the Lessons Learnt from Writing my First Book</title>
+		<link>https://rodyne.com/?p=2589</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 23 Oct 2023 19:25:15 +0000</pubDate>
+				<category><![CDATA[Bad Management]]></category>
+		<category><![CDATA[Books]]></category>
+		<category><![CDATA[boz]]></category>
+		<category><![CDATA[Boz NZ]]></category>
+		<category><![CDATA[New Zealand]]></category>
+		<category><![CDATA[NZ]]></category>
+		<category><![CDATA[Publishing]]></category>
+		<category><![CDATA[The Summer of Reasoning]]></category>
+		<category><![CDATA[LEssons for New Authors]]></category>
+		<category><![CDATA[New Authors]]></category>
+		<category><![CDATA[Tips for New Authors]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=2589</guid>
+
+					<description><![CDATA[I learnt a few things on the way to writing by first book, most have been re-hashed by every author out there, and even if you haven&#8217;t got past the first chapter in your book you probably know most already. &#8230; <a href="https://rodyne.com/?p=2589">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">I learnt a few things on the way to writing by first book, most have been re-hashed by every author out there, and even if you haven&#8217;t got past the first chapter in your book you probably know most already. I am still learning these lessons, and some are hard. Anyway let me share my five cents worth, because writing your blockbuster is just the start of the Journey. </p>
+
+
+
+<p class="wp-block-paragraph">I wrote most of The Summer of Reasoning on my Chromebook in Google docs. In full screen mode it is an amazing distraction free writing environment. Open the Chromebook, write something, close it, I unfortunately had to do it in three parts as Google docs (before 2023 at least) becomes painful to use over 100K words (The Chromebook has 4GB FFS Google!). Like it or hate it, most publishers (or epub conversion software) expect docx source files, so for the 370,000 word novel I combined the 3 parts in LibreOffice, which also has its faults, but it is fast and can work in docx and also export to Epub format though there are lots of superfluous &#8220;&lt;Span>&#8221; declarations and your cover needs to be a .jpg not .jpeg. (again probably fixed by the time you read this)</p>
+
+
+
+<p class="wp-block-paragraph">If you are doing this for pleasure and that feel good factor (like me) then sweet, you&#8217;ve cracked it, it&#8217;s all pretty easy.</p>
+
+
+
+<ol class="wp-block-list">
+<li>Knock up your masterpiece. No tips here, just keep writing it will happen eventually.</li>
+
+
+
+<li>Proof-read it and re-edit. For me this was emailing it to my kindle or Kobo in Epub format. </li>
+
+
+
+<li>Unless it is for a specific plot element, remove any rants, personal politics, biases etc and go back to step 2. (I may have failed a bit here)</li>
+
+
+
+<li>Go back to step 2. I did this four (or was it five) times, each update fixing dozens of problems, and of course probably adding some new ones, very like programming really! Hot tip here is if you change something, go back a few paragraphs before re-reading it. Feel free to email me any errors, I&#8217;m certainly not perfect.</li>
+
+
+
+<li>By now you will be sick of reading your masterpiece so get someone critical to read it and take their advice carefully, then go back to step 2 if necessary.</li>
+
+
+
+<li>(Optionally) Get an ISBN number. In NZ this is free from the <a href="https://natlib.govt.nz/publishers-and-authors/isn" target="_blank" rel="noopener" title="">National Library</a>, you just have to email them your finished eBook. Amazon Kindle doesn&#8217;t need one and Draft2Digital will give you one.</li>
+
+
+
+<li>Create an account on the Kindle Direct Publishing (<a href="https://kdp.amazon.com/en_US/bookshelf" target="_blank" rel="noopener" title="">KDP</a>) page, if you already have a kindle account this is quick, but you do need to upload some bank details for all those mega-dollars you are obviously going to rake in. (trying to keep a straight face writing this bit!) Then upload and publish your book. Ta-Da! 70% of the eBook market can now buy your book.</li>
+
+
+
+<li>If you want to also include the other 30% (Apple, Kobo, Smashwords, Barnes and Noble, etc.) then the easiest way I found was to create an account on <a title="" href="https://www.draft2digital.com/" target="_blank" rel="noopener">Draft2Digital</a>. They are an aggregator and will publish it everywhere including Amazon. Their service costs nothing but they take 10% of your royalties. (10% of nothing is still nothing!). The only gotcha I could see with these guys was that you cannot enroll in the Amazon Kindle unlimited or Prime, but if you do this then you cannot release your book on the other platforms anyway. The DOCX to ePub converter in Draft2Digital is also pretty good and its output file can be downloaded and used as the source for your Kindle KDP book. (2026 Update: D2D Changed their policy to charge $12/year this may be higher or lower as you read this. Your call, I dumped them as my books were on sale for $0)</li>
+
+
+
+<li>Again, really, really work on your cover, blurb and keep the category generic and cover/blurb as close to the subject of the book as possible. I cannot emphasise this enough as I seriously screwed up here, and your first entry in the market really needs to shine.</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">Note that eBooks are only around 10% of the book market so making the next step to printed book is a good idea and again there is no cost, they just print on demand and take the printing cost out of the sale price, I made a few editing passes after feedback from readers before I went this option as it is harder to change a printed copy. Note printed books make good Christmas presents and look awesome on you bookshelf!</p>
+
+
+
+<p class="wp-block-paragraph">On whatever publishing platform you use, you are going to have to think up your short blurb, keywords and categories you want the book to appear in. Best to do this early as doing it at the last possible moment will ultimately lead you to pick some last-minute rubbish with silly search terms and half cut off description (like I did). Luckily as an eBook I was able to edit it later when my brain started working again.</p>
+
+
+
+<p class="wp-block-paragraph">Optional also, (but cool!) add publisher to the list of services your business offers. It&#8217;s only a few changes to your web site and voila you are a publisher; makes you look bigger and more professional!</p>
+
+
+
+<h2 class="wp-block-heading">Don&#8217;t Give Up Your Day Job!</h2>
+
+
+
+<p class="wp-block-paragraph">Then comes reality. Nobody is going to ever read your book as they are never going to find your book on amazon.com or any of the other platforms out there. I think the statistic I saw was that almost seven thousand new books are published every day, and your masterpiece will probably languish on page four hundred of your target eBook buyers search list forever unless you are an established author or pay money to promote it. There is a great meme I recently saw which sums this all up perfectly.</p>
+
+
+
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="500" height="659" src="https://rodyne.com/wp-content/uploads/internet-meme.jpg" alt="" class="wp-image-3222" srcset="https://rodyne.com/wp-content/uploads/internet-meme.jpg 500w, https://rodyne.com/wp-content/uploads/internet-meme-228x300.jpg 228w" sizes="(max-width: 500px) 100vw, 500px" /></figure>
+
+
+
+<p class="wp-block-paragraph">I wonder how many authors start writing before finding this out and I now wonder how many awesome novels I have missed because of stupid algorithms forever excluding them. (Please Amazon, B&amp;N, Smashwords etc. Add a search filter for books that have not been rated yet!). I did not promote my book, nor mention it much except in passing comments to friends and family. Don&#8217;t get me wrong, I really want people to read it, I just don&#8217;t want them all to be friends and family.</p>
+
+
+
+<p class="wp-block-paragraph"><em>The algorithm (that shit piece of software that tries to read your mind and recommend your next movie, song or book read) thrives on reviews and star ratings so if you have a following or lots of friends and family I would suggest sucking up your pride and asking them to leave reviews. I did not and still have no reviews so as the years go by it will get to a point where it wont just not be recommended, but it will be difficult to even find.</em> As an author you will come to hate it and everything to do with marketing/promotion. I threw the towel in early and made my books free.</p>
+
+
+
+<p class="wp-block-paragraph">So today, even when I search for my title or author directly (it doesn&#8217;t help being called Boz!) my book was still on page two or three of the search results.</p>
+
+
+
+<p class="wp-block-paragraph">Then how do you price it? Free and well people may think its trash (it may be!) but too expensive and nobody is going to ever buy it (assuming they can find it of course!) anyway it is priced at <s>$3.99</s> $0.99 (Note hot tip, if a book is $0.99 on Kindle it might be free on the other sites as Kindle charges $0.99 minimum).</p>
+
+
+
+<p class="wp-block-paragraph">Another option as I finally did in 2025 was to create a <a href="https://ko-fi.com">Ko-Fi </a>account and have it downloadable from there at a price the reader wants to pay, this means they can read the book for free and (if they like it) can then make a donation by clicking a &#8220;Buy me a coffee&#8221; button. See example <a href="https://ko-fi.com/s/daaf299cb8">Here</a>.</p>
+
+
+
+<p class="wp-block-paragraph">A few more observations/tips:</p>
+
+
+
+<ol class="wp-block-list">
+<li><a href="https://rodyne.com/?p=2402">Don&#8217;t write long books until you&#8217;re famous</a>! (Lots of reasons)</li>
+
+
+
+<li>Get your categories correct. Genre readers are really finicky and will punish you on the reviews, people who read romance, generally hate sci-fi or horror and vice-versa, so err on the side of caution if you&#8217;re doing this for $$$.</li>
+
+
+
+<li>Put some action at the beginning. All the book sellers have the equivalent of the Kindle &#8220;send a sample&#8221; which lots of people use to judge if it&#8217;s a good book. Unfortunately, mine doesn&#8217;t really get going until about fifteen percent in, it&#8217;s more setting up and character building up until then.</li>
+
+
+
+<li>Don&#8217;t, don&#8217;t, don&#8217;t ever use the real name of someone you know, and even if the name is different and the character is 90% based on someone, they will think it is them. Feel free to use  mannerisms of actors or other fictional character, but no, nobody I know is a character in my book nor will they ever be.</li>
+
+
+
+<li>Shout out to AI for letting me design my book cover for free, even if it is only to give your favourite artist/illustrator an idea of what you want. I would love to have paid somebody to do this, and if I ever get famous and need a new cover I certainly will.</li>
+
+
+
+<li>Plots age! I really wish I had set my first book in a completely separate universe. The plot feels perfect as of 2024/2025, but I dread to think how dated and laughable it will look in a few years.</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">So, has it put me off writing another book? definitely not, but it will stay a part time endeavor and it looks like I won&#8217;t be giving up my day job and will still be programming for a few more years. </p>
+
+
+
+<p class="wp-block-paragraph">I am also happy to discus my mistakes with any fellow writer who will listen over a beer or a coffee, I know you&#8217;re out there.. <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">External links</span></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=38147276">Don&#8217;t give up your day job to become an author | Hacker News (ycombinator.com)</a></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=38253263">NaNoWriMo: National Novel Writing Month | Hacker News (ycombinator.com)</a></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://penpinery.com/home/">Pen Pinery &#8211; Home</a> &#8211; More good information for aspiring Authors</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

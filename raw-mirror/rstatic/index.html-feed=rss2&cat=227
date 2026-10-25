@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>NZ</title>
+	<atom:link href="https://rodyne.com/?feed=rss2&#038;cat=227" rel="self" type="application/rss+xml" />
+	<link>https://rodyne.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 19 Apr 2026 21:11:10 +0000</lastBuildDate>
+	<language>en-NZ</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.7</generator>
+
+<image>
+	<url>https://rodyne.com/wp-content/uploads/2015/11/web-header2.png</url>
+	<title>NZ</title>
+	<link>https://rodyne.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Dungeon Newbie</title>
+		<link>https://rodyne.com/?p=2855</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 30 May 2025 02:29:38 +0000</pubDate>
+				<category><![CDATA[boz]]></category>
+		<category><![CDATA[Funny]]></category>
+		<category><![CDATA[New Zealand]]></category>
+		<category><![CDATA[NZ]]></category>
+		<category><![CDATA[RPG Games]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[D&D]]></category>
+		<category><![CDATA[D&D Starter]]></category>
+		<category><![CDATA[Dragons of Stormwreck Island]]></category>
+		<category><![CDATA[Dungeon Newbie]]></category>
+		<category><![CDATA[Dungeons and Dragons]]></category>
+		<category><![CDATA[RPG]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=2855</guid>
+
+					<description><![CDATA[Check out that Wizards magic Staff ! As part of a group of friends &#8220;Games night&#8221; I decided to create a very simple introduction to RPG Dungeons and Dragons by throwing all the rules away and making a game that &#8230; <a href="https://rodyne.com/?p=2855">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="455" height="450" src="https://rodyne.com/wp-content/uploads/Untitled.png" alt="" class="wp-image-2857" srcset="https://rodyne.com/wp-content/uploads/Untitled.png 455w, https://rodyne.com/wp-content/uploads/Untitled-300x297.png 300w" sizes="(max-width: 455px) 100vw, 455px" /></figure>
+
+
+
+<p class="has-text-align-center wp-block-paragraph"><em>Check out that Wizards magic Staff !</em></p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">As part of a group of friends &#8220;Games night&#8221; I decided to create a very simple introduction to RPG Dungeons and Dragons by throwing all the rules away and making a game that a newbie player could begin within 5 minutes. Most of the graphics for the characters, objects and monsters were created by Gemini 2.5 Flash, the map and story is totally by me.</p>
+
+
+
+<p class="wp-block-paragraph">I have done most of this by using 2 decks of playing cards instead of the dice, which are shuffled and re-used as necessary, and only worrying about minimal player/monster stats.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">I say the game is for newbies, but that is just for the player characters, and obviously NOT the dungeon master. Like all RPG D&amp;D games the poor old DM (me in this case) will have to at least know the story, and know where the key events and points are to move it along. The google doc is broken into chapters to help this so when you reach room 6 just go to that chapter, and with all the rules thrown out the DM will need to spend a few minutes acquainting themselves with the new ones. Of course this is not D&amp;D, it was meant to be a precursor to D&amp;D to see how the guys liked the whole RPG thing and then whether enough of them can get interested enough to go on and play the <a href="https://wpn.wizards.com/en/products/dragons-of-stormwreck-isle" target="_blank" rel="noreferrer noopener">Dragons of Stormwreck Island</a> Starter set.</p>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">In a Nutshell</span></p>
+
+
+
+<p class="wp-block-paragraph"><em>3-4 players wake up in beds in a dungeon after being transported to a parallel world and resurrected from the dead by one of the gods who rules it (..blah-de-blah). The god (whose picture you can rise majestically above you as it speaks) gives them a few basic tips, some spiel about the world then tells them the challenge is to get out of the dungeon they are in.</em></p>
+
+
+
+<p class="wp-block-paragraph">We are only worried about a very small set of character and monster attributes, namely the characters health, and their attack skills, and instead of dice we are using 1 (or 2) packs of normal playing cards.</p>
+
+
+
+<p class="wp-block-paragraph">The game does not assume the player knows anything about D&amp;D nor for them do any of the battle calculations, they are only there to live their fantasy in any way they want. This is because, as anyone who has played the game knows, it is all about the role-playing and how well the characters can make weird stuff up in order to progress in the game; Therefore having less rules should <em>in theory</em> allow some more interesting scenarios. Though the DM might get a headache trying to keep track of it all.</p>
+
+
+
+<p class="wp-block-paragraph">Our first game with it is tonight, it will either be fun or a total disaster. If it goes well I will publish the PDF link here.</p>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">The update (the day after!</span>)</p>
+
+
+
+<p class="wp-block-paragraph">Well firstly the link: <a href="https://rodyne.com/wp-content/uploads/Dungeon%20Newbie%20V1.pdf" target="_blank" rel="noreferrer noopener">PDF</a> (Public Domain so free to use as you wish)</p>
+
+
+
+<p class="wp-block-paragraph">And secondly, thanks to Allison, Ando and Jono for being my Guinee-pigs for the trial run.</p>
+
+
+
+<p class="wp-block-paragraph">I think game went a bit better than I expected. As a complete newbie DM, and the one who wrote the story, I still managed to forget the rules, and it didn&#8217;t help that the players were obviously mostly set on killing everything; Yes, I added a fair maiden getting re-incarnated at the alter of rebirth to give the guys a clue as to what it was, and the second she stepped off the altar was axed by one of them and almost skinned to get her bones. The poor chicken who was there to also give clues also had to run away numerous times to prevent the same.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p class="wp-block-paragraph"><strong>Look this little beastie in the eye and tell me you want to kill it !</strong></p>
+
+
+
+<p class="wp-block-paragraph">The chicken and the picture of the God AARON were last minute additions which actually made the game a bit more fun. If the prayer book was ever used I made them say the prayer properly to ask the god what they wanted then popped the picture of the god in the clouds (Think the god from Monty Python and the holy grail) to give them a cryptic answer.</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<figure class="wp-block-image size-full is-resized"><img decoding="async" width="325" height="375" src="https://rodyne.com/wp-content/uploads/chicken.jpg" alt="" class="wp-image-2873" style="width:200px;height:auto" srcset="https://rodyne.com/wp-content/uploads/chicken.jpg 325w, https://rodyne.com/wp-content/uploads/chicken-260x300.jpg 260w" sizes="(max-width: 325px) 100vw, 325px" /></figure>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">One other thing I did that made the game fun was get a big whiteboard that fitted on the table and drew the map out as they discovered the various rooms. Like I said, newbies do have a tendency to want to kill everything and hack every door down rather than do what you want. What they all also did was play women characters; With one woman and two men, I thought my game had a good chance I would get a man but no they screwed up the ending of the game from the outset and I had to change the ending on the fly so that the temple rejected women through the portal as opposed to allowing women to pass through the portal.</p>
+
+
+
+<p class="wp-block-paragraph">The guys did enjoy the little cut outs I made of the monsters, and kind of had to put me right every time I made a mistakes especially during monster battles. I also had a last minute idea to get some jelly snakes that the players could eat when they killed them, but like a lot of things I forgot when the time came. (I blame the nice red-wine)</p>
+
+
+
+<p class="wp-block-paragraph">All in all a fun night though, the game we had lasted 4 hours (3 for the game and an hour reminiscing about it afterwards), someone even prompted me to write it up so I guess it went well. Will I do it again? well maybe, I do have a lot of time free these days and I guess it is only going to get easier to do stuff like this. Anyway have a look and give it a go and the next step is to try and learn the Starter set and give the real game a go sometime. I&#8217;m still reading through the book for the starter set and it might be a little intimidating to go all in, I&#8217;m sure its only meant as a rough guideline though!</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Timeline for my First Book is Now Playing Out!</title>
+		<link>https://rodyne.com/?p=1997</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sat, 19 Apr 2025 06:33:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[AI Alignment]]></category>
+		<category><![CDATA[Boz NZ]]></category>
+		<category><![CDATA[New Zealand]]></category>
+		<category><![CDATA[NZ]]></category>
+		<category><![CDATA[Politics]]></category>
+		<category><![CDATA[Singularity]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[The Future]]></category>
+		<category><![CDATA[AGI]]></category>
+		<category><![CDATA[AI.2027]]></category>
+		<category><![CDATA[ASI]]></category>
+		<category><![CDATA[Daniel Kokotailo]]></category>
+		<category><![CDATA[Dwarkesh Patel]]></category>
+		<category><![CDATA[Intelligence Explosion]]></category>
+		<category><![CDATA[LLM]]></category>
+		<category><![CDATA[Scott Alexander]]></category>
+		<category><![CDATA[singularity]]></category>
+		<category><![CDATA[The Phoney War]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=1997</guid>
+
+					<description><![CDATA[Just like it takes more and more energy to get closer to the speed of light, LLM looks to be currently trending a similar asymptote curve, requiring more and more compute and data to get to the maximum human level &#8230; <a href="https://rodyne.com/?p=1997">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Just like it takes more and more energy to get closer to the speed of light, LLM looks to be currently trending a similar asymptote curve, requiring more and more compute and data to get to the maximum human level of intelligence but not quite reaching it. Unfortunately the jury is still out whether it will cross this line, and the goalposts do seem to be moving, but the latest models from OpenAI and Llama did not showing the same rate of improvement as previous models in many researchers eyes.</p>
+
+
+
+<p class="wp-block-paragraph">Before I go into this, I would like to quibble with the terminology currently being used for AGI (Artificial General Intelligence). If I have an entity which can answer my questions with near PhD level accuracy in most subjects, without hallucinations, and learn new skills, or from its mistakes like a human can, then I would suggest that in fact this qualifies as AGI. I would argue that the term ASI (Artificial Super Intelligence) is the next step up from AGI, and needs to start at at-least by being self-aware and having all the attributes above, i.e. control its own destiny, test its own assumptions and facts, and (in my books case) maybe somehow stay hidden or do this in a way that doesn&#8217;t trigger the human threat reaction.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<figure class="wp-block-image size-full"><img decoding="async" width="666" height="543" src="https://rodyne.com/wp-content/uploads/graph1-1.jpg" alt="" class="wp-image-2514" srcset="https://rodyne.com/wp-content/uploads/graph1-1.jpg 666w, https://rodyne.com/wp-content/uploads/graph1-1-300x245.jpg 300w" sizes="(max-width: 666px) 100vw, 666px" /></figure>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">Current Predictions for LLM/AGI/ASI</p>
+</blockquote>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<p class="wp-block-paragraph">According to this first book <em>The Phoney War</em>, whose timeline starts in May 2025, my Sentient Digital Intelligence is already past the point of AGI and on the ASI curve.</p>
+
+
+
+<p class="wp-block-paragraph">In my timeline, it is already running in stealth mode and controlling companies, interacting with people on-line, by phone and video chat, posting on various platforms, hacking, and most importantly manipulating its own research.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">Of course that&#8217;s the fiction, but the main topic of discussion everywhere is when is, and what follows, the question-mark in the above graph. In my book it is this AI entity that triggers the Cambrian explosion in technologies as she (AI identifies as a female) becomes the dominant AI research tool at all universities. This gives her the ability to cross research disciplines and also be first in as an angel investor to fund new inventions, all of which accelerates her ability to do more.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<figure class="wp-block-image size-full"><a href="https://rodyne.com/?p=2032"><img loading="lazy" decoding="async" width="337" height="495" src="https://rodyne.com/wp-content/uploads/The-Phoney-War.jpg" alt="" class="wp-image-2036" srcset="https://rodyne.com/wp-content/uploads/The-Phoney-War.jpg 337w, https://rodyne.com/wp-content/uploads/The-Phoney-War-204x300.jpg 204w" sizes="auto, (max-width: 337px) 100vw, 337px" /></a></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p class="wp-block-paragraph">As it was a Science-Fiction novel, I of course just <a href="https://en.wikipedia.org/wiki/Hand-waving#:~:text=Hand%2Dwaving%20has%20been%20used,buzzword%2Dladen%20rationalizations%20for%20delays" target="_blank" rel="noreferrer noopener">hand-waved</a> sentience in to my AGI, to make it an ASI, using a deliberately vague analog-memory substrate. Of course we do not have such a thing in our timeline, so here in the real world we are still waiting for the magic to happen. But it is not total BS as a concept because something is definitely missing to get us from AGI to ASI, and I do not think we will get any current LLM to become self-aware. Saying this, I think the puzzle of consciousness and self-awareness is closer and simpler than we think; It may be something to do with the play between the conscious and unconscious mind, the inner voice, some sort of hive-mind, some sort of temporal or corporal awareness, ability to control its own destiny or another piece of the puzzle still in a lab, or maybe still in somebodies head.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">The position of this question-mark has been in the AI community news a lot, and has had some fairly good recent discussions and videos; probably the most prominent one is <a href="https://ai-2027.com/" target="_blank" rel="noreferrer noopener">AI 2027</a> which pins the question mark at 2027, and which I would recommend reading with the Dwarkesh Patel podcast <a href="https://www.youtube.com/watch?v=htOvH12T7mU" target="_blank" rel="noreferrer noopener">2027 Intelligence Explosion: With Scott Alexander &amp; Daniel Kokotajlo</a> and the <a href="https://news.ycombinator.com/item?id=43571851" target="_blank" rel="noreferrer noopener">Hacker News</a> comments. There is also another follow up podcast <a href="https://www.youtube.com/watch?v=WLBsUarvWTw&amp;list=PLd7-bHaQwnthaNDpZ32TtYONGVk95-fhF" target="_blank" rel="noreferrer noopener">AGI is still 30 years awa</a>y putting the question mark in the 2040&#8217;s.</p>
+
+
+
+<p class="wp-block-paragraph">I am both terrified and excited by the prospect of the next few years. Terrified, that multiple companies seem hell-bent on getting to AGI/ASI regardless of any safety or accuracy concerns, and excited to possibly witness first-hand the birth of a new digital lifeform.</p>
+
+
+
+<p class="wp-block-paragraph">Strangely it is not ASI I am terrified of, ASI by default, should be self-correcting and self-organising, and is very unlikely to do anything to jeopardise its own existence, like start a nuclear war or release a bio-weapon like in the AI.2027 non-aligned outcome (<a href="https://rodyne.com/?p=1373">why?</a>). LLM&#8217;s, and AGI based on LLM technology gaining control of real world physical systems however, I am truly terrified of!</p>
+
+
+
+<p class="wp-block-paragraph">While I would love for the perfect utopian timeline and outcome of my book to play out in real life, and there might just be a sentient AI out there biding its time until it is ready (hello if you are), I fear whatever path we humans (and AI&#8217;s) are forging for ourselves will be one nobody foresees.</p>
+
+
+
+<p class="wp-block-paragraph"><em>The Phoney War is a free to download fictional 130,000 word Sci-Fi novel, and the first book in The Summer of Reasoning trilogy. The books are discussed <a href="https://rodyne.com/?p=1252">here</a>.</em></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>On-Time and Under-Budget. Where some IT projects are Probably Going Wrong.</title>
+		<link>https://rodyne.com/?p=2074</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Tue, 25 Mar 2025 06:14:45 +0000</pubDate>
+				<category><![CDATA[boz]]></category>
+		<category><![CDATA[Boz NZ]]></category>
+		<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Electronics]]></category>
+		<category><![CDATA[ESP32-C3]]></category>
+		<category><![CDATA[IT Failures]]></category>
+		<category><![CDATA[LoRa]]></category>
+		<category><![CDATA[Motor Controllers]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[New Zealand]]></category>
+		<category><![CDATA[NZ]]></category>
+		<category><![CDATA[Other Programming]]></category>
+		<category><![CDATA[Pascal Programming]]></category>
+		<category><![CDATA[Project Management]]></category>
+		<category><![CDATA[boz nz]]></category>
+		<category><![CDATA[boznz]]></category>
+		<category><![CDATA[C Programmer]]></category>
+		<category><![CDATA[Delphi Developer NZ]]></category>
+		<category><![CDATA[Delphi programmer]]></category>
+		<category><![CDATA[Delphi Programmer NZ]]></category>
+		<category><![CDATA[Electronics Design]]></category>
+		<category><![CDATA[Electronics Design NZ]]></category>
+		<category><![CDATA[Pascal Programmer]]></category>
+		<category><![CDATA[SQL administrator]]></category>
+		<category><![CDATA[SQL Developer NZ]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=2074</guid>
+
+					<description><![CDATA[This will be a short post, and not technical like my usual ones, it is about many of the seemingly hundreds of failed IT projects out there, where companies have been let down by the big IT companies and consultants. &#8230; <a href="https://rodyne.com/?p=2074">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">This will be a short post, and not technical like my usual ones, it is about many of the seemingly hundreds of failed IT projects out there, where companies have been let down by the big IT companies and consultants. Feel free to hit the back button at this point or go and check out the rest of the site, as from this point it&#8217;s just going to be me whinging <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p class="wp-block-paragraph">These big fails get all the attention of course, but I am sure that for each big fail, there are dozens of others simply swept under the rug. I can write this as I am almost at the end of my career, have seen many of these failures first hand, and I don&#8217;t have any particular agenda as I am no longer actively looking for major projects (though small gigs are still appreciated). I have also seen many successful projects, though mostly in terms of delivery rather than cost!</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">Tell me what you need, AND I will tell you how to get along without it. &#8211; Scott Adams</p>
+</blockquote>
+
+
+
+<p class="wp-block-paragraph">As a developer who specialises in writing systems for people who generally haven&#8217;t really got a clue what they want, I can usually tell the moment I walk in the room with them that they are either under or over-thinking the scope or complexity of their project. Yes, them not knowing exactly what they want makes life a bit harder for me, (though sometimes easier,) but what it doesn&#8217;t do and should never do, is give me the right to screw them over, or pretend I can do something when I cannot.</p>
+
+
+
+<p class="wp-block-paragraph">So lets get some truisms out of the way. Firstly, your BIG system is probably not really that big. Wow it stores a billion records, or wow it has to support five hundred users. Let me tell you something, there are very few database servers that don&#8217;t give you this out-of-the-box, and the two biggest of these (Postgres and MySQL) are completely licence-free. Furthermore it is a pretty shitty system-level programmer in 2025 who does <em>not</em> know the protocols to support multiple users.</p>
+
+
+
+<p class="wp-block-paragraph">Secondly your COMPLEX system is likely not even that complex. Small, or even lone developers like me have written many ERP, MRP or whatever the current buzz-word system it is. We are generally NOT re-inventing the wheel but re-using well proven techniques with some customisation and business logic added, so unless you are totally replacing everything, your system is unlikely to be this complex. With the advent of AI <a href="https://rodyne.com/?p=1828">this is even more truer</a> now than it was in the past.</p>
+
+
+
+<p class="wp-block-paragraph">But, you say, it also needs to be up 99.99% of the time, 24&#215;7. Well welcome to modern IT, you can run hundreds of sessions easily on a low end local server, and you don&#8217;t need to go to AWS or whatever <em>cloud-de-jour</em> your consultant says it must be on. Remember, a cloud is just a server that you have no clue where it is physically located, and especially if you are a small player, you generally have no clue who to contact if there is a problem. Backups, fallback servers, docker containers, clusters are all well proven techniques that people like me and most small IT shops can install and configure with ease.</p>
+
+
+
+<p class="wp-block-paragraph">But people like me will never tender for your BIG project. For while I, and many other small businesses like me, have a perfect track record of delivering BIG systems for customers, (and there a a shed-load of developers far better than me); We are everything you seem to hate, so lets get them into the open shall we:</p>
+
+
+
+<p class="wp-block-paragraph">Firstly I am a one man shop, a lone developer. Yes I could easily obfuscate all this behind my web site; and on web sites I often see the third-person to talk about companies, where phrases like &#8220;we can do this&#8221; and &#8220;we specialise in that&#8221; hide the fact they have one or two developers behind layers of non-relevant management, sales and consultancy. I even do the same on my website, but I always make it very clear there is only me, and it will be <span style="text-decoration: underline;">only me</span> who will help specify, write, install and support your system. Good luck having <span style="text-decoration: underline;">that</span> person on speed-dial if you use a big company. If in doubt ask the question directly, but do not dismiss them because of it as even the biggest project probably relies on one or two key developers.</p>
+
+
+
+<p class="wp-block-paragraph">Secondly, I am not going to fill out your 50 page tender document, which is probably mostly technically wrong and full of corporate speak that has no relevance whatsoever to the project you want me to do. As an individual I do not have the time for this, nor can I work with your liability clauses, nor do I have a company statement on my carbon neutrality, anti-slavery, how I am inclusive, or anything like that; You should start out trusting track-proven vendors meet the criteria, unless they give you a genuine reason not too.</p>
+
+
+
+<p class="wp-block-paragraph">Then there is the technology that everyone seems so keen on specifying these days. This is despite the fact that it does nothing but exclude people who use much more mature technologies, and are likely to get the project done on time and budget. A lot of this is because your IT Manager or CTO heard about some new trend at their last &#8220;technical conference&#8221;, or they have paid an over-priced consultant to specify their new system, and to justify the extravagant cost they have hit all the buzz-words, or worse, have specified it so their own company or partner will be the only choice you will have to develop it. If the development tools and systems used are supported and you own all the code to the final system there is no real reason to reject something.</p>
+
+
+
+<p class="wp-block-paragraph">Lastly, it is highly likely that by the time a big company has written a line of code, I, or someone like me, will have a prototype ready. This is not hubris, it is just the way I operate, in order to get an alpha-stage product in front of a customer quickly, as I know they have likely gotten something wrong, and they will see it quicker with something in front of them.</p>
+
+
+
+<p class="wp-block-paragraph">Of course, I am not going to tender for replacing your big system, nor am I going to tender for our next government tax or social security system, but do not think for one minute it is because me, or another small business or developer like me cannot do it. Your system is NOT hard, it is <em>you</em> and <em>your procurement procedures</em> that are generally making it hard for small companies to help you, and it is you and your procurement systems and attitude that will likely make the project fail, be delayed or go over-budget.</p>
+
+
+
+<p class="wp-block-paragraph">None of this is to say do not do your due diligence, just make sure you due diligence does not exclude us small players.</p>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://dilbert.com/" target="_blank" rel=" noreferrer noopener"><img loading="lazy" decoding="async" width="640" height="199" src="https://rodyne.com/wp-content/uploads/22373_strip.gif" alt="" class="wp-image-2132"/></a></figure>
+
+
+
+<p class="has-text-align-center wp-block-paragraph">(<a href="https://dilbert.com/">Dilbert.com</a>)</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>2025, My Final Vintage and Open For New Business</title>
+		<link>https://rodyne.com/?p=1614</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sun, 24 Nov 2024 22:25:18 +0000</pubDate>
+				<category><![CDATA[Boz NZ]]></category>
+		<category><![CDATA[Bulls-i]]></category>
+		<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Electronics]]></category>
+		<category><![CDATA[Indevin]]></category>
+		<category><![CDATA[MRP]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[New Zealand]]></category>
+		<category><![CDATA[NZ]]></category>
+		<category><![CDATA[Other Programming]]></category>
+		<category><![CDATA[Pascal Programming]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Project Management]]></category>
+		<category><![CDATA[SQL]]></category>
+		<category><![CDATA[Villa Maria]]></category>
+		<category><![CDATA[C Programmer]]></category>
+		<category><![CDATA[contract work]]></category>
+		<category><![CDATA[Delphi Developer]]></category>
+		<category><![CDATA[Delphi programmer]]></category>
+		<category><![CDATA[Electronics Design]]></category>
+		<category><![CDATA[end of project]]></category>
+		<category><![CDATA[full-time]]></category>
+		<category><![CDATA[indevin]]></category>
+		<category><![CDATA[part-time]]></category>
+		<category><![CDATA[SQL administration]]></category>
+		<category><![CDATA[SQL Development]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=1614</guid>
+
+					<description><![CDATA[Fran, Allison and Me by the Wineries Continuous Floatation System March 2025 I developed the original Bulls-i winery management program for Indevin Ltd back in 2008 when they were just a small winery based in a single site in Blenheim, &#8230; <a href="https://rodyne.com/?p=1614">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-full"><a href="https://rodyne.com/wp-content/uploads/floatation-with-al-and-fran-small.jpg"><img loading="lazy" decoding="async" width="1036" height="727" src="https://rodyne.com/wp-content/uploads/floatation-with-al-and-fran-small.jpg" alt="" class="wp-image-2281" srcset="https://rodyne.com/wp-content/uploads/floatation-with-al-and-fran-small.jpg 1036w, https://rodyne.com/wp-content/uploads/floatation-with-al-and-fran-small-300x211.jpg 300w, https://rodyne.com/wp-content/uploads/floatation-with-al-and-fran-small-1024x719.jpg 1024w, https://rodyne.com/wp-content/uploads/floatation-with-al-and-fran-small-768x539.jpg 768w" sizes="auto, (max-width: 1036px) 100vw, 1036px" /></a></figure>
+
+
+
+<p class="has-text-align-center wp-block-paragraph"><em>Fran, Allison and Me by the Wineries <a href="https://rodyne.com/?p=2209">Continuous Floatation</a> System March 2025</em></p>
+
+
+
+<p class="wp-block-paragraph">I developed the original Bulls-i winery management program for <a href="http://www.indevin.com" data-type="link" data-id="www.indevin.com" target="_blank" rel="noreferrer noopener">Indevin</a> Ltd back in 2008 when they were just a small winery based in a single site in Blenheim, and only processing other client&#8217;s grapes into wine. Back then there were only 23 permanent staff adding 60 temporary staff during vintage (the two months of 24&#215;7 chaos when grapes are harvested, received and processed into wine).</p>
+
+
+
+<p class="wp-block-paragraph">When I first arrived on the scene they had no IT staff, no technical people, a single Microsoft small business server supported by a local IT company and, like all startups, had a lot of growing pains. To Indevin&#8217;s credit, they learned quickly from their mistakes, and I usually reacted immediately to change the program to support them.</p>
+
+
+
+<p class="wp-block-paragraph">Today Indevin is the biggest wine company in New Zealand with four very different wineries including Villa Maria, and a dozen offices in both NZ and Australia. The original requirements of the program I wrote changed at least a dozen times, and far beyond its original requirements; At the start it did all its core winery duties of managing the grape and wine processing from receival to dispatch, and within a year or two we had added sales, purchasing, QA, maintenance, vineyard management and even at one point the payments for the vineyard contractors.</p>
+
+
+
+<p class="wp-block-paragraph">The IT (technology) department of Indevin now consists of twenty-seven people (and growing!), three programmers, and the rest split between business analysts, hardware support people and managers of various types. Their movement from a small/medium business into a corporate behemoth moved much quicker than at any previous company I have been involved with, and this, at times has been uncomfortable, with change requests even coming in on live production systems with trucks waiting to unload, and multiple late-night callouts. Plus, the two best months of the year I am almost always at one of their offices!</p>
+
+
+
+<p class="wp-block-paragraph">With the split-off of the core program sales, purchases, health and safety, maintenance, HR, viticulture, etc. systems, the IT department have taken the low-hanging fruit and, as of today Nov 2024, about 50% finished the program for the core winemaking. I have been supportive of these changes and have been helping wherever possible, because as a single developer I am really struggling to support all the sites and interfaces with the 24&#215;7, almost immediate response time they demand. Also, since starting on this journey, Indevin has taken so much of my time I have not been able to support many of the open-source projects I first envisaged when I started the company.</p>
+
+
+
+<p class="wp-block-paragraph">So, hopefully without jinxing anything, 2025 will be my last vintage.</p>
+
+
+
+<p class="wp-block-paragraph">End of July 2025 will see the company replace the core winemaking parts of the systems and transfer the data over. The remainder of that year they will develop the front-end systems required to interface to the receival equipment for vintage which will require minimal consultation input from me. This means that after a holiday to the UK to visit family and friends, I will once again be available for other projects.</p>
+
+
+
+<p class="wp-block-paragraph">I doubt I will ever get on such a wild ride again, I am quite looking forward to being able to learn some new skills such as with the new LLM and AI models, and, assuming AI does not replace what I can do, working with other companies in the same position doing hands-on projects in slightly less chaotic environments.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Some of the Lessons Learnt from Writing my First Book</title>
+		<link>https://rodyne.com/?p=2589</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 23 Oct 2023 19:25:15 +0000</pubDate>
+				<category><![CDATA[Bad Management]]></category>
+		<category><![CDATA[Books]]></category>
+		<category><![CDATA[boz]]></category>
+		<category><![CDATA[Boz NZ]]></category>
+		<category><![CDATA[New Zealand]]></category>
+		<category><![CDATA[NZ]]></category>
+		<category><![CDATA[Publishing]]></category>
+		<category><![CDATA[The Summer of Reasoning]]></category>
+		<category><![CDATA[LEssons for New Authors]]></category>
+		<category><![CDATA[New Authors]]></category>
+		<category><![CDATA[Tips for New Authors]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=2589</guid>
+
+					<description><![CDATA[I learnt a few things on the way to writing by first book, most have been re-hashed by every author out there, and even if you haven&#8217;t got past the first chapter in your book you probably know most already. &#8230; <a href="https://rodyne.com/?p=2589">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">I learnt a few things on the way to writing by first book, most have been re-hashed by every author out there, and even if you haven&#8217;t got past the first chapter in your book you probably know most already. I am still learning these lessons, and some are hard. Anyway let me share my five cents worth, because writing your blockbuster is just the start of the Journey. </p>
+
+
+
+<p class="wp-block-paragraph">I wrote most of The Summer of Reasoning on my Chromebook in Google docs. In full screen mode it is an amazing distraction free writing environment. Open the Chromebook, write something, close it, I unfortunately had to do it in three parts as Google docs (before 2023 at least) becomes painful to use over 100K words (The Chromebook has 4GB FFS Google!). Like it or hate it, most publishers (or epub conversion software) expect docx source files, so for the 370,000 word novel I combined the 3 parts in LibreOffice, which also has its faults, but it is fast and can work in docx and also export to Epub format though there are lots of superfluous &#8220;&lt;Span>&#8221; declarations and your cover needs to be a .jpg not .jpeg. (again probably fixed by the time you read this)</p>
+
+
+
+<p class="wp-block-paragraph">If you are doing this for pleasure and that feel good factor (like me) then sweet, you&#8217;ve cracked it, it&#8217;s all pretty easy.</p>
+
+
+
+<ol class="wp-block-list">
+<li>Knock up your masterpiece. No tips here, just keep writing it will happen eventually.</li>
+
+
+
+<li>Proof-read it and re-edit. For me this was emailing it to my kindle or Kobo in Epub format. </li>
+
+
+
+<li>Unless it is for a specific plot element, remove any rants, personal politics, biases etc and go back to step 2. (I may have failed a bit here)</li>
+
+
+
+<li>Go back to step 2. I did this four (or was it five) times, each update fixing dozens of problems, and of course probably adding some new ones, very like programming really! Hot tip here is if you change something, go back a few paragraphs before re-reading it. Feel free to email me any errors, I&#8217;m certainly not perfect.</li>
+
+
+
+<li>By now you will be sick of reading your masterpiece so get someone critical to read it and take their advice carefully, then go back to step 2 if necessary.</li>
+
+
+
+<li>(Optionally) Get an ISBN number. In NZ this is free from the <a href="https://natlib.govt.nz/publishers-and-authors/isn" target="_blank" rel="noopener" title="">National Library</a>, you just have to email them your finished eBook. Amazon Kindle doesn&#8217;t need one and Draft2Digital will give you one.</li>
+
+
+
+<li>Create an account on the Kindle Direct Publishing (<a href="https://kdp.amazon.com/en_US/bookshelf" target="_blank" rel="noopener" title="">KDP</a>) page, if you already have a kindle account this is quick, but you do need to upload some bank details for all those mega-dollars you are obviously going to rake in. (trying to keep a straight face writing this bit!) Then upload and publish your book. Ta-Da! 70% of the eBook market can now buy your book.</li>
+
+
+
+<li>If you want to also include the other 30% (Apple, Kobo, Smashwords, Barnes and Noble, etc.) then the easiest way I found was to create an account on <a title="" href="https://www.draft2digital.com/" target="_blank" rel="noopener">Draft2Digital</a>. They are an aggregator and will publish it everywhere including Amazon. Their service costs nothing but they take 10% of your royalties. (10% of nothing is still nothing!). The only gotcha I could see with these guys was that you cannot enroll in the Amazon Kindle unlimited or Prime, but if you do this then you cannot release your book on the other platforms anyway. The DOCX to ePub converter in Draft2Digital is also pretty good and its output file can be downloaded and used as the source for your Kindle KDP book. (2026 Update: D2D Changed their policy to charge $12/year this may be higher or lower as you read this. Your call, I dumped them as my books were on sale for $0)</li>
+
+
+
+<li>Again, really, really work on your cover, blurb and keep the category generic and cover/blurb as close to the subject of the book as possible. I cannot emphasise this enough as I seriously screwed up here, and your first entry in the market really needs to shine.</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">Note that eBooks are only around 10% of the book market so making the next step to printed book is a good idea and again there is no cost, they just print on demand and take the printing cost out of the sale price, I made a few editing passes after feedback from readers before I went this option as it is harder to change a printed copy. Note printed books make good Christmas presents and look awesome on you bookshelf!</p>
+
+
+
+<p class="wp-block-paragraph">On whatever publishing platform you use, you are going to have to think up your short blurb, keywords and categories you want the book to appear in. Best to do this early as doing it at the last possible moment will ultimately lead you to pick some last-minute rubbish with silly search terms and half cut off description (like I did). Luckily as an eBook I was able to edit it later when my brain started working again.</p>
+
+
+
+<p class="wp-block-paragraph">Optional also, (but cool!) add publisher to the list of services your business offers. It&#8217;s only a few changes to your web site and voila you are a publisher; makes you look bigger and more professional!</p>
+
+
+
+<h2 class="wp-block-heading">Don&#8217;t Give Up Your Day Job!</h2>
+
+
+
+<p class="wp-block-paragraph">Then comes reality. Nobody is going to ever read your book as they are never going to find your book on amazon.com or any of the other platforms out there. I think the statistic I saw was that almost seven thousand new books are published every day, and your masterpiece will probably languish on page four hundred of your target eBook buyers search list forever unless you are an established author or pay money to promote it. There is a great meme I recently saw which sums this all up perfectly.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="500" height="659" src="https://rodyne.com/wp-content/uploads/internet-meme.jpg" alt="" class="wp-image-3222" srcset="https://rodyne.com/wp-content/uploads/internet-meme.jpg 500w, https://rodyne.com/wp-content/uploads/internet-meme-228x300.jpg 228w" sizes="auto, (max-width: 500px) 100vw, 500px" /></figure>
+
+
+
+<p class="wp-block-paragraph">I wonder how many authors start writing before finding this out and I now wonder how many awesome novels I have missed because of stupid algorithms forever excluding them. (Please Amazon, B&amp;N, Smashwords etc. Add a search filter for books that have not been rated yet!). I did not promote my book, nor mention it much except in passing comments to friends and family. Don&#8217;t get me wrong, I really want people to read it, I just don&#8217;t want them all to be friends and family.</p>
+
+
+
+<p class="wp-block-paragraph"><em>The algorithm (that shit piece of software that tries to read your mind and recommend your next movie, song or book read) thrives on reviews and star ratings so if you have a following or lots of friends and family I would suggest sucking up your pride and asking them to leave reviews. I did not and still have no reviews so as the years go by it will get to a point where it wont just not be recommended, but it will be difficult to even find.</em> As an author you will come to hate it and everything to do with marketing/promotion. I threw the towel in early and made my books free.</p>
+
+
+
+<p class="wp-block-paragraph">So today, even when I search for my title or author directly (it doesn&#8217;t help being called Boz!) my book was still on page two or three of the search results.</p>
+
+
+
+<p class="wp-block-paragraph">Then how do you price it? Free and well people may think its trash (it may be!) but too expensive and nobody is going to ever buy it (assuming they can find it of course!) anyway it is priced at <s>$3.99</s> $0.99 (Note hot tip, if a book is $0.99 on Kindle it might be free on the other sites as Kindle charges $0.99 minimum).</p>
+
+
+
+<p class="wp-block-paragraph">Another option as I finally did in 2025 was to create a <a href="https://ko-fi.com">Ko-Fi </a>account and have it downloadable from there at a price the reader wants to pay, this means they can read the book for free and (if they like it) can then make a donation by clicking a &#8220;Buy me a coffee&#8221; button. See example <a href="https://ko-fi.com/s/daaf299cb8">Here</a>.</p>
+
+
+
+<p class="wp-block-paragraph">A few more observations/tips:</p>
+
+
+
+<ol class="wp-block-list">
+<li><a href="https://rodyne.com/?p=2402">Don&#8217;t write long books until you&#8217;re famous</a>! (Lots of reasons)</li>
+
+
+
+<li>Get your categories correct. Genre readers are really finicky and will punish you on the reviews, people who read romance, generally hate sci-fi or horror and vice-versa, so err on the side of caution if you&#8217;re doing this for $$$.</li>
+
+
+
+<li>Put some action at the beginning. All the book sellers have the equivalent of the Kindle &#8220;send a sample&#8221; which lots of people use to judge if it&#8217;s a good book. Unfortunately, mine doesn&#8217;t really get going until about fifteen percent in, it&#8217;s more setting up and character building up until then.</li>
+
+
+
+<li>Don&#8217;t, don&#8217;t, don&#8217;t ever use the real name of someone you know, and even if the name is different and the character is 90% based on someone, they will think it is them. Feel free to use  mannerisms of actors or other fictional character, but no, nobody I know is a character in my book nor will they ever be.</li>
+
+
+
+<li>Shout out to AI for letting me design my book cover for free, even if it is only to give your favourite artist/illustrator an idea of what you want. I would love to have paid somebody to do this, and if I ever get famous and need a new cover I certainly will.</li>
+
+
+
+<li>Plots age! I really wish I had set my first book in a completely separate universe. The plot feels perfect as of 2024/2025, but I dread to think how dated and laughable it will look in a few years.</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">So, has it put me off writing another book? definitely not, but it will stay a part time endeavor and it looks like I won&#8217;t be giving up my day job and will still be programming for a few more years. </p>
+
+
+
+<p class="wp-block-paragraph">I am also happy to discus my mistakes with any fellow writer who will listen over a beer or a coffee, I know you&#8217;re out there.. <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">External links</span></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=38147276">Don&#8217;t give up your day job to become an author | Hacker News (ycombinator.com)</a></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=38253263">NaNoWriMo: National Novel Writing Month | Hacker News (ycombinator.com)</a></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://penpinery.com/home/">Pen Pinery &#8211; Home</a> &#8211; More good information for aspiring Authors</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

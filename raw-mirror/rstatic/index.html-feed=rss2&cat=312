@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Retro</title>
+	<atom:link href="https://rodyne.com/?feed=rss2&#038;cat=312" rel="self" type="application/rss+xml" />
+	<link>https://rodyne.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 18 Oct 2026 20:25:53 +0000</lastBuildDate>
+	<language>en-NZ</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.7</generator>
+
+<image>
+	<url>https://rodyne.com/wp-content/uploads/2015/11/web-header2.png</url>
+	<title>Retro</title>
+	<link>https://rodyne.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Can I Now Please Go Back to a Dumb-Phone?</title>
+		<link>https://rodyne.com/?p=4105</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 18 Sep 2026 21:05:32 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[AI Alignment]]></category>
+		<category><![CDATA[boz]]></category>
+		<category><![CDATA[Critical Thinking]]></category>
+		<category><![CDATA[Electronics]]></category>
+		<category><![CDATA[End Game]]></category>
+		<category><![CDATA[Philosophy]]></category>
+		<category><![CDATA[Retro]]></category>
+		<category><![CDATA[Science Fiction]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[The Future]]></category>
+		<category><![CDATA[The Ramblings of an Old Man]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[dumb phones]]></category>
+		<category><![CDATA[simplifying life]]></category>
+		<category><![CDATA[smart phones]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=4105</guid>
+
+					<description><![CDATA[As I get older I find using the smart phone less and less attractive, I also find apps more and more superfluous and annoying; They are not intuitive, they assume you understand the latest IT fads, they have too small &#8230; <a href="https://rodyne.com/?p=4105">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">As I get older I find using the smart phone less and less attractive, I also find apps more and more superfluous and annoying; They are not intuitive, they assume you understand the latest IT fads, they have too small fonts for my eyes, as well as this most are just badly written, intrusive, lack privacy, inefficient and drain my battery so I need to keep the phone constantly charged. Yet the world keeps pushing apps to me;  There is rarely an option NOT to use an app, after all who in 2026 does <em>not</em> have a smart phone?</p>
+
+
+
+<p class="wp-block-paragraph">Unlike 99% of the world I do not have (nor want) social media on my phone. My iPhone SE is mostly used for messaging, phone calls, the odd picture, it is not that I am a techno-phoebe, it is just that I have other far superior form-factors to do this on when I need to; Eg I also have a couple of laptops: a 11&#8243; chromebook I use for email and writing when I travel, and a modern ThinkPad on my desk with duel 32-inch monitors which I use for stuff like CAD, programming, games, and (yes), the web and social media. I also have a Kobo for reading as I now prefer eBooks where I can make the fonts a bit bigger.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="549" height="404" src="https://rodyne.com/wp-content/uploads/pebbl2.jpg" alt="" class="wp-image-4108" srcset="https://rodyne.com/wp-content/uploads/pebbl2.jpg 549w, https://rodyne.com/wp-content/uploads/pebbl2-300x221.jpg 300w" sizes="(max-width: 549px) 100vw, 549px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">AI has now unarguably delivered on voice recognition including all languages, context and nuances. Likewise with text to voice. AI can now also interpret importance to events and, with appropriate authority, action them without me. With this in mind I for one would now be very happy to go back to a more simple time where the phone convenienced <em>me</em>, not everybody else.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">I am very much in the minority here, and I could go on and describe the perfect format for me, indeed, I did describe several in my book; But that is just silly as we are living in a time where I do not need some third-party, or corporation to do this for me, I can now do it myself.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Don&#8217;t look Behind The Curtains!</title>
+		<link>https://rodyne.com/?p=3574</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 30 Jan 2026 07:47:15 +0000</pubDate>
+				<category><![CDATA[C Programming]]></category>
+		<category><![CDATA[Electronics]]></category>
+		<category><![CDATA[ESP32-C3]]></category>
+		<category><![CDATA[Other Programming]]></category>
+		<category><![CDATA[Pascal Programming]]></category>
+		<category><![CDATA[Philosophy]]></category>
+		<category><![CDATA[PicoMite]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Retro]]></category>
+		<category><![CDATA[RP2040]]></category>
+		<category><![CDATA[RP2350]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[Ramblings of an old man]]></category>
+		<category><![CDATA[The Stack]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=3574</guid>
+
+					<description><![CDATA[My recent goals to work with and learn some newer, more popular, micro-controllers, and to try some different programming languages, has made me also take another look at the ways things have progressed since I started my career. My programming &#8230; <a href="https://rodyne.com/?p=3574">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-resized"><img decoding="async" width="359" height="506" src="https://rodyne.com/wp-content/uploads/image-2-1.jpg" alt="" class="wp-image-3590" style="aspect-ratio:0.7094743071171292;width:298px;height:auto" srcset="https://rodyne.com/wp-content/uploads/image-2-1.jpg 359w, https://rodyne.com/wp-content/uploads/image-2-1-213x300.jpg 213w" sizes="(max-width: 359px) 100vw, 359px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%">
+<p class="wp-block-paragraph">My recent goals to work with and learn some newer, more popular, micro-controllers, and to try some different programming languages, has made me also take another look at the ways things have progressed since I started my career. My programming career started with Pet and ZX81 Basic at school, then Turbo Pascal for PC, and C for VMS/Unix at work/college. These were all languages I could easily grok. I still remember a magazine article where somebody poked a number into a memory location in the ZX81 and the letter &#8220;A&#8221; popped up on the screen, one line of code.. which mapped to one single CPU instruction! That was all it took for the light bulb to go on in my head.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">The 80&#8217;s were simpler times, and life at that point was easy, and things worked well.. But then came the 90&#8217;s and along came Windows! I vaguely remember the 100&#8217;s of lines of weird C++ code, calling this API, then that API, just to get a window on the screen with &#8220;Hello world&#8221;, it all made zero sense at the time, not just to me, but a lot of our more traditional programmers, and I knew from that point on things had changed big time for me; I would no longer be a part of that world, I never wanted to see it ever again, and (for me at least) Windows/C++ had tainted the simplicity of C.</p>
+
+
+
+<p class="wp-block-paragraph">I guess this epiphany happened to a lot of other people too, as dozens of new programming languages, development environments, and operating systems, all sprung up around this time, each preaching a better and easier life than C/C++. My department however had committed to Windows, and we were all electronics engineers, so it was Visual Basic, then Delphi which won us over. Both languages hid the (high) complexity of Windows behind a simple event driven point and click interface, great for us engineers who simply wanted to get something done.</p>
+
+
+
+<p class="wp-block-paragraph">Someone coming into programming in 2026 will likely be offered JavaScript or Python as their first development language, both require an OS, an IDE, an interpreter or a browser, and probably the equivalent of a 1980&#8217;s supercomputer just to print &#8220;Hello World&#8221;. No beginner is really going to have a clue how their <em>Print &#8220;Hello World&#8221;</em> got onto their screen, because doing so requires understanding a API stack a mile high; If this was where I had to start my programming journey, I might never have begun, as I like to understand how things work. To many, I expect the inner workings of the stack between their chosen programming language, and the work their program actually does, is still <em>black-magic</em>.</p>
+
+
+
+<p class="wp-block-paragraph">I was lucky to have peeked behind the curtains early in my career, and have an intimate knowledge of CPU architectures, but even I have basically given up trying to understand the layers or stack. I read and write to whatever API is exposed, and hope the level below me knows what it is doing! Occasionally I have written parts of &#8216;the stack&#8217;, building hardware and writing a driver for Windows or Linux to support it, but even then I am conforming to a set of norms for the level above it, and I doubt anybody ever checked my code.</p>
+
+
+
+<p class="wp-block-paragraph">Only with Micro-controller projects am I fully back in control, and with them (for me at least) there generally was no stack; My program <em>was</em> the stack! This was however back with older 8-bit or 16-bit micros, and micro-controllers were not immune from technologies progress. Today&#8217;s micro-processors are amazing pieces of technology that have improved in leaps and bounds, going to multi-core monsters, with layers of complexity and peripherals that would shame a 1980&#8217;s super-computers. Unlike software though, they have done this while improving there efficiency and lowering there cost. For me, the best thing about all of this is you don&#8217;t really have to use any of this new complexity, and a simple blinking LED can still be done in a few primitive lines of C.</p>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://rodyne.com/?p=1751"><img decoding="async" width="784" height="168" src="https://rodyne.com/wp-content/uploads/IMG_0508-ezgif.com-optimize.gif" alt="" class="wp-image-3540"/></a></figure>
+
+
+
+<p class="wp-block-paragraph">From a blinking LED I can add in all the complexity, and use as many of these new peripherals as I like. This is <em>exactly</em> like I did back in 1980 with my first Z80 chip, no real need for a stack or an API.</p>
+
+
+
+<p class="wp-block-paragraph">But API&#8217;s and stacks get added anyway, for convenience, reliability and speed of development. Abstracting away complex code behind a set of C SDK libraries, an RTOS, MicroPython, Arduino or even MMBasic, is a way of not having to learn the 1000&#8217;s of pages of CPU and peripheral datasheets. A lot of people are happy to take these easier options, including me, but lets not kid ourselves that we diligently read the libraries of source code that get compiled into our binaries, most of the time we are generally trusting the coders have done a good job.</p>
+
+
+
+<p class="wp-block-paragraph">A modern micro-processor, or System-On-Chip (SOC), is a far different beast from a micro-controller, adding many more layers of complexity, security, memory management, cores and peripherals, such as PCIe, USB3, Ethernet, or even a GPU. They are so complex that they often require there own bootstrap program to even initialise everything before it even finds and runs even a single line of your code. Very few programmers are brave enough to work <em><a href="https://en.wikipedia.org/wiki/Bare_machine" target="_blank" rel="noreferrer noopener">bare-metal</a></em> at this level because often as not these SOC&#8217;s, unlike micro-controllers, hide or abstract everything behind NDA&#8217;s or binary API&#8217;s, this is why for example on your cell phone, real world people accept they are going to work through an operating system and use the provided API&#8217;s.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">So, to segue again back to my first paragraph, if I was being honest with my real goals, I love the fact that when working with micro-controllers I am effectively going back to a simpler time, a time where I owned, and understood the stack, where the stack hardly ever changed, and when I turned my computer on I was running my program code within microseconds. I guess that is why there is a resurgence in retro-computing going on, people still want to know what is behind the curtains and understand how it all works!</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="512" height="512" src="https://rodyne.com/wp-content/uploads/wizardoftech.jpg" alt="" class="wp-image-3607" srcset="https://rodyne.com/wp-content/uploads/wizardoftech.jpg 512w, https://rodyne.com/wp-content/uploads/wizardoftech-300x300.jpg 300w, https://rodyne.com/wp-content/uploads/wizardoftech-150x150.jpg 150w" sizes="auto, (max-width: 512px) 100vw, 512px" /></figure>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">I am one of those people, but I will never go back to using a retro-computer or retro-operating system for my daily drive, I am happy the stack is there and hundreds of thousands of people have stood on each others shoulders, to bring me the marvelous Linux and IOS GUI&#8217;s I have today. However there is a cost, and that cost is complexity, efficiency, and the fact that programmers (like me) take all these layers of code for granted without looking behind the curtain. A whole Eco-system based on the trust that somebody else has done your due diligence for you!</p>
+
+
+
+<p class="wp-block-paragraph">This is especially scary once you realise how many bad actors are out there, examining every line of these stacks for code vulnerabilities. This is happening every hour of the day, and they are finding them with ease. AI, over-complicated programming styles, and dependency hell, are making it harder for the developers to miss these cracks in their code reviews, and easier for the bad guys to find them.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<figure class="wp-block-image size-full"><a href="https://news.ycombinator.com/item?id=46789913" target="_blank" rel=" noreferrer noopener"><img loading="lazy" decoding="async" width="518" height="213" src="https://rodyne.com/wp-content/uploads/vulnerabilities.jpg" alt="" class="wp-image-3613" srcset="https://rodyne.com/wp-content/uploads/vulnerabilities.jpg 518w, https://rodyne.com/wp-content/uploads/vulnerabilities-300x123.jpg 300w" sizes="auto, (max-width: 518px) 100vw, 518px" /></a></figure>
+
+
+
+<p class="has-text-align-center has-small-font-size wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=46789913" target="_blank" rel="noreferrer noopener">Hacker News Link and Comments For Story Above</a></p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<p class="wp-block-paragraph">Unfortunately, as always, it is up to you to balance the security, against the ease and convenience, or, like the vast majority of us, believe the myth that your system is secure and does not have these problems.</p>
+</div>
+</div>
+
+
+
+<p class="has-text-align-center wp-block-paragraph"><em>Thanks to <a href="https://gemini.google/overview/image-generation/" target="_blank" rel="noreferrer noopener">Gemini</a> for the memes, but like AI vibe-coding it pays to look at the finer details </em><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p class="has-light-gray-background-color has-background wp-block-paragraph">The vulnerabilities of these programming stacks were one of the plot elements in my free sci-fi trilogy eBook <a href="https://rodyne.com/?p=1252">The Summer Of Reasoning</a>. I still think I did a good job in that book of explaining the problem, why it matters, and the consequences of when it fails.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Small Blinkenlight Update</title>
+		<link>https://rodyne.com/?p=3533</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 19 Jan 2026 22:05:55 +0000</pubDate>
+				<category><![CDATA[blinkenlights]]></category>
+		<category><![CDATA[Other Programming]]></category>
+		<category><![CDATA[PicoMite]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Retro]]></category>
+		<category><![CDATA[RP2040]]></category>
+		<category><![CDATA[MMBasic]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=3533</guid>
+
+					<description><![CDATA[I loaded the MM Edit program onto my new Linux/Kubuntu desktop and wanted to test it out with a Raspberry Pi Pico development board to ensure everything was working. As my Pico board was all the way over in my &#8230; <a href="https://rodyne.com/?p=3533">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">I loaded the MM Edit program onto my new Linux/Kubuntu desktop and wanted to test it out with a Raspberry Pi Pico development board to ensure everything was working. As my Pico board was all the way over in my workshop, and it was raining and cold outside (yeah, middle of summer here &#8211; go figure!), I pulled the spare <a href="https://rodyne.com/?p=1751">RP2040 blinkenlight board</a> off my spares shelf and decided to have another go at the temporary C firmware on it, maybe fix it once and for all.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="784" height="168" src="https://rodyne.com/wp-content/uploads/IMG_0508-ezgif.com-optimize.gif" alt="" class="wp-image-3540"/></figure>
+
+
+
+<p class="wp-block-paragraph">The original blinkenlight board was a surprise favourite with the Hacker News and HackaDay community last year, and judging from the correspondence I had, a lot of people appreciated the RP2040 version over the original 8-Bit PIC one. Obviously, as I was testing MM Edit, not VS Code, I replaced the C program with a small MMBASIC program, just to see how easy it was to to do, if it all worked, and, if BASIC was fast enough to drive a bunch of multiplexed LED&#8217;s with row and column drivers. I am pleased to say it did, and the results surprised me, this must have also been the fastest development I have ever done, maybe 3 hours start to finish! It was as simple as clicking the boot-select switch on my board, plugging it in to a free USB port, and dropping the PicoMite RP2040 6.01 firmware on the new USB drive. Then writing the super-simple program below in MM Edit, pressing reset on the blinkenlight board clicking the MM Edit upload button and presto!</p>
+
+
+
+<p class="wp-block-paragraph">I wont even bother to explain the code you don&#8217;t get much easier than this. I guess I should start testing my C compilers now, wont be as much fun <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<pre class="wp-block-code"><code>' Firmware for the Blinkenlights board (https://rodyne.com/?p=1751)
+' Note we are ignoring the 4-switch inputs as not required in USB version
+' Use OPTION HEARTBEAT OFF to free up the heartbeat LED which I have used
+
+OPTION EXPLICIT     ' must declare variables and defaults
+OPTION DEFAULT NONE '
+ON ERROR IGNORE     ' lazy error handling for non-critical hardware
+
+' set RP2040 pin assignments
+SETPIN gp3, dout
+SETpin GP4, dout
+SETpin GP5, dout
+SETpin GP9, dout
+SETpin GP10, dout
+SETpin GP11, dout
+SETpin GP12, dout
+SETpin GP13, dout
+SETpin GP14, dout
+SETpin GP15, dout
+SETpin GP16, dout
+SETpin GP17, dout
+SETpin GP18, dout
+SETpin GP19, dout
+SETpin GP20, dout
+SETpin GP21, dout
+SETpin GP22, dout
+SETpin GP23, dout
+SETpin GP24, dout
+SETpin GP25, dout
+SETpin GP26, dout
+SETpin GP27, dout
+SETpin GP28, dout
+SETpin GP29, dout
+
+' global variables
+dim integer regs(8) ' 8 banks (rows) of 16 leds
+DIM integer row = 0 ' which row is selected for output
+dim integer OpModeTimeout = 0 ' it needs to accept input from my retro comp
+dim string  CBuff$="" 'input temporary sorage
+dim string  Char$
+DIM integer trnd, nVal, hVal
+
+' program main loop
+DO
+  if OpModeTimeout=0 then ' no input so do some random light show
+    trnd = rnd*400 ' adjust this to speed up or slow down light show
+    if trnd&lt;10 then regs(row)=regs(row)&lt;&lt;1  ' shift bank LEDs left
+    if trnd=13 then regs(row)=regs(row)>>1  ' and right
+    if trnd=14 then regs(row)=not regs(row) ' invert them
+    if trnd=15 then regs(row)=rnd*65000     ' pop a new random pattern in
+    if trnd>380 then regs(row)=regs(row)+1  ' increment them
+  else
+    OpModeTimeout=OpModeTimeout-1 ' if no input for 12s then timeout to rnd light show 
+  endif  
+
+  ' asset the scan row driver (1=ROW ON)
+  pin(gp22)=(row=7)
+  pin(gp23)=(row=6)
+  pin(gp24)=(row=5)
+  pin(gp25)=(row=4)
+  pin(gp26)=(row=3)
+  pin(gp27)=(row=2)
+  pin(gp28)=(row=1)
+  pin(gp29)=(row=0)
+  
+  ' decode and asset the correct column driver for the 16 LED's (0=COL ON)
+  if regs(row) and &amp;h0001 then PIN(GP3)=0 else pin(gp3)=1
+  if regs(row) and &amp;h0002 then PIN(GP4)=0 else pin(gp4)=1
+  if regs(row) and &amp;h0004 then PIN(GP5)=0 else pin(gp5)=1
+  if regs(row) and &amp;h0008 then PIN(GP9)=0 else pin(gp9)=1
+  if regs(row) and &amp;h0010 then PIN(GP10)=0 else pin(gp10)=1
+  if regs(row) and &amp;h0020 then PIN(GP11)=0 else pin(gp11)=1
+  if regs(row) and &amp;h0040 then PIN(GP12)=0 else pin(gp12)=1
+  if regs(row) and &amp;h0080 then PIN(GP13)=0 else pin(gp13)=1
+  if regs(row) and &amp;h0100 then PIN(GP14)=0 else pin(gp14)=1
+  if regs(row) and &amp;h0200 then PIN(GP15)=0 else pin(gp15)=1
+  if regs(row) and &amp;h0400 then PIN(GP16)=0 else pin(gp16)=1
+  if regs(row) and &amp;h0800 then PIN(GP17)=0 else pin(gp17)=1
+  if regs(row) and &amp;h1000 then PIN(GP18)=0 else pin(gp18)=1
+  if regs(row) and &amp;h2000 then PIN(GP19)=0 else pin(gp19)=1
+  if regs(row) and &amp;h4000 then PIN(GP20)=0 else pin(gp20)=1
+  if regs(row) and &amp;h8000 then PIN(GP21)=0 else pin(gp21)=1
+
+  pause 1 ' 1mS
+  
+  ' after pause turn all scan lines off so we dont get ghosting when we change states
+  pin(gp3)=1
+  pin(gp4)=1
+  pin(gp5)=1
+  pin(gp9)=1
+  pin(gp10)=1
+  pin(gp11)=1
+  pin(gp12)=1
+  pin(gp13)=1
+  pin(gp14)=1
+  pin(gp15)=1
+  pin(gp16)=1
+  pin(gp17)=1
+  pin(gp18)=1
+  pin(gp19)=1
+  pin(gp20)=1
+  pin(gp21)=1
+  
+  ' process banks/rows 0-7 in round-robin
+  row=row+1
+  if row>7 then row=0
+  
+  ' The USB port in this firmware acts like a virtual terminal so you can send
+  ' text strings into it as if you are coming from a serial port, just need to 
+  ' pretend a serial char is a keypress :-)
+  ' format if r=nnnn where r is the row (0-7), and nnnn is a 16-bit hex string
+  ' eg "4=2FE7&lt;CR>" will put the value 2FE7 into bank 4 of the leds
+  ' if no serial received for more than 12 seconds then revert back to rnd light show
+  Char$=inkey$
+  if Char$&lt;>"" then ' check if character received
+    if Char$=CHR$(10) OR Char$=CHR$(13) then ' if its CR then process buffer
+      ' Note I'm not doing any checks on input using lazy error handling
+      print "'"+CBuff$+"'" 'for debugging
+      nVal = Val(LEFT$(CBuff$,1)) ' get the register value 0-7
+      hVal = val("&amp;H" + mid$(CBuff$,3,4))' convert 4 char hex str to value
+      regs(nVal)=hVal ' set the register
+      OpModeTimeout=10000 ' reset the timeout to display it
+      CBuff$="" ' clear buffer string when processed 
+    else  
+      CBuff$=CBuff$+Char$ ' if not a CR then add char to buffer string
+    endif  
+  endif  
+
+loop
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Schematic and Gerbers for the Blinkenlights RP2040 = &gt; <a href="https://rodyne.com/wp-content/uploads/Schematic_Gerbers_SourceCode_and_UF2_Binary.zip">here</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Re-Purposing an old Pioneer Amplifier</title>
+		<link>https://rodyne.com/?p=3380</link>
+					<comments>https://rodyne.com/?p=3380#comments</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 07 Jan 2026 09:41:33 +0000</pubDate>
+				<category><![CDATA[Electronics]]></category>
+		<category><![CDATA[Other Programming]]></category>
+		<category><![CDATA[Repair]]></category>
+		<category><![CDATA[Retro]]></category>
+		<category><![CDATA[RP2350]]></category>
+		<category><![CDATA[MMBasic]]></category>
+		<category><![CDATA[MP3 Jukebox]]></category>
+		<category><![CDATA[PCM5102]]></category>
+		<category><![CDATA[pico2]]></category>
+		<category><![CDATA[PicoMite]]></category>
+		<category><![CDATA[pioneer stereo]]></category>
+		<category><![CDATA[PT2259]]></category>
+		<category><![CDATA[SC16315]]></category>
+		<category><![CDATA[VFD]]></category>
+		<category><![CDATA[VSX-520K]]></category>
+		<category><![CDATA[vsx520]]></category>
+		<category><![CDATA[XMAS Fun!]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=3380</guid>
+
+					<description><![CDATA[A mate gave me a broken Pioneer VSX-520 surround sound amplifier to fix about 5 years ago, and despite the extremely good service manual that came with it I could not figure out the problem. I went through all the &#8230; <a href="https://rodyne.com/?p=3380">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">A mate gave me a broken Pioneer VSX-520 surround sound amplifier to fix about 5 years ago, and despite the extremely good service manual that came with it I could not figure out the problem. I went through all the usual suspects for this model, diligently worked through the fault repair flow diagrams and finally got to the bit where it said &#8220;replace the main board&#8221;. I then moved further, seeking every obscure YouTube repairer, also to no avail, and in the end I decided it was not worth the effort and it went onto my &#8216;to-do later&#8217; shelf in the workshop.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="727" src="https://rodyne.com/wp-content/uploads/vsx520-in-action-1024x727.jpg" alt="" class="wp-image-3422" srcset="https://rodyne.com/wp-content/uploads/vsx520-in-action-1024x727.jpg 1024w, https://rodyne.com/wp-content/uploads/vsx520-in-action-300x213.jpg 300w, https://rodyne.com/wp-content/uploads/vsx520-in-action-768x546.jpg 768w, https://rodyne.com/wp-content/uploads/vsx520-in-action-1536x1091.jpg 1536w, https://rodyne.com/wp-content/uploads/vsx520-in-action.jpg 1775w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p class="has-text-align-center wp-block-paragraph">My <em>New</em> Bedroom Stereo System</p>
+
+
+
+<p class="wp-block-paragraph">The To-Do moment reared its head last month. My CD player started to play up with some of my CD&#8217;s due to the scratching on them, this was causing them to skip tracks or even refuse to play. As I mostly play CD&#8217;s when I&#8217;m sat in the bath, it gets really annoying when that happens and I have to get out all wet! I don&#8217;t remember being so careless with the CD&#8217;s to get them in this state, but I guess I fell for the hype at the time about how much more resilient they would be than vinyl (Yeah right!)</p>
+
+
+
+<p class="wp-block-paragraph">Luckily about twenty years ago I ripped my favourite CD&#8217;s to MP3 files, and digging through my backups the other day I found all 30GB of them at 196KBit/s, all arranged nicely in the correct folders by group/album/track. This got me thinking about making a little jukebox player for them, maybe reusing one of my <em>million</em> dev boards I seem to have lying around, adding a SD card, an I2S DAC and a bit of software to tie it all together.</p>
+
+
+
+<p class="wp-block-paragraph">The problem was that I also wanted something that would fit in nicely with my stereo system, a ugly enclosure was not going anywhere near my bedroom. That was when I remembered I had the perfect enclosure, one which looked the part, and one where I knew the amplifier, display and power supply parts were working OK. So the big question was how much of it could I re-use?</p>
+
+
+
+<p class="wp-block-paragraph">Like I said, the service manual for this amplifier is quite comprehensive. Each circuit board is shown, with a full schematics, PCB layouts and inter-board wiring diagrams, as well as helpful test procedures; The front panel was simply a bunch of switches and a custom Vacuum Fluorescent Display driven by an SC16315 driver chip. I also knew the power amplifier board worked (a really nice Class AB design), as I had unplugged the main board at the time and tested it with a signal generator and bench power supply. Also the main transformer was good as I had measured the voltages. The two sub-boards containing the DSP and video stuff were very proprietary and absolutely no use to me and they could go, and unfortunately the motherboard was highly integrated with the processor controlling it all, and again highly proprietary, and had to go. But to me it looked like the core parts would be fine, and if I could re-use the parts above, especially that classy AB amplifier board, and substitute a dev board to hold it all together then winner-winner, I might get a good looking MP3 jukebox.</p>
+
+
+
+<p class="wp-block-paragraph">I also kind of wanted to also do this on the cheap, (contemplating full retirement and not having any paying customers at the moment). Luckily for me the old Pioneer main board was single-sided, which meant even a ham-fisted old git like me could easily unsolder and re-use as many of the connectors, capacitors and regulator chips as I could salvage. But being a dodgery old bastard, there was also no way I was soldering in a bunch of surface mount stuff! So I knocked out a schematic, shadowing the old connectors as closely as possible, added a 40-pin header for my Raspberry Pi Pico2 dev board, a PCM5102 I2S DAC, an input selector circuit, and a volume control chip. I then added all the connectors for the front panel, PSU and amplifier, un-mounted so I could transplant them here. With my circuit double-checked, I crossed my fingers and fired the design off to JLPCB. What I got back was below:</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="995" height="617" src="https://rodyne.com/wp-content/uploads/pcb-2.jpg" alt="" class="wp-image-3387" srcset="https://rodyne.com/wp-content/uploads/pcb-2.jpg 995w, https://rodyne.com/wp-content/uploads/pcb-2-300x186.jpg 300w, https://rodyne.com/wp-content/uploads/pcb-2-768x476.jpg 768w" sizes="auto, (max-width: 995px) 100vw, 995px" /></figure>
+
+
+
+<p class="wp-block-paragraph">Which, when I soldered on the missing components and fitted it in the amplifier, looked quite neat:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="822" height="1024" src="https://rodyne.com/wp-content/uploads/IMG_0470-822x1024.jpg" alt="" class="wp-image-3477" srcset="https://rodyne.com/wp-content/uploads/IMG_0470-822x1024.jpg 822w, https://rodyne.com/wp-content/uploads/IMG_0470-241x300.jpg 241w, https://rodyne.com/wp-content/uploads/IMG_0470-768x956.jpg 768w, https://rodyne.com/wp-content/uploads/IMG_0470.jpg 1133w" sizes="auto, (max-width: 822px) 100vw, 822px" /></figure>
+
+
+
+<p class="wp-block-paragraph">Not surprisingly I did make a few mistakes. Luckily none of them were unrecoverable! The first mistake was easy to fix, I forgot a bunch of pull up resistors for the front panel switches, and being on an analog input I could not get any voltages off them. The second mistake was a bit more annoying, and harder to recover from, I used a pair of G6KU-2F-TR-DC5 relays instead of the G6K-2F-TR-DC5 relays to switch the source input, the G6KU being the latching type, which need to be driven by a H-Bridge to unlatch them! A rework would cost me another $100, so sod that, the actual insides of my neat circuit board now has a pair of crappy SPDT relays glued to the board (I did say I was doing this on the cheap didn&#8217;t I?)</p>
+
+
+
+<p class="wp-block-paragraph">It all powered on, without incident (or smoke) and all the voltages were present and correct. A quick signal generator input to the amplifier confirmed the PSU, the amplifier and the speaker output were good so the next step were to get the various bits working: These were the I2C volume control, a PT2259 chip part LCSC had in stock that was cheap (you sensing a theme here?) but had a sort of usable data sheet, the input selectors, and output relays, (just GPIO pins). Then for the front panel, a SPI SC16315 VFD display driver, a pair of rotary switches for selector and volume, and a bunch of individual key switches on a resistor chain. (See schematic extract below)</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="1018" src="https://rodyne.com/wp-content/uploads/vsx-520-front-panel-cct-1024x1018.jpg" alt="" class="wp-image-3404" srcset="https://rodyne.com/wp-content/uploads/vsx-520-front-panel-cct-1024x1018.jpg 1024w, https://rodyne.com/wp-content/uploads/vsx-520-front-panel-cct-300x298.jpg 300w, https://rodyne.com/wp-content/uploads/vsx-520-front-panel-cct-150x150.jpg 150w, https://rodyne.com/wp-content/uploads/vsx-520-front-panel-cct-768x764.jpg 768w, https://rodyne.com/wp-content/uploads/vsx-520-front-panel-cct-1536x1527.jpg 1536w, https://rodyne.com/wp-content/uploads/vsx-520-front-panel-cct.jpg 1787w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p class="has-text-align-center wp-block-paragraph">VSX-520K Front Panel circuit (from Pioneer Service Manual)</p>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">Back to BASICs</span></p>
+
+
+
+<p class="wp-block-paragraph">I wanted an easy way to test all the parts individually. Normally I would pile straight into C, and I was not looking forward to it, and that was when I stumbled upon MMBASIC specifically MMBASIC for the Raspberry Pi PICO called PicoMite. I kind of shrugged it off at first as who uses BASIC in 2025, but there again this is from a guy who uses PASCAL! Also with MMBASIC you could issue commands directly from the prompt. E.g. entering PIN(GP15)=1 would turn on my power relay; Last time I tried BASIC was back in 1988 on an Atari ST, so I remembered enough and started testing the hardware without really thinking. I am glad I did.</p>
+
+
+
+<p class="wp-block-paragraph">The PicoMite manual is easy to understand and well written but was a bit long, so being lazy first I tried vibe coding the commands. Gemini tried its best, and got the gist, but there must have been a few old versions of the language that it got its knickers in a twist with, giving me all sorts of commands with syntax errors, (eg telling me the function to get the free memory was mm.info(free ram) ). Giving Gemini the latest PicoMite manual helped, but I still had to look at the forums (<a href="https://www.thebackshed.com/forum/index.php" target="_blank" rel="noreferrer noopener">the back shed</a>) for help. However to cut a long story short, between the manual and the forum I got most of what I wanted so it was kind of easy, and I managed to quickly develop and test code for every part of the board. Within a few days, I could pop in my 32GB SD card, select the artist I want to play and have it play the album for me, using the selector wheel to skip up and down songs/artists, and using the volume control and other switches without real issue.</p>
+
+
+
+<p class="wp-block-paragraph">I expected the VFD display to be the difficult part, but it was surprisingly easy as the system was configured for 12 digits and 16 segments, and you could easily see the 12 grid regions on the display if you took the red filter off the front panel. I wont bore you with it, as it is in the attached code with the schematic and CAD files.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="387" src="https://rodyne.com/wp-content/uploads/IMG_0471-1024x387.jpg" alt="" class="wp-image-3389" srcset="https://rodyne.com/wp-content/uploads/IMG_0471-1024x387.jpg 1024w, https://rodyne.com/wp-content/uploads/IMG_0471-300x114.jpg 300w, https://rodyne.com/wp-content/uploads/IMG_0471-768x291.jpg 768w, https://rodyne.com/wp-content/uploads/IMG_0471.jpg 1266w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p class="wp-block-paragraph">Also the six Zener diodes in series for the VFD HV supply were a few cents cheaper than a single 30V Zener in case you were wondering, I could not reuse the old diode as I cracked the glass trying to extract it off the old motherboard! Below, you can just see the relay hack on the working motherboard if you look hard enough.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="473" src="https://rodyne.com/wp-content/uploads/IMG_0484-1024x473.jpg" alt="" class="wp-image-3388" srcset="https://rodyne.com/wp-content/uploads/IMG_0484-1024x473.jpg 1024w, https://rodyne.com/wp-content/uploads/IMG_0484-300x139.jpg 300w, https://rodyne.com/wp-content/uploads/IMG_0484-768x355.jpg 768w, https://rodyne.com/wp-content/uploads/IMG_0484-1536x710.jpg 1536w, https://rodyne.com/wp-content/uploads/IMG_0484.jpg 1829w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p class="wp-block-paragraph">It was at this point that I was about to go back to VS Code and knock it all out in C, when I actually realised how utterly stupid that would be &#8211; I had 90% of the functionality already and it worked fine! So bottom line is I tidied up the MMBASIC program popped the lid back on the amplifier and it now sits pride of place in the bedroom connected to the 2 speakers there, and the 2 in the bathroom. Press the power button and it carries on from the song it left off. You would not know it was not written in C as it is very responsive, why did I not know about this program before? </p>
+
+
+
+<p class="wp-block-paragraph">You can see it <a href="https://youtu.be/DhgqELojpVE" target="_blank" rel="noreferrer noopener">here</a> on YouTube In Action. The video is unfortunately minus the warm-rich, <em>copyrighted</em> music, but the quality of the sound is about as good as you get with MP3 and to an old git like me, indistinguishable from a CD. So all in all I&#8217;m pretty happy.</p>
+
+
+
+<p class="wp-block-paragraph">A few little things are still required if I am honest. The code seems to work just fine, but probably has more bugs in it than a tramps sleeping bag; I am sure someone who knows MMBASIC would be laughing their heads off. I may revisit it sometime, probably when one of those bugs rears its head, and I can be arsed undoing the screws holding the lid on. (Hmmm I probably should invest in a panel mounted USB C connector for the back)</p>
+
+
+
+<p class="wp-block-paragraph">The 8-character alpha-numeric display is totally retro, but also pretty lame for displaying song titles, but hey I know all the songs already so whatever! I have however ordered some dry-transfer letters to replace the markings on the switches on the front panel as the temporary crappy-white stickers just have to go!.</p>
+
+
+
+<p class="wp-block-paragraph">I have wired up the front-panel Infra-Red sensor, but I don&#8217;t have the remote to test it and don&#8217;t really need it, but for the future, who knows? I also need to work out why the PT2259 is making an annoying click every time I send a new volume setting; Again picking a cheaper chip with so little information, sometimes has its down-sides. In hindsight, the Pioneer audio input riser board I threw away which has an input selector chip and volume control might have been a better bet to try and reverse engineer. I also have a broken Pioneer VSX-517 but the mains transformer and supply are toasted in that one, but now I&#8217;ve got the buzz, maybe I should give that a go next?</p>
+
+
+
+<p class="wp-block-paragraph">Finally a BIG shout out to the guys who wrote the PicoMite MMBASIC system (Geoff Graham and Peter Mather), and to Pioneer for both helping me get this far, and ensuring another electronic item did not end up as landfill.</p>
+
+
+
+<p class="wp-block-paragraph">I don&#8217;t expect anyone to actually make this (its mainly for inspiration) but if you do, then the CAD files and source are below.</p>
+
+
+
+<ul class="wp-block-list has-light-gray-background-color has-background">
+<li>EasyEDA Schematic/PCB files (With fix for PU resistor and relay) =&gt; <a href="https://drive.google.com/file/d/1_fVz2mYCARVpls5s0PbcVn9QPUbRiqcm/view?usp=sharing">Here</a></li>
+
+
+
+<li>Link to PicoMite Ver 6.01.00 basic manual and firmware =&gt; <a href="https://geoffg.net/picomite.html" target="_blank" rel="noreferrer noopener">here</a> </li>
+
+
+
+<li>MMBASIC Program =&gt; <a href="https://drive.google.com/file/d/1ALDORGfoecxl0-fWbPDWskuEBL95xZvW/view?usp=sharing">Here</a></li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Note the comments at the start of the program, as some configurations have to be set up once, outside of the program code, using the option commands in MMBASIC. I have added the code and schematic below for completeness, but they are just copies of the links above.</p>
+
+
+
+<p class="wp-block-paragraph">Discussion on Hackaday =&gt; <a href="https://hackaday.com/2026/01/14/a-new-life-for-an-old-amplifier/">Here</a>, and on the RPi Forums =&gt; <a href="https://forums.raspberrypi.com/viewtopic.php?t=395428">Here</a></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="821" height="1024" src="https://rodyne.com/wp-content/uploads/circuit-821x1024.jpg" alt="" class="wp-image-3406" srcset="https://rodyne.com/wp-content/uploads/circuit-821x1024.jpg 821w, https://rodyne.com/wp-content/uploads/circuit-240x300.jpg 240w, https://rodyne.com/wp-content/uploads/circuit-768x958.jpg 768w, https://rodyne.com/wp-content/uploads/circuit-1231x1536.jpg 1231w, https://rodyne.com/wp-content/uploads/circuit.jpg 1267w" sizes="auto, (max-width: 821px) 100vw, 821px" /></figure>
+
+
+
+<p class="wp-block-paragraph">MMBASIC Source Code</p>
+
+
+
+<pre class="wp-block-code"><code>' VSX-AMPLIFIER-JUKEBOX (unfinished but works well)
+' No Copyright or restrictions. Completely Free to use. Rodyne.com 2026
+
+' NOTE: Requires a PICO 2 (RP2350) Overclocked to 250Mhz to do the MP3 Decoding.
+' The board I am using is a Pimaroni Pico Plus with the 80 pin RP2350B chip so a 
+' couple of the pins are different from the normal pico2: We use GP41 instead 
+' of GP27 and GP42 instead of GP28 for the analogue inputs, otherwise same as pico2
+
+' SYSTEM COMMANDS BELOW MUST BE RUN FROM PROMPT (NOT PRGM) TO CONFIGURE A NEW 
+' BOARD SEE MANUAL FOR DESCRIPTION OF WHAT THEY MEAN:
+
+'OPTION HEARTBEAT OFF             ' Turn off the green flashing light for bedroom!
+'OPTION SYSTEM SPI GP2, GP3, GP4  ' Config SPI FOR SD CARD READER
+'OPTION SDCARD GP22               ' Config SD Card reader chip select pin
+'OPTION AUDIO I2S GP16, GP18      ' Config I2S FOR PCM5102 DAC
+'OPTION CPUSPEED 250000           ' Give CPU more umph! to handle mp3 decoding
+
+'Global variables
+DIM VFDfont(91) as integer  ' For the VFD display SC16315 chip conv ASCII to font
+DIM artists$(400) length 40 ' Upto 400 artists (I have 122)
+DIM tracks$(300) LENGTH 128 ' Upto 300 mp3 tracks per artist (128 bytes is max filename)
+dim DispStr$                ' What will be displayed on VFD, scrolls if bigger than 8
+
+DIM INTEGER SelectWheelState,PrevGP0,VolumeWheelState,PrevGP1
+DIM integer NumArtists,NumTracks,CurrentTrack,CurrentArtist,key3
+DIM integer CurrentVolume,CurrentInputSource,ArtistFinished,TrackTimer
+dim integer DispPos,TrackSS,TrackMM,LastDP
+
+'memory ' Not sure how big the MP3 buffer is/needs to be so keep above arrays reasonable
+
+setpin gp6, gp7, i2c2 ' Init PT2259 volume chip - def I2C Addr = &amp;H44 (7-bit)
+SETPIN GP10, DOUT     ' SC16315 CLK (IDLE = HIGH - MODE 3)
+SETPIN GP5,  DOUT     ' SC16315 STB (IDLE = HIGH)
+SETPIN GP11, DOUT     ' SC16315 DIN
+SETPIN GP15, DOUT     ' MAINS-POWER RELAY (0=POWER-OFF)
+SETPIN GP14, DOUT     ' MUTE SPEAKERS (0=Speakers muted)
+SETPIN GP19, DOUT     ' INPUT SOURCE RELAY (GP19=0=I2S, GP19=1=CD OR AUX)
+SETPIN GP20, DOUT     ' INPUT SOURCE RELAY (GP20=0=CD PLAYER, GP20=1=AUX)
+SETPIN GP0,  DIN, PULLUP  ' ROTARY ENCODE SELECT WHEEL DN (0V ACTIVE)
+SETPIN GP21, DIN, PULLUP  ' ROTARY ENCODE SELECT WHEEL UP (0V ACTIVE)
+setpin gp0, INTb, SelectWheelInterrupt
+SETPIN GP1,  DIN, PULLUP  ' ROTARY ENCODE VOL CONTROL  DN (0V ACTIVE)
+SETPIN GP13, DIN, PULLUP  ' ROTARY ENCODE VOL CONTROL  UP (0V ACTIVE)
+setpin gp1, intb, VolumeWheelInterrupt
+SETPIN GP26, DIN, PULLUP  ' STANDBY "POWER" BUTTON (0V ACTIVE)
+SETPIN GP12, DIN  ' IR INPUT (FUTURE USE)
+SETPIN GP42, ARAW 'KEY2 (GP28 ON NORMAL PICO) N/U yet 
+SETPIN GP41, ARAW 'KEY3 (GP27 ON NORMAL PICO)
+                  '
+
+
+' For the SC16315 VFD Display driver we only need to send clock/data and cs, it is
+' SPI protocol but if we use SPI we waste a pin, plus at the time of designing I 
+' was not sure I could have the SD Card and the display working together so I thought
+' I would not waste a pin and bit bang the data out (the pioneer does not use the
+' SC16315's keyboard scan so we do not need MISO)
+
+SUB SPISendByte(dat) 
+  LOCAL i
+  FOR i = 0 TO 7
+    PIN(GP11) = dat AND &amp;H01  ' Toggle MOSI LSB First
+    PIN(GP10) = 0             ' clock hi
+    dat = dat >> 1            ' shift bits to ready next bit
+    PIN(GP10) = 1             ' clock low
+  NEXT i                      ' rinse/repeat until all 8 bits gone
+END SUB
+
+' Init the SC16315 VFD Driver (Flowchart on Page 10 of SC16315S datasheet)
+
+SUB InitVFD 
+  PIN(GP5) = 0      ' COMMAND: set Display Mode 12 digits/16 segments - last 2 chars n/u
+  SPISendByte(&amp;H08) 
+  PIN(GP5) = 1
+  PIN(GP5) = 0      ' COMMAND: Set data: Write to Display RAM, Auto-Increment
+  SPISendByte(&amp;H40) 
+  PIN(GP5) = 1
+  PIN(GP5) = 0      ' COMMAND 3: Set RAM Address to 00H Auto increment  
+  SPISendByte(&amp;HC0) 
+  FOR i = 1 TO 36   ' write 0 to all RAM addresses (CLR RAM)
+    SPISendByte(0)
+  NEXT i  
+  PIN(GP5) = 1  
+  PIN(GP5) = 0      ' COMMAND 4 : Display OFF
+  SPISendByte(&amp;H80) 
+  PIN(GP5) = 1  
+END SUB
+
+' The display has 12 characters, character 3 and character 12 are the symbols that
+' we do not use, the other 10 are split into 8 alphanumeric and 2 numeric as below
+'
+' +---+---+---+---+---+---+---+---+   +---+---+
+' | 11| 10| 9 | 8 | 7 | 6 | 5 | 4 |   | 2 | 1 |
+' +---+---+---+---+---+---+---+---+   +---+---+
+'
+' So to display HELLO we send "H" to char 11, "E" to char 10.. etc
+
+' Each character has up to 16 segments in the SC16315 mode pioneer have used, but
+' the SC16315 has upto 24 segments so the last 8bits are not used, thus we have to
+' map each ASCII char to a 16 bit (2byte) bitmap this is done in the VFDFont() 
+' array so each character is two bytes with the font data and a blank 0x00 byte.
+' I'm Pretty sure after the init I dont need to keep sending the COMMANDs for mode 
+' and data but that is what the datasheet example says, and it works, so whatever..
+
+
+SUB PrintVFD dtext$  ' Print text$ on VFD (String of exactly 10 characters)
+  LOCAL i, charCode, segData
+  dtext$ = UCASE$(dtext$ + "          ")
+  PIN(GP5) = 0      ' COMMAND: set Display Mode 12 digits/16 segments - last 2 chars n/u
+  SPISendByte(&amp;H08) 
+  PIN(GP5) = 1
+  PIN(GP5) = 0      ' COMMAND: Set data: Write to Display RAM, Auto-Increment
+  SPISendByte(&amp;H40) 
+  PIN(GP5) = 1
+  PIN(GP5) = 0      ' COMMAND 4 : Display OFF
+  SPISendByte(&amp;H88) 
+  PIN(GP5) = 1  
+  PIN(GP5) = 0      ' COMMAND 3: Set RAM Address to 00H Auto increment  
+  SPISendByte(&amp;HC0) 
+  i=11
+  ' Immediately Send 12 digits using ASCII segment data from font table
+  DO while i>0
+    charCode = ASC(MID$(dtext$, i, 1))
+    IF charCode &lt; 32 OR charCode > 90 THEN charcode = 32
+    segData = VFDfont(charCode) ' get ASCII->segment conversion
+    SPISendByte(segData AND &amp;HFF)         ' Low Byte (Segments 1-8)
+    SPISendByte((segData >> 8) AND &amp;HFF)  ' High Byte (Segments 9-16)
+    SPISendByte(0)                        ' 3rd Byte (Extra segments/Icons)
+    i=i-1
+  LOOP
+  PIN(GP5) = 1  
+  PIN(GP5) = 0      ' Finally Send instruction for Display ON at full brightness
+  SPISendByte(&amp;H8e) 
+  PIN(GP5) = 1
+END SUB
+
+' The PT2599 has a basic and hard to find datasheet, there is a noticable click
+' when I send a command to set the volume, I have tried a few variations on the 
+' data sent but dont see an easy way to get rid of it (bugger!) a hard mute input
+' would have been too much to ask!
+' Looking back I should have used one of the combined volume control, selector 
+' chips LCSC seems to have a few of such as the ROHM BD37534FV-E2 as I could have
+' also ditched the input relays and had a few more inputs available for lower $ (sigh!)
+
+SUB SetVolume(percent, DoVFD) ' Set Volume between 0% (mute) and 100% (full)
+  LOCAL db, tens, ones, tempstr$
+  db = 79 - INT(percent * 0.79)
+  tens = INT(db / 10) +&amp;HE0
+  ones = db MOD 10    +&amp;HD0
+  IF percent=0 then
+    I2C2 WRITE &amp;H44, 0, 1, &amp;H77 ' Mute ON
+  ELSE
+    I2C2 WRITE &amp;H44, 0, 3, &amp;H74, tens, ones ' Unmute and set L&amp;R to -20dB
+  ENDIF      
+  if DoVFD=1 then PrintVFD("VOL: " + str$(percent))
+END SUB
+
+' I use two relays to select 3 input sources, the primary one being the I2S DAC so
+' I can play my MP3's, but setting relay U15 lets us select the CD input and if you
+' also set U11 then the AUX input. So basically we are just toggling 2 GPIO pins
+
+SUB SelectInput(src, DoVFD)
+  if CurrentInputSource &lt;> src then
+    IF src=1 THEN
+      PIN(GP20) = 1 ' 1 = Select CD PLAYER
+      PIN(GP19) = 0
+      if DoVFD=1 then PrintVFD("SRC: CD ")
+    elseif src=2 THEN
+      PIN(GP20) = 1 ' 2 = Select AUX
+      PIN(GP19) = 1
+      if DoVFD=1 then PrintVFD("SRC: AUX")
+    ELSE
+      src = 0
+      PIN(GP19) = 0 ' off/dont-care
+      PIN(GP20) = 0 ' 3 = Select MP3 
+      if DoVFD=1 then PrintVFD("SRC: MP3")
+    ENDIF        
+    CurrentInputSource = src  
+  endif  
+END SUB
+
+' This next bit you just send it a folder name (eg B:/genesis) and it will find
+' all the MP3 files under it. eg the next level down is an album folder so we
+' will retrieve the tracks under the album folder. eg it will get files like:
+' B:/genesis/foxtrot/suppers ready.mp3 or
+' B:/genesis/duke (Full album).mp3
+' these are populated in the tracks$() array which is cleared as you select the
+' artist. I could not see any comments about size restrictions on the PLAY MP3
+' so hoping all good long term
+
+SUB GetTrackList path$ AS string, DoPrint AS Integer
+  local integer ii, NumAlbum
+  LOCAL SubDir$(50) ' Allow upto 50 sub-folders for albums if required
+  local string file$
+  CurrentTrack=0
+  Numtracks=0
+  NumAlbum=0
+  for ii=0 to BOUND(tracks$())
+    tracks$(ii)=""
+  next ii
+  ' All tracks in root artist folder
+  file$=DIR$(path$+"*.mp3", file)
+  do while file$&lt;>"" and NumTracks&lt;bound(tracks$())
+    tracks$(NumTracks)=path$+file$
+    if DoPrint then print " - Add track "+str$(NumTracks+1)+" : '"+tracks$(NumTracks)+"'"
+    file$=DIR$()
+    NumTracks=NumTracks+1
+  loop
+  ' Second, find all subdirectories (albums)
+  file$=DIR$(path$+"*", dir)
+  do while file$&lt;>"" and NumTracks&lt;bound(subDir$())
+    IF file$ &lt;> "." AND file$ &lt;> ".." THEN
+      SubDir$(NumAlbum)=path$+file$
+      if DoPrint then print " +album '"+SubDir$(NumAlbum)+"'"
+      NumAlbum=NumAlbum+1
+    endif
+    file$=DIR$()
+  loop
+  ' Get all the tracks in these subdirectories
+  for ii=0 to numAlbum
+    file$ = DIR$(subdir$(ii) + "/*.mp3", FILE)
+    do while file$&lt;>"" and NumTracks&lt;bound(tracks$())
+      tracks$(NumTracks)=SubDir$(ii)+"/"+file$
+      if DoPrint then print " - Add album-track '"+tracks$(NumTracks)+"'"
+      file$=DIR$()
+      NumTracks=NumTracks+1
+    loop
+  next ii  
+  print "Select Artist '"+path$+"': " + str$(NumAlbum) +" Albums, "+ Str$(NumTracks) + " Tracks"
+  print ""
+END SUB
+
+sub PlayTrack
+  if CurrentTrack&lt;NumTracks then
+    play mp3 tracks$(CurrentTrack)
+    print "Playing Track " +str$(CurrentTrack+1) + " : "+tracks$(CurrentTrack)
+    DispPos=0
+    TrackSS=0
+    TrackMM=0
+    LastDP=0
+  ELSE  
+    CurrentArtist=CurrentArtist+1
+    ArtistFinished=1
+  endif
+end sub
+
+
+
+'###################################
+'####  MAIN PROGRAM STARTS HERE ####
+'###################################
+
+ProgramInit:
+
+  ' Initialise pin and variables to default states
+  
+  PIN(GP10) = 1 ' SC16315 CLK (IDLE = HIGH - MODE 3)
+  PIN(GP5)  = 1 ' SC16315 STB (IDLE = HIGH)
+  pin(gp15) = 0 ' MAINS-POWER RELAY (0=POWER-OFF)
+  pin(gp14) = 0 ' MUTE SPEAKERS (0=Speakers muted)
+  PIN(GP19) = 0 ' INPUT SOURCE RELAY (GP19=0=I2S, GP19=1=CD OR AUX)
+  PIN(GP20) = 0 ' INPUT SOURCE RELAY (GP20=0=CD PLAYER, GP20=1=AUX)
+
+  SelectWheelState = 0
+  PrevGP0=pin(GP0)
+  VolumeWheelState = 0
+  PrevGP1=pin(GP1)
+
+  I2C2 OPEN 100, 100
+  
+  'Initialise variables when amplifier looses power - preserved during standby
+  
+  CurrentArtist = 0
+  CurrentTrack = 0
+  NumArtists=0
+  CurrentVolume = 20      ' 20% (quiet)
+  CurrentInputSource = 0  ' 0=MP3, 1=CD - also had 2=AUX but problem with relay :-(  
+  RESTORE fontdata        ' Load the VFD display SC16315 segment fontdata array
+  FOR ii = 32 TO 90
+    READ VFDfont(ii)
+  NEXT ii
+  
+  ' Get list of all artists from SD Card root folder
+  dim string f$
+  f$=DIR$("B:/*", DIR)
+  do while f$&lt;>"" and NumArtists&lt;bound(artists$())
+    artists$(NumArtists)=f$
+    f$=DIR$()
+    NumArtists=NumArtists+1
+  loop
+  Print str$(NumArtists) + " Artists found on disk"
+
+  ArtistFinished=1  
+  TrackTimer=0
+  
+ProgramStart:
+
+  SETTICK 1000,TimerInterrupt,1
+
+  print "Waiting power on.."
+  
+  'Note The main Amplifier CCT is de-powered at this time so cannot initialise anything!
+
+  DO WHILE PIN(GP26) = 1 ' WAIT FOR POWER BUTTON TO BE PRESSED
+  LOOP
+  pin(gp15) = 1 'power on main amplifier hardware
+  PAUSE 250
+  DO WHILE PIN(GP26) = 0 ' WAIT FOR POWER BUTTON TO BE RELEASED
+  LOOP
+
+  pause 200 ' 200mS delay for the SC16315S VFD Driver and PT2259 volume control
+  
+  VolumeWheelState = 0
+  SelectWheelState = 0
+  InitVFD 
+  PrintVFD(" RODYNE  26") ' init the display and display company/welcome message
+  I2C2 WRITE &amp;H44, 0, 1, &amp;HF0 ' PT2259 volume control init/Reset/Clear registers
+  SetVolume(CurrentVolume,0) 
+
+  pause 2000
+  PrintVFD(" WELCOME  ") 
+  SelectInput(CurrentInputSource,0) ' re-select correct input source 
+
+  pause 1000
+  pin(gp14) = 1 'turn on speakers
+  
+
+  DO ' NORMAL OPERATION LOOP (UNTIL POWER OFF/STBY BUTTON PRESSED)
+  
+    if ArtistFinished=1 then
+      IF CurrentArtist&lt;NumArtists then 
+        GetTrackList "B:/"+artists$(CurrentArtist)+"/",0 'get selected artists songlist
+        CurrentTrack=0  ' start at track 1
+        Playtrack       ' and play song
+      endif  
+      ArtistFinished=0
+      pause 500
+    endif 
+    
+    if mm.info(sound)="OFF" then      ' No music playing (after init or track finished)
+      print "Track finished"
+      if CurrentTrack&lt;NumTracks then  ' If more tracks then play the next one
+        CurrentTrack=CurrentTrack+1   ' by incrementing the current track variable
+        PlayTrack
+      ELSE  
+        CurrentArtist=CurrentArtist+1 ' if at end of tracklist then goto next artist
+        ArtistFinished=1              ' will activate the code 10 lines above
+      endif
+      pause 500      
+    endif    
+
+    if pin(gp26) = 0 then exit DO ' Exit loop if POWER OFF BUTTON Pressed
+    
+    ' The volume and select wheels are rotary encoders, the wheelstates are 
+    ' handled in the interrupts at the end of the code
+    
+    IF VolumeWheelState=2 then ' volume turned up
+      if CurrentVolume&lt;96 then
+        CurrentVolume = CurrentVolume+4
+        SetVolume(CurrentVolume,1)
+      endif
+      VolumeWheelState = 0
+    endif  
+    
+    IF VolumeWheelState=1 then ' volume turned down
+      if CurrentVolume>3 then
+        CurrentVolume = CurrentVolume-4
+        SetVolume(CurrentVolume,1)
+      endif
+      VolumeWheelState = 0
+    endif  
+
+    IF SelectWheelState=1 then 'Select wheel rotated anti-clockwise
+      play STOP
+      PrintVFD("PREVIOUS    ")
+      if CurrentTrack>0 then
+        print "PREV SONG"
+        CurrentTrack=CurrentTrack-1
+      else
+        CurrentTrack=0  
+      endif  
+      Playtrack
+      SelectWheelState = 0
+      pause 500
+    endif
+    
+    IF SelectWheelState=2 then ' Select wheel rotated clockwise
+      play STOP
+      PrintVFD("NEXT       ")
+      if CurrentTrack&lt;NumTracks then
+        print "NEXT SONG"
+        CurrentTrack=CurrentTrack+1
+        Playtrack
+      else
+        ArtistFinished=1  
+      endif  
+      SelectWheelState = 0
+      pause 500
+    endif  
+    
+    ' Looking at the five buttons at the bottom left of the amplifier on Key3 input
+    '
+    ' +------------+------------+------------+------------+    +--------------+
+    ' | Select MP3 | Select CD  | RND Track  | RND Artist |    | Pause/Resume |
+    ' +------------+------------+------------+------------+    +--------------+
+    '
+    ' Get analog voltage of the Key3 input represents which button was pressed
+    
+    Key3 = pin(GP41) \ 100 ' \ is integer division : makes 0-4096 value = 0-41
+    if Key3 &lt;33 then ' KEY PRESSED
+      pause 25
+      Key3 = pin(GP41) \ 100 ' get value again as it can glitch      
+      PRINT Key3 'debug
+      if key3=9 then  ' Select MP3 (Jukebox) button pressed
+        SelectInput(0,1)
+        if mm.info(sound)="PAUSED MP3" then
+          play resume
+          pause 800
+          PrintVFD("-RESUME-")          
+        endif
+      endif  
+      if key3=14 then ' Select CD PLAYER button pressed
+        SelectInput(1,1)
+        if mm.info(sound)&lt;>"OFF" then
+          play pause
+        endif
+      endif  
+      if key3=19 then ' RND Track button pressed
+        CurrentTrack = INT(rnd*NumTracks) ' Select a random track for this artist
+        PrintVFD("RND TRAK   ")
+        play stop
+        PlayTrack
+      endif
+      if key3=23 then ' RND Artist Button pressed
+        CurrentArtist = INT(rnd*NumArtists) ' Select random artist
+        PrintVFD("RND ARTS ")
+        play stop
+        ArtistFinished=1
+      endif
+      if key3=26 then ' Pause/resume Button pressed
+        print mm.info(sound)
+        if mm.info(sound)="PAUSED MP3" then ' Play is PAUSED so resume
+          play resume
+          PrintVFD("-RESUME-")
+        else ' MP3 is playing so PAUSE
+          PrintVFD("-PAUSED-")
+          play pause
+        endif        
+      endif
+      do
+        pause 100 
+      LOOP until pin(gp41)>33 ' Pause/debounce wait for user to release the switch
+      DispPos=0 ' Causes re-display of song title after any key press
+    endif
+
+    ' Here we control what is displayed. When song starts display the artist/track
+    ' info, note we can just use the track(currenttrack) as we dont have font data
+    ' for slashes and backslashes so they appear as spaces.
+    ' After we have displayed the track we display the song length counter in MM:SS
+    ' format. Note the variable DispPos increments every second (see interrupt at 
+    ' end of file) until reset, as does the song timer TrackMM (minutes) and 
+    ' TrackSS (seconds) There is an initial 2 second delay before any of this 
+    ' happens so we can display any button press info
+    
+    if mm.info(sound)="MP3" then 'Only do this when song playing
+      if DispPos&lt;>LastDP and DispPos>2 then ' only want to call once every second
+        if DispPos&lt;len(tracks$(CurrentTrack)) then ' display track info
+          DispStr$=tracks$(CurrentTrack)
+          DispStr$=MID$(DispStr$,2,LEN(DispStr$)-5)+"           "
+          DispStr$=mid$(DispStr$,DispPos,8)+" "+STR$(CurrentTrack+1,2,0,"0")
+        else ' display track timer
+          DispStr$=str$(TrackMM,2,0,"0")+":"+STR$(TrackSS,2,0,"0")+"    "
+          DispStr$=dispStr$+STR$(CurrentTrack+1,2,0,"0")
+        endif
+        PrintVFD(DispStr$)
+        LastDP=DispPos
+      endif
+    endif  
+  
+  LOOP ' loops indefinately until the power/standby button pressed then we exit
+
+  pin(gp14) = 0 'turn off speaker relays
+  
+  CurrentTrack=CurrentTrack-1 ' set pos back to start of song being played
+  PrintVFD("           ")     ' otherwise when we pwr-on we get last display text
+  
+  ' was going to save the artist/track/volume to flash, but power consumption was
+  ' only found to be 600mW in standby and 24W when on and playing at normal volume
+  
+  if mm.info(sound)&lt;>"OFF" then ' STOP MP3 PLAYING
+    play stop
+  endif
+  
+  pin(gp15) = 0 'power off main amplifier hardware
+  
+  DO 
+    pause 50
+  LOOP UNTIL pin(gp26) &lt;> 0 ' Wait for power button released
+  pause 1000                ' Wait for sticky fingers
+
+GOTO ProgramStart 'Program endless loop so loop back to just after initialise
+
+
+'##########################################################################
+'####    VFD FONT BITMAP DATA STARTS HERE ONLY ASCII 32 to ASCII 90    ####
+'####    ARE REQUIRED AS WE CAN ONLY DO UPPERCASE LETTERS AND NUMBERS  ####
+'####    (I THINK THIS IS THE WAY YOU ARE SUPPOSED TO DO CONSTS?)      ####
+'##########################################################################
+
+fontdata:
+data &amp;H0000 ' space (ASCII 32)
+data &amp;H0000 ' !
+data &amp;H0000 ' "
+data &amp;H0000 ' #
+data &amp;H0000 ' $
+data &amp;H0000 ' %
+data &amp;H0000 ' &amp;
+data &amp;H0000 ' '
+data &amp;H0000 ' (
+data &amp;H0000 ' )
+data &amp;H0000 ' *
+data &amp;H0000 ' +
+data &amp;H0000 ' ,
+data &amp;H0300 ' -
+data &amp;H0001 ' .
+data &amp;H0000 ' /
+data &amp;HfC44 ' 0
+data &amp;H6000 ' 1
+data &amp;HDB00 ' 2
+data &amp;HF300 ' 3
+data &amp;H6700 ' 4
+data &amp;HB700 ' 5
+data &amp;HBF00 ' 6
+data &amp;HE000 ' 7
+data &amp;HFF00 ' 8
+data &amp;HE700 ' 9
+data &amp;H0003 ' :
+data &amp;H0003 ' ;
+data &amp;H0000 ' &lt;
+data &amp;H0000 ' =
+data &amp;H0000 ' >
+data &amp;H0000 ' ?
+data &amp;H0000 ' @
+data &amp;HEE00 ' A
+data &amp;H9F48 ' B
+data &amp;H9C00 ' C
+data &amp;H7B00 ' D
+data &amp;H9F00 ' E
+data &amp;H8F00 ' F
+data &amp;HBD00 ' G
+data &amp;H6F00 ' H
+data &amp;H9090 ' I
+data &amp;HF800 ' J
+data &amp;H0E48 ' K
+data &amp;H1C00 ' L
+data &amp;H6C60 ' M
+data &amp;H6C28 ' N
+data &amp;HFC00 ' O
+data &amp;HCF00 ' P
+data &amp;HFC08 ' Q
+data &amp;HCC08 ' R
+data &amp;HB700 ' S
+data &amp;H8090 ' T
+data &amp;H7C00 ' U
+data &amp;H6028 ' V
+data &amp;H6C0C ' W
+data &amp;H006C ' X
+data &amp;H0070 ' Y
+data &amp;H9044 ' Z (ASCII 90)
+
+
+'####################################
+'#### INTERRUPT FUNCTIONS AT END ####
+'####################################
+
+SelectWheelInterrupt: ' Rotary encoder Falling edge triggered interrupt
+  NewGP0 = pin(GP0)
+  if NewGP0&lt;>PrevGP0 THEN
+    if pin(gp21) &lt;> NewGP0 then
+      SelectWheelState=1
+    else
+      SelectWheelState=2      
+    endif    
+    PrevGP0=NewGP0
+  endif  
+ireturn
+   
+VolumeWheelInterrupt: ' Rotary encoder Falling edge triggered interrupt
+  NewGP1 = pin(GP1)
+  if NewGP1&lt;>PrevGP1 THEN
+    if pin(gp13) &lt;> NewGP1 then
+      VolumeWheelState=1
+    else
+      VolumeWheelState=2    
+    endif    
+    PrevGP1=NewGP1
+  endif
+ireturn
+
+TimerInterrupt:       ' track timer and position of scrolling VFD Display
+  TrackSS=TrackSS+1
+  if TrackSS>59 then  ' Seconds overflow so increment minutes
+    TrackSS=0
+    TrackMM=TrackMM+1 ' minutes unlikely to overflow unless MP3 > 99 minutes long 
+  endif    
+  DispPos=DispPos+1   ' scroll cursor to next
+IRETURN
+</code></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://rodyne.com/?feed=rss2&#038;p=3380</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Do 8051/8031 assembly like its 1984!</title>
+		<link>https://rodyne.com/?p=3225</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 10 Dec 2025 22:43:23 +0000</pubDate>
+				<category><![CDATA[boz]]></category>
+		<category><![CDATA[Other Programming]]></category>
+		<category><![CDATA[Pascal Programming]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Retro]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[8031]]></category>
+		<category><![CDATA[8051]]></category>
+		<category><![CDATA[assembler]]></category>
+		<category><![CDATA[GCHQ]]></category>
+		<category><![CDATA[nostalgia]]></category>
+		<category><![CDATA[Turbo Pascal 3]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=3225</guid>
+
+					<description><![CDATA[After my recent trip to the UK, my friend Tony, who I worked with as a electronics technician in Q4 division at GCHQ from 1984 to 1989, sent me an email. Apparently in the late nineties, a few years after &#8230; <a href="https://rodyne.com/?p=3225">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">After my recent trip to the UK, my friend Tony, who I worked with as a electronics technician in Q4 division at GCHQ from 1984 to 1989, sent me an email. Apparently in the late nineties, a few years after I left, he was rummaging through some items awaiting disposal when he spotted something familiar, and, being a bit of a retro nerd, quietly appropriated it. So what you may ask is it?</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="740" height="801" src="https://rodyne.com/wp-content/uploads/Retro8031-1.jpg" alt="" class="wp-image-3228" srcset="https://rodyne.com/wp-content/uploads/Retro8031-1.jpg 740w, https://rodyne.com/wp-content/uploads/Retro8031-1-277x300.jpg 277w" sizes="auto, (max-width: 740px) 100vw, 740px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">Well this my friends was an 8051 developers board; Part of the extremely expensive Intel 8031/8051 developers kit, which several of the GCHQ development (M Division) departments used back in the day. This kit usually included an in-circuit emulator (ICE), some sort of flash programmer, a wad of thick manuals, and the complete software package for VAX/VMS (The OS of champions back in the day!). The Intel 8031 was basically an 8051 without flash or EPROM and a lot less expensive, it was usually paired with something like an 8755 EPROM/IO.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">Now in the early 80&#8217;s adding any type of smarts to your electronics project was not quite as simple as connecting a $2 board and running up an Arduino IDE; Back then the world was mostly focussed on micro-computers such as the Z80, 680x, 650x, etc, which required all the associated RAM/ROM and IO to make them work. Micro-controllers were there but hidden from the normal hobbyists, and used mainly in industrial applications. The first microcontroller I was exposed to was the 8031, and like many things, once I got used to it, I just stuck with it. The 8051 is still used today.</p>
+
+
+
+<p class="wp-block-paragraph">An 8051 in the mid-80&#8217;s cost about US$40 (US$90 in 2025 money), though that was not the end of it, back then you also had to <em>buy</em> or <em>pirate</em> the assembler or compiler software, and, to put the proverbial nail in the coffin, buy or have access to an EPROM programmer. As a twenty year old junior technician I was always wanting to build things, but I was also perpetually broke, had to pay rent, run my car, eat and drink too, so forking out mega-bucks for the above was never going to happen. Luckily I <em>worked</em> at GCHQ!</p>
+
+
+
+<p class="wp-block-paragraph">There is a bit of a little known fact about GCHQ (and I guess all military/NATO organisations should be included here) and that is a lowly junior electronic technician back then could simply write out a chit, with a NATO stock number on it for almost any electronics part, and it would magically appear the same or the next day; With almost no questions asked! Also as an electronics technician, when we weren&#8217;t repairing or servicing computers (which was most of the time) we had very little to do.</p>
+
+
+
+<p class="wp-block-paragraph">Being in a maintenance department we did not have the full development kit, nor a spare VAX in the office to run it on (We fixed mostly DEC PDP 11/70s and peripherals). What we did have though was a PC/XT, a EPROM blower, wads of time, and an almost infinite supply of components! Coding back then for a poor hobbyist meant getting the data book, writing out all the op codes by hand, typing the resultant hexadecimal into a file and sending it to the EPROM blower to write the 8051 or 8755! But yours truly also had a secret weapon, TURBO PASCAL!</p>
+
+
+
+<p class="wp-block-paragraph">Writing an assembler was simply substituting 8051 assembly mnemonics for there hexadecimal equivalent, and remembering a few labels so you could add in the appropriate memory locations, registers and jumps, it certainly wasn&#8217;t rocket science. That is exactly what 1984 Boz thought and so he wrote one.</p>
+
+
+
+<p class="wp-block-paragraph">I am pretty sure this was one of my very first Pascal programs, as I started using Turbo Pascal 1.0 in September 1984 after another guy Mark loaded his copy on the work PC and showed me it. I also used the newly written assembler to program my home built 8031 based central heating controller which would have been Christmas that same year. The big surprise from Tony&#8217;s email was that he had kept a copy of that assembler program, as he was going to use it to determine how to write a Z80 one. More importantly, he also kept a copy of it&#8217;s turbo pascal source code. The really big surprise is that in 2025 it all still works!</p>
+
+
+
+<p class="wp-block-paragraph">The code is laughable (from the perspective of 2025 Boz), but I had to remember that back then Turbo Pascal compiled to the old COM style executable, not the EXE, and so code and data had to fit into a 64KB memory segment. I had never done any formal programming courses, had never used an assembler, nor had any idea how an assembler worked until I decided to build one. So I basically guessed how to do it, assuming I could define registers or memory addresses with labels, and use labels for jumps, just like hand written stuff. What a trip down memory lane..</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="877" height="1024" src="https://rodyne.com/wp-content/uploads/assm-877x1024.jpg" alt="" class="wp-image-3234" srcset="https://rodyne.com/wp-content/uploads/assm-877x1024.jpg 877w, https://rodyne.com/wp-content/uploads/assm-257x300.jpg 257w, https://rodyne.com/wp-content/uploads/assm-768x896.jpg 768w, https://rodyne.com/wp-content/uploads/assm.jpg 921w" sizes="auto, (max-width: 877px) 100vw, 877px" /></figure>
+
+
+
+<p class="wp-block-paragraph">The 660 lines of pascal I wrote also included an interface to the EPROM programmer we used at the time, and all compiled to a 24KB executable! As you can see from the program comment it was seriously limited (having only 26KB free for data), but you also have to remember, the 8051 had only 2KB of memory and 128 bytes of RAM back then! Luxury!</p>
+
+
+
+<p class="wp-block-paragraph">I have attached the whole <a href="https://drive.google.com/file/d/168rXHhy0mdJLibxhmPZQps7u2fWiEQbR/view?usp=sharing">project zip</a> to my google drive. This 55KB zip file not only contains the assembler pascal source code and executable file but <span style="text-decoration: underline;">also</span> the whole turbo pascal 3.02 IDE. (Turbo Pascal 3 was made free back in 2002) Everything runs fine on the date of this post on the latest <a href="https://www.dosbox.com/" data-type="link" data-id="https://www.dosbox.com/" target="_blank" rel="noreferrer noopener">DOSBox</a></p>
+
+
+
+<p class="wp-block-paragraph">Remember this was 1984 and young Boz had never seen a proper assembler, I hand-coded stuff from listings in computer magazines, and the made-up syntax of the source file was probably influenced from my exposure previously to BASIC programming. The assembly file below contained all the supported op codes to test the program worked properly.</p>
+
+
+
+<pre class="wp-block-code"><code>DATA=$AA
+PSW=50
+RGR21=20
+BITST=$50
+RGR20=$20
+TEST=255
+
+ORG $0000
+START:   ADD A,R0
+         ADD A,R1
+         ADD A,R2
+         ADD A,R3
+         ADD A,R4
+         ADD A,R5
+         ADD A,R6
+         ADD A,R7
+         ADD A,#DATA
+         ADD A,@R0
+         ADD A,@R1
+         ADD A,RGR20
+         ADDC A,R0
+         ADDC A,R1
+         ADDC A,R2
+         ADDC A,R3
+         ADDC A,R4
+         ADDC A,R5
+         ADDC A,R6
+         ADDC A,R7
+         ADDC A,#50
+         ADDC A,@R0
+         ADDC A,@R1
+         ADDC A,RGR20
+         ANL A,R0
+         ANL A,R1
+         ANL A,R2
+         ANL A,R3
+         ANL A,R4
+         ANL A,R5
+         ANL A,R6
+         ANL A,R7
+         ANL A,@R0
+         ANL A,@R1
+         ANL A,#TEST
+         ANL RGR20,#TEST
+         ANL RGR20,A
+         ANL A,RGR20
+         ANL C,RGR20
+         CJNE A,#TEST,START
+         CJNE A,RGR20,START
+         CJNE R0,#TEST,START
+         CJNE R1,#TEST,START
+         CJNE R2,#TEST,START
+         CJNE R3,#TEST,START
+         CJNE R4,#TEST,START
+         CJNE R5,#TEST,START
+         CJNE R5,#TEST,START
+         CJNE R6,#TEST,START
+         CJNE R7,#TEST,START
+         CJNE @R0,#TEST,START
+         CJNE @R1,#TEST,START
+         CLR A
+         CLR C
+         CLR RGR20
+         CPL A
+         CPL C
+         CPL RGR20
+         DA A
+         DEC A
+         DEC R0
+         DEC R1
+         DEC R2
+         DEC R3
+         DEC R4
+         DEC R5
+         DEC R6
+         DEC R7
+         DEC @R0
+         DEC @R1
+         DEC RGR20
+         DIV AB
+LL1:     DJNZ R0,LL1
+         DJNZ R1,LL1
+         DJNZ R2,LL1
+         DJNZ R3,LL1
+         DJNZ R4,LL1
+         DJNZ R5,LL1
+         DJNZ R6,LL1
+         DJNZ R7,LL1
+         DJNZ RGR20,LL1
+         INC A
+         INC DPTR
+         INC R0
+         INC R1
+         INC R2
+         INC R3
+         INC R4
+         INC R5
+         INC R6
+         INC R7
+         INC @R0
+         INC @R1
+         INC RGR20
+         JBC BITST,LL1
+         JZ LL1
+         JB BITST,LL1
+         JC LL1
+         JMP @A+DPTR
+         JNB BITST,LL1
+         JNC LL1
+         JNZ LL1
+         LCALL SUBRT
+         LJMP LL1
+         MOV DPTR,#$AAAA
+         MOVC A,@A+DPTR
+         MOVC A,@A+PC
+         MOVX @DPTR,A
+         MOVX A,@R0
+         MOVX A,@R1
+         MOVX @R0,A
+         MOVX @R1,A
+         MOV A,R0
+         MOV A,R1
+         MOV A,R2
+         MOV A,R3
+         MOV A,R4
+         MOV A,R5
+         MOV A,R6
+         MOV A,R7
+         MOV A,@R0
+         MOV A,@R1
+         MOV R0,A
+         MOV R1,A
+         MOV R2,A
+         MOV R3,A
+         MOV R4,A
+         MOV R5,A
+         MOV R6,A
+         MOV R7,A
+         MOV R0,#TEST
+         MOV R1,#TEST
+         MOV R2,#TEST
+         MOV R3,#TEST
+         MOV R4,#TEST
+         MOV R5,#TEST
+         MOV R6,#TEST
+         MOV R7,#TEST
+         MOV R0,RGR20
+         MOV R1,RGR20
+         MOV R2,RGR20
+         MOV R3,RGR20
+         MOV R4,RGR20
+         MOV R5,RGR20
+         MOV R6,RGR20
+         MOV R7,RGR20
+         MOV @R0,A
+         MOV @R1,A
+         MOV @R0,#TEST
+         MOV @R1,#TEST
+         MOV @R0,RGR20
+         MOV @R1,RGR20
+         MOV A,#TEST
+         MOV A,RGR20
+         MOV RGR20,#TEST
+         MOV RGR20,A
+         MOV RGR20,R0
+         MOV RGR20,R1
+         MOV RGR20,R2
+         MOV RGR20,R3
+         MOV RGR20,R4
+         MOV RGR20,R5
+         MOV RGR20,R6
+         MOV RGR20,R7
+         MOV RGR20,@R0
+         MOV RGR20,@R1
+         MOV C,BITST
+         MOV BITST,C
+         MOV RGR20,RGR21
+         MUL AB
+         NOP
+         ORL A,R0
+         ORL A,R1
+         ORL A,R2
+         ORL A,R3
+         ORL A,R4
+         ORL A,R5
+         ORL A,R6
+         ORL A,R7
+         ORL A,@R0
+         ORL A'@R1
+         ORL A,#TEST
+         ORL A,RGR20
+         ORL RGR20,#TEST
+         ORL RGR20,A
+         ORL C,BITST
+SUBRT:   POP PSW
+         PUSH PSW
+         RETI
+         XRL A,R0
+         XRL A,R1
+         XRL A,R2
+         XRL A,R3
+         XRL A,R4
+         XRL A,R5
+         XRL A,R6
+         XRL A,R7
+         XRL A,@R0
+         XRL A,@R1
+         XRL A,#TEST
+         XRL A,RGR20
+         XRL RGR21,A
+         XRL RGR20,#TEST
+         RET
+         RL A
+         RLC A
+         RR A
+         RRC A
+         SETB C
+         SETB BITST
+         SJMP HERE
+HERE:    SUBB A,R0
+         SUBB A,R1
+         SUBB A,R2
+         SUBB A,R3
+         SUBB A,R4
+         SUBB A,R4
+         SUBB A,R5
+         SUBB A,R6
+         SUBB A,R7
+         SUBB A,@R0
+         SUBB A,@R1
+         SUBB A,#TEST
+         SUBB A,RGR20
+         SWAP A
+         XCH A,R0
+         XCH A,R1
+         XCH A,R2
+         XCH A,R3
+         XCH A,R4
+         XCH A,R5
+         XCH A,R6
+         XCH A,R7
+         XCH A,@R0
+         XCH A,@R1
+         XCH A,RGR20
+         XCHD A,@R0
+         XCHD A,@R1
+         XRL A,R0
+         XRL A,R1
+         XRL A,R2
+         XRL A,R3
+         XRL A,R4
+         XRL A,R5
+         XRL A,R6
+         XRL A,R7
+         XRL A,@R0
+         XRL A,@R1
+         XRL A,#TEST
+         XRL A,RGR20
+         XRL RGR21,A
+         XRL RGR20,#TEST
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">I did also go on to write a compiler for an 8031 called BPL (Boz&#8217;s Programing Language &#8211; go figure!) it was a  weird cross between Turbo Pascal 1.0, BASIC and C. Unfortunately I have not seen it for about 15 years, but I will find it one day.</p>
+
+
+
+<p class="has-light-gray-background-color has-background wp-block-paragraph">Comments here =&gt; <a href="https://news.ycombinator.com/item?id=46226176" target="_blank" rel="noreferrer noopener">Do 8051/8031 assembly like its 1984 | Hacker News</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

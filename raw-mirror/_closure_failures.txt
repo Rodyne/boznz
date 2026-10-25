@@ -1,0 +1,16 @@
+404 https://rodyne.com/wp-content/themes/twentyten/style.css?ver=20260520
+404 https://rodyne.com/wp-content/themes/twentyten/blocks.css?ver=20250220
+404 https://rodyne.com/wp-includes/js/comment-reply.min.js?ver=7.0.7
+https://rodyne.com/rstatic/wp-content/uploads/Dungeon Newbie V1.pdf URL can't contain control characters. '/rstatic/wp-content/uploads/Dungeon Newbie V1.pdf' (found at least ' ')
+https://rodyne.com/rstatic/wp-content/uploads/2024/11/DALL·E-2024-11-23-13.42.09-A-Renaissance-era-writer-sitting-at-a-wooden-desk-in-a-dimly-lit-study-deeply-pondering-while-holding-a-quill-pen.-The-room-is-adorned-with-books-sc-2.png 'ascii' codec can't encode character '\xb7' in position 44: ordinal not in range(128)
+https://rodyne.com/rstatic/wp-content/uploads/2024/11/DALL·E-2024-11-23-13.42.09-A-Renaissance-era-writer-sitting-at-a-wooden-desk-in-a-dimly-lit-study-deeply-pondering-while-holding-a-quill-pen.-The-room-is-adorned-with-books-sc-2-300x300.png 'ascii' codec can't encode character '\xb7' in position 44: ordinal not in range(128)
+https://rodyne.com/rstatic/wp-content/uploads/2024/11/DALL·E-2024-11-23-13.42.09-A-Renaissance-era-writer-sitting-at-a-wooden-desk-in-a-dimly-lit-study-deeply-pondering-while-holding-a-quill-pen.-The-room-is-adorned-with-books-sc-2-150x150.png 'ascii' codec can't encode character '\xb7' in position 44: ordinal not in range(128)
+https://rodyne.com/rstatic/wp-content/uploads/2024/11/DALL·E-2024-11-21-08.49.05-A-cartoon-style-depiction-of-a-small-ship-with-several-holes-in-its-hull-water-leaking-in-and-only-the-captain-standing-at-the-helm-confidently-and-2.jpg 'ascii' codec can't encode character '\xb7' in position 44: ordinal not in range(128)
+https://rodyne.com/rstatic/wp-content/uploads/2024/11/DALL·E-2024-11-21-08.49.05-A-cartoon-style-depiction-of-a-small-ship-with-several-holes-in-its-hull-water-leaking-in-and-only-the-captain-standing-at-the-helm-confidently-and-2-300x300.jpg 'ascii' codec can't encode character '\xb7' in position 44: ordinal not in range(128)
+https://rodyne.com/rstatic/wp-content/uploads/2024/11/DALL·E-2024-11-21-08.49.05-A-cartoon-style-depiction-of-a-small-ship-with-several-holes-in-its-hull-water-leaking-in-and-only-the-captain-standing-at-the-helm-confidently-and-2-150x150.jpg 'ascii' codec can't encode character '\xb7' in position 44: ordinal not in range(128)
+404 https://rodyne.com/wp-content/uploads/2020/09/ChainDisplay.zip
+404 https://rodyne.com/wp-content/uploads/2015/04/terminal-case.png
+404 https://rodyne.com/wp-content/uploads/2019/08/shwd2-1024x768.jpg
+404 https://rodyne.com/wp-content/uploads/2019/08/shed3.jpg
+404 https://rodyne.com/wp-content/uploads/2019/08/shed4.jpg
+404 https://rodyne.com/rstatic/wp-includes/js/comment-reply.min.js%3Fver=7.0.7

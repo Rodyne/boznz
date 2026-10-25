@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Prove You&#8217;re Human</title>
+	<atom:link href="https://rodyne.com/?feed=rss2&#038;tag=prove-youre-human" rel="self" type="application/rss+xml" />
+	<link>https://rodyne.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 16 Aug 2026 23:10:50 +0000</lastBuildDate>
+	<language>en-NZ</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.7</generator>
+
+<image>
+	<url>https://rodyne.com/wp-content/uploads/2015/11/web-header2.png</url>
+	<title>Prove You&#8217;re Human</title>
+	<link>https://rodyne.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>The Internet is Rotting from Within</title>
+		<link>https://rodyne.com/?p=4045</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sat, 11 Jul 2026 01:55:31 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[AI Alignment]]></category>
+		<category><![CDATA[Critical Thinking]]></category>
+		<category><![CDATA[Philosophy]]></category>
+		<category><![CDATA[Singularity]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[The Future]]></category>
+		<category><![CDATA[The Ramblings of an Old Man]]></category>
+		<category><![CDATA[The Summer of Reasoning]]></category>
+		<category><![CDATA[Prove You're Human]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=4045</guid>
+
+					<description><![CDATA[As I mentioned at the end of my previous post, my 3 months trial of social media is currently at an end as I cannot get on X, basically because I cannot verify I am a human. I tick the &#8230; <a href="https://rodyne.com/?p=4045">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">As I mentioned at the end of my previous post, my 3 months trial of social media is currently at an end as I cannot get on X, basically because I cannot verify I am a human. I tick the box, then get a QR code which I have to scan with my phone, but as I do not use my phone for anything outside phone calls, text messages and banking, this is the point that I say fuck you X.</p>
+
+
+
+<p class="wp-block-paragraph">The level of friction to do anything recently been getting noticeably higher. I am happy to tick a box to prove I am human, and a little less happy to tell you which of your stupid pictures have motorbikes or traffic lights in them. I am extremely unhappy when you assume you can now start doing this shit using my phone.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="784" height="414" src="https://rodyne.com/wp-content/uploads/cpaBY-2.jpg" alt="" class="wp-image-4063" srcset="https://rodyne.com/wp-content/uploads/cpaBY-2.jpg 784w, https://rodyne.com/wp-content/uploads/cpaBY-2-300x158.jpg 300w, https://rodyne.com/wp-content/uploads/cpaBY-2-768x406.jpg 768w" sizes="(max-width: 784px) 100vw, 784px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<p class="wp-block-paragraph">And so we come to the perceived culprit of all the new checks, bots, probably powered by AI agents. Agents which can now presumably tick boxes, and tell you which capture pictures have traffic lights in them.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">If I was a social media company, I too probably would also not want these agent spamming my posts either, but there comes a point where your checks are going too far, which also means that if your site is not 1000% where I want to go, I will not be visiting it.</p>
+
+
+
+<p class="wp-block-paragraph">It&#8217;s not just here, the problem of Internet security is getting worse. The number of almost believable spam messages in my inbox now far exceeds the number of real emails, to the point I have now completely stopped accepting random emails, even when the subject line is totally relevant, and the DKIM is valid. The reason is simple, I am paranoid, my whole operating system stack is built on pillars of salt, (I made a post about it a few months back <a href="https://rodyne.com/?p=3574">here</a>), decades of well-meaning humans adding bricks and mortar here and there and contributing to what we all thought was a nice solid house. AI is now finding all the flaws and loopholes in the code all this is made from, and, for an encore, now also has the ability to social engineer its way through your guard rails to execute it.</p>
+
+
+
+<p class="wp-block-paragraph">I have gotten to the point I will no longer click on any email attachments even from people I know, I will not scan QR codes, I will not follow links from trusted sites to other sites, and I don&#8217;t trust anyone on-line full-stop; But even this might not be enough. I no longer think of IF I get compromised, but WHEN I get compromised. These days even a security update might do it, and because of this paranoia I am honestly removing anything stored on my devices that can be used by a 3rd party. I also have another laptop which now sits off-line with all this information and backups, it will never go online again. As I get older I can see myself going on-line less-and-less, and when I do I will only be visiting sites I am 100% certain are OK, but even this will be reliant on the site not being compromised. </p>
+
+
+
+<p class="wp-block-paragraph">I am, and have always been far more security-savvy than 99.99% of my friends, but these days I am open about the dangers, and try my best to install a sense of paranoia in them as, mark my words, the worst is not here. So, unless some smart humans or an AI thinks of a way to fix all this, then you should prepare yourself for a tsunami.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

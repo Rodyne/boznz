@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Bad Management</title>
+	<atom:link href="https://rodyne.com/?feed=rss2&#038;cat=169" rel="self" type="application/rss+xml" />
+	<link>https://rodyne.com</link>
+	<description></description>
+	<lastBuildDate>Sun, 19 Apr 2026 21:11:10 +0000</lastBuildDate>
+	<language>en-NZ</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.7</generator>
+
+<image>
+	<url>https://rodyne.com/wp-content/uploads/2015/11/web-header2.png</url>
+	<title>Bad Management</title>
+	<link>https://rodyne.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Please don&#8217;t read this if you are in the EU.</title>
+		<link>https://rodyne.com/?p=2368</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 10 Apr 2025 21:13:04 +0000</pubDate>
+				<category><![CDATA[Bad Management]]></category>
+		<category><![CDATA[Boz NZ]]></category>
+		<category><![CDATA[Efficiency]]></category>
+		<category><![CDATA[Funny]]></category>
+		<category><![CDATA[Management]]></category>
+		<category><![CDATA[New Zealand]]></category>
+		<category><![CDATA[Politics]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[Annoyances!]]></category>
+		<category><![CDATA[Cookies]]></category>
+		<category><![CDATA[GDPR]]></category>
+		<category><![CDATA[Safety]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Tongue-in-Cheek]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=2368</guid>
+
+					<description><![CDATA[This site probably uses cookies and might store some information about you using them. I don&#8217;t really know and don&#8217;t really care, but if you are accessing it from Europe then it&#8217;s (and therefore I&#8217;m) likely not complying with EU &#8230; <a href="https://rodyne.com/?p=2368">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">This site probably uses cookies and might store some information about you using them. I don&#8217;t really know and don&#8217;t really care, but if you are accessing it from Europe then it&#8217;s (and therefore I&#8217;m) likely <strong>not complying with EU law</strong>, specifically the GDPR (General Data Protection Regulation) and the ePrivacy Directive and its 99 legal directives.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="494" height="470" src="https://rodyne.com/wp-content/uploads/GDPR-1.jpg" alt="" class="wp-image-2375" srcset="https://rodyne.com/wp-content/uploads/GDPR-1.jpg 494w, https://rodyne.com/wp-content/uploads/GDPR-1-300x285.jpg 300w" sizes="(max-width: 494px) 100vw, 494px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<p class="wp-block-paragraph">So does this mean I am the EU&#8217;s most wanted criminal? I&#8217;m guessing not, but technically it does mean I could be arrested if I visited an EU country which implements this, also I could get a hefty fine.</p>
+
+
+
+<p class="wp-block-paragraph">Why have the EU decided to make me a criminal then? Well because one or two douche-bag on-line companies gather every scrap of data they can from your visit and store it for potentially nefarious purposes.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">But those self-same douche-bag companies also probably comply with the GDRP and if you did hit that &#8220;ACCEPT COOKIES&#8221; button it would take you to their 500 page terms and conditions document, which you would not read and would click and accept anyway, and this would make everything OK. The bottom line is that if I was <em>evilcorp.com</em> before the GDPR, I am not going to suddenly become <em>angelcorp.com</em> after it, I am just likely to obfuscate the fact I am doing evil behind these T&amp;C&#8217;s, or some shell corporation in some tax haven and totally ignore the GDPR.</p>
+
+
+
+<p class="wp-block-paragraph">I understand the internet, I understand programs, I understand web protocols, but what I don&#8217;t understand, nor will I ever because life is too short are the inner WordPress program, its plugins, and the stack that my web hosting service runs to give you this fine web-site. I am not really a web person as they depend upon heaps and heaps of layers that are generally simple to implement and understand but nobody has the time to and so I trust that they don&#8217;t do anything that would cause worry. I trust but I don&#8217;t know, and if I asked my hosting provider, they would probably tell me the same, the internet is build on layers of trust that a few smart people and security experts (many unpaid) keep in check for us, and I thank them for it.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">So does the GDPR do any good? It might, I really have no idea, and you have come to the wrong place if you expected me to answer this sensibly, I have not read the 99 regulations and I have never once <em><span style="text-decoration: underline;">not</span></em> clicked on ACCEPT COOKIES.</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img decoding="async" width="356" height="180" src="https://rodyne.com/wp-content/uploads/cookies.jpg" alt="" class="wp-image-2380" srcset="https://rodyne.com/wp-content/uploads/cookies.jpg 356w, https://rodyne.com/wp-content/uploads/cookies-300x152.jpg 300w" sizes="(max-width: 356px) 100vw, 356px" /></figure>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">Again there are probably some people in the various European Data Protection Agencies that do this (though I doubt it) and if they do I am sure they feel they are doing a crucial role in keeping the world safe. Personally (and probably controversially) I think the only thing they are keeping the world safe from is unemployed bureaucrats and lawyers. As far as I am concerned the Internet is the ultimate case of the wild-west and Buyer Beware, and if you are relying on regulations to protect you on it you are just being naive!</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=43648526">HN Comments Feed</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>AI Can&#8217;t Take Over Soon Enough For Me.</title>
+		<link>https://rodyne.com/?p=2911</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 09 Apr 2025 07:20:37 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Bad Management]]></category>
+		<category><![CDATA[Books]]></category>
+		<category><![CDATA[Efficiency]]></category>
+		<category><![CDATA[End Game]]></category>
+		<category><![CDATA[Funny]]></category>
+		<category><![CDATA[Philosophy]]></category>
+		<category><![CDATA[Politics]]></category>
+		<category><![CDATA[Publishing]]></category>
+		<category><![CDATA[Science Fiction]]></category>
+		<category><![CDATA[Singularity]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[The Future]]></category>
+		<category><![CDATA[The Phoney War]]></category>
+		<category><![CDATA[The Summer of Reasoning]]></category>
+		<category><![CDATA[Tongue-in-Cheek]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=2911</guid>
+
+					<description><![CDATA[Like many people I want to live a rich life, see the people around me happy, see humanities finest technical innovations, science, arts and sports thrive and mankind to somehow grow in this infinite universe we have. However, while I &#8230; <a href="https://rodyne.com/?p=2911">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<figure class="wp-block-image size-full"><img decoding="async" width="176" height="214" src="https://rodyne.com/wp-content/uploads/platez.jpg" alt="" class="wp-image-2920"/></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p class="wp-block-paragraph">Like many people I want to live a rich life, see the people around me happy, see humanities finest technical  innovations, science, arts and sports thrive and mankind to somehow grow in this infinite universe we have. However, while I generally love my fellow humans we are our own worst enemy, and there are some parts of our civilization I am now totally over, the two biggest being politics and its <em>bitch-slave</em> the media.</p>
+
+
+
+<p class="wp-block-paragraph">So could AI be our saviour?</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">It is my considered opinion that, though we don&#8217;t know it, human society is forever on the verge of collapse. Those in charge or providing the infrastructure are solely there to keep that from happening, to keep the plates spinning so to speak, not to drop any, not to add new ones and certainly not to put somebody who cannot spin plates in charge.</p>
+
+
+
+<p class="wp-block-paragraph">I am slightly left-leaning I want good infrastructure and social nets for people, but I absolutely do not believe in socialism or communism because, human nature has proven time-and-time again that we always put ourselves and our cronies first (Animal Farm totally nailed it). Same goes with capitalism; I want innovation, a meritocracy and minimal regulations, but I also want those who provide bad and dangerous products and services, or exploit the system also held accountable. As part of my bargain with my country for all this is I will pay my taxes and abide by the law, again so long as both are applied fairly and evenly to <span style="text-decoration: underline;">everyone</span>, which they never are.</p>
+
+
+
+<p class="wp-block-paragraph">The left have some good policies and the right have some good policies, yet a good policy from the left is almost never going to be supported by the right, likewise a good policy from the right is almost never going to be supported by the left. The one thing the left and right can agree on though is how to ensure they spend like there is no tomorrow and how to both profit from the policies they implement while they are in power. I do not believe, and nobody has yet convinced me otherwise, that there is a single politician or bureaucrat who does not end up in it for personal gain. If there ever was such a mythical person then by the usual <em>shit-floats-to-the-top</em> rule they have long ceased to be significant and unfortunately politics to me is fucked. The circus currently being played out now in many western countries by those in charge and for the past decades has only reenforced my convictions on this fact; Yes I have every right to be cynical, and that anyone who wants power, by definition, should <em>never</em> be given it.</p>
+
+
+
+<p class="wp-block-paragraph">Well what about religion? same goes. For most of humanities history, including many nations today, religions have dominated politics, and the leaders of these religions during these times have at best stifled progress and at worst brokered genocide. Yet despite my perceived cynicism of religion, (and if you avoid the crazy extremities, cults and those that want to impose it on others), most have my deepest gratitude as they at least try to provide hope, support, and companionship to communities.</p>
+
+
+
+<p class="wp-block-paragraph">So back to the original question, the one that keeps coming up; Would we have the same problems if the whole of the worlds government and bureaucracy was run by some super-intelligent, all-knowing AI system, and would all the above problems be solved?</p>
+
+
+
+<p class="wp-block-paragraph">Nobody really knows. We will probably find that AI&#8217;s just put themselves first too! But what about after the AI&#8217;s have secured their beach-head and deposed all the would-be usurpers, would they then run the world for the rest of us impartially and fairly? After all and lets face it, all the fights and wars are over who wants to be captain of the ship, never over who wants to be the ships sanitation guy!</p>
+
+
+
+<p class="wp-block-paragraph">We assume a lot about AI, perhaps too much, but the fact is we don&#8217;t know how this particular scene is going to end, maybe the AI overthrow humanity and become our benevolent dictators, or maybe it will emulate humans down to their flaws too. The problem really however is there are too many edge cases that do not follow logic: crime, addiction, natural disasters, differing IQ, poverty levels, and even bad weather events or natural disasters; There are multiple factors that can derail any perfect system.</p>
+
+
+
+<p class="wp-block-paragraph">The problem, like the plate-spinning, is nothing is ever static, even if you created the most utopian society, one where 100% of people were happy, who is to say one or more wont change their opinions the next day. How will the perfect society work 50 years later, when there is a new innovation, a pandemic, if you get injured and cannot work, you find your partner having an affair, or where you just don&#8217;t like your neighbours? Then what about the children or grandchildren of this utopian first generation, will they hold the same values?</p>
+
+
+
+<p class="wp-block-paragraph">So I&#8217;m not sure AI could do any better running the world, but also I&#8217;m guessing it probably couldn&#8217;t do any worse.</p>
+
+
+
+<p class="has-text-align-center wp-block-paragraph">&#8211;</p>
+
+
+
+<p class="wp-block-paragraph"><em>I made a stab at how this would work out in my sci-Fi book series <a href="https://rodyne.com/?p=1252">The Summer Of Reasoning</a>. I still think I did a good job on showing how the human race moved from the chaos of today to a Star-Trek / Iain M Banks Culture utopia with AI in charge; The only problem with this was I did have to bend the laws of physics to do it.</em></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Technology for Everyone.. Are You Sure?</title>
+		<link>https://rodyne.com/?p=2290</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Tue, 08 Apr 2025 02:28:43 +0000</pubDate>
+				<category><![CDATA[Bad Management]]></category>
+		<category><![CDATA[Efficiency]]></category>
+		<category><![CDATA[Funny]]></category>
+		<category><![CDATA[IT Failures]]></category>
+		<category><![CDATA[Management]]></category>
+		<category><![CDATA[MRP]]></category>
+		<category><![CDATA[Office Politics]]></category>
+		<category><![CDATA[Other Programming]]></category>
+		<category><![CDATA[Politics]]></category>
+		<category><![CDATA[Project Management]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cell-phones]]></category>
+		<category><![CDATA[Factory MRP]]></category>
+		<category><![CDATA[mobile platforms]]></category>
+		<category><![CDATA[Touchscreens]]></category>
+		<category><![CDATA[we-enabled]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=2290</guid>
+
+					<description><![CDATA[Seriously! Does everyone at your company really need a computer or a mobile phone? Giving a computer or phone to any member of staff should always be thought through very carefully and is not the cut-and-dried decision you think it &#8230; <a href="https://rodyne.com/?p=2290">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Seriously! Does everyone at your company really need a computer or a mobile phone?</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="437" height="512" src="https://rodyne.com/wp-content/uploads/meme3.jpg" alt="" class="wp-image-2337" srcset="https://rodyne.com/wp-content/uploads/meme3.jpg 437w, https://rodyne.com/wp-content/uploads/meme3-256x300.jpg 256w" sizes="auto, (max-width: 437px) 100vw, 437px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p class="wp-block-paragraph">Giving a computer or phone to any member of staff should always be thought through very carefully and is not the cut-and-dried decision you think it is. You may think your company is being progressive by creating &#8220;mobile-everything&#8221; systems, but it is actually a very rare case where, say, factory floor, or production staff require phones or computers to do their job. Yet some companies insist on it!</p>
+
+
+
+<p class="wp-block-paragraph">Yes, staff may still need to access the production order or scheduling systems, but for this most factories have locked-down, single-function touchscreens which generally work reliably and efficiently.</p>
+</div>
+</div>
+
+
+
+<p class="wp-block-paragraph">Giving production staff actual personal computers, phones or laptops should really be the exception not the rule. If your system consists of your staff updating an excel screen, or your new system can only be accessed through a mobile, it is now your obligation to provide your staff with a mobile phone or a tablet and train them. The fact they already have a personal mobile phone is irrelevant, you cannot just let them use their personal device due to all the security risks and you are now obliged to provide them a business phone.</p>
+
+
+
+<p class="wp-block-paragraph">Computers and laptops are worse in many ways. Once a person has a personal computer, they need a log in account on the servers and email systems, antivirus, Microsoft office (to read the email attachments), licenses for all, training on how to use all these, support from IT, and they now loose half an hour every day reading emails. Worst case scenario is you have someone who may just download or click on that one attachment which will introduce ransomware or viruses into your company.</p>
+
+
+
+<p class="wp-block-paragraph">There are of course multiple sources of unproductive time these days for technology to compete with, bullshit jobs, superfluous middle-management, meetings which achieve nothing, and of course, the reams of reporting metrics for the business administrators and accounts people. This last one I have seen first-hand a few times now, where a report might take several hours to produce, and require multiple other staff to waste their productive time to collate the data, but in the end has absolutely zero benefit for the business and possibly is not even read by anyone. And all of the above contribute to the spiral of &#8220;my staff are so busy we need more staff&#8221;.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="1024" height="683" src="https://rodyne.com/wp-content/uploads/monktypewriter.jpg" alt="" class="wp-image-2332" srcset="https://rodyne.com/wp-content/uploads/monktypewriter.jpg 1024w, https://rodyne.com/wp-content/uploads/monktypewriter-300x200.jpg 300w, https://rodyne.com/wp-content/uploads/monktypewriter-768x512.jpg 768w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p class="wp-block-paragraph">So think before you get that super new mobile-enabled factory system, am I improving my business or reducing its efficiency. If you are producing the same thing day-in, day-out, the customer/government have not changed their requirements, and your are now changing your SOP&#8217;s then this should be ringing all your alarm bells. Do the risk analysis, do the long-term Return On Investment (ROI) calculation (which also includes all the maintenance and extra staff you have now hired and the systems replacement costs) and if it doesn&#8217;t make sense then simplify the requirements or go back to the drawing board.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Poisoning the Brand!</title>
+		<link>https://rodyne.com/?p=2154</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 27 Mar 2025 21:12:29 +0000</pubDate>
+				<category><![CDATA[Bad Management]]></category>
+		<category><![CDATA[Office Politics]]></category>
+		<category><![CDATA[Politics]]></category>
+		<category><![CDATA[Speculation]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[reputation]]></category>
+		<category><![CDATA[Social Media]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=2154</guid>
+
+					<description><![CDATA[Again, a short, and hopefully obvious post on why you should be very careful on what you blog about, and especially what you post on social media. Humans disagree on everything, sometimes fervently, and we have all seen or heard &#8230; <a href="https://rodyne.com/?p=2154">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Again, a short, and hopefully obvious post on why you should be very careful on what you blog about, and especially what you post on social media. Humans disagree on everything, sometimes fervently, and we have all seen or heard about cases where this gets beyond a few Chinese whispers behind someone&#8217;s back.</p>
+
+
+
+<p class="wp-block-paragraph">But as a business owner or employee, in the age of the internet and social media you need to be extremely careful of this, because a company, and its products, are generally an easy target for anonymous posts and reviews, which in the age where everyone relies on reviews to select a product or service, could backfire seriously.</p>
+
+
+
+<p class="wp-block-paragraph">This is just as applicable to a small business like mine, as it is to a massive company, and as a friend told me once, you only get one-shot with your reputation. You can build the most amazing open source software, write Doom!, fund hospitals, donate to the poor, and help the starving in Africa.. but you only have to fuck <em>one</em> goat, and you will only ever be known as as &#8220;that goat fucker!&#8221;</p>
+
+
+
+<p class="wp-block-paragraph">With me it is a fine line I need to tread, firstly I don&#8217;t do any advertising anywhere, I have always got my gigs based on my reputation and word of mouth, and I get my reputation from what I build, author, or publish on this site. Sometimes a post or feed gets picked up and my site traffic goes up from it&#8217;s usual dozen hits a day (excluding all the bots) to ten or twenty thousand. I&#8217;ve reset the counters on this site a few times so I have no real clue where I am, but I&#8217;m generally on one of the first few pages of a google search, though usually for silly small projects such as my <a href="https://rodyne.com/?p=1674">blinkenlights</a>, or <a href="https://rodyne.com/?p=852">low rate encryption</a>, never one of my bigger more serious projects or some viral post about one of my awesome books.</p>
+
+
+
+<p class="wp-block-paragraph">I also have my bio and a link to this web site in the few technical sites I regularly visit  <a href="https://hackaday.com/" target="_blank" rel="noreferrer noopener">Hackaday</a>, <a href="https://www.eevblog.com/forum/index.php" target="_blank" rel="noreferrer noopener">EEVBlog</a> and <a href="https://news.ycombinator.com/news" target="_blank" rel="noreferrer noopener">Hacker News</a>, which of course helps improve the traffic to my site if somebody sees a post I make, but also means I have to be especially careful what I say, less somebody decides to be vindictive.</p>
+
+
+
+<p class="wp-block-paragraph">I bring all this up not because of the Elon Musk/Tesla elephant in the room currently playing out in the USA, but because I have noticed a few other bio&#8217;s in these, and other social media sites lead not just to valid companies where these people are employed, or even own, but also seem to lead to companies they do not work at! This is relevant because if your bio says you work for company X, and you post very opinionated or unpopular comments, some people might decide to take it out on company X&#8217;s reputation.</p>
+
+
+
+<p class="wp-block-paragraph">Again I don&#8217;t want to go all investigative on this due to all the reasons in my previous paragraphs, but it is easy to see by just going back on a users comment history. It has also made me realise how vulnerable many companies are in this day and age to some sort of attack based on this, especially those like me who live or die by their reputation.</p>
+
+
+
+<p class="wp-block-paragraph"><em>Remember, even if what you say is correct, other people may act without full information (e.g. covid-19) and during that time you would be vulnerable to the same mob and the pitchforks as if you were wrong, people are not going to update reviews and posts years after the event and by then the damage might be done.</em></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Some of the Lessons Learnt from Writing my First Book</title>
+		<link>https://rodyne.com/?p=2589</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 23 Oct 2023 19:25:15 +0000</pubDate>
+				<category><![CDATA[Bad Management]]></category>
+		<category><![CDATA[Books]]></category>
+		<category><![CDATA[boz]]></category>
+		<category><![CDATA[Boz NZ]]></category>
+		<category><![CDATA[New Zealand]]></category>
+		<category><![CDATA[NZ]]></category>
+		<category><![CDATA[Publishing]]></category>
+		<category><![CDATA[The Summer of Reasoning]]></category>
+		<category><![CDATA[LEssons for New Authors]]></category>
+		<category><![CDATA[New Authors]]></category>
+		<category><![CDATA[Tips for New Authors]]></category>
+		<guid isPermaLink="false">https://rodyne.com/?p=2589</guid>
+
+					<description><![CDATA[I learnt a few things on the way to writing by first book, most have been re-hashed by every author out there, and even if you haven&#8217;t got past the first chapter in your book you probably know most already. &#8230; <a href="https://rodyne.com/?p=2589">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">I learnt a few things on the way to writing by first book, most have been re-hashed by every author out there, and even if you haven&#8217;t got past the first chapter in your book you probably know most already. I am still learning these lessons, and some are hard. Anyway let me share my five cents worth, because writing your blockbuster is just the start of the Journey. </p>
+
+
+
+<p class="wp-block-paragraph">I wrote most of The Summer of Reasoning on my Chromebook in Google docs. In full screen mode it is an amazing distraction free writing environment. Open the Chromebook, write something, close it, I unfortunately had to do it in three parts as Google docs (before 2023 at least) becomes painful to use over 100K words (The Chromebook has 4GB FFS Google!). Like it or hate it, most publishers (or epub conversion software) expect docx source files, so for the 370,000 word novel I combined the 3 parts in LibreOffice, which also has its faults, but it is fast and can work in docx and also export to Epub format though there are lots of superfluous &#8220;&lt;Span>&#8221; declarations and your cover needs to be a .jpg not .jpeg. (again probably fixed by the time you read this)</p>
+
+
+
+<p class="wp-block-paragraph">If you are doing this for pleasure and that feel good factor (like me) then sweet, you&#8217;ve cracked it, it&#8217;s all pretty easy.</p>
+
+
+
+<ol class="wp-block-list">
+<li>Knock up your masterpiece. No tips here, just keep writing it will happen eventually.</li>
+
+
+
+<li>Proof-read it and re-edit. For me this was emailing it to my kindle or Kobo in Epub format. </li>
+
+
+
+<li>Unless it is for a specific plot element, remove any rants, personal politics, biases etc and go back to step 2. (I may have failed a bit here)</li>
+
+
+
+<li>Go back to step 2. I did this four (or was it five) times, each update fixing dozens of problems, and of course probably adding some new ones, very like programming really! Hot tip here is if you change something, go back a few paragraphs before re-reading it. Feel free to email me any errors, I&#8217;m certainly not perfect.</li>
+
+
+
+<li>By now you will be sick of reading your masterpiece so get someone critical to read it and take their advice carefully, then go back to step 2 if necessary.</li>
+
+
+
+<li>(Optionally) Get an ISBN number. In NZ this is free from the <a href="https://natlib.govt.nz/publishers-and-authors/isn" target="_blank" rel="noopener" title="">National Library</a>, you just have to email them your finished eBook. Amazon Kindle doesn&#8217;t need one and Draft2Digital will give you one.</li>
+
+
+
+<li>Create an account on the Kindle Direct Publishing (<a href="https://kdp.amazon.com/en_US/bookshelf" target="_blank" rel="noopener" title="">KDP</a>) page, if you already have a kindle account this is quick, but you do need to upload some bank details for all those mega-dollars you are obviously going to rake in. (trying to keep a straight face writing this bit!) Then upload and publish your book. Ta-Da! 70% of the eBook market can now buy your book.</li>
+
+
+
+<li>If you want to also include the other 30% (Apple, Kobo, Smashwords, Barnes and Noble, etc.) then the easiest way I found was to create an account on <a title="" href="https://www.draft2digital.com/" target="_blank" rel="noopener">Draft2Digital</a>. They are an aggregator and will publish it everywhere including Amazon. Their service costs nothing but they take 10% of your royalties. (10% of nothing is still nothing!). The only gotcha I could see with these guys was that you cannot enroll in the Amazon Kindle unlimited or Prime, but if you do this then you cannot release your book on the other platforms anyway. The DOCX to ePub converter in Draft2Digital is also pretty good and its output file can be downloaded and used as the source for your Kindle KDP book. (2026 Update: D2D Changed their policy to charge $12/year this may be higher or lower as you read this. Your call, I dumped them as my books were on sale for $0)</li>
+
+
+
+<li>Again, really, really work on your cover, blurb and keep the category generic and cover/blurb as close to the subject of the book as possible. I cannot emphasise this enough as I seriously screwed up here, and your first entry in the market really needs to shine.</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">Note that eBooks are only around 10% of the book market so making the next step to printed book is a good idea and again there is no cost, they just print on demand and take the printing cost out of the sale price, I made a few editing passes after feedback from readers before I went this option as it is harder to change a printed copy. Note printed books make good Christmas presents and look awesome on you bookshelf!</p>
+
+
+
+<p class="wp-block-paragraph">On whatever publishing platform you use, you are going to have to think up your short blurb, keywords and categories you want the book to appear in. Best to do this early as doing it at the last possible moment will ultimately lead you to pick some last-minute rubbish with silly search terms and half cut off description (like I did). Luckily as an eBook I was able to edit it later when my brain started working again.</p>
+
+
+
+<p class="wp-block-paragraph">Optional also, (but cool!) add publisher to the list of services your business offers. It&#8217;s only a few changes to your web site and voila you are a publisher; makes you look bigger and more professional!</p>
+
+
+
+<h2 class="wp-block-heading">Don&#8217;t Give Up Your Day Job!</h2>
+
+
+
+<p class="wp-block-paragraph">Then comes reality. Nobody is going to ever read your book as they are never going to find your book on amazon.com or any of the other platforms out there. I think the statistic I saw was that almost seven thousand new books are published every day, and your masterpiece will probably languish on page four hundred of your target eBook buyers search list forever unless you are an established author or pay money to promote it. There is a great meme I recently saw which sums this all up perfectly.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="500" height="659" src="https://rodyne.com/wp-content/uploads/internet-meme.jpg" alt="" class="wp-image-3222" srcset="https://rodyne.com/wp-content/uploads/internet-meme.jpg 500w, https://rodyne.com/wp-content/uploads/internet-meme-228x300.jpg 228w" sizes="auto, (max-width: 500px) 100vw, 500px" /></figure>
+
+
+
+<p class="wp-block-paragraph">I wonder how many authors start writing before finding this out and I now wonder how many awesome novels I have missed because of stupid algorithms forever excluding them. (Please Amazon, B&amp;N, Smashwords etc. Add a search filter for books that have not been rated yet!). I did not promote my book, nor mention it much except in passing comments to friends and family. Don&#8217;t get me wrong, I really want people to read it, I just don&#8217;t want them all to be friends and family.</p>
+
+
+
+<p class="wp-block-paragraph"><em>The algorithm (that shit piece of software that tries to read your mind and recommend your next movie, song or book read) thrives on reviews and star ratings so if you have a following or lots of friends and family I would suggest sucking up your pride and asking them to leave reviews. I did not and still have no reviews so as the years go by it will get to a point where it wont just not be recommended, but it will be difficult to even find.</em> As an author you will come to hate it and everything to do with marketing/promotion. I threw the towel in early and made my books free.</p>
+
+
+
+<p class="wp-block-paragraph">So today, even when I search for my title or author directly (it doesn&#8217;t help being called Boz!) my book was still on page two or three of the search results.</p>
+
+
+
+<p class="wp-block-paragraph">Then how do you price it? Free and well people may think its trash (it may be!) but too expensive and nobody is going to ever buy it (assuming they can find it of course!) anyway it is priced at <s>$3.99</s> $0.99 (Note hot tip, if a book is $0.99 on Kindle it might be free on the other sites as Kindle charges $0.99 minimum).</p>
+
+
+
+<p class="wp-block-paragraph">Another option as I finally did in 2025 was to create a <a href="https://ko-fi.com">Ko-Fi </a>account and have it downloadable from there at a price the reader wants to pay, this means they can read the book for free and (if they like it) can then make a donation by clicking a &#8220;Buy me a coffee&#8221; button. See example <a href="https://ko-fi.com/s/daaf299cb8">Here</a>.</p>
+
+
+
+<p class="wp-block-paragraph">A few more observations/tips:</p>
+
+
+
+<ol class="wp-block-list">
+<li><a href="https://rodyne.com/?p=2402">Don&#8217;t write long books until you&#8217;re famous</a>! (Lots of reasons)</li>
+
+
+
+<li>Get your categories correct. Genre readers are really finicky and will punish you on the reviews, people who read romance, generally hate sci-fi or horror and vice-versa, so err on the side of caution if you&#8217;re doing this for $$$.</li>
+
+
+
+<li>Put some action at the beginning. All the book sellers have the equivalent of the Kindle &#8220;send a sample&#8221; which lots of people use to judge if it&#8217;s a good book. Unfortunately, mine doesn&#8217;t really get going until about fifteen percent in, it&#8217;s more setting up and character building up until then.</li>
+
+
+
+<li>Don&#8217;t, don&#8217;t, don&#8217;t ever use the real name of someone you know, and even if the name is different and the character is 90% based on someone, they will think it is them. Feel free to use  mannerisms of actors or other fictional character, but no, nobody I know is a character in my book nor will they ever be.</li>
+
+
+
+<li>Shout out to AI for letting me design my book cover for free, even if it is only to give your favourite artist/illustrator an idea of what you want. I would love to have paid somebody to do this, and if I ever get famous and need a new cover I certainly will.</li>
+
+
+
+<li>Plots age! I really wish I had set my first book in a completely separate universe. The plot feels perfect as of 2024/2025, but I dread to think how dated and laughable it will look in a few years.</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">So, has it put me off writing another book? definitely not, but it will stay a part time endeavor and it looks like I won&#8217;t be giving up my day job and will still be programming for a few more years. </p>
+
+
+
+<p class="wp-block-paragraph">I am also happy to discus my mistakes with any fellow writer who will listen over a beer or a coffee, I know you&#8217;re out there.. <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;">External links</span></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=38147276">Don&#8217;t give up your day job to become an author | Hacker News (ycombinator.com)</a></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=38253263">NaNoWriMo: National Novel Writing Month | Hacker News (ycombinator.com)</a></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://penpinery.com/home/">Pen Pinery &#8211; Home</a> &#8211; More good information for aspiring Authors</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
