@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="Unlike a PC the Raspberry Pi does not come with any sort real time clock. Usually this is not a problem as it is connected to the Internet and a simple"/>
+<meta property="og:title" content="USB Real-Time Clock for Raspberry Pi, etc"/>
+<meta property="og:description" content="Unlike a PC the Raspberry Pi does not come with any sort real time clock. Usually this is not a problem as it is connected to the Internet and a simple"/>
+<meta property="og:url" content="https://boznz.com/post880.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/2017/12/rtc-uart.jpg"/>
 <title>USB Real-Time Clock for Raspberry Pi, etc</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -35,25 +42,25 @@
 <p class="wp-block-paragraph">Several solutions exist that plug a Real-Time Clock Chip (Usually a <a href="https://datasheets.maximintegrated.com/en/ds/DS1307.pdf">DS1307</a>) into the IO Header and connect using I2C however if your IO header is in use it gets a bit messy, so here I present a simpler solution which is a USB Dongle that still uses the ubiquitous DS1307 and emulates a serial port from which you can read and set the clock using normal serial commands.</p>
 <p class="wp-block-paragraph">No driver necessary! Plug in the USB connect to the New USB serial port at 115200 baud and voila!</p>
 <div class="wp-block-image">
-<figure class="aligncenter"><a href="images/2017/12/rtc-uart.jpg" rel="attachment wp-att-881"><img alt="" class="wp-image-881" height="682" src="images/2017/12/rtc-uart.jpg" width="1141"/></a></figure>
+<figure class="aligncenter"><a href="images/2017/12/rtc-uart.jpg" rel="attachment wp-att-881"><img alt="Rtc uart" class="wp-image-881" height="682" src="images/2017/12/rtc-uart.jpg" width="1141"/></a></figure>
 </div>
 <p class="wp-block-paragraph"></p>
 <p class="wp-block-paragraph">As you can see it is Human friendly and computer friendly date/time formats are available.</p>
 <p class="wp-block-paragraph">The design is based around the DS1307 and the el-cheapo <a href="http://www.microchip.com/wwwproducts/Devices.aspx?product=PIC16F1455">PIC16F1455</a> which is around a dollar which I have thrown together and added an open source USB Stack in to the mix to get it all going. Gotta Love that little ol’ PIC chip!</p>
 <div class="wp-block-image">
-<figure class="aligncenter"><img alt="" class="wp-image-882" height="239" src="images/2017/12/rtc-pcb.png" width="637"/></figure>
+<figure class="aligncenter"><img alt="Rtc pcb" class="wp-image-882" height="239" src="images/2017/12/rtc-pcb.png" width="637"/></figure>
 </div>
 <p class="wp-block-paragraph"></p>
 <p class="wp-block-paragraph">Project is more or less complete, the PCB above is Rev 3 and is awaiting delivery, three revisions is a bit extreme, but cut-outs can be hard to do and for $2 to get the PCB made who’s going to bother prototyping anything now!  I had a lot of messing around trying to fit it in a suitable USB Dongle Enclosure and USB-A Connector, the one I finally settled on is the USB-7201-G from Bud Industries which I got off digikey. I must say I am non too happy with the PCB footprints for USB-A Connectors, there must be over 100 but none look like the connectors will fit due to the two tabs on the connector case which I had to break off (yes extreme annoyance can be handy sometimes!).</p>
 <p class="wp-block-paragraph">I changed my original circuit from a tiny super-capacitor to a battery as I thought I could sneakily enter the hack-a-day coin cell prize, however after doing it and re-thinking the rules it is not really powered by a coin cell and has no power management so in the end I diddn’t bother entering..</p>
 <p class="wp-block-paragraph">In the next version ($2 a PCB remember!) I think I will go back to a super-capacitor again. difference is the coin-cell version will keep power for about 5 years where as the 480uF super-capacitor version will only do about 4 days which, lets face it, is more than adequate for brown-outs and extended power failures.</p>
 <div class="wp-block-image">
-<figure class="aligncenter"><a href="images/2017/12/rtc-prototype1.jpg"><img alt="" class="wp-image-891" height="224" loading="lazy" src="images/2017/12/rtc-prototype1.jpg" width="402"/></a></figure>
+<figure class="aligncenter"><a href="images/2017/12/rtc-prototype1.jpg"><img alt="Rtc prototype1" class="wp-image-891" height="224" loading="lazy" src="images/2017/12/rtc-prototype1.jpg" width="402"/></a></figure>
 </div>
 <p class="wp-block-paragraph"></p>
 <p class="wp-block-paragraph">The version 1 prototype above uses a super-capacitor charged with a resistor/diode from the PICs VUSB3V3 pin 11, I actually think its a better design than the coin-cell one shown here as you will never need to change batteries (not that changing one every 5 years is that big a deal!) and its not such a tight fit in the case.</p>
 <div class="wp-block-image">
-<figure class="aligncenter"><a href="images/2017/12/rtc-schema.png" rel="attachment wp-att-883"><img alt="" class="wp-image-883" height="410" loading="lazy" src="images/2017/12/rtc-schema.png" width="693"/></a></figure>
+<figure class="aligncenter"><a href="images/2017/12/rtc-schema.png" rel="attachment wp-att-883"><img alt="Rtc schema" class="wp-image-883" height="410" loading="lazy" src="images/2017/12/rtc-schema.png" width="693"/></a></figure>
 </div>
 <p class="wp-block-paragraph">The circuit above is about the simplest project I have made for a while and the firmware all fitted together nicely due to a nice Open source PIC USB Library from a guy called Alan Ott at Signal 11 Software so hats off to him for doing the real hard work. I have said it before the USB stack is everything I hate so anyone making it easy to use has my thanks. Only real issue I have is the accuracy which seems to loose a minute a day, this is probably due to the crappy-cheap crystal which is supposed to be tuned for 12.5pf or the knock-off ds1307 chip, anyway going to try a few more that may meet the maxim data sheet better.</p>
 <p class="wp-block-paragraph">EDA Project is <a href="https://easyeda.com/rodyne/USB_RTC-dfce249ec7af4d7380d69c51a7e2cfec">here</a></p>
@@ -80,7 +87,7 @@
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>

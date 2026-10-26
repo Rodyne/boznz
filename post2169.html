@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="About 13 years ago, before this web site, and back when I used to be called boznz.com, I put out a simple project to reverse engineer some soft-flap"/>
+<meta property="og:title" content="Flip, Flap, Flop! – Solari Fix."/>
+<meta property="og:description" content="About 13 years ago, before this web site, and back when I used to be called boznz.com, I put out a simple project to reverse engineer some soft-flap"/>
+<meta property="og:url" content="https://boznz.com/post2169.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/solari3.jpg"/>
 <title>Flip, Flap, Flop! – Solari Fix.</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -36,24 +43,24 @@
 <p class="wp-block-paragraph">I did a rough write up at the time that got featured on <a href="https://hackaday.com/2012/10/17/reverse-engineering-solari-soft-flap-displays/" rel="noreferrer noopener" target="_blank">hack-a-day</a> and I preserved the basics of the original web page <a href="files/2014/04/solari.pdf">here</a>.</p>
 </div>
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
-<figure class="aligncenter size-full"><img alt="" class="wp-image-2185" height="633" src="images/solari3.jpg" width="640"/></figure>
+<figure class="aligncenter size-full"><img alt="Solari3" class="wp-image-2185" height="633" src="images/solari3.jpg" width="640"/></figure>
 </div>
 <p class="has-text-align-center wp-block-paragraph">A Sad, Broken, Display 🙁</p>
 </div>
 </div>
 <p class="wp-block-paragraph">It was happily sitting pride of place in the cafeteria of my clients 15-Valley winery for those 13 years providing real-time updates to the grape tonnage received, and the occasional funny message, in its own <em>retro-spectacular</em> way. This was until a few weeks ago, when it failed to wake up at the start of vintage.</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-2186" height="361" src="images/solari4.jpg" width="883"/></figure>
+<figure class="wp-block-image size-full"><img alt="Solari4" class="wp-image-2186" height="361" src="images/solari4.jpg" width="883"/></figure>
 <p class="wp-block-paragraph">Actually I was quite surprised it lasted that long given how old and fragile the individual units are, how quick and dirty the whole project was engineered, and how bad an environment it was in. So, as support for vintage was ticking over nicely, and ignoring my usual warranty rules, I got the guys to uninstall it and throw it in the back of my dodgy electric pickup for the bumpy 20KM journey back to my workshop.</p>
 <p class="wp-block-paragraph">After an age with an air compressor and vacuum cleaner, and with the unit fully dismantled in front on me on the bench now, the memories flooded back. I had just returned to electronic engineering in from a 15 year hiatus in IT and network management and my electronics lab at that point consisted of an old radio shack soldering iron, a fluke multimeter, a 5Mhz analog scope, a newly acquired EasyPIC 4 development kit from <a href="https://www.mikroe.com/" rel="noreferrer noopener" target="_blank">Mikroelectronika</a> with MikroPascal for PIC and various out of date through-hole components and breadboards, that managed to survive shipping from the UK. All of course in my spare bedroom, so when they guys at Indevin dropped the box of displays on my desk and asked me to “make it work” I was all fired up to give it all a try. I managed to get something knocked-up and working, good enough, at least that a carpenter could mount it all in a neat cabinet and hide the warts.</p>
 <p class="wp-block-paragraph">Fast forward 13 years..</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-2188" height="604" loading="lazy" src="images/solari5.jpg" width="806"/></figure>
+<figure class="wp-block-image size-full"><img alt="Solari5" class="wp-image-2188" height="604" loading="lazy" src="images/solari5.jpg" width="806"/></figure>
 <p class="wp-block-paragraph">With the unit in pieces I immediately saw the problem, the control board, and four of the units had pretty severe water damage. I say water, but it was more likely beer, wine or a soft drink as it had eaten away at some of the PCB’s and mechanics. But 14 of the display units looked good. The problem was the control board needed replacing and as this was the only time I ever used the MikroPascal compiler for PIC in anger, so it was going to be a new design.</p>
 <p class="wp-block-paragraph">I remember at the time I thought MikroPascal was quite cool, and it was dead simple, solving me the problem of re-learning C. Alas it was a short love affair as my next client insisted I use C and from that point on, so well I just went with the money! </p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-2189" height="510" loading="lazy" src="images/solari2.jpg" width="729"/></figure>
+<figure class="wp-block-image size-full"><img alt="Solari2" class="wp-image-2189" height="510" loading="lazy" src="images/solari2.jpg" width="729"/></figure>
 <p class="wp-block-paragraph">Anyway, armed with the original pascal source code I quickly knocked out a replacement control board and 140 line of (XC8) C which would replicate the functionality. While in the re-design phase, changes were made to convert the input from ethernet to RS485, so the weighs could be directly updated from their SCADA Interface. I reused the original transformer, cables and 14 of the remaining displays and got it all working again, but while it was in pieces I thought I would capture some nicer pictures.</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-2191" height="681" loading="lazy" src="images/solari1.jpg" width="957"/></figure>
+<figure class="wp-block-image size-full"><img alt="Some Technical Info for the future." class="wp-image-2191" height="681" loading="lazy" src="images/solari1.jpg" width="957"/></figure>
 <p class="wp-block-paragraph"><span style="text-decoration: underline;">Some Technical Info for the future.</span></p>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-2192" height="724" loading="lazy" src="images/Schematic_Solari-Controller_2025-03-31-1024x724.jpg" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="Schematic Solari Controller 2025 03 31" class="wp-image-2192" height="724" loading="lazy" src="images/Schematic_Solari-Controller_2025-03-31-1024x724.jpg" width="1024"/></figure>
 <p class="wp-block-paragraph">The Control board mainly consists of power-supplies. The two raw 18VAC supplies combining and going directly out to the slave devices for 36VAC total. And two DC supplies, a 12VDC 3A which supplies the Solari slave devices, and a 5VDC 3A which supplies the control logic and the slave daughter boards. The 3A for the 5V is totally overkill, 20 slaves plus the control board draw a tenth of that, but it always good if you can re-use the same components to reduce the pick-n-place component count. The only other real change, apart from the obvious fact we are now using a serial RS485 data input instead of Ethernet, is that the front panel indicator/reset switch actually powers off the 12VDC and 5VDC supplies giving a <em>harder</em> reset. I also re-used another PIC16F1782 from my pile, which now wont go into landfill when I die 🙂</p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="360" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Zo4YrWu3MF4?feature=oembed" title="Solari display box after fix with new controller" width="640"></iframe>
@@ -230,7 +237,7 @@ void main()
     }
 }</code></pre>
 <p class="wp-block-paragraph">A better view of the PCB is here. The only error I had was I added a pull-up resistor R13 in the original version 1 board on the TPS5430 ENA to Vin when it needs to float to enable and grounded to sleep, the design I have now removed this and works fine.</p>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-2203" height="726" loading="lazy" src="images/pcb-1024x726.jpg" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="Pcb" class="wp-image-2203" height="726" loading="lazy" src="images/pcb-1024x726.jpg" width="1024"/></figure>
 </div>
 <div class="entry-utility">
 							This entry was posted in <a href="category-173.html" rel="category">C Programming</a>, <a href="category-170.html" rel="category">Electronics</a>, <a href="category-31.html" rel="category">Indevin</a>, <a href="category-203.html" rel="category">Repair</a>, <a href="category-194.html" rel="category">Soft-Flap Display</a>, <a href="category-193.html" rel="category">solari</a> and tagged <a href="tag-repair.html" rel="tag">Repair</a>, <a href="tag-soft-flap-display.html" rel="tag">Soft-Flap Display</a>, <a href="tag-solari.html" rel="tag">solari</a>. Bookmark the <a href="post2169.html" rel="bookmark" title="Permalink to Flip, Flap, Flop! – Solari Fix.">permalink</a>.													</div>
@@ -250,7 +257,7 @@ void main()
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>

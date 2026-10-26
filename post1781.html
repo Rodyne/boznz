@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="As I sit at my desk in the clients winery, “working” vintage support, (a job where I mostly feel like Dumbo’s feather , ie a prop that gives the company"/>
+<meta property="og:title" content="Yet another boring small project (with an interesting back-story)"/>
+<meta property="og:description" content="As I sit at my desk in the clients winery, “working” vintage support, (a job where I mostly feel like Dumbo’s feather , ie a prop that gives the company"/>
+<meta property="og:url" content="https://boznz.com/post1781.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/clock-pcb.png"/>
 <title>Yet another boring small project (with an interesting back-story)</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -34,11 +41,11 @@
 <p class="wp-block-paragraph">So I thought I would design and build a clock, one which will reliably keep the time and be pretty well maintenance free for its hopefully long and boring life. But why would anybody need to design a clock today, surely every variation has been tried? Well, for one thing, this clock is going to be pretty big. Although it is only a seven-segment display, with two digits for hours and two for minutes, each segment is going to be a wine bottle. So 7 bottles are required per digit, in total 28 bottles.</p>
 <p class="wp-block-paragraph">Inside each bottle will be an LED strip or similar so we can light the segment, therefore we need a circuit board that can drive 28 LED strips, also, to make the flashing colons that separate the hours and minutes, the ends of two bottles will be used, and so another output is required to drive the LED’s in those. That’s 29 drivers, 29 bottles, 2M x 1M in size minimum, and as a total package with some form of mounting, quite heavy I guess!</p>
 <p class="wp-block-paragraph"><span style="text-decoration: underline;">The boring electronics prototype</span></p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-1853" height="542" src="images/clock-pcb.png" width="674"/></figure>
+<figure class="wp-block-image size-full"><img alt="Clock pcb" class="wp-image-1853" height="542" src="images/clock-pcb.png" width="674"/></figure>
 <p class="wp-block-paragraph">The electronics for this were always going to be easy. Again it’s a project I would normally slap in an old PIC microcontroller and an RTC and have it designed in a few hours. But that was the old 1990’s Boz, the new 2025 Boz is on a mission to try out some of the new technologies out there, and the modern micro-controller for today will be (rolls-the-dice..) the ESP32-C3. Specifically the ESP32-C3-WROOM-02 a RISC-V 32-bit processor with Wi-Fi, Bluetooth, 400KB of RAM and 2MB of Flash all for $3.30. (A bit over-kill for a clock, but welcome to 2025!)</p>
 <p class="wp-block-paragraph">So a brand-new processor I have never used before, or even seen before a few days ago should be exciting, or at least a bit risky? Maybe, maybe-not. Lets go on a journey together. For this journey, the AI of choice will be Googles Gemini 2.0, a competent, if pretty boring and sensible AI, so while Grok 3 may be considered your rebellious genius teenager, Gemini 2.0 is probably your quiet old uncle, the retired school teacher who lives in his shed and doesn’t really talk to many people, but also tends to be sensible.</p>
 <p class="wp-block-paragraph"><span style="text-decoration: underline;">The Schematic.</span></p>
-<figure class="wp-block-image size-full"><a href="images/Schematic_Indevin-Clock-V2_2025-03-05.png"><img alt="" class="wp-image-1782" height="1170" src="images/Schematic_Indevin-Clock-V2_2025-03-05.png" width="1652"/></a></figure>
+<figure class="wp-block-image size-full"><a href="images/Schematic_Indevin-Clock-V2_2025-03-05.png"><img alt="Schematic Indevin Clock V2 2025 03 05" class="wp-image-1782" height="1170" src="images/Schematic_Indevin-Clock-V2_2025-03-05.png" width="1652"/></a></figure>
 <p class="wp-block-paragraph">Yes, pretty boring and certainly not rocket science. An RTC, a serial input for a GPS (Not yet sure if I can get a signal where it is going to be located, but a good time-source never-the-less), and 29 open-collector outputs that can drive a few hundred milliamps at up to 24V, total BOM cost around $8 from LCSC</p>
 <p class="wp-block-paragraph">Firstly, it is obvious that a lot of the big AI models have a good understanding of electronics, and simple questions, like how much power will this or that draw? or what are the maximum and minimum supply voltages for power and IO? are generally answered correctly. However, that accuracy is about 90% at best and 10% of answers will be confidently answered wrongly, with a quick and humble apology when the mistake is finally pointed out. Again the ability to feed a schematic into a AI would be fantastic, but we are not there yet. (or if we are I haven’t seen it!)</p>
 <p class="wp-block-paragraph">Asking questions like, what capacitance would I require on VCC1 to keep the RTC running for 8-hours in the configuration shown was answered quite well with suitable workings out shown and the real-life circuit performing slightly better than the calculation </p>
@@ -508,7 +515,7 @@ void initWiFi()
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>

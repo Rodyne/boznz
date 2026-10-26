@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="Got my updated design back from JLPCB on Friday and this morning decided to test them and have a go at programming them. While I have done a hardware"/>
+<meta property="og:title" content="Das Blinkenlights (mit RP2040!)"/>
+<meta property="og:description" content="Got my updated design back from JLPCB on Friday and this morning decided to test them and have a go at programming them. While I have done a hardware"/>
+<meta property="og:url" content="https://boznz.com/post1751.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/Untitled.jpg"/>
 <title>Das Blinkenlights (mit RP2040!)</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -31,7 +38,7 @@
 <span class="meta-prep meta-prep-author">Posted on</span> <a href="post1751.html" rel="bookmark" title="10:17 pm"><span class="entry-date">26 January 2025</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
 <div class="entry-content">
 <p class="wp-block-paragraph">Got my updated design back from JLPCB on Friday and this morning decided to test them and have a go at programming them. While I have done a hardware RP2040 design for a customer before I have never actually gotten around to programming one.</p>
-<figure class="wp-block-image size-full"><a href="https://www.youtube.com/watch?v=vKjqw5iGqnQ&amp;t=2s"><img alt="" class="wp-image-2579" height="944" src="images/Untitled.jpg" width="919"/></a></figure>
+<figure class="wp-block-image size-full"><a href="https://www.youtube.com/watch?v=vKjqw5iGqnQ&amp;t=2s"><img alt="Untitled" class="wp-image-2579" height="944" src="images/Untitled.jpg" width="919"/></a></figure>
 <p class="wp-block-paragraph">The changes to the <a href="post1674.html">original blinkenlights</a> are:</p>
 <ol class="wp-block-list">
 <li>RP2040 Microcontroller </li>
@@ -42,7 +49,7 @@
 <p class="wp-block-paragraph">The design is a bit easier as the RP2040 has 30 GPIO pins, this means we don’t have to resort to any weird external chips and can just drive the 8 rows of 16 LEDs directly through MOSFETS, though I need to move everything from 5V to 3.3V. The spare pins connected to a 4-pin dip-switch the only use at the moment for this is to ensure differing panels have different random light sequences but could also be read by the host to send different info to different panels if this functionality is programmed.</p>
 <p class="wp-block-paragraph">As the guy is away for a few weeks I decided I would check them out myself. Previously I have checked the RP2040 is working by simply setting the BOOT SEL switch, to disable the flash chip, and plugging the USB into my PC. If all was well, a new drive would appear in the file manager as a mounted USB Drive with two readable files. As this part worked I thought I would try and be smart and take a ride with ChatGPT to see if I could convert my original PIC C code to the RP2040.</p>
 <p class="wp-block-paragraph">TLDR; The hardware is fine, the LEDs blink, but buggered if I could get the USB/CDC serial interface working in the few hours allocated.</p>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-1752" height="529" src="images/blinkenlights-rp2040-pcb-1024x529.jpg" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="Blinkenlights rp2040 pcb" class="wp-image-1752" height="529" src="images/blinkenlights-rp2040-pcb-1024x529.jpg" width="1024"/></figure>
 <p class="wp-block-paragraph">Note I decided to move the BOOT SEL switch back to a push-button in the final design, even though the DIP switch did make it easier to use without having three hands.</p>
 <p class="wp-block-paragraph">If you want to make this project, again all the files are here =&gt; <a href="https://oshwlab.com/rodyne/new-project_copy_copy_copy_copy">OSHWLab</a></p>
 <p class="wp-block-paragraph">If you don’t like that, then all the files are also zipped up here =&gt; <a href="files/Schematic_Gerbers_SourceCode_and_UF2_Binary.zip">zip-files</a></p>
@@ -53,7 +60,7 @@
 <p class="wp-block-paragraph">The only bits that caused an issue were the fact I have never used VS Code before and the first project I created took about 10 minutes to even show up as it silently downloaded the SDK. Of course me being impatient closed VS Code after a minute of nothing seeming to happen, then I noticed the little messages at the bottom right of the IDE and decided to let it do its thing. All good after then, though man, that IDE is really slow!</p>
 <p class="wp-block-paragraph">With blinky LED under the belt I decided to ask ChatGPT to create me a bare RP2040 C Program with a 1mS interrupt, which it nicely did, and I proceeded to modify the interrupt to put the LED scan code. Pressing compile totally failed as I forgot about the make file, CMakeList.txt. Now make files are usually handled by whatever IDE I am using, MPLABX or STM32 cube, I never need to touch them and never do anything fancy with them, having it exposed to a newbie like me was a bit of a shock, (Sigh, why did Pascal never catch on!) luckily ChatGPT to the rescue.</p>
 <p class="wp-block-paragraph">Now ChatGPT has been pretty good and getting better, but I know it’s limitations. The perfect example of this was a few weeks ago after it gave me the perfect description how to connect some 74LS193 counters on my retro-computer. A very upbeat naive version of me then asked it for a schematic, and what I got was below!</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-1753" height="1024" loading="lazy" src="images/ChatGPT-I-want-to-connect-2-74ls193-counters-in-series-to-get-an-8-bit-counter-can-you-show-me-the-schematic-to-do-this.jpg" width="1024"/></figure>
+<figure class="wp-block-image size-full"><img alt="ChatGPT I want to connect 2 74ls193 counters in series to get an 8 bit counter can you show me the schematic to do this" class="wp-image-1753" height="1024" loading="lazy" src="images/ChatGPT-I-want-to-connect-2-74ls193-counters-in-series-to-get-an-8-bit-counter-can-you-show-me-the-schematic-to-do-this.jpg" width="1024"/></figure>
 <p class="wp-block-paragraph">So WTF! Yes it will make a good t-shirt to mock our AI overlords in the future, but as it stands, AI is not quite at the level of replacing an EE. (yet!)</p>
 <p class="wp-block-paragraph">Anyway, back to the story. I was a bit shocked with the number of configurations you needed in the CMakeList.txt file, e.g. just including a file in the C code before was good enough, but the compiler here will not do anything unless the make file knows about it. I guess there is some logic, since there are about a million C libraries out there.</p>
 <p class="wp-block-paragraph">Anyway, to my surprise on first compiling my program and dropping the UF2 file onto my RP2040 USB drive it worked! Hi Five to me and ChatGPT, the winning combo!</p>
@@ -79,7 +86,7 @@
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>

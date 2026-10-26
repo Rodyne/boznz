@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="If your latest IOT project needs to run on batteries for a few years and you need to send some important data over the airwaves or across a serial line"/>
+<meta property="og:title" content="Encryption for very low data rate embedded systems"/>
+<meta property="og:description" content="If your latest IOT project needs to run on batteries for a few years and you need to send some important data over the airwaves or across a serial line"/>
+<meta property="og:url" content="https://boznz.com/post852.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/2017/10/dasterdly.png"/>
 <title>Encryption for very low data rate embedded systems</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -32,7 +39,7 @@
 <div class="entry-content">
 <p>If your latest IOT project needs to run on batteries for a few years and you need to send some important data over the airwaves or across a serial line then you are in a bit of a poor situation when it comes to normal encryption.</p>
 <p>While adding 1 to the ACSII character and sending the message backwards worked for Tin-Tin and looked like a good idea when you were 10 years old, you really are are going to look a bit silly when your device gets hacked and an impostor can read key data or more seriously send false messages which will be interpreted as one from your sensor.</p>
-<p><a href="images/2017/10/dasterdly.png" rel="attachment wp-att-854"><img alt="" class="size-full wp-image-854 alignleft" height="263" src="images/2017/10/dasterdly.png" width="192"/></a></p>
+<p><a href="images/2017/10/dasterdly.png" rel="attachment wp-att-854"><img alt="Dasterdly" class="size-full wp-image-854 alignleft" height="263" src="images/2017/10/dasterdly.png" width="192"/></a></p>
 <p>Proper encryption is generally known as <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">public key encryption</a> requires quite a complicated algorithm to compute and requires a private key stored in your IOT device and a public key stored in the remote device to decode it. You default low power AT-Mega or PIC 8-bit microprocessors struggle a bit in this situation and the normal course of action is to bite the bullet and upgrade to a 32 bit core, but what if I said there is another way which requires no messy complicated math or algorithms and is totally unbreakable?</p>
 <p>Well there is a simple solution, one which uses the oldest (and most unbreakable) encryption method known to man, it’s called the <a href="https://en.wikipedia.org/wiki/One-time_pad">One Time Pad</a> or OTP. It is however really only suitable for very low data rate sensors as this method requires a random byte for every single encrypted byte you want to transmit. Here’s the big thing though, you only want to encrypt the actual data values and the checksum not the header, preamble and other fluff, in fact this should really not be encrypted using your key as repeating the same header bytes over and over again will make your encryption scheme several-giga-orders of magnitude easier to decrypt!</p>
 <p>Also if the data is unimportant (and that is a thing you need to decide carefully) and your happy anyone can read it (say temperature readings in a field) then the only thing you need to protect against is `man in the middle` attack in which somebody else sends your message with false data in it. In these cases you really only need to encrypt the CRC to produce a digital signature so you can check the data is true and has not been compromised.</p>
@@ -49,7 +56,7 @@
 <p>So back to the simple OTP, for super secure I need 87.6KB of ROM.</p>
 <p>Both the sender and the receiver need this same random data pattern, and it will need to be random as the normal RAND() functions of your favourite programming language are not actually that random. DES encrypting such a random stream would make it pretty near random as we can get without going to silly extremes.</p>
 <p>To do the actual encryption the two bytes of data will need to be XOR’d with two of the OTP/RND key bytes and the next position in the OTP/RND ROM table incremented (below). The receiving system does exactly the same XOR function on the encrypted data and out pops the good data.</p>
-<p><a href="images/2017/10/xor-1.png" rel="attachment wp-att-871"><img alt="" class="aligncenter size-full wp-image-871" height="364" src="images/2017/10/xor-1.png" width="1030"/></a></p>
+<p><a href="images/2017/10/xor-1.png" rel="attachment wp-att-871"><img alt="Xor 1" class="aligncenter size-full wp-image-871" height="364" src="images/2017/10/xor-1.png" width="1030"/></a></p>
 <p> </p>
 <p>Thats all there is to it, there really is no need to do any further encryption as the OTP is theoretically unbreakable without the KEY. (so don’t ruin it by publishing the header on Github!)</p>
 <p>If you have more data and your microprocessor is maxed out of flash then the method I have used is to use serial SPI flash which costs a few dollars. 64MB Serial flash in an SOIC8 package can store 8MB of of KEY data which could be used for bigger or more frequent messages but if your getting that big you really need to go to a bigger micro and one of proper PKE or DES encryption libraries.</p>
@@ -74,7 +81,7 @@
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
