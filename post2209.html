@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="There are two common methods to clarify juice before it goes into fermentation. Firstly there is cold-settling, where you just leave the juice alone for"/>
+<meta property="og:title" content="Continuous Floatation in Wineries"/>
+<meta property="og:description" content="There are two common methods to clarify juice before it goes into fermentation. Firstly there is cold-settling, where you just leave the juice alone for"/>
+<meta property="og:url" content="https://boznz.com/post2209.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/floatation-with-al-and-fran-small-1024x719.jpg"/>
 <title>Continuous Floatation in Wineries</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -31,10 +38,10 @@
 <span class="meta-prep meta-prep-author">Posted on</span> <a href="post2209.html" rel="bookmark" title="4:17 pm"><span class="entry-date">10 April 2025</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
 <div class="entry-content">
 <p class="wp-block-paragraph">There are two common methods to clarify juice before it goes into fermentation. Firstly there is cold-settling, where you just leave the juice alone for several days and wait for the clear juice and lees (the juice particulates) to separate. Then there is floatation, where you add a processing agent (usually bentonite) and bubble a gas (nitrogen) through the juice and allow the particulates to rise to the top and the clear juice at the bottom. For big wineries, floatation is preferred as it reduces the long settling times (where juice may even begin to ferment before it is ready) and it produces a clearer juice faster.</p>
-<figure class="wp-block-image size-large"><a href="images/floatation-with-al-and-fran-small.jpg"><img alt="" class="wp-image-2281" height="719" src="images/floatation-with-al-and-fran-small-1024x719.jpg" width="1024"/></a></figure>
+<figure class="wp-block-image size-large"><a href="images/floatation-with-al-and-fran-small.jpg"><img alt="Floatation with al and fran small" class="wp-image-2281" height="719" src="images/floatation-with-al-and-fran-small-1024x719.jpg" width="1024"/></a></figure>
 <p class="has-text-align-center wp-block-paragraph"><em>Me, Allison (Winemaker) and Fran (transformation project manager) overlooking the Indevin Winery floatation system and three of its four float pools</em></p>
 <p class="wp-block-paragraph">This post will concentrate on this floatation process, or more specifically the continuous floatation process, and how your wine-making system should keep track of the composition. A very simplified diagram of this process is below. Where multiple Crush tanks with compatible juice are successively fed into the pool until the clear tank is full.</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-2210" height="135" src="images/float.jpg" width="848"/></figure>
+<figure class="wp-block-image size-full"><img alt="Float" class="wp-image-2210" height="135" src="images/float.jpg" width="848"/></figure>
 <p class="wp-block-paragraph">Note in the text below we might see reference to a propagation or “Prop” tank, this is just another clear tank with a different name and a different status and the procedure to get its composition is identical.</p>
 <p class="wp-block-paragraph">When processing just a single crush tank, we fill the float pool from the crush tank (yellow in picture), and once the pool is full we begin bubbling the gas through, collect the clarified juice from the bottom (blue in picture) into the clear tank, and the rest (the grey in the picture) is considered lees and goes to the lees tank where it is either further clarified to get a bit more juice or disposed of. Once the crush tank and float pool are empty we start again.</p>
 <p class="wp-block-paragraph">The problem with this (single) float is we have to stop the process to empty the pool, which can add some hours to the procedure. In a continuous floatation process when the first crush tank is emptied, we record the tank dips, and flowmeter readings, while the float pool is still full and change to a new crush tank and continue the process with minimal interruption, eventually after processing several similar crush tanks the last job empties the pool and the sequence restarts with the next batch.</p>
@@ -51,7 +58,7 @@ Lees Volume = FM1 - FM2</code></pre>
 <p class="wp-block-paragraph">The float pools also have a nominal (full) volume we work to and in practice the inflow and outflow is controlled to keep it at this volume throughout the process.</p>
 <p class="wp-block-paragraph">For the system we designed we split the continuous floatation into jobs based on the emptying of a crush tank. At the start of each job we will have the known start volumes of the crush and clear tank (via DIPs or otherwise) and our first action is to ensure both the flowmeters are reset so we can do the calculations. This I do quite easily as I already have a bi-directional service connecting the SCADA systems to MySQL (the Bulls-i RDBS) plus I keep my own counters for both flowmeter values independent of the values held in SCADA as these can be reset manually and I have been burnt many times by using other peoples data.</p>
 <p class="wp-block-paragraph">We have three possible types of continuous floatation jobs, the first where we fill the pool, then one or more middle jobs, and finally an end job where we flush the pool and this can be seen in a simple series of jobs below.</p>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-2323" height="227" loading="lazy" src="images/float2-1024x227.jpg" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="Float2" class="wp-image-2323" height="227" loading="lazy" src="images/float2-1024x227.jpg" width="1024"/></figure>
 <p class="wp-block-paragraph">In the first job in the series where we fill that tank we only have one source “SRC #1” and all the juice volume will end up in either</p>
 <ol class="wp-block-list">
 <li>The Float Pool (at the Float pool fill volume)</li>
@@ -65,11 +72,11 @@ Lees Volume = FM1 - FM2</code></pre>
 <p class="wp-block-paragraph">In the Bulls-i system “Float Pool #1” is an asset, but it is NOT a tank. However as a programmer, I can bypass this restriction and so treat it as a virtual tank, giving it volume, batch-codes and a composition exactly like a normal vessel and knowing that at the end of the series it will be empty.</p>
 <p class="wp-block-paragraph">So not a difficult process when you break it down into steps. </p>
 <p class="wp-block-paragraph">There are two users of the system, the winemaker who creates the floatation jobs and decides on which tanks and float pools will be allocated, where they go in the sequence, and what additives if any need to be made. The other is the cellar-hand who operates the system and does the work on the winery floor, and who needs to see the current status of the job clearly and be able to enter information on a system to say which tanks are connected and their opening and closing volumes.</p>
-<figure class="wp-block-image size-full"><a href="images/float3.jpg"><img alt="" class="wp-image-2360" height="506" loading="lazy" src="images/float3.jpg" width="1464"/></a></figure>
+<figure class="wp-block-image size-full"><a href="images/float3.jpg"><img alt="Float3" class="wp-image-2360" height="506" loading="lazy" src="images/float3.jpg" width="1464"/></a></figure>
 <p class="wp-block-paragraph">The winemaker part of this is shown above (for “Pool B”) Only one job can be active in a line, and we must have at least a FIRST (to fill the pool) and a LAST (to empty the pool) along with 1 or more MIDDLE jobs. The Winemaker job screen looks like below</p>
-<figure class="wp-block-image size-large"><a href="images/image.png"><img alt="" class="wp-image-2361" height="529" loading="lazy" src="images/image-1024x529.png" width="1024"/></a></figure>
+<figure class="wp-block-image size-large"><a href="images/image.png"><img alt="Image" class="wp-image-2361" height="529" loading="lazy" src="images/image-1024x529.png" width="1024"/></a></figure>
 <p class="wp-block-paragraph">This job translates onto the Cellar-hand operators touchscreen as below where we have a very limited number of options to start the job, make product additions to the tank/pool and start and end each tank in series. The operator screen will also require RFID confirmations from operators who have the qualification to do this. In this way the winemaker fills the operators work buffer and when the operator has finished and signed off the job it is returned to their office screen to complete.</p>
-<figure class="wp-block-image size-large"><a href="images/float5.jpg"><img alt="" class="wp-image-2362" height="576" loading="lazy" src="images/float5-1024x576.jpg" width="1024"/></a></figure>
+<figure class="wp-block-image size-large"><a href="images/float5.jpg"><img alt="Float5" class="wp-image-2362" height="576" loading="lazy" src="images/float5-1024x576.jpg" width="1024"/></a></figure>
 <p class="wp-block-paragraph">All the flowmeter and SCADA volumes are captured and displayed real-time on the appropriate graphic on the screen to aid both the winemaker (sitting remotely in an office) and the operator doing the job. There are also a few additional toys we have added to this system to reproduce the four (RED/GREEN/YELLOW/FALSHING) LEDs from the program to real lights on the cellar floor.</p>
 <p class="wp-block-paragraph">Hopefully this brief introduction to automating a slightly more complicated production process will show what is possible.</p>
 </div>
@@ -91,7 +98,7 @@ Lees Volume = FM1 - FM2</code></pre>
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>

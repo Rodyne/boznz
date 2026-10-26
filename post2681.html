@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="Designing systems for Industrial Automation or electronics control are a very different kettle of fish from designing for your standard business system, in"/>
+<meta property="og:title" content="Systems Engineering and Industrial Automation"/>
+<meta property="og:description" content="Designing systems for Industrial Automation or electronics control are a very different kettle of fish from designing for your standard business system, in"/>
+<meta property="og:url" content="https://boznz.com/post2681.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/process.png"/>
 <title>Systems Engineering and Industrial Automation</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -26,7 +33,7 @@
 <div class="entry-content">
 <p class="wp-block-paragraph">Designing systems for Industrial Automation or electronics control are a very different kettle of fish from designing for your standard business system, in many ways it’s a lot easier but there is a very close linkage with the hardware which needs to be taken in to account and most importantly a need to design for total reliability (including fail-safe options). I can deliver a complete range of services in this area including if required custom electronics circuit design and sourcing low cost manufacturing.</p>
 <p class="wp-block-paragraph">The easiest way to look at Industrial automation is to take a real life example, such as a very simple winery with a few cooling tanks which we want to keep at a constant temperature. We will only show 2 tanks but normally the PLC would control more, possibly even regulating the coolant pump to ensure an even system pressure.</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-2682" height="243" src="images/process.png" width="504"/></figure>
+<figure class="wp-block-image size-full"><img alt="Process" class="wp-image-2682" height="243" src="images/process.png" width="504"/></figure>
 <p class="wp-block-paragraph">In the above simple scenario each tank would require a temperature sensor and an electrically operated valve. When the temperature is above an upper setpoint we open the valve and let the coolant in to cool the tank, when the temperature drops below the lower setpoint the valve is closed, thus the temperature of the tank can never exceed the setpoint. The software program you would write would simply need to go around a loop reading the temperature sensor and switching the valve control relay on or off. A few more tanks we simply repeat the above in a loop.. Lets face it, a Doddle!</p>
 <p class="wp-block-paragraph">The big temptation for a technical person coming from a PC programming background into an industrial area is always the same, something along the lines of “I could knock up a program to do that in a few minutes if you used a PC”. Yes, while it is possible to control industrial systems such as above using a PC it is not desirable for several reasons:</p>
 <ul class="wp-block-list">
@@ -43,7 +50,7 @@
 <p class="wp-block-paragraph">Where a PC does come in useful in a factory or production space is in the Human Machine Interface (or HMI as in the actual factory touchscreen receival system I designed for <a href="https://web.archive.org/web/20100814195112/http://www.indevin.com/">Indevin</a> above) where all the different control systems are brought back to a graphical interface, allowing operators to immediately see and control very complex processes. </p>
 </div>
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-2683" height="296" src="images/touchscreen-example.jpg" width="401"/></figure>
+<figure class="wp-block-image size-full"><img alt="Touchscreen example" class="wp-image-2683" height="296" src="images/touchscreen-example.jpg" width="401"/></figure>
 </div>
 </div>
 <p class="wp-block-paragraph">In this situation the PC simply acts as an Interface to your production systems or queries the states of whatever is controlling the plant and shows it graphically, likewise changes (such as taking a pump off-line) can be done at the click of a touchscreen button. A single PC system failure in these cases would not affect the operation of the controller or business system as you may have 2 or 3 stations and once the PC is brought back on-line it re-reads the master controller or database again as if nothing happened. On a larger scale, software of this type is used to monitor whole factory production areas and mostly referred to by the generic name of <a href="https://web.archive.org/web/20100814195112/http://en.wikipedia.org/wiki/SCADA">SCADA</a>.</p>
@@ -51,7 +58,7 @@
 <p class="wp-block-paragraph">Contrary to what you may have heard SCADA systems are very simple often just reading and writing setpoints and registers to a few PLC’s and HMI’s. Reading and writing to the SCADA system from your production system is not difficult and can enhance the useability and automation of it greatly. Getting the information to do this from your SCADA maintainer should not be an obstacle, if they make it one then you really should be looking for another supplier as despite what they say you are the customer, and it is your data.</p>
 <p class="wp-block-paragraph"><span style="text-decoration: underline;">PLC, PLC.. so what’s a PLC</span></p>
 <p class="wp-block-paragraph">PLC stands for Programable Logic Controller and, (surprise surprise!) the heart of a PLC is actually a teeny-tiny off the shelf micro-processor, the only difference between the processor in your laptop is that the processor in the PLC is designed from the ground up to run a much simpler set of instructions, at a fraction of the speed, using a fraction of the power, and normally has built in memory and I/O. For these reasons the chip is sometimes also referred to as a micro-controller; You have several in front of you now controlling your keyboard, your mouse, and maybe even your digital watch (and when was the last time you re-booted your keyboard, mouse or watch!). A PLC simply adds the electronics around the micro-controller to electrically isolate the I/O ports to allow industry standard 5V 4-20mA, 24VDC or 240VAC connections. Importantly, the PLC exactly specifies the Input and Output ports so no ambiguity exists for the electrician who usually programs them.</p>
-<figure class="wp-block-image"><img alt="" src="images/external/cp1h.png"/></figure>
+<figure class="wp-block-image"><img alt="Cp1h" src="images/external/cp1h.png"/></figure>
 <p class="wp-block-paragraph">A PLC does not have an operating system, it does some basic self tests then begins running it’s program immediately after power on, this also means the start up time can be measured in milliseconds and the timing to read and write the I/O ports are precisely known. The downside (for a normal programmer) is that the program you write has to work at a very low level using simple logic (AND, OR, NOT etc) and, special programming languages are often used to allow the electrical engineers who design and run factories to be able to program them. </p>
 <p class="wp-block-paragraph">The most common PLC programming language is called <a href="https://web.archive.org/web/20100814195112/http://en.wikipedia.org/wiki/Ladder_logic">ladder logic</a> which visually approximates the electrical symbols for switches and relays (coils) which any electrician can understand without knowing much about computers. Ladder logic is great for relays and switches but not so easy to understand when we begin to work with analog controls. Other PLC languages like <a href="https://web.archive.org/web/20100814195112/http://en.wikipedia.org/wiki/Structured_text">Structured Text</a> (ST) exist which are better suited to handling these, but are becoming outdated, and as PLC’s are pushed to do more complicated tasks they are usually replaced by more specialised systems programmed in a high level language such as C.</p>
 <p class="wp-block-paragraph">PLC’s are great for industrial control, they can be used as building blocks for individual systems in the factory and can easily grow by adding different IO module types and can all talk to each other or back to a SCADA system with the designer knowing that everything is tried and tested and will work reliably for years. If you change the design parameters of the factory you just download a new program into the PLC without any re-wiring, that is why if you go to any factory or production line in the world, ride up an elevator or go for a ride on a roller coaster you will see PLC’s doing their thing.</p>
@@ -62,7 +69,7 @@
 <p class="wp-block-paragraph">So a PLC is basically a Micro-controller with industrial grade electronic components, an environmentally protected case, opto-isolated inputs, relay or buffered outputs, documented memory map, expansion, and a electrical engineer orientated development environment. But there is absolutely nothing stopping you from designing and building your own ‘PLC’ exactly tailored for your own particular process or application. Many millions of companies and individuals do this every day, however there are a lot of factors to consider before deciding this is a better route than a PLC, the (very) general rules of thumb are:-</p>
 <p class="wp-block-paragraph">Firstly, consider the size of the project. A micro-controller has a good amount of IO ports as standard, but once you get past about 40 input or output ports, complexity, development time, testing and circuit costs are going to rise. A PLC is of course built for expansion and can keep adding IO, like Lego, up to several hundred ports. Small micro-controller projects are very quick and simple to develop, in the example of the wine tanks above, development and testing of such a simple controller could be done inside a day and once designed a circuit board can be produced locally for under $100 each or in Asia in qty for under $20.</p>
 <p class="wp-block-paragraph">Secondly, developing for a micro-controller maybe more expensive than for a PLC (or should be, but I’ve seen examples of PLC’s that should have been commissioned in a day take weeks!) the reason being that you also need to design the electronics to interface to the outside world (e.g. buffered analogue inputs 4-20mA, 0-10V etc, optically isolated digital inputs, relay output, LCD screens, power supply, MODBUS, Ethernet interfaces, buttons etc) the more complex the circuit the more to design and test. With a PLC you just buy these off the shelf and they just work. However if your making two micro-controller based control units then the development costs are effectively halved, three or more and assuming you have the electronics know how then it becomes a no-brainer in favour of developing your own micro-controller. (Note you would always make a few additional units as spares for any real world application as you can never have enough spares.)</p>
-<figure class="wp-block-image"><img alt="" src="images/external/plc-graph.gif"/></figure>
+<figure class="wp-block-image"><img alt="Plc graph" src="images/external/plc-graph.gif"/></figure>
 <p class="wp-block-paragraph">Thirdly, consider the geography of what you are trying to do. If all the systems are close together a single PLC with enough I/O ports would certainly be a logical choice; however, if you have a lot of remote systems to control, the cost of wiring the control signals may become prohibitive over having several customised small ones.</p>
 <p class="wp-block-paragraph">Fourthly, consider expansion, both these solutions can have there software upgraded in a matter of seconds with a down time of under a minute, but if you need to add more physical I/O to your custom micro-controller design later on and you havent designed for it, your circuit will need to go back to the drawing board. A PLC does not suffer this limitation and so if your requirements may change down the line get a PLC.</p>
 <p class="wp-block-paragraph">Fifthly, If you are designing devices to go into a non-industrial environment such as a home, an automobile, a shed in the middle of a field, or if your system needs to be battery powered or is controlling voltages under 24V then choose a custom micro-controller design.</p>
@@ -86,7 +93,7 @@
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>

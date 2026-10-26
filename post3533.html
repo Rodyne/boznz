@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="I loaded the MM Edit program onto my new Linux/Kubuntu desktop and wanted to test it out with a Raspberry Pi Pico development board to ensure everything"/>
+<meta property="og:title" content="Small Blinkenlight Update"/>
+<meta property="og:description" content="I loaded the MM Edit program onto my new Linux/Kubuntu desktop and wanted to test it out with a Raspberry Pi Pico development board to ensure everything"/>
+<meta property="og:url" content="https://boznz.com/post3533.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/IMG_0508-ezgif.com-optimize.gif"/>
 <title>Small Blinkenlight Update</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -31,7 +38,7 @@
 <span class="meta-prep meta-prep-author">Posted on</span> <a href="post3533.html" rel="bookmark" title="11:05 am"><span class="entry-date">20 January 2026</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="author-2.html" title="View all posts by admin">admin</a></span> </div>
 <div class="entry-content">
 <p class="wp-block-paragraph">I loaded the MM Edit program onto my new Linux/Kubuntu desktop and wanted to test it out with a Raspberry Pi Pico development board to ensure everything was working. As my Pico board was all the way over in my workshop, and it was raining and cold outside (yeah, middle of summer here – go figure!), I pulled the spare <a href="post1751.html">RP2040 blinkenlight board</a> off my spares shelf and decided to have another go at the temporary C firmware on it, maybe fix it once and for all.</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-3540" height="168" src="images/IMG_0508-ezgif.com-optimize.gif" width="784"/></figure>
+<figure class="wp-block-image size-full"><img alt="IMG 0508 ezgif.com optimize" class="wp-image-3540" height="168" src="images/IMG_0508-ezgif.com-optimize.gif" width="784"/></figure>
 <p class="wp-block-paragraph">The original blinkenlight board was a surprise favourite with the Hacker News and HackaDay community last year, and judging from the correspondence I had, a lot of people appreciated the RP2040 version over the original 8-Bit PIC one. Obviously, as I was testing MM Edit, not VS Code, I replaced the C program with a small MMBASIC program, just to see how easy it was to to do, if it all worked, and, if BASIC was fast enough to drive a bunch of multiplexed LED’s with row and column drivers. I am pleased to say it did, and the results surprised me, this must have also been the fastest development I have ever done, maybe 3 hours start to finish! It was as simple as clicking the boot-select switch on my board, plugging it in to a free USB port, and dropping the PicoMite RP2040 6.01 firmware on the new USB drive. Then writing the super-simple program below in MM Edit, pressing reset on the blinkenlight board clicking the MM Edit upload button and presto!</p>
 <p class="wp-block-paragraph">I wont even bother to explain the code you don’t get much easier than this. I guess I should start testing my C compilers now, wont be as much fun 🙁</p>
 <pre class="wp-block-code"><code>' Firmware for the Blinkenlights board (https://rodyne.com/?p=1751)
@@ -184,7 +191,7 @@ loop
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>

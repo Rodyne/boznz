@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="My recent goals to work with and learn some newer, more popular, micro-controllers, and to try some different programming languages, has made me also take"/>
+<meta property="og:title" content="Don’t look Behind The Curtains!"/>
+<meta property="og:description" content="My recent goals to work with and learn some newer, more popular, micro-controllers, and to try some different programming languages, has made me also take"/>
+<meta property="og:url" content="https://boznz.com/post3574.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/image-2-1.jpg"/>
 <title>Don’t look Behind The Curtains!</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -32,7 +39,7 @@
 <div class="entry-content">
 <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<figure class="wp-block-image size-full is-resized"><img alt="" class="wp-image-3590" height="506" src="images/image-2-1.jpg" style="aspect-ratio:0.7094743071171292;width:298px;height:auto" width="359"/></figure>
+<figure class="wp-block-image size-full is-resized"><img alt="Image 2 1" class="wp-image-3590" height="506" src="images/image-2-1.jpg" style="aspect-ratio:0.7094743071171292;width:298px;height:auto" width="359"/></figure>
 </div>
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%">
 <p class="wp-block-paragraph">My recent goals to work with and learn some newer, more popular, micro-controllers, and to try some different programming languages, has made me also take another look at the ways things have progressed since I started my career. My programming career started with Pet and ZX81 Basic at school, then Turbo Pascal for PC, and C for VMS/Unix at work/college. These were all languages I could easily grok. I still remember a magazine article where somebody poked a number into a memory location in the ZX81 and the letter “A” popped up on the screen, one line of code.. which mapped to one single CPU instruction! That was all it took for the light bulb to go on in my head.</p>
@@ -43,7 +50,7 @@
 <p class="wp-block-paragraph">Someone coming into programming in 2026 will likely be offered JavaScript or Python as their first development language, both require an OS, an IDE, an interpreter or a browser, and probably the equivalent of a 1980’s supercomputer just to print “Hello World”. No beginner is really going to have a clue how their <em>Print “Hello World”</em> got onto their screen, because doing so requires understanding a API stack a mile high; If this was where I had to start my programming journey, I might never have begun, as I like to understand how things work. To many, I expect the inner workings of the stack between their chosen programming language, and the work their program actually does, is still <em>black-magic</em>.</p>
 <p class="wp-block-paragraph">I was lucky to have peeked behind the curtains early in my career, and have an intimate knowledge of CPU architectures, but even I have basically given up trying to understand the layers or stack. I read and write to whatever API is exposed, and hope the level below me knows what it is doing! Occasionally I have written parts of ‘the stack’, building hardware and writing a driver for Windows or Linux to support it, but even then I am conforming to a set of norms for the level above it, and I doubt anybody ever checked my code.</p>
 <p class="wp-block-paragraph">Only with Micro-controller projects am I fully back in control, and with them (for me at least) there generally was no stack; My program <em>was</em> the stack! This was however back with older 8-bit or 16-bit micros, and micro-controllers were not immune from technologies progress. Today’s micro-processors are amazing pieces of technology that have improved in leaps and bounds, going to multi-core monsters, with layers of complexity and peripherals that would shame a 1980’s super-computers. Unlike software though, they have done this while improving there efficiency and lowering there cost. For me, the best thing about all of this is you don’t really have to use any of this new complexity, and a simple blinking LED can still be done in a few primitive lines of C.</p>
-<figure class="wp-block-image size-full"><a href="post1751.html"><img alt="" class="wp-image-3540" height="168" src="images/IMG_0508-ezgif.com-optimize.gif" width="784"/></a></figure>
+<figure class="wp-block-image size-full"><a href="post1751.html"><img alt="IMG 0508 ezgif.com optimize" class="wp-image-3540" height="168" src="images/IMG_0508-ezgif.com-optimize.gif" width="784"/></a></figure>
 <p class="wp-block-paragraph">From a blinking LED I can add in all the complexity, and use as many of these new peripherals as I like. This is <em>exactly</em> like I did back in 1980 with my first Z80 chip, no real need for a stack or an API.</p>
 <p class="wp-block-paragraph">But API’s and stacks get added anyway, for convenience, reliability and speed of development. Abstracting away complex code behind a set of C SDK libraries, an RTOS, MicroPython, Arduino or even MMBasic, is a way of not having to learn the 1000’s of pages of CPU and peripheral datasheets. A lot of people are happy to take these easier options, including me, but lets not kid ourselves that we diligently read the libraries of source code that get compiled into our binaries, most of the time we are generally trusting the coders have done a good job.</p>
 <p class="wp-block-paragraph">A modern micro-processor, or System-On-Chip (SOC), is a far different beast from a micro-controller, adding many more layers of complexity, security, memory management, cores and peripherals, such as PCIe, USB3, Ethernet, or even a GPU. They are so complex that they often require there own bootstrap program to even initialise everything before it even finds and runs even a single line of your code. Very few programmers are brave enough to work <em><a href="https://en.wikipedia.org/wiki/Bare_machine" rel="noreferrer noopener" target="_blank">bare-metal</a></em> at this level because often as not these SOC’s, unlike micro-controllers, hide or abstract everything behind NDA’s or binary API’s, this is why for example on your cell phone, real world people accept they are going to work through an operating system and use the provided API’s.</p>
@@ -52,14 +59,14 @@
 <p class="wp-block-paragraph">So, to segue again back to my first paragraph, if I was being honest with my real goals, I love the fact that when working with micro-controllers I am effectively going back to a simpler time, a time where I owned, and understood the stack, where the stack hardly ever changed, and when I turned my computer on I was running my program code within microseconds. I guess that is why there is a resurgence in retro-computing going on, people still want to know what is behind the curtains and understand how it all works!</p>
 </div>
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-3607" height="512" loading="lazy" src="images/wizardoftech.jpg" width="512"/></figure>
+<figure class="wp-block-image size-full"><img alt="Wizardoftech" class="wp-image-3607" height="512" loading="lazy" src="images/wizardoftech.jpg" width="512"/></figure>
 </div>
 </div>
 <p class="wp-block-paragraph">I am one of those people, but I will never go back to using a retro-computer or retro-operating system for my daily drive, I am happy the stack is there and hundreds of thousands of people have stood on each others shoulders, to bring me the marvelous Linux and IOS GUI’s I have today. However there is a cost, and that cost is complexity, efficiency, and the fact that programmers (like me) take all these layers of code for granted without looking behind the curtain. A whole Eco-system based on the trust that somebody else has done your due diligence for you!</p>
 <p class="wp-block-paragraph">This is especially scary once you realise how many bad actors are out there, examining every line of these stacks for code vulnerabilities. This is happening every hour of the day, and they are finding them with ease. AI, over-complicated programming styles, and dependency hell, are making it harder for the developers to miss these cracks in their code reviews, and easier for the bad guys to find them.</p>
 <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
-<figure class="wp-block-image size-full"><a href="https://news.ycombinator.com/item?id=46789913" rel="noreferrer noopener" target="_blank"><img alt="" class="wp-image-3613" height="213" loading="lazy" src="images/vulnerabilities.jpg" width="518"/></a></figure>
+<figure class="wp-block-image size-full"><a href="https://news.ycombinator.com/item?id=46789913" rel="noreferrer noopener" target="_blank"><img alt="Vulnerabilities" class="wp-image-3613" height="213" loading="lazy" src="images/vulnerabilities.jpg" width="518"/></a></figure>
 <p class="has-text-align-center has-small-font-size wp-block-paragraph"><a href="https://news.ycombinator.com/item?id=46789913" rel="noreferrer noopener" target="_blank">Hacker News Link and Comments For Story Above</a></p>
 </div>
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
@@ -87,7 +94,7 @@
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>

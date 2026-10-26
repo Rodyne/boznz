@@ -3,6 +3,13 @@
 <html lang="en-NZ">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="description" content="Note there is a RP2040 version of this now available Das Blinkenlights (mit RP2040!) Probably the only German word I know, and, quite by accident, became"/>
+<meta property="og:title" content="Das Blinkenlights!"/>
+<meta property="og:description" content="Note there is a RP2040 version of this now available Das Blinkenlights (mit RP2040!) Probably the only German word I know, and, quite by accident, became"/>
+<meta property="og:url" content="https://boznz.com/post1674.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="boznz.com"/>
+<meta property="og:image" content="https://boznz.com/images/front-panel.jpg"/>
 <title>Das Blinkenlights!</title>
 <link href="css/site.css" rel="stylesheet"/>
 <link href="images/2015/11/web-header2.png" rel="icon"/>
@@ -13,7 +20,7 @@
 <div id="header">
 <div id="masthead">
 <div id="branding" role="banner">
-<img alt="" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
+<img alt="boznz.com, Boz's Blog on Technology and the Future" height="198" src="images/cropped-newlogo2.jpg" width="940"/> </div>
 <div id="access" role="navigation">
 </div>
 </div>
@@ -40,11 +47,11 @@
 </div></figure>
 <p class="wp-block-paragraph">Looks cool, yet it is just my RPI NAS inside the cabinet, a lot of space and the total power budget is 6.5 watts. (including the RPi4 !)</p>
 <p class="wp-block-paragraph">The thing that has made this possible is that the price of making and assembling a printed circuit over the past few years has plummeted. The 2U panels I made are really just 1.6mm thick black PCB’s with all the components mounted on the back and 128 reverse LEDs shining through the front as per the picture below.</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-1733" height="674" src="images/front-panel.jpg" width="961"/></figure>
+<figure class="wp-block-image size-full"><img alt="Front panel" class="wp-image-1733" height="674" src="images/front-panel.jpg" width="961"/></figure>
 <p class="wp-block-paragraph">Now you need to remember this is not a metal panel it is a 1.6mm thick fibre-glass one, it does the job, but it wont take much abuse like a metal one will and flexes a little when handling it.</p>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-1710" height="209" loading="lazy" src="images/blinkenlights1-1-1024x209.jpg" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="Blinkenlights1 1" class="wp-image-1710" height="209" loading="lazy" src="images/blinkenlights1-1-1024x209.jpg" width="1024"/></figure>
 <p class="wp-block-paragraph">There were a few ways to do this. I thought at first of not using a microprocessor and having 16 74HC595 shift registers for each LED, but then I would have to move the smarts to my raspberry pi or whatever server I am actually using to clock the data in. Also if I didn’t use a micro, the display could not do any blingy stuff. So I looked in my parts bin seeing what crappy microprocessors I could get rid of.</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-1711" height="502" loading="lazy" src="images/partsbin.jpg" width="764"/></figure>
+<figure class="wp-block-image size-full"><img alt="Partsbin" class="wp-image-1711" height="502" loading="lazy" src="images/partsbin.jpg" width="764"/></figure>
 <p class="wp-block-paragraph">Yes, I remembered now, I had almost 200 really crappy PIC16F1782 chips, left over from an update for one of my clients when he decided to add more functionality to his controller and we had to unsolder a batch of them, and resolder in the “better” PIC16F1783 which had another 256 bytes of RAM. I bet most hobbyist’s have some version of this chip around before the STM32’s, RP2040’s and ESP’s took over the world.</p>
 <p class="wp-block-paragraph">First problem there are not enough GPIO pins on the 28-pin PIC to drive 128 LED’s, plus an address line, plus a serial receive pin, minimum GPIO’s for that is 24 (16×8 LED scan matrix)+4(address)+1(RXD) = 29. A simple solution is to add two 74HC595 shift registers to increase the outputs by 16 at the expense of 4 pins to control them. Also the shift registers are only 9 cents each installed so that is what I did. Of course an even simpler solution would have been to grab the 44-pin PICs from the same box but where’s the fun in that!</p>
 <p class="wp-block-paragraph">Now the first design constraint is I cannot use any through-hole components as the holes will show though to the other side of the board where the silk screen is and spoil the effect. The second design constraint was power, luckily server racks are generally located in dark rooms or inside away from sunlight so no need to pump too many amps though the LED’s. Last design constraint was to be able to actually use the LED’s as real register displays and for that I needed a serial port so I could write real values to the registers, with 4 address switches I can have 16 panels (32U) and display up to 64 x 32-bit words. So when I finally get back to my retro computer it is going to look awesome!</p>
@@ -63,7 +70,7 @@
 <p class="wp-block-paragraph"><a href="https://oshwlab.com/rodyne/new-project">https://oshwlab.com/rodyne/new-project</a></p>
 <p class="wp-block-paragraph">All design files are public domain. Do what you will with them. (CAD/Gerber files <a href="files/DAS-BLINKENLIGHTS-2U.zip">here</a> if you wish to duplicate or fab somewhere else)</p>
 <p class="wp-block-paragraph">The schematic for those interested is below, but better to use the oshwlab link above and the EasyEDA editor (note my first time using oshwlab so hoping it all works)</p>
-<figure class="wp-block-image size-large"><a href="https://oshwlab.com/rodyne/new-project"><img alt="" class="wp-image-1715" height="726" loading="lazy" src="images/Schematic_BLINKENLIGHTS-2U_2025-01-11-1024x726.png" width="1024"/></a></figure>
+<figure class="wp-block-image size-large"><a href="https://oshwlab.com/rodyne/new-project"><img alt="Schematic BLINKENLIGHTS 2U 2025 01 11" class="wp-image-1715" height="726" loading="lazy" src="images/Schematic_BLINKENLIGHTS-2U_2025-01-11-1024x726.png" width="1024"/></a></figure>
 <p class="wp-block-paragraph">Working C Code below for those in the know. Please don’t criticise, it had to fit into 256 bytes of RAM and 2K of ROM (which it easily does) and I have a love/hate relationship with C at the best of times. And yes I know I’m not supposed to call procedures from interrupts, I just noticed that, so feel free to fix if you must and add some better random patterns.</p>
 <pre class="wp-block-code"><code>#include &lt;xc.h&gt;
 
@@ -307,7 +314,7 @@ int main()
 <br/>
 <br/><u><b>Novels By Boz</b></u><br/><br/>
 <a href="post1252.html">
-<img src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
+<img alt="The Summer of Reasoning trilogy cover" src="images/The-Summ-of-Reasoning-Cover-2.jpg" style="width: 194px;"/>
 </a>
 <br/>-<br/><a href="post1446.html">
 <img alt="A Level of Consciousness (2024)" src="images/Cover3.jpg" style="width: 194px;"/>
