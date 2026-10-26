@@ -1763,3 +1763,101 @@ body.custom-background { background-color: #ffffff; }
 	color: #666;
 	font-style: italic;
 }
+
+/* Gutenberg block layout. Twenty Ten has no column rules, so these
+   blocks stacked at each image's intrinsic size. */
+.wp-block-columns {
+	display: flex;
+	align-items: flex-start;
+	gap: 1.5em;
+	margin: 0 0 1.5em;
+}
+.wp-block-column {
+	flex: 1 1 0;
+	min-width: 0;
+}
+.wp-block-column.is-vertically-aligned-top {
+	align-self: flex-start;
+}
+.wp-block-group.is-layout-flex {
+	display: flex;
+	align-items: flex-start;
+	gap: 1em;
+}
+.wp-block-group.is-nowrap {
+	flex-wrap: nowrap;
+}
+
+.entry-content figure,
+.wp-block-image figure,
+.wp-block-columns figure {
+	margin: 0 0 1em;
+}
+.wp-block-image img,
+figure img {
+	max-width: 100%;
+	height: auto;
+}
+.wp-block-columns .wp-block-image a {
+	display: block;
+}
+.wp-block-columns .wp-block-image img,
+.wp-block-columns figure img {
+	width: 100%;
+	height: auto;
+}
+.wp-block-image.is-resized img {
+	height: auto;
+	max-width: 100%;
+}
+
+.entry-content .alignleft,
+.entry-content figure.alignleft {
+	float: left;
+	margin: 0.25em 1.5em 1em 0;
+}
+.entry-content .alignright,
+.entry-content figure.alignright {
+	float: right;
+	margin: 0.25em 0 1em 1.5em;
+}
+.entry-content .aligncenter,
+.entry-content figure.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.has-text-align-left { text-align: left; }
+.has-text-align-center { text-align: center; }
+.has-text-align-right { text-align: right; }
+.has-background { padding: 1em 1.25em; }
+.has-small-font-size { font-size: 13px; }
+.has-medium-font-size { font-size: 20px; }
+
+.wp-block-embed {
+	margin: 0 0 1.5em;
+	max-width: 100%;
+}
+.wp-block-embed__wrapper iframe {
+	max-width: 100%;
+}
+.wp-embed-aspect-16-9 .wp-block-embed__wrapper iframe {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+}
+.wp-embed-aspect-4-3 .wp-block-embed__wrapper iframe {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 600px) {
+	.wp-block-columns {
+		flex-wrap: wrap;
+	}
+	.wp-block-column {
+		flex-basis: 100% !important;
+	}
+}
