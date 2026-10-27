@@ -1,1 +1,3 @@
 *.BAS -text
+*.epub binary
+books/*.txt -text
