@@ -1861,3 +1861,101 @@ figure img {
 		flex-basis: 100% !important;
 	}
 }
+
+/* Phone and narrow windows.
+   The fixed shell is 940px plus 20px of padding on each side (980px).
+   Below that, let the page use the screen width. Wider laptop windows
+   keep the original fixed layout. */
+@media (max-width: 980px) {
+	#access .menu-header,
+	div.menu,
+	#colophon,
+	#branding,
+	#main,
+	#wrapper,
+	#access {
+		width: auto;
+		max-width: 100%;
+	}
+	#wrapper {
+		box-sizing: border-box;
+	}
+	#access {
+		float: none;
+	}
+	#access .menu-header,
+	div.menu {
+		margin-left: 0;
+		width: auto;
+	}
+	#container {
+		float: none;
+		margin: 0;
+		width: auto;
+		overflow: hidden;
+	}
+	#content,
+	.one-column #content,
+	.single-attachment #content {
+		margin: 0 0 24px;
+		width: auto;
+		max-width: 100%;
+	}
+	#primary,
+	#secondary {
+		float: none;
+		clear: both;
+		width: auto;
+		max-width: 100%;
+	}
+	#site-title,
+	#site-description,
+	#site-info,
+	#site-generator,
+	#footer-widget-area .widget-area {
+		float: none;
+		width: auto;
+		max-width: 100%;
+	}
+	#branding img {
+		float: none;
+		max-width: 100%;
+		height: auto;
+	}
+	img,
+	video,
+	embed,
+	object {
+		max-width: 100%;
+		height: auto;
+	}
+	iframe {
+		max-width: 100%;
+	}
+	.wp-caption,
+	.wp-caption img {
+		max-width: 100% !important;
+		height: auto;
+	}
+	pre,
+	.wp-block-code,
+	.wp-block-preformatted,
+	#content table {
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+	pre,
+	.wp-block-code,
+	.wp-block-preformatted {
+		overflow-x: auto;
+	}
+	#content table {
+		display: block;
+		overflow-x: auto;
+	}
+	#content,
+	#primary,
+	#secondary {
+		overflow-wrap: break-word;
+	}
+}
