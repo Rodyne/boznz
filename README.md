@@ -45,7 +45,7 @@ The live pages ask for the Twenty Ten theme stylesheet, but that file currently 
 
 ## Files that were already missing
 
-These links were already broken on rodyne.com. The pages now say so in place, instead of pointing at a dead address:
+These links were already broken on rodyne.com. The placeholder notes and the ChainDisplay download line have been removed from the pages:
 
 - `shwd2-1024x768.jpg`, `shed3.jpg`, and `shed4.jpg` on the shed post (`post1045.html`)
 - `terminal-case.png` on `post661.html`
